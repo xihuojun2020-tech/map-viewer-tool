@@ -74,7 +74,7 @@ export function initLibrary({request,getMode,openMap,showStories,notify}){
     while(watching===rid){
       const state=await request(`library/requests/${rid}`);if(watching!==rid)return;progress(state);
       if(state.layerId&&state.layerId!==visibleLayer){
-        if(!visibleLayer){await download(state.layerId,target);notify('首份地图已就绪；后续内容继续处理。');}
+        if(!visibleLayer){await download(state.layerId,target);notify(state.stage==='completed'?'所选范围地图已加载。':'首份地图已就绪；后续内容继续处理。');}
         else{$('library-new-map').hidden=false;$('library-new-map').onclick=()=>perform($('library-new-map'),async()=>{await download(state.layerId);$('library-new-map').hidden=true;});notify('新增地图已就绪，可返回书库载入。');}
       }
       if(['completed','failed','cancelled'].includes(state.stage)){

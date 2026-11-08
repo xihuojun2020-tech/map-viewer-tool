@@ -19,7 +19,7 @@ name = 'map-tool-'+item['versionName']+'.apk'
 apk = releases/name
 shutil.copy2(build/item['outputFile'], apk)
 payload = {'package': metadata['applicationId'], 'versionCode': item['versionCode'],
-           'versionName': item['versionName'], 'notes': '修复文案更新后旧小说地图和书库不兼容的问题，保留已有地图与阅读位置；校正分析进度单位、资料说明与页面命名，完善手机和平板横竖屏操作。',
+           'versionName': item['versionName'], 'notes': '修复旧小说地图和书库兼容，保留已有地图与阅读位置；校正分析进度、完成状态与资料说明，完善手机和平板横竖屏操作。',
            'url': 'https://genghaodewuwa.xyz/map-tool/releases/'+name,
            'size': apk.stat().st_size, 'sha256': hashlib.file_digest(apk.open('rb'), 'sha256').hexdigest()}
 data = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode()

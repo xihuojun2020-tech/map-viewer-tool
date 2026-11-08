@@ -21,7 +21,7 @@
   },
   {
     "path": "android/app/build.gradle.kts",
-    "sha256": "f69d713258b40f33c8057e3af3ef7f27e85907ff7018aefaa581be79b33a3f71",
+    "sha256": "ed107194cd3f2049d0f87eae60f8591652662208a56666b9799d9e73a5d6b955",
     "bytes": 1234
   },
   {
@@ -1286,8 +1286,8 @@
   },
   {
     "path": "README.md",
-    "sha256": "f2439ee6257253a0e89a080e593dd9a504a2a7767dea4d4c8466f54b5a57eea8",
-    "bytes": 7434
+    "sha256": "1f5a28beaca579ea383a07d083f888e090b550eb62d515244c6d680f6fbdb3ca",
+    "bytes": 7584
   },
   {
     "path": "research/han-140-base-metadata.json",
@@ -1481,8 +1481,8 @@
   },
   {
     "path": "scripts/make_android_update.py",
-    "sha256": "e6dc41b32f8ae81c5d6a3884a7fd1597df4d5c44f507f6c357f85e70bc5f3933",
-    "bytes": 1914
+    "sha256": "30e99404bf44ff23ff35c01477a81398e127ebad91017de836b24e15b3616ee0",
+    "bytes": 1881
   },
   {
     "path": "scripts/prepare_assets.py",
@@ -1611,8 +1611,8 @@
   },
   {
     "path": "tests/map-compatibility-browser.cjs",
-    "sha256": "fc75a87233140f6432c32f581f600817cbc51865689585502cc2b7eeaf26f762",
-    "bytes": 7583
+    "sha256": "d2046dbf18b2c4e8ef4b54858e73c2a84d6e262ddda6a3180c6954133c3b8465",
+    "bytes": 8324
   },
   {
     "path": "tests/map-ui.cjs",
@@ -1906,8 +1906,8 @@
   },
   {
     "path": "web/library-ui.mjs",
-    "sha256": "13ce749c33c1ae3462b815f682f817b90a6ff790de5fb9608e5bd218cf52063c",
-    "bytes": 10741
+    "sha256": "044a47880ab333ba3c3c088c9eab975a912672046dbc9d1dcef2fefeb50ae4db",
+    "bytes": 10800
   },
   {
     "path": "web/map-compatibility.json",

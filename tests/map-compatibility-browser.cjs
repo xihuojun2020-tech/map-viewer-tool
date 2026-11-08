@@ -39,7 +39,9 @@ const output='tmp/copy-fix-20261108/browser';fs.mkdirSync(output,{recursive:true
     await page.getByText('地图载入失败：这份地图需要匹配的底图版本，请更新应用；已有地图已保留。',{exact:true}).waitFor();
     assert.equal(await page.evaluate(async()=>JSON.stringify(await(await import('./scene/store.mjs')).readStories('compatibility-test'))),original);
 
-    const requests=[];
+    const requests=[],downloadBytes=Buffer.from(JSON.stringify({...pack,id:'completed-test'}));
+    const downloadManifest={...catalog.canonical,storyId:'completed-test',chapterIds:['one'],startChapter:1,
+      bytes:downloadBytes.length,sha256:require('node:crypto').createHash('sha256').update(downloadBytes).digest('hex')};
     await page.route('https://genghaodewuwa.xyz/map-tool/api/v1/**',async route=>{
       const request=route.request(),url=new URL(request.url());requests.push({url:url.pathname,query:Object.fromEntries(url.searchParams),body:request.postDataJSON()});
       let body;
@@ -47,7 +49,9 @@ const output='tmp/copy-fix-20261108/browser';fs.mkdirSync(output,{recursive:true
       else if(url.pathname.endsWith('/directory'))body={chapters:[{id:'one',title:'第一章'}],checked:1};
       else if(url.pathname.endsWith('/availability'))body={status:'missing'};
       else if(request.method()==='POST')body={requestId:'test-request',stage:'queued',mode:'cumulative',target:{chapter:1},extractedBlocks:0,totalBlocks:1};
-      else if(url.pathname.endsWith('/requests/test-request'))body={stage:'completed',mode:'cumulative',fetched:1,extractedBlocks:1,totalBlocks:1,target:{chapter:1},coveredThrough:{chapter:1,paragraph:100,chapterComplete:false}};
+      else if(url.pathname.endsWith('/requests/test-request'))body={stage:'completed',layerId:'test-layer',mode:'cumulative',fetched:1,extractedBlocks:1,totalBlocks:1,target:{chapter:1},coveredThrough:{chapter:1,paragraph:100,chapterComplete:false}};
+      else if(url.pathname.endsWith('/layers/test-layer/manifest'))body=downloadManifest;
+      else if(url.pathname.endsWith('/layers/test-layer/download')){await route.fulfill({contentType:'application/json',body:downloadBytes});return;}
       else throw Error('未预期的测试请求：'+url.pathname);
       await route.fulfill({contentType:'application/json',body:JSON.stringify(body)});
     });
@@ -57,6 +61,8 @@ const output='tmp/copy-fix-20261108/browser';fs.mkdirSync(output,{recursive:true
     await page.getByRole('button',{name:'选择这本书',exact:true}).click();
     await page.getByText('所选范围未生成；可选择累计局势或当前章局部地图。',{exact:true}).waitFor();
     await page.locator('#library-generate').click();
+    await page.locator('#live-status').filter({hasText:'所选范围地图已加载。'}).waitFor();
+    await page.locator('#close-map').click();
     await page.waitForFunction(()=>document.getElementById('library-progress-text').textContent.includes('分析进度：1 / 1 批'));
     assert.match(await page.locator('#library-progress-text').innerText(),/第 1 章第 100 段/);
     const sent=requests.find(r=>r.url.endsWith('/availability')).query;
@@ -80,7 +86,7 @@ const output='tmp/copy-fix-20261108/browser';fs.mkdirSync(output,{recursive:true
       await page.screenshot({path:output+`/map-${width}.png`});
     }
     assert.deepEqual(errors,[]);
-    const result={legacyPackUnchanged:true,bookmarkPosition:2,reviewedLocalPack:true,unknownRejected:true,libraryCanonicalVersion:true,batchProgress:true,viewports:5,pageErrors:errors};
+    const result={legacyPackUnchanged:true,bookmarkPosition:2,reviewedLocalPack:true,unknownRejected:true,libraryCanonicalVersion:true,batchProgress:true,completedDownloadStatus:true,viewports:5,pageErrors:errors};
     fs.writeFileSync(output+'/result.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
   }finally{await context.close();await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1});
