@@ -1,0 +1,114 @@
+{
+  "continue": {
+    "iistart": "2015-06-15T23:51:51Z",
+    "continue": "||revisions"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 40798913,
+        "ns": 6,
+        "title": "File:Eastern China blank relief map.svg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 471528,
+            "width": 920,
+            "height": 1006,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Eastern_China_blank_relief_map.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Eastern_China_blank_relief_map.svg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=40798913",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-06-17 23:31:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Eastern China blank relief map",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "SVG topographic maps of China|SVG blank maps of China|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Blank relief map of eastern China.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-06-07",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><span class=\"int-own-work\" lang=\"en\">Own work</span>\n</p>\n<ul><li>coastline and rivers from <a rel=\"nofollow\" class=\"external text\" href=\"https://www.naturalearthdata.com/downloads/10m-physical-vectors/\">Natural Earth 1:10m Physical Vectors</a></li>\n<li>lakes from from <a rel=\"nofollow\" class=\"external text\" href=\"https://www.soest.hawaii.edu/pwessel/gshhg/index.html\">GSHHG</a></li>\n<li>contours derived from <a rel=\"nofollow\" class=\"external text\" href=\"https://www.ngdc.noaa.gov/mgg/global/etopo5.HTML\">ETOPO5</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\n<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kanguole&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kanguole (page does not exist)\">Kanguole</a></div>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ],
+        "revisions": [
+          {
+            "revid": 1177366862,
+            "parentid": 1115206748,
+            "slots": {
+              "main": {
+                "contentmodel": "wikitext",
+                "contentformat": "text/x-wiki",
+                "content": "=={{int:filedesc}}==\n{{Map\n|description={{en|1=Blank relief map of eastern China.}}\n|legend=Elevation:\n{{legend|#aa8753|above 2000m}}\n{{legend|#cab982|800–2000m}}\n{{legend|#efebc0|200–800m}}\n{{legend|#a8c68f|below 200m}}\n|projection=equirectangular\n|latitude=18/42.5\n|longitude=99.5/125.7\n|warp status=skip\n|date=2015-06-07\n|source={{own}}\n* coastline and rivers from [https://www.naturalearthdata.com/downloads/10m-physical-vectors/ Natural Earth 1:10m Physical Vectors]\n* lakes from from [https://www.soest.hawaii.edu/pwessel/gshhg/index.html GSHHG]\n* contours derived from [https://www.ngdc.noaa.gov/mgg/global/etopo5.HTML ETOPO5]\n|author=[[User:Kanguole|Kanguole]]\n|permission=\n|other versions=\n}}\n\n=={{int:license-header}}==\n{{self|cc-by-sa-4.0}}\n\n[[Category:SVG blank maps of China]]\n[[Category:SVG topographic maps of China]]"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

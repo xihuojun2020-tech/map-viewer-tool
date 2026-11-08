@@ -1,0 +1,66 @@
+const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict');const fs=require('node:fs');
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+ try{
+  const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('http://127.0.0.1:8790/');await page.waitForFunction(()=>window.atlas&&window.atlas.map.isStyleLoaded());
+  assert.equal(await page.locator('.province-grid button').count(),13);
+  assert.equal(await page.locator('#map-time').innerText(),'194年');
+  assert.equal(await page.locator('[data-layer="regions"]').isChecked(),true);
+  assert.equal(await page.evaluate(()=>window.atlas.map.getSource('regions')),undefined);
+  assert.equal(await page.evaluate(()=>window.atlas.map.getPaintProperty('water-mask','fill-opacity')),1);
+  const layers=await page.evaluate(()=>window.atlas.map.getStyle().layers.map(x=>x.id));
+  assert.ok(layers.indexOf('water-mask')>layers.indexOf('terrain-wide'));
+  await page.locator('.province-grid button').filter({hasText:'徐州'}).click();
+  assert.match(await page.locator('#panel-content').innerText(),/郯.*刺史治/s);
+  await page.locator('#panel-content .inline-buttons button').getByText('东海郡',{exact:true}).click();
+  assert.doesNotMatch(await page.locator('#panel-content').innerText(),/阶段主要势力/);
+  await page.locator('#panel-content .inline-buttons button').getByText('襄贲',{exact:true}).click();
+  assert.match(await page.locator('#panel-content').innerText(),/县级条目/);assert.match(await page.locator('#panel-content').innerText(),/襄賁/);
+  await page.getByRole('button',{name:'返回东海郡',exact:true}).click();
+  assert.equal(await page.locator('#panel-content h1').innerText(),'东海郡');
+  await page.getByRole('button',{name:'返回徐州',exact:true}).click();
+  assert.equal(await page.locator('#panel-content h1').innerText(),'徐州');
+  await page.locator('#layers-button').click();
+  await page.locator('[data-layer="terrain"]').uncheck();
+  await page.locator('#layers-button').click();
+  await page.evaluate(()=>window.atlas.map.jumpTo({center:[118.5,34.65],zoom:8.3}));
+  await page.waitForFunction(()=>window.atlas.map.isStyleLoaded());
+  const donghai=page.getByRole('button',{name:'东海，区域，区域级定位',exact:true,includeHidden:true});
+  assert.equal(await donghai.evaluate(n=>getComputedStyle(n).display),'none');
+  assert.ok(await page.locator('.place-label').getByText('郯县',{exact:true}).isVisible());
+  assert.ok(await page.locator('.place-label').getByText('襄贲县',{exact:true}).isVisible());
+  await page.getByRole('button',{name:'东海，郡级行政区参考',exact:true}).click();
+  assert.match(await page.locator('#panel-content').innerText(),/东海是郡名/);
+  await page.screenshot({path:'output/administrative-xuzhou.png',fullPage:true});
+  await page.locator('#layers-button').click();await page.locator('[data-layer="regions"]').check();await page.locator('#layers-button').click();
+  await page.locator('#year-input').fill('196');await page.locator('#year-input').dispatchEvent('change');
+  const colors=await page.evaluate(()=>{
+   const nodes=[...document.querySelectorAll('.place-marker')];
+   const color=name=>nodes.find(n=>n.getAttribute('aria-label').startsWith(name+'，')).style.getPropertyValue('--control-color');
+   return {xiaopei:color('小沛'),xiapi:color('下邳'),tan:color('郯'),liu:window.atlas.data.factions.find(x=>x.id==='liu').color};
+  });
+  assert.equal(colors.xiaopei,colors.liu);assert.notEqual(colors.xiapi,colors.liu);
+  assert.equal(await page.evaluate(()=>window.atlas.map.getLayer('regions-fill')),undefined);
+  await page.locator('#year-input').fill('280');await page.locator('#year-input').dispatchEvent('change');
+  const recordedNames=await page.evaluate(()=>{
+   const state=window.atlas.state;
+   const owners=new Set(Object.entries(state.controlRecords).map(([id,event])=>event.controls[id]));
+   return window.atlas.data.factions.filter(f=>owners.has(f.id)).map(f=>f.name);
+  });
+  for(const name of recordedNames)assert.ok(await page.locator('#legend').getByText(name,{exact:true}).isVisible());
+  const tan=page.getByRole('button',{name:'郯，县治，区域级定位',exact:true});
+  assert.ok(await tan.evaluate(n=>n.classList.contains('center-county')));
+  assert.equal(await tan.evaluate(n=>getComputedStyle(n).backgroundColor),'rgb(51, 127, 154)');
+  await page.locator('#layers-button').click();await page.locator('[data-layer="mountains"]').check();await page.locator('#layers-button').click();
+  await page.evaluate(()=>window.atlas.map.jumpTo({center:[117.2,36.2],zoom:8.5}));
+  assert.equal(await page.getByRole('button',{name:'泰山，区域，区域级定位',exact:true,includeHidden:true}).evaluate(n=>getComputedStyle(n).display),'none');
+  assert.ok(await page.locator('.mountain-label').getByText('▲ 泰山',{exact:true}).isVisible());
+  await page.setViewportSize({width:390,height:844});await page.locator('#close-panel').click();
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+  assert.deepEqual(errors,[]);
+  const result={checks:['固定建安郡国行政底图','行政中心级别颜色','徐州—东海郡—襄贲的原文层级及逐级返回','行政详情不推断整郡势力','现代海域遮罩高于地势图','郡名不作为城池圆点','郯县与襄贲县明确命名','郡名可点并解释虚线局限','小沛记录不扩张成整郡势力面','地点势力图例独立于旧分期','泰山郡索引与泰山地形分离','手机布局'],page_errors:errors};
+  fs.writeFileSync('output/administration-verification.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

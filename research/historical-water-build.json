@@ -1,0 +1,113 @@
+{
+  "source_url": "https://commons.wikimedia.org/wiki/File:Yellow_River_watercourse_changes.svg",
+  "source_sha256": "b6e3342e6111fd7b7e5fa8fcc9fbceaa5ba883e1f7aee3d866fe5218c1d08b81",
+  "base_sha256": "351bf5975528af0e33d1985ba58bff4cbc7432e4a7f14efd4aa974b6d8602999",
+  "path": "path4550",
+  "points": 129,
+  "default_visible": false,
+  "source_warning": "来源页明确指出原图忽略了西汉的重要河道变化。此次只提取其标注的东汉下游线，但该线仍未独立考订，不能作为精确定位或战役淹没范围的依据。",
+  "user_zhihu_url": "https://zhuanlan.zhihu.com/p/1943697695039534400",
+  "zhihu_status": "正文请求返回403；未声称已读到帖子，也未使用其图片。",
+  "other_checks": [
+    "黄河古道研究仓储页面实际返回维护公告，未取得论文全文。",
+    "中国国家地理旧图链接返回页面不存在，未据此认定已核读原图。"
+  ],
+  "changban": {
+    "source_sha256": "197dc96a76ecfd56458845f1f9f83b5c836b611f8d17881dbd12a58a1d510f9c",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bataille_de_Changban.svg",
+    "controls": [
+      {
+        "source_id": "Xinye",
+        "place_id": "xinye",
+        "name": "新野",
+        "svg": [
+          271.428562,
+          92.362184
+        ],
+        "coordinates": [
+          112.36,
+          32.52
+        ],
+        "fit_error_km": 3.73,
+        "leave_one_out_error_km": 7.47
+      },
+      {
+        "source_id": "Fancheng",
+        "place_id": "fancheng",
+        "name": "樊城",
+        "svg": [
+          234.999999,
+          164.505039
+        ],
+        "coordinates": [
+          112.14,
+          32.07
+        ],
+        "fit_error_km": 1.26,
+        "leave_one_out_error_km": 1.81
+      },
+      {
+        "source_id": "Xiangyang",
+        "place_id": "xiangyang",
+        "name": "襄阳",
+        "svg": [
+          228.57142800000003,
+          175.93361
+        ],
+        "coordinates": [
+          112.14,
+          32.04
+        ],
+        "fit_error_km": 5.5,
+        "leave_one_out_error_km": 7.82
+      },
+      {
+        "source_id": "Jiangling",
+        "place_id": "jiangling",
+        "name": "江陵",
+        "svg": [
+          243.57142800000003,
+          436.64788999999996
+        ],
+        "coordinates": [
+          112.19,
+          30.35
+        ],
+        "fit_error_km": 1.75,
+        "leave_one_out_error_km": 19.74
+      },
+      {
+        "source_id": "Xiakou",
+        "place_id": "xiakou",
+        "name": "夏口",
+        "svg": [
+          539.285715,
+          401.64788999999996
+        ],
+        "coordinates": [
+          114.3,
+          30.55
+        ],
+        "fit_error_km": 0.61,
+        "leave_one_out_error_km": 57.19
+      }
+    ],
+    "affine_svg_to_lonlat": [
+      [
+        0.007063970378499551,
+        -0.00010634217740454329
+      ],
+      [
+        2.2181749476879453e-05,
+        -0.006331793748075562
+      ],
+      [
+        110.47594140682544,
+        33.14794676395987
+      ]
+    ],
+    "fit_rms_km": 3.14,
+    "leave_one_out_max_km": 57.19,
+    "decision": "只发布208年研究示意，不升级为历史河道；未连接源图缺段。"
+  }
+}

@@ -1,0 +1,1049 @@
+{
+  "source": "jianan-219",
+  "review_scope": "源图名称的中文对读，不等于219年建置或治所定位已独立考定。",
+  "labels": [
+    {
+      "source_id": "g1742",
+      "source_text": "Hedong",
+      "name": "河东",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1758",
+      "source_text": "Taiyuan",
+      "name": "太原",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1776",
+      "source_text": "Shangdang",
+      "name": "上党",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2102",
+      "source_text": "Zhangye",
+      "name": "张掖",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1810",
+      "source_text": "Xinxing",
+      "name": "新兴",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1824",
+      "source_text": "Leping",
+      "name": "乐平",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1828",
+      "source_text": "Yanmen",
+      "name": "雁门",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1844",
+      "source_text": "Hongnong",
+      "name": "弘农",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1864",
+      "source_text": "Jingzhao",
+      "name": "京兆",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1884",
+      "source_text": "Zuopingyi",
+      "name": "左冯翊",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1914",
+      "source_text": "Beidi",
+      "name": "北地",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1938",
+      "source_text": "Youfufeng",
+      "name": "右扶风",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1960",
+      "source_text": "Wudu",
+      "name": "武都",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1972",
+      "source_text": "Hanxing",
+      "name": "汉兴",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g1990",
+      "source_text": "Hanyang",
+      "name": "汉阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2018",
+      "source_text": "Anding",
+      "name": "安定",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2032",
+      "source_text": "Longxi",
+      "name": "陇西",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2036",
+      "source_text": "Jincheng",
+      "name": "金城",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2066",
+      "source_text": "Xiping",
+      "name": "西平",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2070",
+      "source_text": "Wuwei",
+      "name": "武威",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2166",
+      "source_text": "Xihe",
+      "name": "西河",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2088",
+      "source_text": "Xi",
+      "name": "西郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2118",
+      "source_text": "Xihai",
+      "name": "西海",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2122",
+      "source_text": "Jiuquan",
+      "name": "酒泉",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2140",
+      "source_text": "Dunhuang",
+      "name": "敦煌",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2170",
+      "source_text": "Henei",
+      "name": "河内",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2184",
+      "source_text": "Henan",
+      "name": "河南",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2198",
+      "source_text": "Wei",
+      "name": "魏郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2544",
+      "source_text": "Beihai",
+      "name": "北海",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2224",
+      "source_text": "Zhongshan",
+      "name": "中山",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2244",
+      "source_text": "Changshan",
+      "name": "常山",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2250",
+      "source_text": "10",
+      "name": "博陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2278",
+      "source_text": "Hejian",
+      "name": "河间",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2314",
+      "source_text": "Zhangwu",
+      "name": "章武",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2324",
+      "source_text": "Zhuo",
+      "name": "涿郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2328",
+      "source_text": "Dai",
+      "name": "代郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2338",
+      "source_text": "Shanggu",
+      "name": "上谷",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2356",
+      "source_text": "Yuyang",
+      "name": "渔阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2374",
+      "source_text": "13",
+      "name": "广阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2378",
+      "source_text": "Youbeiping",
+      "name": "右北平",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2408",
+      "source_text": "Liaoxi",
+      "name": "辽西",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2432",
+      "source_text": "Liaodong",
+      "name": "辽东",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2446",
+      "source_text": "Lelang",
+      "name": "乐浪",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2450",
+      "source_text": "Daifang",
+      "name": "带方",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2468",
+      "source_text": "Xuantu",
+      "name": "玄菟",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2504",
+      "source_text": "Bohai",
+      "name": "渤海",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2530",
+      "source_text": "Laoling",
+      "name": "乐陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2548",
+      "source_text": "Donglai",
+      "name": "东莱",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2566",
+      "source_text": "Dongguan",
+      "name": "东莞",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2586",
+      "source_text": "Dong",
+      "name": "东郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2598",
+      "source_text": "2",
+      "name": "东平",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2672",
+      "source_text": "Chenliu",
+      "name": "陈留",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2630",
+      "source_text": "4",
+      "name": "任城",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2634",
+      "source_text": "3",
+      "name": "山阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2638",
+      "source_text": "1",
+      "name": "济北",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2642",
+      "source_text": "5",
+      "name": "泰山",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2646",
+      "source_text": "Jiyin",
+      "name": "济阴",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2686",
+      "source_text": "Langya",
+      "name": "琅邪",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2690",
+      "source_text": "6",
+      "name": "东海",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2694",
+      "source_text": "7",
+      "name": "利城",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2706",
+      "source_text": "Xiapi",
+      "name": "下邳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2710",
+      "source_text": "Pei",
+      "name": "沛国",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2726",
+      "source_text": "Qiao",
+      "name": "谯郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2736",
+      "source_text": "Chen",
+      "name": "陈郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2740",
+      "source_text": "Runan",
+      "name": "汝南",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2764",
+      "source_text": "Yiyang",
+      "name": "义阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2768",
+      "source_text": "Jiangxia",
+      "name": "江夏",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2798",
+      "source_text": "Qichun",
+      "name": "蕲春",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2802",
+      "source_text": "Lujiang",
+      "name": "庐江",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2820",
+      "source_text": "Jiujiang",
+      "name": "九江",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2840",
+      "source_text": "Danyang",
+      "name": "丹阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2858",
+      "source_text": "Wu",
+      "name": "吴郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2912",
+      "source_text": "Poyang",
+      "name": "鄱阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2866",
+      "source_text": "Kuaiji",
+      "name": "会稽",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2890",
+      "source_text": "Xindu",
+      "name": "新都",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2908",
+      "source_text": "Linchuan",
+      "name": "临川",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2930",
+      "source_text": "Yuzhang",
+      "name": "豫章",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2948",
+      "source_text": "Luling",
+      "name": "庐陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g2980",
+      "source_text": "Zhangling",
+      "name": "章陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3000",
+      "source_text": "Xiangyang",
+      "name": "襄阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3004",
+      "source_text": "Nanxiang",
+      "name": "南乡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3024",
+      "source_text": "Shangyong",
+      "name": "上庸",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3048",
+      "source_text": "Hanzhong",
+      "name": "汉中",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3068",
+      "source_text": "Guling",
+      "name": "固陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3084",
+      "source_text": "Ba",
+      "name": "巴郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3092",
+      "source_text": "Baxi",
+      "name": "巴西",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3104",
+      "source_text": "Dangqu",
+      "name": "宕渠",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3120",
+      "source_text": "Wenshan",
+      "name": "汶山",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3138",
+      "source_text": "Shu",
+      "name": "蜀郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3156",
+      "source_text": "Qianwei",
+      "name": "犍为",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3166",
+      "source_text": "Yuesui",
+      "name": "越巂",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3190",
+      "source_text": "Zhuti",
+      "name": "朱提",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3194",
+      "source_text": "Zangke",
+      "name": "牂牁",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3220",
+      "source_text": "Yizhou",
+      "name": "益州郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3224",
+      "source_text": "Yongchang",
+      "name": "永昌",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3246",
+      "source_text": "Jiangyang",
+      "name": "江阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3268",
+      "source_text": "Guanghan",
+      "name": "广汉",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3300",
+      "source_text": "Yinping",
+      "name": "阴平",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3304",
+      "source_text": "ZZiittoonngg",
+      "name": "梓潼",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3348",
+      "source_text": "Xicheng",
+      "name": "西城",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3352",
+      "source_text": "Nan",
+      "name": "南郡",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3368",
+      "source_text": "Yidu",
+      "name": "宜都",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3372",
+      "source_text": "Fangling",
+      "name": "房陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3392",
+      "source_text": "Wuling",
+      "name": "武陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3422",
+      "source_text": "Changsha",
+      "name": "长沙",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3440",
+      "source_text": "Lingling",
+      "name": "零陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3444",
+      "source_text": "Guiyang",
+      "name": "桂阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3462",
+      "source_text": "Nanhai",
+      "name": "南海",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3478",
+      "source_text": "Cangwu",
+      "name": "苍梧",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3494",
+      "source_text": "Hepu",
+      "name": "合浦",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3506",
+      "source_text": "Yulin",
+      "name": "郁林",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3520",
+      "source_text": "Jiaozhi",
+      "name": "交趾",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3538",
+      "source_text": "Jiuzhen",
+      "name": "九真",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3564",
+      "source_text": "Rinan",
+      "name": "日南",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3568",
+      "source_text": "Nanyang",
+      "name": "南阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3602",
+      "source_text": "Yingchuan",
+      "name": "颍川",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3606",
+      "source_text": "8",
+      "name": "梁国",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3610",
+      "source_text": "Lu",
+      "name": "鲁国",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3618",
+      "source_text": "Pengcheng",
+      "name": "彭城",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3640",
+      "source_text": "Guangling",
+      "name": "广陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3678",
+      "source_text": "Chengyang",
+      "name": "城阳",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3684",
+      "source_text": "Qi",
+      "name": "齐国",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3696",
+      "source_text": "Le'an",
+      "name": "乐安",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3700",
+      "source_text": "Jinan",
+      "name": "济南",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3716",
+      "source_text": "12",
+      "name": "平原",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3720",
+      "source_text": "Ganling",
+      "name": "甘陵",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3782",
+      "source_text": "11",
+      "name": "安平",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3786",
+      "source_text": "Julu",
+      "name": "巨鹿",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g3798",
+      "source_text": "9",
+      "name": "赵国",
+      "kind": "郡国名称",
+      "note": "对读源图名称；标签位置不代表治所坐标。"
+    },
+    {
+      "source_id": "g5178",
+      "source_text": "Guzang",
+      "name": "姑臧",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g5310",
+      "source_text": "Dunhuang",
+      "name": "敦煌",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g5350",
+      "source_text": "Changran",
+      "name": "长安",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g5694",
+      "source_text": "Luoyang",
+      "name": "雒阳",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g5722",
+      "source_text": "Ye",
+      "name": "邺",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g6158",
+      "source_text": "Shouchun",
+      "name": "寿春",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g6282",
+      "source_text": "Jianye",
+      "name": "建业",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g6306",
+      "source_text": "Wu",
+      "name": "吴县",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g6314",
+      "source_text": "Shanyin",
+      "name": "山阴",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g7310",
+      "source_text": "Xiangyang",
+      "name": "襄阳",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g7398",
+      "source_text": "Jiangling",
+      "name": "江陵",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g7906",
+      "source_text": "Panyu",
+      "name": "番禺",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g7982",
+      "source_text": "Longbian",
+      "name": "龙编",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g8178",
+      "source_text": "Linxiang",
+      "name": "临湘",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g8282",
+      "source_text": "Nanzheng",
+      "name": "南郑",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g8818",
+      "source_text": "Chengdu",
+      "name": "成都",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g9490",
+      "source_text": "Tan",
+      "name": "郯",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g9626",
+      "source_text": "Xiapi",
+      "name": "下邳",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g9962",
+      "source_text": "Ji",
+      "name": "蓟",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    },
+    {
+      "source_id": "g10254",
+      "source_text": "Xiangping",
+      "name": "襄平",
+      "kind": "城邑名称",
+      "note": "对读源图标签；未把文字锚点当作古城精确坐标。"
+    }
+  ]
+}

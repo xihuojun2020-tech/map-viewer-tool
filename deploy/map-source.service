@@ -1,0 +1,23 @@
+[Unit]
+Description=Novel map local text source
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=map-source
+Group=map-source
+EnvironmentFile=/etc/map-tool/source.env
+ExecStart=/opt/map-tool/source/ecd99f44fdbc984320a0595b9bbbbfead3a20f6d/fqapi-server --listen 127.0.0.1:18921 --data-dir /var/lib/map-tool-source --max-concurrency 2
+Restart=on-failure
+RestartSec=5
+MemoryMax=128M
+CPUQuota=25%
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/map-tool-source
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

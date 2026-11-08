@@ -1,0 +1,774 @@
+{
+  "method": "同源地形瓦片图像相关配准；等经纬度图幅上的仿射变换",
+  "control_origin": "来源作者公开的30度、1800像素瓦片；不是古城点位或古界考证控制。",
+  "limits": [
+    "检验点未参与拟合，但来自同一地形底图系列；尚未完成独立测绘源的地理验证。",
+    "匹配零残差不代表古界零误差；源图本身的年代、绘制与底图地理精度另行核验。",
+    "图幅说明存在复制错误：南段部分说明误写为零至六十度，按30度分幅及拼接连续性核对；不是完整坐标参考系统元数据。"
+  ],
+  "control_selection_note": "原候选海面图块（2000，480）无灰度变化，不能定位；在拟合前改用（2180，480）。八个检验点未更换。",
+  "source_hashes": {
+    "web\\assets\\jianan-terrain.jpg": "e6bb9c3e07551c34284e5af9a0bbc3afe91ebd20e03620a6f1c936b61ec3c7a7",
+    "data\\references\\Topographic30deg N30E90.png": "f35957e97ef1a5d99949765a32c798f0d1511bb820d016192020ab903df9d90c",
+    "data\\references\\Topographic30deg N30E120.png": "692231ab46aea23600991f3206b4a1ab9f49dd66d0dbd8411a2e8fcc545b85dd",
+    "data\\references\\Topographic30deg N0E90.png": "4a6e89adc5a88ac4e688cc763e847d015669c8a684ebb15384be28f506546883"
+  },
+  "fit_count": 24,
+  "holdout_count": 8,
+  "controls": [
+    {
+      "id": 1,
+      "role": "fit",
+      "source_svg": [
+        199,
+        179
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        202,
+        1021
+      ],
+      "coordinates": [
+        93.36666666666666,
+        42.983333333333334
+      ],
+      "correlation": 0.999335,
+      "predicted": [
+        93.36351446448667,
+        42.983333333331196
+      ],
+      "error_km": 0.256415
+    },
+    {
+      "id": 2,
+      "role": "fit",
+      "source_svg": [
+        499,
+        159
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        502,
+        1001
+      ],
+      "coordinates": [
+        98.36666666666667,
+        43.31666666666666
+      ],
+      "correlation": 0.996889,
+      "predicted": [
+        98.36575650943037,
+        43.31666666666767
+      ],
+      "error_km": 0.073634
+    },
+    {
+      "id": 3,
+      "role": "fit",
+      "source_svg": [
+        849,
+        159
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        852,
+        1001
+      ],
+      "coordinates": [
+        104.2,
+        43.31666666666666
+      ],
+      "correlation": 0.997539,
+      "predicted": [
+        104.20163704506538,
+        43.31666666667083
+      ],
+      "error_km": 0.132441
+    },
+    {
+      "id": 4,
+      "role": "fit",
+      "source_svg": [
+        1149,
+        199
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1152,
+        1041
+      ],
+      "coordinates": [
+        109.2,
+        42.65
+      ],
+      "correlation": 0.991523,
+      "predicted": [
+        109.20370290395375,
+        42.65000000000599
+      ],
+      "error_km": 0.30284
+    },
+    {
+      "id": 5,
+      "role": "fit",
+      "source_svg": [
+        1449,
+        149
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1452,
+        991
+      ],
+      "coordinates": [
+        114.2,
+        43.483333333333334
+      ],
+      "correlation": 0.980721,
+      "predicted": [
+        114.20603304192511,
+        43.483333333343126
+      ],
+      "error_km": 0.486747
+    },
+    {
+      "id": 6,
+      "role": "fit",
+      "source_svg": [
+        1649,
+        199
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1652,
+        1041
+      ],
+      "coordinates": [
+        117.53333333333333,
+        42.65
+      ],
+      "correlation": 0.998464,
+      "predicted": [
+        117.54067509771808,
+        42.6500000000105
+      ],
+      "error_km": 0.600443
+    },
+    {
+      "id": 7,
+      "role": "fit",
+      "source_svg": [
+        1949,
+        179
+      ],
+      "tile": "Topographic30deg N30E120.png",
+      "tile_pixel": [
+        153,
+        1021
+      ],
+      "coordinates": [
+        122.55,
+        42.983333333333334
+      ],
+      "correlation": 0.98504,
+      "predicted": [
+        122.54291714266176,
+        42.98333333334698
+      ],
+      "error_km": 0.576154
+    },
+    {
+      "id": 8,
+      "role": "fit",
+      "source_svg": [
+        2199,
+        259
+      ],
+      "tile": "Topographic30deg N30E120.png",
+      "tile_pixel": [
+        403,
+        1101
+      ],
+      "coordinates": [
+        126.71666666666667,
+        41.65
+      ],
+      "correlation": 0.999459,
+      "predicted": [
+        126.71116832480351,
+        41.650000000014145
+      ],
+      "error_km": 0.45684
+    },
+    {
+      "id": 9,
+      "role": "fit",
+      "source_svg": [
+        299,
+        479
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        302,
+        1321
+      ],
+      "coordinates": [
+        95.03333333333333,
+        37.983333333333334
+      ],
+      "correlation": 0.99933,
+      "predicted": [
+        95.03002797296291,
+        37.983333333325525
+      ],
+      "error_km": 0.289691
+    },
+    {
+      "id": 10,
+      "role": "fit",
+      "source_svg": [
+        599,
+        499
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        602,
+        1341
+      ],
+      "coordinates": [
+        100.03333333333333,
+        37.65
+      ],
+      "correlation": 0.998778,
+      "predicted": [
+        100.03215256053639,
+        37.649999999994456
+      ],
+      "error_km": 0.103954
+    },
+    {
+      "id": 11,
+      "role": "fit",
+      "source_svg": [
+        899,
+        519
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        902,
+        1361
+      ],
+      "coordinates": [
+        105.03333333333333,
+        37.31666666666666
+      ],
+      "correlation": 0.998484,
+      "predicted": [
+        105.03427714810988,
+        37.316666666663394
+      ],
+      "error_km": 0.083464
+    },
+    {
+      "id": 12,
+      "role": "fit",
+      "source_svg": [
+        1199,
+        509
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1202,
+        1351
+      ],
+      "coordinates": [
+        110.03333333333333,
+        37.483333333333334
+      ],
+      "correlation": 0.997663,
+      "predicted": [
+        110.03648982871101,
+        37.483333333332986
+      ],
+      "error_km": 0.278518
+    },
+    {
+      "id": 13,
+      "role": "fit",
+      "source_svg": [
+        1449,
+        599
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1452,
+        1441
+      ],
+      "coordinates": [
+        114.2,
+        35.983333333333334
+      ],
+      "correlation": 0.934034,
+      "predicted": [
+        114.20471164651019,
+        35.98333333333326
+      ],
+      "error_km": 0.423943
+    },
+    {
+      "id": 14,
+      "role": "fit",
+      "source_svg": [
+        1649,
+        599
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1652,
+        1441
+      ],
+      "coordinates": [
+        117.53333333333333,
+        35.983333333333334
+      ],
+      "correlation": 0.995785,
+      "predicted": [
+        117.53950052401592,
+        35.98333333333507
+      ],
+      "error_km": 0.554909
+    },
+    {
+      "id": 15,
+      "role": "fit",
+      "source_svg": [
+        2179,
+        479
+      ],
+      "tile": "Topographic30deg N30E120.png",
+      "tile_pixel": [
+        383,
+        1321
+      ],
+      "coordinates": [
+        126.38333333333334,
+        37.983333333333334
+      ],
+      "correlation": 0.999496,
+      "predicted": [
+        126.37704342151673,
+        37.98333333334248
+      ],
+      "error_km": 0.551265
+    },
+    {
+      "id": 16,
+      "role": "fit",
+      "source_svg": [
+        2259,
+        499
+      ],
+      "tile": "Topographic30deg N30E120.png",
+      "tile_pixel": [
+        463,
+        1341
+      ],
+      "coordinates": [
+        127.71666666666667,
+        37.65
+      ],
+      "correlation": 0.999118,
+      "predicted": [
+        127.71090024383392,
+        37.65000000000943
+      ],
+      "error_km": 0.507672
+    },
+    {
+      "id": 17,
+      "role": "fit",
+      "source_svg": [
+        279,
+        849
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        282,
+        1691
+      ],
+      "coordinates": [
+        94.7,
+        31.816666666666666
+      ],
+      "correlation": 0.999578,
+      "predicted": [
+        94.69546260453785,
+        31.81666666665057
+      ],
+      "error_km": 0.428724
+    },
+    {
+      "id": 18,
+      "role": "fit",
+      "source_svg": [
+        649,
+        799
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        652,
+        1641
+      ],
+      "coordinates": [
+        100.86666666666667,
+        32.65
+      ],
+      "correlation": 0.999456,
+      "predicted": [
+        100.86496884963621,
+        32.64999999998834
+      ],
+      "error_km": 0.158957
+    },
+    {
+      "id": 19,
+      "role": "fit",
+      "source_svg": [
+        949,
+        849
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        952,
+        1691
+      ],
+      "coordinates": [
+        105.86666666666667,
+        31.816666666666666
+      ],
+      "correlation": 0.998908,
+      "predicted": [
+        105.86700534418203,
+        31.816666666656612
+      ],
+      "error_km": 0.032001
+    },
+    {
+      "id": 20,
+      "role": "fit",
+      "source_svg": [
+        1199,
+        819
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1202,
+        1661
+      ],
+      "coordinates": [
+        110.03333333333333,
+        32.31666666666666
+      ],
+      "correlation": 0.999294,
+      "predicted": [
+        110.03557953409185,
+        32.31666666665953
+      ],
+      "error_km": 0.211079
+    },
+    {
+      "id": 21,
+      "role": "fit",
+      "source_svg": [
+        1499,
+        849
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1502,
+        1691
+      ],
+      "coordinates": [
+        115.03333333333333,
+        31.816666666666666
+      ],
+      "correlation": 0.997079,
+      "predicted": [
+        115.03767475732278,
+        31.816666666661575
+      ],
+      "error_km": 0.410207
+    },
+    {
+      "id": 22,
+      "role": "fit",
+      "source_svg": [
+        699,
+        1199
+      ],
+      "tile": "Topographic30deg N0E90.png",
+      "tile_pixel": [
+        702,
+        241
+      ],
+      "coordinates": [
+        101.7,
+        25.983333333333334
+      ],
+      "correlation": 0.999589,
+      "predicted": [
+        101.69749149531049,
+        25.983333333313357
+      ],
+      "error_km": 0.250739
+    },
+    {
+      "id": 23,
+      "role": "fit",
+      "source_svg": [
+        999,
+        1199
+      ],
+      "tile": "Topographic30deg N0E90.png",
+      "tile_pixel": [
+        1002,
+        241
+      ],
+      "coordinates": [
+        106.7,
+        25.983333333333334
+      ],
+      "correlation": 0.998732,
+      "predicted": [
+        106.69967481156908,
+        25.98333333331606
+      ],
+      "error_km": 0.032504
+    },
+    {
+      "id": 24,
+      "role": "fit",
+      "source_svg": [
+        1349,
+        1399
+      ],
+      "tile": "Topographic30deg N0E90.png",
+      "tile_pixel": [
+        1352,
+        441
+      ],
+      "coordinates": [
+        112.53333333333333,
+        22.65
+      ],
+      "correlation": 0.998012,
+      "predicted": [
+        112.53496806035301,
+        22.649999999981503
+      ],
+      "error_km": 0.167754
+    },
+    {
+      "id": 25,
+      "role": "holdout",
+      "source_svg": [
+        119,
+        649
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        122,
+        1491
+      ],
+      "coordinates": [
+        92.03333333333333,
+        35.15
+      ],
+      "correlation": 0.999193,
+      "predicted": [
+        92.02821878938434,
+        35.14999999998684
+      ],
+      "error_km": 0.465005
+    },
+    {
+      "id": 26,
+      "role": "holdout",
+      "source_svg": [
+        499,
+        309
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        502,
+        1151
+      ],
+      "coordinates": [
+        98.36666666666667,
+        40.81666666666666
+      ],
+      "correlation": 0.991552,
+      "predicted": [
+        98.36531604429206,
+        40.81666666666439
+      ],
+      "error_km": 0.113659
+    },
+    {
+      "id": 27,
+      "role": "holdout",
+      "source_svg": [
+        1049,
+        339
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1052,
+        1181
+      ],
+      "coordinates": [
+        107.53333333333333,
+        40.31666666666666
+      ],
+      "correlation": 0.995328,
+      "predicted": [
+        107.53589736440514,
+        40.31666666666869
+      ],
+      "error_km": 0.217389
+    },
+    {
+      "id": 28,
+      "role": "holdout",
+      "source_svg": [
+        1549,
+        419
+      ],
+      "tile": "Topographic30deg N30E90.png",
+      "tile_pixel": [
+        1552,
+        1261
+      ],
+      "coordinates": [
+        115.86666666666667,
+        38.983333333333334
+      ],
+      "correlation": 0.898492,
+      "predicted": [
+        115.87263464342902,
+        38.98333333333811
+      ],
+      "error_km": 0.515842
+    },
+    {
+      "id": 29,
+      "role": "holdout",
+      "source_svg": [
+        2129,
+        299
+      ],
+      "tile": "Topographic30deg N30E120.png",
+      "tile_pixel": [
+        333,
+        1141
+      ],
+      "coordinates": [
+        125.55,
+        40.983333333333334
+      ],
+      "correlation": 0.99902,
+      "predicted": [
+        125.54387476030628,
+        40.983333333345975
+      ],
+      "error_km": 0.514159
+    },
+    {
+      "id": 30,
+      "role": "holdout",
+      "source_svg": [
+        499,
+        1399
+      ],
+      "tile": "Topographic30deg N0E90.png",
+      "tile_pixel": [
+        502,
+        441
+      ],
+      "coordinates": [
+        98.36666666666667,
+        22.65
+      ],
+      "correlation": 0.999645,
+      "predicted": [
+        98.36211533095369,
+        22.649999999973836
+      ],
+      "error_km": 0.467053
+    },
+    {
+      "id": 31,
+      "role": "holdout",
+      "source_svg": [
+        999,
+        1619
+      ],
+      "tile": "Topographic30deg N0E90.png",
+      "tile_pixel": [
+        1002,
+        661
+      ],
+      "coordinates": [
+        106.7,
+        18.983333333333334
+      ],
+      "correlation": 0.998198,
+      "predicted": [
+        106.6984415091818,
+        18.98333333330686
+      ],
+      "error_km": 0.163871
+    },
+    {
+      "id": 32,
+      "role": "holdout",
+      "source_svg": [
+        1599,
+        1149
+      ],
+      "tile": "Topographic30deg N0E90.png",
+      "tile_pixel": [
+        1602,
+        191
+      ],
+      "coordinates": [
+        116.7,
+        26.816666666666666
+      ],
+      "correlation": 0.9993,
+      "predicted": [
+        116.70418826579902,
+        26.8166666666559
+      ],
+      "error_km": 0.415629
+    }
+  ],
+  "affine_coefficients": [
+    [
+      0.01667394438752863,
+      9.019777020489906e-15
+    ],
+    [
+      -2.9364342553905853e-06,
+      -0.016666666666688576
+    ],
+    [
+      90.04592515310019,
+      45.966666666666654
+    ]
+  ],
+  "median_holdout_km": 0.440317,
+  "p90_holdout_km": 0.5146639000000001,
+  "worst_correlation": 0.898492,
+  "publication_status": "配准研究边线，未经古界逐段复核，不作为县域或诸侯实控面"
+}

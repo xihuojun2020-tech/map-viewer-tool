@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/build/three.module.js",
+    "file": "three.module.js",
+    "sha256_upstream": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+    "change": "无"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/jsm/loaders/GLTFLoader.js",
+    "file": "GLTFLoader.js",
+    "sha256_upstream": "d073b438e6a07e1359741dd5d6c76c953420cc0d4fd84eb1bdde94315540e6a3",
+    "change": "本地相对模块导入"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/jsm/utils/BufferGeometryUtils.js",
+    "file": "BufferGeometryUtils.js",
+    "sha256_upstream": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb",
+    "change": "本地相对模块导入"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/LICENSE",
+    "file": "THREE-LICENSE.txt",
+    "sha256_upstream": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "change": "无"
+  }
+]

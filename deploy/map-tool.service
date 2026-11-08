@@ -1,0 +1,27 @@
+[Unit]
+Description=Novel map private API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=map-tool
+Group=map-tool
+WorkingDirectory=/opt/map-tool/backend
+EnvironmentFile=/etc/map-tool/service.env
+EnvironmentFile=/etc/map-tool/source.env
+Environment=MAPTOOL_COMPILER_ROOT=/opt/map-tool/compiler
+Environment=MAPTOOL_NODE=/opt/map-tool/runtime/node-v22.14.0-linux-x64/bin/node
+ExecStart=/usr/bin/python3 /opt/map-tool/backend/service.py
+Restart=on-failure
+RestartSec=5
+MemoryMax=256M
+CPUQuota=50%
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/map-tool
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

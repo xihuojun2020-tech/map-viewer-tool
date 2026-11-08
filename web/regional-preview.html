@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>山川与州域 · 三国地图独立预览</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="regional-preview.css">
+  <script src="assets/maplibre-gl.js" defer></script><script type="module" src="regional-preview.mjs"></script>
+</head>
+<body>
+  <header><div class="identity"><span class="seal" aria-hidden="true">舆</span><div><h1>山川与州域</h1><p>三国地图 · 独立资料预览</p></div></div>
+    <div class="search-wrap"><label for="search">寻地</label><input id="search" type="search" placeholder="州域、城池、山川" autocomplete="off"><div id="search-results" hidden></div></div>
+    <a class="back" href="./">返回阅读版 ↗</a>
+  </header>
+  <main>
+    <section class="workspace" aria-label="地图与图层">
+      <div id="preview-map" role="region" aria-label="可缩放拖动的三国区域预览图"></div>
+      <div class="map-tools"><div class="mode-switch" role="group" aria-label="区域配色"><button id="mode-regions" aria-pressed="true">州域配色</button><button id="mode-groups" aria-pressed="false">原包分组</button></div><div class="view-buttons"><button id="fit-central">中原与江南</button><button id="fit-all">全境与周边</button><button id="layers-button" aria-expanded="false">图层</button></div></div>
+      <div id="layer-panel" hidden><strong>地图显示</strong><label><input type="checkbox" id="show-terrain" checked>地势明暗</label><label><input type="checkbox" id="show-water" checked>原著山川</label><label><input type="checkbox" id="show-cities" checked>城池标记</label><label><input type="checkbox" id="show-labels" checked>区域名称</label><label><input type="checkbox" id="show-fill" checked>区域底色</label></div>
+      <div class="map-caption"><strong id="mode-caption">州域与周边区域</strong><span>来源未注明年代 · 海陆与地势为现代参照</span></div>
+      <div class="map-key"><span><i class="water-key"></i>主要河流</span><span><i class="region-key"></i>来源区域边界</span><span>白线：指向或选中的区域</span></div>
+      <div id="loading" role="status">正在载入区域与山川…</div><div id="map-error" role="alert" hidden></div>
+      <button id="mobile-detail" aria-expanded="false">查看地图资料</button>
+    </section>
+    <aside id="detail-panel" aria-label="区域与地点资料"><div class="panel-top"><span>地图札记</span><button id="close-detail" aria-label="收起资料">×</button></div><div id="detail-content"></div></aside>
+  </main>
+</body>
+</html>

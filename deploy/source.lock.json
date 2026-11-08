@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/Maicy0609/fanqie-lite-api",
+  "commit": "ecd99f44fdbc984320a0595b9bbbbfead3a20f6d",
+  "license": "GPL-3.0",
+  "modified": false,
+  "target": "x86_64-unknown-linux-gnu",
+  "binarySha256": "02db6d75d4e22a008ed04cecea037bbba8152e59c9231c70be42cc6b54577d6e",
+  "rust": "1.98.0",
+  "zig": "0.14.1",
+  "cargoZigbuild": "0.24.1"
+}

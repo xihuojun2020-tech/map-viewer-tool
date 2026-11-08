@@ -1,0 +1,2658 @@
+{
+  "title": "三国兵人造型审核",
+  "version": "首批审核",
+  "assets": [
+    {
+      "id": "guanyu",
+      "name": "关羽",
+      "kind": "general",
+      "camp": "蜀汉",
+      "evidence": "演义及史料线索",
+      "traits": "枣红长脸、丹凤眼、长须；绿袍、绿巾、青龙偃月刀",
+      "design": "深绿色交领战袍，绿色包头巾，内穿古铜色札甲，枣红肤色的长脸，丹凤眼，黑色长须垂至胸腹，一手扶须，一手持长杆青龙偃月刀，刀颈有克制的龙纹，稳重的站姿",
+      "citations": [
+        {
+          "title": "三國演義/第001回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583915",
+          "revision": 2583915,
+          "paragraph": 8,
+          "quote": "鐵一千斤，以資器用。玄德謝別二客，便命良匠打造雙股劍。雲長造青龍偃月刀，又名「冷艷鋸」，重八十二斤。張飛造丈八點鋼矛。各置全身鎧甲。共聚鄉勇五百餘人，來見鄒靖。鄒靖引見太守劉焉。三人參見畢，各通姓名。玄德說起宗派，劉焉大喜，遂認玄"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "lvbu",
+      "name": "吕布",
+      "kind": "general",
+      "camp": "群雄",
+      "evidence": "演义及史料线索",
+      "traits": "三叉紫金冠、雉尾、红锦袍、画戟",
+      "design": "三叉束发紫金冠，两支长而细的雉尾从冠上向后弯曲，深红锦袍，黑铁札甲配古金兽面肩饰，束腰皮带，面容英武而无胡须，右手持传统中国方天画戟：长杆顶端是直立枪尖，枪尖左右两侧各有一片宽大且清晰的银色月牙刃，月牙刃中间镂空，明确的双月牙画戟而不是星形尖刺长枪，脚踩圆形岩石底座，非西式骑士",
+      "citations": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "revision": 7910939,
+          "paragraph": 20,
+          "quote": "奔來迎。王匡將軍馬列成陣勢，勒馬門旗下看時，見呂布出陣：頭戴三叉束髮紫金冠，體挂西川紅錦百花袍，身披獸面吞頭連環鎧，腰繫勒甲玲瓏獅蠻帶；弓箭隨身，手持畫戟；坐下嘶風赤兔馬；果然是人中呂布，馬中赤兔！"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "zhangfei",
+      "name": "张飞",
+      "kind": "general",
+      "camp": "蜀汉",
+      "evidence": "演义及史料线索",
+      "traits": "豹头环眼、燕颔虎须、丈八蛇矛",
+      "design": "魁梧宽肩，粗犷的中国男性面孔，豹头环眼，浓密短络腮胡，黑色头巾，炭黑战袍和深铁灰札甲，宽革带，右手紧握丈八蛇矛，矛头为修长单片钢刃，整片刃从根到尖明显左右蜿蜒成连续的S形，三个清楚的蛇形弯曲，不要直枪头和侧枝，威严站姿",
+      "citations": [
+        {
+          "title": "三國演義/第001回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583915",
+          "revision": 2583915,
+          "paragraph": 9,
+          "quote": "：「反國逆賊，何不早降！」程遠志大怒，遣副將鄧茂出戰。張飛挺丈八蛇矛直出，手起處，刺中鄧茂心窩，翻身落馬。程遠志見折了鄧茂，拍馬舞刀，直取張飛。雲長舞動大刀，縱馬飛迎。程遠志見了，早吃一驚，措手不及，被雲長刀起處，揮為兩段。後人"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "zhaoyun",
+      "name": "赵云",
+      "kind": "general",
+      "camp": "蜀汉",
+      "evidence": "演义及史料线索",
+      "traits": "少年将军、长枪；银甲白袍取影视辨识方向",
+      "design": "英俊沉稳的青年中国将领，无胡须，银灰札甲，白色战袍和短白披风，银盔上有白色短缨，左手扶腰，右手持银色长枪，武器直立不遮住脸，气质干净克制",
+      "citations": [
+        {
+          "title": "三國演義/第007回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567970",
+          "revision": 2567970,
+          "paragraph": 5,
+          "quote": "飛馬挺槍，直取文醜。公孫瓚爬上坡去，看那少年：生得身長八尺，濃眉大眼，闊面重頤，威風凜凜，與文醜大戰五六十合，勝負未分。瓚部下救軍到，文醜撥馬回去了。那少年也不追趕。瓚忙下土坡，問那少年姓名。那少年欠身答曰：「某乃常山真定人也：姓趙，名雲"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "machao",
+      "name": "马超",
+      "kind": "general",
+      "camp": "蜀汉",
+      "evidence": "演义及史料线索",
+      "traits": "白袍银铠、长枪；狮盔细节为艺术设计",
+      "design": "年轻英武的中国骑将，银色狮面头盔，白缨，银色细密札甲，白袍配金色窄滚边，右手持长枪，左手扶佩剑，身材修长，脸部清秀但坚毅，不戴面罩",
+      "citations": [
+        {
+          "title": "三國演義/第058回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7909160",
+          "revision": 7909160,
+          "paragraph": 15,
+          "quote": "個英雄。又見馬超生得面如傅粉，脣若抹硃；腰細膀寬，聲雄力猛；白袍銀鎧，手執長鎗，立馬陣前；上首龐德，下首馬岱。操暗暗稱奇，自縱馬謂超曰：「汝乃漢朝名將子孫，何故背反耶？」超咬牙切齒，大罵：「操賊欺君罔上，罪不容誅！害我父弟，不共"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "huangzhong",
+      "name": "黄忠",
+      "kind": "general",
+      "camp": "蜀汉",
+      "evidence": "演义及史料线索",
+      "traits": "白须老将、弓箭与大刀",
+      "design": "老年中国将领，灰白长须与浓眉，古铜盔甲，赭黄色战袍，头盔红短缨，背负一张反曲弓和箭袋，右手持长杆大刀，昂首站立，皮肤保留年老皱纹，精神矍铄",
+      "citations": [
+        {
+          "title": "三國演義/第053回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568015",
+          "revision": 2568015,
+          "paragraph": 6,
+          "quote": "升；是劉表帳下中郎將，與劉表之姪劉磐共守長沙，後事韓玄；雖今年近六旬，卻有萬夫不當之勇，不可輕敵。雲長去，必須多帶軍馬。」"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "dianwei",
+      "name": "典韦",
+      "kind": "general",
+      "camp": "曹魏",
+      "evidence": "演义及史料线索",
+      "traits": "魁梧近卫、双铁戟",
+      "design": "强壮厚重的中国武士身材，方脸短须，露出坚实前臂，黑铁重札甲，深褐短战袍，双手各握一把短柄铁戟，双戟有清晰侧枝，肩甲宽厚但无夸张尖刺",
+      "citations": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "revision": 2567975,
+          "paragraph": 26,
+          "quote": "可脫，大叫：「誰人救我！」馬軍隊裏，一將踴出：乃典韋也。手挺雙鐵戟，大叫：「主公勿憂！」飛身下馬，插住雙戟，取短戟十數枝，挾在手中，顧從人曰：「賊來十步乃呼我！」遂放開腳步，冒箭前行。布軍數十騎追至，從人大叫：「十步矣！」韋日"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "xuchu",
+      "name": "许褚",
+      "kind": "general",
+      "camp": "曹魏",
+      "evidence": "演义及史料线索",
+      "traits": "虎痴、壮硕近卫；甲胄为艺术设计",
+      "design": "壮硕而结实的中国成年武士，圆宽脸，短髭须，深青短袍、黑铁札甲、皮革护臂、厚实革带，一手持厚背环首大刀，一手握拳，宽肩粗颈，头戴简单铁盔，不赤裸上身",
+      "citations": [
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "revision": 2567974,
+          "paragraph": 16,
+          "quote": "，引數百騎奔走葛陂。正行之間，山背後撞出一軍。為頭一個壯士，身長八尺，腰大十圍；手提大刀，截住去路。何儀挺槍出迎，只一合，被那壯士活挾過去。餘眾著忙，皆下馬受縳，被壯士盡驅入葛陂塢中。"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "gaoshun",
+      "name": "高顺",
+      "kind": "general",
+      "camp": "群雄",
+      "evidence": "演义及史料线索",
+      "traits": "陷阵营统领、整齐甲具；面貌与配色为设计",
+      "design": "沉稳严肃的中国中年军官，短须，整齐细密的深黑铁札甲，低调暗红战袍，黑色圆顶兜鍪及颈甲，手持长矛，左臂持窄长黑漆盾，少量古铜铆钉，克制不张扬",
+      "citations": [
+        {
+          "title": "三國志/卷07",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2452141",
+          "revision": 2452141,
+          "paragraph": 12,
+          "quote": "順爲人清白有威嚴，不飲酒，不受饋遺。所將七百餘兵，號爲千人，鎧甲鬬具皆精練齊整，每所攻擊無不破者，名爲陷陣營。順每諫布，言「凡破家亡國，非無忠臣明智者也，但患不見用耳。將軍舉動，不肯詳思，輙喜言誤，誤不可數也」。布知其忠，然不能用。布從郝"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "ganning",
+      "name": "甘宁",
+      "kind": "general",
+      "camp": "孙吴",
+      "evidence": "演义及史料线索",
+      "traits": "铜铃、锦衣、弓；服饰细节为设计",
+      "design": "精悍的中国水军将领，短束发，靛蓝锦袍，外穿深青皮札甲，腰间系几枚小铜铃，背负弓与箭袋，右手持环首刀，袖口收紧便于水上作战，衣襟有克制的云纹，不是海盗船长",
+      "citations": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "revision": 4256828,
+          "paragraph": 23,
+          "quote": "人也；頗通書史，有氣力，好遊俠；嘗招合亡命，縱橫於江湖之中；腰懸銅鈴，人聽鈴聲，盡皆避之。又嘗以西川錦作帆幔，時人皆稱為『錦帆賊』。後悔前非，改行從善，引眾投劉表。見表不能成事，即欲來投東吳，卻被黃祖留住在夏口。"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "zhouyu",
+      "name": "周瑜",
+      "kind": "general",
+      "camp": "孙吴",
+      "evidence": "演义及史料线索",
+      "traits": "儒雅都督、佩剑；素袍与轻甲取影视方向",
+      "design": "儒雅年轻的中国都督，清秀面孔，整齐发髻配小冠，月白长袍外穿银灰轻札甲，深红束带，右手持出鞘直剑垂向地面，左手持合拢的竹简，姿态从容，无羽扇",
+      "citations": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "revision": 8729938,
+          "paragraph": 11,
+          "quote": "程普，黃蓋，韓當等，擇日起兵。行至歷陽，見一軍到。當先一人：姿質風流，儀容秀麗；見了孫策，下馬便拜。策視其人，乃廬江舒城人：姓周，名瑜，字公瑾。原來孫堅討董卓之時，移家舒城，瑜與孫策同年，交情甚密，因結為昆仲。策長瑜兩月，瑜以兄事策。瑜叔"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "jiangwei",
+      "name": "姜维",
+      "kind": "general",
+      "camp": "蜀汉后期",
+      "evidence": "演义及史料线索",
+      "traits": "后期将领、枪与弓；面貌和色彩为设计",
+      "design": "英武沉静的青年中国将领，青灰札甲、浅赭战袍、简洁银铁盔，头盔上有深红短缨，右手持长枪，背负反曲弓与箭袋，修长身材，脸部有坚毅神情，无长胡须",
+      "citations": [
+        {
+          "title": "三國演義/第092回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568054",
+          "revision": 2568054,
+          "paragraph": 19,
+          "quote": "當日姜維謂馬遵曰：「近聞諸葛亮殺敗夏侯楙，困於南安，水泄不通，安得有人自重圍之中而出？又且裴緒乃無名下將。從不曾見；況安定報馬，又無公文：以此察之，此人乃蜀將詐稱魏將。"
+        }
+      ],
+      "note": "原文证明人物或相关特征；面部、配色、甲片细节为艺术设计。影视只取服饰气质，不是演员肖像扫描。",
+      "selected": true
+    },
+    {
+      "id": "xianzhen",
+      "name": "陷阵营",
+      "kind": "unit",
+      "camp": "群雄",
+      "evidence": "史料有据",
+      "traits": "高顺部精锐；文字强调甲具精练齐整，不提供完整制服图",
+      "design": "深黑铁札甲，层叠甲裙，黑色兜鍪，暗红衣袖，左手持窄长黑漆盾，右手执长矛，整齐甲片与铜铆钉，沉稳的中国重装步卒",
+      "citations": [
+        {
+          "title": "三國志/卷07",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2452141",
+          "revision": 2452141,
+          "paragraph": 12,
+          "quote": "順爲人清白有威嚴，不飲酒，不受饋遺。所將七百餘兵，號爲千人，鎧甲鬬具皆精練齊整，每所攻擊無不破者，名爲陷陣營。順每諫布，言「凡破家亡國，非無忠臣明智者也，但患不見用耳。將軍舉動，不肯詳思，輙喜言誤，誤不可數也」。布知其忠，然不能用。布從郝"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": true
+    },
+    {
+      "id": "danyang",
+      "name": "丹阳兵",
+      "kind": "unit",
+      "camp": "汉末多方",
+      "evidence": "史料有据",
+      "traits": "地域兵源群体，并非始终属于同一势力的固定番号；服色未详",
+      "design": "粗犷精悍的中国步卒，深赭红包头巾，麻褐短袍，棕色皮札甲，短打裹腿，左臂木盾蒙皮，右手持汉式直身环首刀：细长笔直的单刃刀身，刀背是一条直线，没有任何弧度，刀柄末端有一个明显圆环，不是弯刀或日本刀，行装紧凑，背负小布包，装备有使用磨损",
+      "citations": [
+        {
+          "title": "三國志/卷32",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "revision": 2583378,
+          "paragraph": 5,
+          "quote": "時先主自有兵千餘人及幽州烏丸雜胡騎，又略得饑民數千人。既到，謙以丹楊兵四千益先主，先主遂去楷歸謙。謙表先主為豫州刺史，屯小沛。謙病篤，謂別駕麋竺曰：「非劉備不能安此州也。」謙死，竺率州人迎先主，先主未敢當。下邳陳登謂先主曰：「今漢室陵遲，海"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": true
+    },
+    {
+      "id": "hubao",
+      "name": "虎豹骑",
+      "kind": "unit",
+      "camp": "曹魏",
+      "evidence": "史料有据",
+      "traits": "曹纯等统领的精锐骑兵；不把虎豹名称解释成动物皮制服",
+      "design": "一名骑在深棕战马上的中国精锐骑兵，黑铁札甲和黑盔，深绛红战袍，长矛斜向上，马有皮革缰绳、鞍与胸带，战马自然站立，马匹不披全身板甲，不穿虎豹皮，椭圆底座",
+      "citations": [
+        {
+          "title": "三國志/卷09",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2274283",
+          "revision": 2274283,
+          "paragraph": 16,
+          "quote": "。二十，從太祖到襄邑募兵，遂常從征戰。〉初以議郎参司空軍事，督虎豹騎從圍南皮。袁譚出戰，士卒多死。太祖欲缓之，純曰：「今千里蹈敵，進不能克，退必喪威；且縣師深入，難以持久。彼勝而骄，我敗而懼，以懼敵骄，必可克也。」太祖善其言，遂"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": true
+    },
+    {
+      "id": "baima",
+      "name": "白马义从",
+      "kind": "unit",
+      "camp": "公孙瓒",
+      "evidence": "史料有据",
+      "traits": "白马与骑射有记载；人数、盔甲颜色不由模型推定",
+      "design": "一名骑在白色战马上的中国骑射手，浅灰札甲、青灰短袍、深蓝巾帻，手持反曲弓，箭袋在鞍侧，白马安静站立，皮革马具、轻便装备，椭圆岩石底座",
+      "citations": [
+        {
+          "title": "三國志/卷06",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2132349",
+          "revision": 2132349,
+          "paragraph": 18,
+          "quote": "橋南二十里。瓚步兵三萬餘人爲方陣，騎爲兩翼，左右各五千餘匹，白馬義從爲中堅，亦分作兩校，左射右，右射左，旌旗鎧甲，光照天地。紹令麴義以八百兵爲先登，彊弩千張夾承之，紹自以步兵數萬結陣於後。義久在涼州，曉習羌鬬，兵皆驍銳。瓚見其兵少，便"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": true
+    },
+    {
+      "id": "qingzhou",
+      "name": "青州兵",
+      "kind": "unit",
+      "camp": "曹操",
+      "evidence": "史实与演义均有线索",
+      "traits": "黄巾降众选编，不应永久用黄巾造型表示全部成员",
+      "design": "青灰短袍、皮札甲、朴素铁盔、环首刀与木盾的中国步兵，服饰有旧布补缀，已经编入正规军，不戴黄色宗教头巾",
+      "citations": [
+        {
+          "title": "三國演義/第010回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567973",
+          "revision": 2567973,
+          "paragraph": 9,
+          "quote": "。不過百餘日，招安到降兵三十餘萬、男女百餘萬口。操擇精銳者，號為「青州兵」，其餘盡令歸農。操自此威名日重。捷書報到長安，朝廷加曹操為鎮東將軍。"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "huangjin",
+      "name": "黄巾诸部",
+      "kind": "unit",
+      "camp": "黄巾",
+      "evidence": "史实与演义均有线索",
+      "traits": "以黄色头巾辨识；不是装备完全统一的一支部队",
+      "design": "黄色包头巾，粗麻短衣，棕色背心，布绑腿，草鞋，手持木杆长矛，朴素乡民出身的中国战士，少量皮革护具，无黄金盔甲",
+      "citations": [
+        {
+          "title": "三國演義/第001回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583915",
+          "revision": 2583915,
+          "paragraph": 5,
+          "quote": "運將終，大聖人出。汝等皆宜順天從正，以樂太平。」四方百姓，裹黃巾從張角反者四五十萬。賊勢浩大，官軍望風而靡。何進奏帝火速降詔，令各處備禦，討賊立功；一面遣中郎將盧植、皇甫嵩、朱雋，各引精兵，分三路討之。"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "jiefan",
+      "name": "解烦兵",
+      "kind": "unit",
+      "camp": "孙吴",
+      "evidence": "史料有据",
+      "traits": "胡综、徐详分领两部；装备颜色为设计",
+      "design": "深赭短袍、青黑札甲、圆顶铁盔的中国精锐步兵，长矛配小型长方盾，简洁水陆两用行装，无披风",
+      "citations": [
+        {
+          "title": "三國志/卷62",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2623289",
+          "revision": 2623289,
+          "paragraph": 6,
+          "quote": "俱典軍國密事。劉備下白帝，權以見兵少，使綜料諸縣，得六千人，立解煩兩部，詳領左部、綜領右部督。吳將晉宗叛歸魏，魏以宗為蘄春太守，去江數百里，數為寇害。權使綜與賀齊輕行掩襲，生虜得宗。加建武中郎將。魏拜權為吳王，封綜、儀、詳皆為亭侯"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "chexia",
+      "name": "车下虎士",
+      "kind": "unit",
+      "camp": "孙吴",
+      "evidence": "史料有据",
+      "traits": "孙权身边的精锐护卫，合肥撤军有记载",
+      "design": "中国近卫武士，厚实深铜札甲、暗朱战袍，铁盔颈甲，持长戟和长盾，威严紧凑，盾有简洁几何边饰",
+      "citations": [
+        {
+          "title": "三國志/卷55",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2603286",
+          "revision": 2603286,
+          "paragraph": 32,
+          "quote": "兒亦樂爲用命。建安二十年，從攻合肥，會疫疾，軍旅皆已引出，唯車下虎士千餘人，并呂蒙、蔣欽、凌統及寧，從權逍遙津北。張遼覘望知之，即將步騎奄至。寧引弓射敵，與統等死戰。寧厲聲問鼓吹何以不作，壯氣毅然，權尤嘉之。〈《吳書》曰：凌統怨寧殺其"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "hushi",
+      "name": "许褚虎士",
+      "kind": "unit",
+      "camp": "曹魏",
+      "evidence": "史料有据",
+      "traits": "虎士有据；“虎卫军”不直接视为原文正式番号",
+      "design": "魁梧中国护卫，黑铁札甲，深蓝衣袖，腰佩剑，右手持长戟，左手厚木盾，朴素精锐装备，非虎皮武士",
+      "citations": [
+        {
+          "title": "三國志/卷18",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2579680",
+          "revision": 2579680,
+          "paragraph": 19,
+          "quote": "而壯之曰：「此吾樊噲也。」即日拜都尉，引入宿衛。諸從褚俠客，皆以為虎士。從徵張繡，先登，斬首萬計，遷校尉。從討袁紹於官渡。時常從士徐他等謀為逆，以褚常侍左右，憚之不敢發。伺褚休下日，他等懷刀入。褚至下捨心動，即還侍。他等不知，入帳"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "xiandeng",
+      "name": "麴义先登部",
+      "kind": "unit",
+      "camp": "袁绍",
+      "evidence": "史料有据",
+      "traits": "先登为作战前列的记述；不据此断定永久番号叫先登死士",
+      "design": "中国弩手，深褐札甲、朴素铁盔，双手持木制强弩，身旁支撑长盾，弩臂、弦与弩机清晰可见",
+      "citations": [
+        {
+          "title": "三國志/卷06",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2132349",
+          "revision": 2132349,
+          "paragraph": 18,
+          "quote": "堅，亦分作兩校，左射右，右射左，旌旗鎧甲，光照天地。紹令麴義以八百兵爲先登，彊弩千張夾承之，紹自以步兵數萬結陣於後。義久在涼州，曉習羌鬬，兵皆驍銳。瓚見其兵少，便放騎欲陵蹈之。義兵皆伏楯下不動，未至數十步，乃同時俱起，揚塵大叫，直前衝"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "daji",
+      "name": "袁绍大戟士",
+      "kind": "unit",
+      "camp": "袁绍",
+      "evidence": "史料有据",
+      "traits": "袁绍帐下大戟士有记载；不能据此指定张郃为固定统帅",
+      "design": "中国戟兵，深古铜札甲、暗金褐衣袍，铁盔，双手持长柄大戟，横枝与枪尖清楚，端正站姿",
+      "citations": [
+        {
+          "title": "三國志/卷06",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2132349",
+          "revision": 2132349,
+          "paragraph": 18,
+          "quote": "到橋十數里，下馬發鞍，見瓚已破，不爲設備，惟帳下彊弩數十張，大戟士百餘人自隨。瓚部迸騎二千餘匹卒至，便圍紹數重，弓矢雨下。別駕從事田豐扶紹欲郤入空垣，紹以兜鍪撲地曰：「大丈夫當前鬬死，而入牆間，豈可得活乎？」彊弩乃亂發，多所殺傷。瓚騎不"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "wudang",
+      "name": "无当部",
+      "kind": "unit",
+      "camp": "蜀汉",
+      "evidence": "史料有据，称谓需区别",
+      "traits": "原文见无当监何平；网络“无当飞军”的统一形象与沿革不能全盘照收",
+      "design": "中国山地步兵，靛青短衣、轻皮甲、绑腿，背负弩与行囊，手持短矛，不添加虚构部族图腾",
+      "citations": [
+        {
+          "title": "三國志/卷35",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "revision": 2115776,
+          "paragraph": 17,
+          "quote": "虎，奈天下笑何！」宣王病之。諸將咸請戰。五月辛巳，乃使張郃攻無當監何平於南圍，自案中道向亮。亮使魏延、高翔、吳班赴拒，大破之，獲甲首三千級，玄鎧五千領，角弩三千一百張，宣王還保營。〉糧盡退軍，與魏將張郃交戰，射殺郃。〈郭沖《五事》"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "yuanrong",
+      "name": "元戎弩手",
+      "kind": "unit",
+      "camp": "蜀汉",
+      "evidence": "兵器有据，兵种为归类",
+      "traits": "连弩及元戎之名有据；不是已经考定的独立军队番号",
+      "design": "中国弩手，灰绿色短袍、轻札甲、布巾，抱持木制连弩，木匣与弩臂清楚，具体机械结构为艺术示意",
+      "citations": [
+        {
+          "title": "三國志/卷35",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "revision": 2115776,
+          "paragraph": 22,
+          "quote": "作八務、七戒、六恐、五懼，皆有條章，以訓厲臣子。又損益連弩，謂之元戎，以鐵為矢，矢長八寸，一弩十矢俱發。《亮集》載作木牛流馬法曰：「木牛者，方腹曲頭，一腳四足，頭入領中，舌著於腹。載多而行少，宜可大用，不可小使；特行者數十里，群"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "jinfan",
+      "name": "锦帆部众",
+      "kind": "unit",
+      "camp": "甘宁早期",
+      "evidence": "演义形象",
+      "traits": "锦帆与铜铃是甘宁早年形象线索，不视为贯穿孙吴的正规番号",
+      "design": "精悍中国江上武士，蓝色短锦衣、腰悬铜铃、束发，佩环首刀与弓，轻装布裹腿，朴素木质底座",
+      "citations": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "revision": 4256828,
+          "paragraph": 23,
+          "quote": "招合亡命，縱橫於江湖之中；腰懸銅鈴，人聽鈴聲，盡皆避之。又嘗以西川錦作帆幔，時人皆稱為『錦帆賊』。後悔前非，改行從善，引眾投劉表。見表不能成事，即欲來投東吳，卻被黃祖留住在夏口。"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "feixiong",
+      "name": "飞熊军",
+      "kind": "unit",
+      "camp": "董卓",
+      "evidence": "演义形象",
+      "traits": "按小说记载展示；不升级为正史已证实番号",
+      "design": "中国西北骑兵，灰黑札甲、暗红巾帻、深褐战马，手持长矛，马具朴素，不加幻想熊翼",
+      "citations": [
+        {
+          "title": "三國演義/第009回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567971",
+          "revision": 2567971,
+          "paragraph": 7,
+          "quote": "此喜信。時哉不可失！」便命心腹將李傕，郭汜，張濟，樊稠，四人領飛熊軍三千守郿塢，自己即日排駕回京；顧謂李肅曰：「吾為帝，汝當為執金吾。」肅拜謝稱臣。卓入辭其母。母時年九十餘矣，問曰：「吾兒何往？」卓曰：「兒將往受漢禪，母親早晚為太后也！」"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "tengjia",
+      "name": "藤甲兵",
+      "kind": "unit",
+      "camp": "演义南中",
+      "evidence": "演义形象",
+      "traits": "藤甲与作战情节按小说处理，不作考古复原",
+      "design": "身穿编织藤甲的中国古代山地战士，藤制胸甲、藤盔、藤盾，赤褐布裙和绑腿，手持短刀，藤条编织清晰，朴素自然材质，非怪物化形象",
+      "citations": [
+        {
+          "title": "三國演義/第090回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568053",
+          "revision": 2568053,
+          "paragraph": 11,
+          "quote": "五谷，以生蛇惡獸為飯；身有鱗甲，刀箭不能侵。其手下軍士，俱穿籐甲；其籐生於山澗之中，盤於石壁之上；國人採取，浸於油中，半年方取出曬之；曬乾復浸，凡十餘遍，卻纔造成鎧甲；穿在身上，渡江不沉，經水不濕，刀箭皆不能入：因此號為籐甲"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "wuhuan",
+      "name": "乌桓骑兵",
+      "kind": "unit",
+      "camp": "汉末北方",
+      "evidence": "史料有据",
+      "traits": "文本证明存在这一兵源，不证明统一装备",
+      "design": "北方骑射武士，厚毛毡帽、棕灰皮衣、皮札甲，骑灰褐马，背弓携箭，衣物适合寒冷地区，不添加臆造的民族面部特征",
+      "citations": [
+        {
+          "title": "三國志/卷32",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "revision": 2583378,
+          "paragraph": 5,
+          "quote": "州牧陶謙遣使告急於田楷，楷與先主俱救之。時先主自有兵千餘人及幽州烏丸雜胡騎，又略得饑民數千人。既到，謙以丹楊兵四千益先主，先主遂去楷歸謙。謙表先主為豫州刺史，屯小沛。謙病篤，謂別駕麋竺曰：「非劉備不能安此州也。」謙死，竺率州人迎先主，"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "liangzhou",
+      "name": "凉州骑兵",
+      "kind": "unit",
+      "camp": "汉末西北",
+      "evidence": "地域兵种归类",
+      "traits": "“西凉铁骑”常被泛用，不将其理解为历年不变的一支番号",
+      "design": "西北中国骑将部下，青灰甲、毛毡短衣、暗红围巾，深色战马，长矛和弓，鞍具皮革，不使用全身欧洲板甲",
+      "citations": [
+        {
+          "title": "三國演義/第058回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7909160",
+          "revision": 7909160,
+          "paragraph": 3,
+          "quote": "擁而來，先生有何妙計，可以退之？」孔明曰：「操平生所慮者，乃西涼之兵也。今操殺馬騰，其子馬超，現統西涼之眾，必切齒操賊。主公可作一書，往結馬超，使超興兵入關，則操又無暇下江南矣。」玄德大喜，即時作書，遣一心腹人，逕往西涼州投"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "wu-navy",
+      "name": "孙吴水军",
+      "kind": "unit",
+      "camp": "孙吴",
+      "evidence": "兵种归类",
+      "traits": "水军与战船有据；兵人只表达水上行动装备",
+      "design": "中国水军弓手，靛蓝短衣、浅褐轻皮甲、束腿，持短弓，腰间短刀，背后小箭袋，站在木船甲板式圆底座上",
+      "citations": [
+        {
+          "title": "三國志/卷54",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2387393",
+          "revision": 2387393,
+          "paragraph": 7,
+          "quote": "今寇眾我寡，難與持久。然觀操軍船艦，首尾相接，可燒而走也。」乃取蒙沖鬥艦數十艘，實以薪草，膏油灌其中。裹以帷幕，上建牙旗，先書報曹公，欺以欲降。〈《江表傳》載蓋書曰：「蓋受孫氏厚恩，常為將帥，見遇不薄。然顧天下事有大勢，用江東六郡山越之人"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "jin-navy",
+      "name": "西晋舟师",
+      "kind": "unit",
+      "camp": "西晋",
+      "evidence": "兵种归类",
+      "traits": "晋军伐吴水师的代表性归类，不是单一专名部队",
+      "design": "西晋水军步兵，暗赭短袍、深灰札甲、铁盔，手执长矛与木盾，站在木甲板式底座上，装备实用克制",
+      "citations": [
+        {
+          "title": "三國志/卷48",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2085142",
+          "revision": 2085142,
+          "paragraph": 39,
+          "quote": "王戎向武昌，平南將軍胡奮向夏口，鎮南將軍杜預向江陵，龍驤將軍王濬、廣武將軍唐彬浮江東下，太尉賈充爲大都督，量宜處要，盡軍勢之中。陶濬至武昌，聞北軍大出，停駐不前。"
+        }
+      ],
+      "note": "造型的颜色、纹饰和未有原文说明的装备组合为艺术设计。",
+      "selected": false
+    },
+    {
+      "id": "baier",
+      "name": "白毦兵",
+      "kind": "unit",
+      "camp": "蜀汉",
+      "evidence": "文献线索待核原卷",
+      "traits": "陈到与白毦是重要线索；本轮公开原卷接口返回拒绝访问，尚未取得可固定的对应原文。",
+      "design": "白色羽饰只是待审设计线索，不将完整制服当作已证史实。",
+      "citations": [],
+      "note": "保留在名录中等待核对，暂不生成模型。",
+      "selected": false
+    }
+  ],
+  "roster": [
+    {
+      "id": "p076",
+      "name": "关羽",
+      "references": [
+        {
+          "title": "三國演義/第001回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583915",
+          "paragraph": 7
+        },
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 8
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p077",
+      "name": "张飞",
+      "references": [
+        {
+          "title": "三國演義/第001回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583915",
+          "paragraph": 7
+        },
+        {
+          "title": "三國演義/第002回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8185068",
+          "paragraph": 2
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p078",
+      "name": "赵云",
+      "references": [
+        {
+          "title": "三國演義/第007回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567970",
+          "paragraph": 6
+        },
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 17
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p079",
+      "name": "马超",
+      "references": [
+        {
+          "title": "三國演義/第010回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567973",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第057回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568020",
+          "paragraph": 20
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p080",
+      "name": "黄忠",
+      "references": [
+        {
+          "title": "三國演義/第053回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568015",
+          "paragraph": 7
+        },
+        {
+          "title": "三國演義/第055回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568018",
+          "paragraph": 19
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p081",
+      "name": "魏延",
+      "references": [
+        {
+          "title": "三國演義/第041回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568004",
+          "paragraph": 9
+        },
+        {
+          "title": "三國演義/第053回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568015",
+          "paragraph": 13
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p082",
+      "name": "姜维",
+      "references": [
+        {
+          "title": "三國演義/第092回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568054",
+          "paragraph": 19
+        },
+        {
+          "title": "三國演義/第093回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568056",
+          "paragraph": 2
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p083",
+      "name": "王平",
+      "references": [
+        {
+          "title": "三國演義/第071回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568034",
+          "paragraph": 21
+        },
+        {
+          "title": "三國演義/第072回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568036",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p084",
+      "name": "廖化",
+      "references": [
+        {
+          "title": "三國演義/第027回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8186000",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第028回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567993",
+          "paragraph": 14
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p085",
+      "name": "马岱",
+      "references": [
+        {
+          "title": "三國演義/第057回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568020",
+          "paragraph": 21
+        },
+        {
+          "title": "三國演義/第058回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7909160",
+          "paragraph": 4
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p086",
+      "name": "关平",
+      "references": [
+        {
+          "title": "三國演義/第028回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567993",
+          "paragraph": 28
+        },
+        {
+          "title": "三國演義/第031回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567992",
+          "paragraph": 22
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p087",
+      "name": "关兴",
+      "references": [
+        {
+          "title": "三國演義/第074回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568037",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第077回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568041",
+          "paragraph": 15
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p088",
+      "name": "张苞",
+      "references": [
+        {
+          "title": "三國演義/第081回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8730381",
+          "paragraph": 9
+        },
+        {
+          "title": "三國演義/第082回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568044",
+          "paragraph": 9
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p089",
+      "name": "关索",
+      "references": [
+        {
+          "title": "三國演義/第087回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568051",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第088回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568052",
+          "paragraph": 4
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p090",
+      "name": "周仓",
+      "references": [
+        {
+          "title": "三國演義/第028回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567993",
+          "paragraph": 13
+        },
+        {
+          "title": "三國演義/第031回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567992",
+          "paragraph": 22
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p091",
+      "name": "裴元绍",
+      "references": [
+        {
+          "title": "三國演義/第028回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567993",
+          "paragraph": 14
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p092",
+      "name": "夏侯惇",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p093",
+      "name": "夏侯渊",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p094",
+      "name": "夏侯霸",
+      "references": [
+        {
+          "title": "三國演義/第102回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568065",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第103回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568064",
+          "paragraph": 24
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p095",
+      "name": "夏侯尚",
+      "references": [
+        {
+          "title": "三國演義/第070回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568033",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第071回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568034",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p096",
+      "name": "曹仁",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p097",
+      "name": "曹洪",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p098",
+      "name": "曹纯",
+      "references": [
+        {
+          "title": "三國演義/第051回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568014",
+          "paragraph": 12
+        },
+        {
+          "title": "三國志/卷18",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2579680",
+          "paragraph": 12
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p099",
+      "name": "张辽",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p100",
+      "name": "徐晃",
+      "references": [
+        {
+          "title": "三國演義/第013回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8185567",
+          "paragraph": 25
+        },
+        {
+          "title": "三國演義/第014回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2613836",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p101",
+      "name": "张郃",
+      "references": [
+        {
+          "title": "三國演義/第022回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567985",
+          "paragraph": 20
+        },
+        {
+          "title": "三國演義/第030回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p102",
+      "name": "于禁",
+      "references": [
+        {
+          "title": "三國志/卷14",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2374427",
+          "paragraph": 67
+        },
+        {
+          "title": "三國志/卷18",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2579680",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p103",
+      "name": "乐进",
+      "references": [
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 7
+        },
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p104",
+      "name": "李典",
+      "references": [
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 7
+        },
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 23
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p105",
+      "name": "臧霸",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p106",
+      "name": "孙观",
+      "references": [
+        {
+          "title": "三國演義/第018回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567980",
+          "paragraph": 18
+        },
+        {
+          "title": "三國演義/第019回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567981",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p107",
+      "name": "吴敦",
+      "references": [
+        {
+          "title": "三國演義/第018回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567980",
+          "paragraph": 18
+        },
+        {
+          "title": "三國演義/第019回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567981",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p108",
+      "name": "尹礼",
+      "references": [
+        {
+          "title": "三國演義/第018回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567980",
+          "paragraph": 18
+        },
+        {
+          "title": "三國演義/第019回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567981",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p109",
+      "name": "昌豨",
+      "references": [
+        {
+          "title": "三國演義/第018回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567980",
+          "paragraph": 18
+        },
+        {
+          "title": "三國演義/第019回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567981",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p110",
+      "name": "高顺",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 24
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 3
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p111",
+      "name": "成廉",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 24
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p112",
+      "name": "魏续",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第016回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567978",
+          "paragraph": 17
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p113",
+      "name": "宋宪",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第016回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567978",
+          "paragraph": 17
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p114",
+      "name": "侯成",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 4
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p115",
+      "name": "侯谐",
+      "references": [
+        {
+          "title": "三國志/卷01",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "paragraph": 39
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p116",
+      "name": "郝萌",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p117",
+      "name": "曹性",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p118",
+      "name": "曹豹",
+      "references": [
+        {
+          "title": "三國演義/第010回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567973",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第014回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2613836",
+          "paragraph": 33
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p119",
+      "name": "许耽",
+      "references": [
+        {
+          "title": "三國志/卷07",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2452141",
+          "paragraph": 8
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p120",
+      "name": "章诳",
+      "references": [
+        {
+          "title": "三國志/卷07",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2452141",
+          "paragraph": 8
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p121",
+      "name": "纪灵",
+      "references": [
+        {
+          "title": "三國演義/第014回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2613836",
+          "paragraph": 31
+        },
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p122",
+      "name": "荀正",
+      "references": [
+        {
+          "title": "三國演義/第014回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2613836",
+          "paragraph": 32
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p123",
+      "name": "李傕",
+      "references": [
+        {
+          "title": "三國演義/第003回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567965",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 19
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p124",
+      "name": "郭汜",
+      "references": [
+        {
+          "title": "三國演義/第003回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567965",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 19
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p125",
+      "name": "张济",
+      "references": [
+        {
+          "title": "三國演義/第003回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567965",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 19
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p126",
+      "name": "樊稠",
+      "references": [
+        {
+          "title": "三國演義/第003回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567965",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 19
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p127",
+      "name": "李肃",
+      "references": [
+        {
+          "title": "三國演義/第003回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567965",
+          "paragraph": 12
+        },
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 10
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p128",
+      "name": "华雄",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 10
+        },
+        {
+          "title": "三國志/卷46",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2629010",
+          "paragraph": 8
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p129",
+      "name": "胡轸",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 10
+        },
+        {
+          "title": "三國志/卷15",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2085075",
+          "paragraph": 19
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p130",
+      "name": "张闿",
+      "references": [
+        {
+          "title": "三國演義/第010回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567973",
+          "paragraph": 12
+        },
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 8
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p131",
+      "name": "许褚",
+      "references": [
+        {
+          "title": "三國演義/第012回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567974",
+          "paragraph": 19
+        },
+        {
+          "title": "三國演義/第014回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2613836",
+          "paragraph": 8
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p132",
+      "name": "典韦",
+      "references": [
+        {
+          "title": "三國演義/第010回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567973",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 23
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p133",
+      "name": "典满",
+      "references": [
+        {
+          "title": "三國演義/第017回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567979",
+          "paragraph": 13
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p134",
+      "name": "郭淮",
+      "references": [
+        {
+          "title": "三國演義/第070回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568033",
+          "paragraph": 10
+        },
+        {
+          "title": "三國演義/第093回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568056",
+          "paragraph": 10
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p135",
+      "name": "邓艾",
+      "references": [
+        {
+          "title": "三國演義/第110回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568072",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第111回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568075",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p136",
+      "name": "邓忠",
+      "references": [
+        {
+          "title": "三國演義/第111回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568075",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第112回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568074",
+          "paragraph": 16
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p137",
+      "name": "钟会",
+      "references": [
+        {
+          "title": "三國演義/第110回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568072",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第112回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568074",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p138",
+      "name": "胡烈",
+      "references": [
+        {
+          "title": "三國演義/第116回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568079",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第119回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568081",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p139",
+      "name": "杜预",
+      "references": [
+        {
+          "title": "三國演義/第120回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568085",
+          "paragraph": 13
+        },
+        {
+          "title": "三國志/卷28",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2386518",
+          "paragraph": 32
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p140",
+      "name": "羊祜",
+      "references": [
+        {
+          "title": "三國演義/第120回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568085",
+          "paragraph": 6
+        },
+        {
+          "title": "三國志/卷25",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2074129",
+          "paragraph": 9
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p141",
+      "name": "王濬",
+      "references": [
+        {
+          "title": "三國演義/第120回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568085",
+          "paragraph": 15
+        },
+        {
+          "title": "三國志/卷18",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2579680",
+          "paragraph": 30
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p142",
+      "name": "王浑",
+      "references": [
+        {
+          "title": "三國演義/第120回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568085",
+          "paragraph": 16
+        },
+        {
+          "title": "三國志/卷48",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2085142",
+          "paragraph": 39
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p143",
+      "name": "文鸯",
+      "references": [
+        {
+          "title": "三國演義/第110回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568072",
+          "paragraph": 6
+        },
+        {
+          "title": "三國演義/第111回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568075",
+          "paragraph": 13
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p144",
+      "name": "文钦",
+      "references": [
+        {
+          "title": "三國演義/第109回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568073",
+          "paragraph": 17
+        },
+        {
+          "title": "三國演義/第110回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568072",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p145",
+      "name": "毌丘俭",
+      "references": [
+        {
+          "title": "三國演義/第105回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2602415",
+          "paragraph": 23
+        },
+        {
+          "title": "三國演義/第108回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568069",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p146",
+      "name": "诸葛诞",
+      "references": [
+        {
+          "title": "三國演義/第110回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568072",
+          "paragraph": 3
+        },
+        {
+          "title": "三國演義/第111回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568075",
+          "paragraph": 10
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p147",
+      "name": "诸葛绪",
+      "references": [
+        {
+          "title": "三國演義/第116回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568079",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第117回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568080",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p148",
+      "name": "孙韶",
+      "references": [
+        {
+          "title": "三國演義/第086回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568049",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第102回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568065",
+          "paragraph": 11
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p149",
+      "name": "丁奉",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第049回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568012",
+          "paragraph": 12
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p150",
+      "name": "徐盛",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第049回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568012",
+          "paragraph": 12
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p151",
+      "name": "凌统",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第039回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567999",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p152",
+      "name": "凌操",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 36
+        },
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 16
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p153",
+      "name": "甘宁",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第039回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567999",
+          "paragraph": 2
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p154",
+      "name": "黄盖",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p155",
+      "name": "程普",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 12
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p156",
+      "name": "韩当",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第006回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567969",
+          "paragraph": 13
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p157",
+      "name": "祖茂",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 13
+        },
+        {
+          "title": "三國志/卷46",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2629010",
+          "paragraph": 8
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p158",
+      "name": "朱治",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 11
+        },
+        {
+          "title": "三國演義/第044回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568008",
+          "paragraph": 23
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p159",
+      "name": "朱然",
+      "references": [
+        {
+          "title": "三國演義/第075回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568039",
+          "paragraph": 12
+        },
+        {
+          "title": "三國演義/第077回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568041",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p160",
+      "name": "潘璋",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第044回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568008",
+          "paragraph": 23
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p161",
+      "name": "马忠",
+      "references": [
+        {
+          "title": "三國演義/第077回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568041",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第081回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8730381",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p162",
+      "name": "蒋钦",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第044回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568008",
+          "paragraph": 23
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p163",
+      "name": "周泰",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第044回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568008",
+          "paragraph": 23
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p164",
+      "name": "陈武",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 22
+        },
+        {
+          "title": "三國演義/第049回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568012",
+          "paragraph": 17
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p165",
+      "name": "董袭",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 44
+        },
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 26
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p166",
+      "name": "孙桓",
+      "references": [
+        {
+          "title": "三國演義/第082回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568044",
+          "paragraph": 8
+        },
+        {
+          "title": "三國演義/第083回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8730382",
+          "paragraph": 17
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p167",
+      "name": "全琮",
+      "references": [
+        {
+          "title": "三國演義/第096回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568062",
+          "paragraph": 11
+        },
+        {
+          "title": "三國志/卷04",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8746774",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p168",
+      "name": "贺齐",
+      "references": [
+        {
+          "title": "三國志/卷47",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2602668",
+          "paragraph": 7
+        },
+        {
+          "title": "三國志/卷48",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2085142",
+          "paragraph": 47
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p169",
+      "name": "吕范",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 9
+        },
+        {
+          "title": "三國演義/第029回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567991",
+          "paragraph": 12
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p170",
+      "name": "吕蒙",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第044回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568008",
+          "paragraph": 6
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p171",
+      "name": "鲁肃",
+      "references": [
+        {
+          "title": "三國演義/第029回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567991",
+          "paragraph": 26
+        },
+        {
+          "title": "三國演義/第042回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568005",
+          "paragraph": 21
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p172",
+      "name": "周瑜",
+      "references": [
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 20
+        },
+        {
+          "title": "三國演義/第029回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567991",
+          "paragraph": 22
+        }
+      ],
+      "status": "本轮代表造型"
+    },
+    {
+      "id": "p173",
+      "name": "陆逊",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第044回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568008",
+          "paragraph": 23
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p174",
+      "name": "陆抗",
+      "references": [
+        {
+          "title": "三國演義/第119回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568081",
+          "paragraph": 10
+        },
+        {
+          "title": "三國演義/第120回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568085",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p175",
+      "name": "朱桓",
+      "references": [
+        {
+          "title": "三國演義/第038回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=4256828",
+          "paragraph": 14
+        },
+        {
+          "title": "三國演義/第085回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568048",
+          "paragraph": 4
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p176",
+      "name": "朱异",
+      "references": [
+        {
+          "title": "三國演義/第111回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568075",
+          "paragraph": 12
+        },
+        {
+          "title": "三國演義/第112回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568074",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p177",
+      "name": "太史慈",
+      "references": [
+        {
+          "title": "三國演義/第011回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567975",
+          "paragraph": 5
+        },
+        {
+          "title": "三國演義/第015回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8729938",
+          "paragraph": 13
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p178",
+      "name": "张任",
+      "references": [
+        {
+          "title": "三國演義/第060回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568025",
+          "paragraph": 31
+        },
+        {
+          "title": "三國演義/第061回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568023",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p179",
+      "name": "严颜",
+      "references": [
+        {
+          "title": "三國演義/第063回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568024",
+          "paragraph": 16
+        },
+        {
+          "title": "三國演義/第064回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568026",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p180",
+      "name": "李严",
+      "references": [
+        {
+          "title": "三國演義/第064回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568026",
+          "paragraph": 19
+        },
+        {
+          "title": "三國演義/第065回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568028",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p181",
+      "name": "吴懿",
+      "references": [
+        {
+          "title": "三國演義/第062回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568027",
+          "paragraph": 28
+        },
+        {
+          "title": "三國演義/第063回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568024",
+          "paragraph": 6
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p182",
+      "name": "吴班",
+      "references": [
+        {
+          "title": "三國演義/第065回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568028",
+          "paragraph": 23
+        },
+        {
+          "title": "三國演義/第081回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8730381",
+          "paragraph": 9
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p183",
+      "name": "高翔",
+      "references": [
+        {
+          "title": "三國演義/第091回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7909162",
+          "paragraph": 24
+        },
+        {
+          "title": "三國演義/第093回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568056",
+          "paragraph": 2
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p184",
+      "name": "陈到",
+      "references": [
+        {
+          "title": "三國志/卷40",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583390",
+          "paragraph": 21
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p185",
+      "name": "霍峻",
+      "references": [
+        {
+          "title": "三國演義/第062回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568027",
+          "paragraph": 30
+        },
+        {
+          "title": "三國演義/第065回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568028",
+          "paragraph": 5
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p186",
+      "name": "霍弋",
+      "references": [
+        {
+          "title": "三國志/卷04",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=8746774",
+          "paragraph": 78
+        },
+        {
+          "title": "三國志/卷41",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=11850645",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p187",
+      "name": "张翼",
+      "references": [
+        {
+          "title": "三國演義/第005回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7910939",
+          "paragraph": 25
+        },
+        {
+          "title": "三國演義/第007回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567970",
+          "paragraph": 7
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p188",
+      "name": "张嶷",
+      "references": [
+        {
+          "title": "三國演義/第087回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568051",
+          "paragraph": 15
+        },
+        {
+          "title": "三國演義/第088回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568052",
+          "paragraph": 4
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p189",
+      "name": "傅佥",
+      "references": [
+        {
+          "title": "三國演義/第112回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568074",
+          "paragraph": 11
+        },
+        {
+          "title": "三國演義/第113回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568076",
+          "paragraph": 9
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p190",
+      "name": "诸葛瞻",
+      "references": [
+        {
+          "title": "三國演義/第105回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2602415",
+          "paragraph": 11
+        },
+        {
+          "title": "三國演義/第117回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568080",
+          "paragraph": 9
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p191",
+      "name": "诸葛尚",
+      "references": [
+        {
+          "title": "三國演義/第117回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568080",
+          "paragraph": 10
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p192",
+      "name": "董厥",
+      "references": [
+        {
+          "title": "三國演義/第087回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568051",
+          "paragraph": 4
+        },
+        {
+          "title": "三國演義/第091回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=7909162",
+          "paragraph": 3
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p193",
+      "name": "夏侯博",
+      "references": [
+        {
+          "title": "三國志/卷01",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "paragraph": 46
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p194",
+      "name": "孙礼",
+      "references": [
+        {
+          "title": "三國演義/第095回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568058",
+          "paragraph": 2
+        },
+        {
+          "title": "三國演義/第097回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568059",
+          "paragraph": 20
+        }
+      ],
+      "status": "待逐人造型"
+    },
+    {
+      "id": "p195",
+      "name": "牛金",
+      "references": [
+        {
+          "title": "三國演義/第051回",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568014",
+          "paragraph": 11
+        },
+        {
+          "title": "三國志/卷09",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2274283",
+          "paragraph": 13
+        }
+      ],
+      "status": "待逐人造型"
+    }
+  ],
+  "style": "较写实的桌游微缩兵人",
+  "scope": "首批代表人物与特色部队造型审核；既有120名将领候选索引保留，不宣称已经穷尽全部三国人物。",
+  "production": "彩色造型稿由本机图像模型生成；三维模型由图像转网格后在建模软件中减面整理。彩稿、三维形体及史料可信度分别审核。"
+}

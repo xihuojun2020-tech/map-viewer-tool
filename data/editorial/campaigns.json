@@ -1,0 +1,825 @@
+{
+  "anchors": [
+    {
+      "id": "wuchao",
+      "name": "乌巢",
+      "coordinates": [
+        114.27,
+        35.04
+      ],
+      "precision": "地域级概略锚点，非遗址或军营测绘",
+      "location_note": "按公开地名资料所述延津东南设置阅读用地域锚点；县内具体遗址位置尚未考订。",
+      "location_source": {
+        "title": "维基百科：乌巢（地名索引）",
+        "url": "https://zh.wikipedia.org/wiki/%E7%83%8F%E5%B7%A2",
+        "note": "仅用于延津东南的地理关系，不用于核定兵力或营地坐标；摘录保存在研究目录。"
+      }
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "h-changshe",
+      "title": "长社之战",
+      "world": "history",
+      "origin": null,
+      "target": "changshe",
+      "attacker": {
+        "faction": "han",
+        "name": "汉军",
+        "commanders": [
+          "皇甫嵩",
+          "朱儁"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "huangjin",
+        "name": "黄巾军",
+        "commanders": [
+          "波才"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "huangjin",
+        "unit_label": "黄巾兵示意"
+      },
+      "summary": "皇甫嵩、朱儁在长社击破波才等。当前资料只能定位交战地域，尚不能确定此次出击的起点。",
+      "evidence": [
+        {
+          "event": "h-y-184-changshe"
+        }
+      ],
+      "route_note": "",
+      "date": {
+        "year": 184,
+        "label": "中平元年五月，日不详",
+        "month": 5
+      }
+    },
+    {
+      "id": "h-jibei",
+      "title": "曹操追黄巾至济北",
+      "world": "history",
+      "origin": "shouzhang",
+      "target": "jibei",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "huangjin",
+        "name": "青州黄巾",
+        "commanders": [
+          "所引本段未记姓名"
+        ],
+        "strength": "受降卒三十余万、男女百余万口；均不是本次交战兵力",
+        "model": "huangjin",
+        "unit_label": "黄巾兵示意"
+      },
+      "summary": "寿张战事后曹操追黄巾至济北，冬季受降并选精锐改编为青州兵。三十余万降卒与百余万男女不能相加当作战兵数。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "遂進兵擊黃巾於壽張東。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "追黃巾至濟北。乞降。冬，受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。"
+        }
+      ],
+      "route_note": "连接寿张与济北地域参照点，具体追击道路未考定。",
+      "date": {
+        "year": 192,
+        "label": "初平三年；追击月日不详，受降在冬季"
+      }
+    },
+    {
+      "id": "h-xiapi",
+      "title": "曹操由彭城进攻下邳",
+      "world": "history",
+      "origin": "pengcheng",
+      "target": "xiapi",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "lu",
+        "name": "吕布军",
+        "commanders": [
+          "吕布"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操攻取彭城后进至下邳，击败吕布出迎的骑兵，追至城下。本条显示到达与接战，不把随后围城结束提前到十月。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "冬十月，屠彭城，獲其相侯諧。進至下邳，布自將騎逆擊。大破之，獲其驍將成廉。追至城下"
+        }
+      ],
+      "route_note": "",
+      "date": {
+        "year": 198,
+        "label": "建安三年十月，日不详",
+        "month": 10
+      }
+    },
+    {
+      "id": "h-guandu",
+      "title": "袁绍进逼官渡",
+      "world": "history",
+      "origin": null,
+      "target": "guandu",
+      "attacker": {
+        "faction": "yuan",
+        "name": "袁绍军",
+        "commanders": [
+          "袁绍"
+        ],
+        "strength": "本段裴注转引“绍众十余万”；本条不据此断定同一时刻的到场人数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "正文称“不满万”；裴松之明确质疑，不能作为确定数值",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "袁绍进临官渡，起土山地道，与曹军对峙。曹军兵数存在史料争议；袁军此次前推起点尚未定位。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "紹復進臨官渡，起土山地道。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "時公兵不滿萬，傷者十二三。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "本紀云：「紹衆十餘萬，屯營東西數十里。」"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "以理而言，竊謂不然。"
+        }
+      ],
+      "route_note": "",
+      "date": {
+        "year": 200,
+        "label": "建安五年秋；对峙过程的逐月界限未定",
+        "season": "秋"
+      }
+    },
+    {
+      "id": "h-wuchao",
+      "title": "曹操夜袭乌巢",
+      "world": "history",
+      "origin": "guandu",
+      "target": "wuchao",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操袭粮军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "步骑五千人；此次夜袭部队，非曹军总兵力",
+        "model": "infantry",
+        "unit_label": "步骑混合示意"
+      },
+      "defender": {
+        "faction": "yuan",
+        "name": "袁绍护粮军",
+        "commanders": [
+          "淳于琼等五将"
+        ],
+        "strength": "护送粮秣的兵万余人；非袁绍全军",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操留曹洪守营，亲率步骑五千夜袭淳于琼等护粮军。乌巢地名由裴注《曹瞒传》补明。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "公還軍官渡。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "冬十月，紹遣車運穀，使淳于瓊等五人將兵萬餘人送之，宿紹營北四十里。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "公乃留曹洪守，自將步騎五千人夜往，會明至。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "今袁氏輜重有萬餘乘，在故市、烏巢，屯軍無嚴備；"
+        }
+      ],
+      "route_note": "官渡营区至乌巢地域的进攻方向；乌巢坐标仅为延津东南的概略锚点，非营地遗址。",
+      "date": {
+        "year": 200,
+        "label": "建安五年十月，日不详",
+        "month": 10
+      }
+    },
+    {
+      "id": "h-changban",
+      "title": "曹操精骑追击长坂",
+      "world": "history",
+      "origin": "xiangyang",
+      "target": "changban",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操追击骑兵",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "精骑五千；追击部队，非曹军总数",
+        "model": "cavalry",
+        "unit_label": "精骑示意"
+      },
+      "defender": {
+        "faction": "liu",
+        "name": "刘备军与随行百姓",
+        "commanders": [
+          "刘备",
+          "张飞",
+          "赵云"
+        ],
+        "strength": "随行众十余万，且“被甲者少”；战兵总数未载",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操轻军到襄阳后，以五千精骑追上刘备于当阳长坂。刘备随行十余万众包含百姓，不能显示为十余万军队。",
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "曹公以江陵有軍實，恐先主據之，乃釋輜重，輕軍到襄陽。聞先主已過，曹公將精騎五千急追之，一日一夜行三百餘里，及於當陽之長坂。"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "比到當陽，眾十餘萬，輜重數千兩，日行十餘里，"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "今雖擁大眾，被甲者少"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "九月，公到新野，琮遂降，備走夏口。"
+        }
+      ],
+      "route_note": "襄阳至长坂的追击方向示意；史书记载一日一夜，不据此生成逐小时军队位置。",
+      "date": {
+        "year": 208,
+        "label": "建安十三年九月相关进军；长坂具体日不详",
+        "month": 9
+      }
+    },
+    {
+      "id": "h-chibi",
+      "title": "孙刘联军迎击赤壁",
+      "world": "history",
+      "origin": "xiakou",
+      "target": "chibi",
+      "attacker": {
+        "faction": "sunquan",
+        "name": "孙刘联军",
+        "commanders": [
+          "周瑜",
+          "程普",
+          "刘备",
+          "黄盖"
+        ],
+        "strength": "孙权选发三万人；这是孙权所发部队，非孙刘联军合计",
+        "model": "infantry",
+        "unit_label": "水战部队·步卒代示"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引交战段未给出可确认的总数；不采用“八十万”号称数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "刘备进住夏口并联孙权，周瑜、程普与刘备并力迎击曹操，遇于赤壁。箭头表示联军会合地域到战场的关系，不是周瑜单独军营的精确航线。",
+      "evidence": [
+        {
+          "source": "sgz-54",
+          "phrase": "因進住夏口，遣諸葛亮詣權。權遂遣瑜及程普等與備並力逆曹公，遇於赤壁。"
+        },
+        {
+          "source": "sgz-54",
+          "phrase": "五萬兵難卒合，已選三萬人，船糧戰具俱辦"
+        },
+        {
+          "source": "sgz-54",
+          "phrase": "瑜部將黃蓋曰："
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "公至赤壁，與備戰，不利。"
+        }
+      ],
+      "route_note": "夏口为联军会合地域锚点；赤壁采用现有地域参照，古战场具体范围有争议。箭头不沿现代河道推定航线。",
+      "date": {
+        "year": 208,
+        "label": "建安十三年；本批保留年级，具体月份未核"
+      }
+    },
+    {
+      "id": "h-chengdu",
+      "title": "刘备由雒城进围成都",
+      "world": "history",
+      "origin": "luoxian",
+      "target": "chengdu",
+      "attacker": {
+        "faction": "liu",
+        "name": "刘备军",
+        "commanders": [
+          "刘备"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "liuzhang",
+        "name": "刘璋军",
+        "commanders": [
+          "刘璋"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "雒城攻破后，刘备进围成都数十日，刘璋出降。入蜀初期的兵数不能直接用作此战参战数。",
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "十九年夏，雒城破"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "進圍成都數十日，璋出降。"
+        }
+      ],
+      "route_note": "",
+      "date": {
+        "year": 214,
+        "label": "建安十九年夏，具体月日未详",
+        "season": "夏"
+      }
+    },
+    {
+      "id": "h-dingjun",
+      "title": "黄忠进击定军山",
+      "world": "history",
+      "origin": null,
+      "target": "dingjun",
+      "attacker": {
+        "faction": "liu",
+        "name": "刘备军",
+        "commanders": [
+          "刘备",
+          "黄忠"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "夏侯渊军",
+        "commanders": [
+          "夏侯渊"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "刘备在定军山一带立营，夏侯渊来争。黄忠奉命乘高进击，击破并斩夏侯渊。战术出击位置未考定，只显示战场兵人。",
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "二十四年春，自陽平南渡沔水，緣山稍前，於定軍山勢作營。淵將兵來爭其地。先主命黃忠乘高鼓譟攻之，大破淵軍，斬淵及曹公所署益州刺史趙顒等。"
+        }
+      ],
+      "route_note": "",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年春，具体月日未详",
+        "season": "春"
+      }
+    },
+    {
+      "id": "h-hanzhong",
+      "title": "曹操由长安南征汉中",
+      "world": "history",
+      "origin": "changan",
+      "target": "hanzhong",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "liu",
+        "name": "刘备军",
+        "commanders": [
+          "刘备"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "夏侯渊战死后曹操自长安南征，刘备据险拒守。本条只表示南征方向，尚不能恢复穿越秦岭的确切行军道路。",
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "曹公自長安舉眾南征。"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "及曹公至，先主斂眾拒險，終不交鋒"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "二十四年春，自陽平南渡沔水"
+        }
+      ],
+      "route_note": "长安至汉中战区的战略方向，非穿越秦岭古道的复原。",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年春相关进军；月日未详",
+        "season": "春"
+      }
+    },
+    {
+      "id": "h-fancheng",
+      "title": "关羽围攻樊城",
+      "world": "history",
+      "origin": null,
+      "target": "fancheng",
+      "attacker": {
+        "faction": "liu",
+        "name": "关羽军",
+        "commanders": [
+          "关羽"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "樊城与援军",
+        "commanders": [
+          "曹仁",
+          "于禁"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "汉水泛溢，于禁军被淹，关羽俘于禁并围曹仁。当前史料确认樊城战事，未据此将江陵任意设成这次出击起点。",
+      "evidence": [
+        {
+          "event": "h-219-han-flood"
+        }
+      ],
+      "route_note": "",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年八月，日不详",
+        "month": 8
+      }
+    },
+    {
+      "id": "h-qishan",
+      "title": "诸葛亮北伐祁山",
+      "world": "history",
+      "origin": "hanzhong",
+      "target": "qishan",
+      "attacker": {
+        "faction": "shu",
+        "name": "蜀汉北伐主力",
+        "commanders": [
+          "诸葛亮"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "wei",
+        "name": "曹魏诸军",
+        "commanders": [
+          "曹真",
+          "张郃"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "诸葛亮此前率军北驻汉中，建兴六年春主力攻祁山。赵云、邓芝据箕谷的疑军另行行动，本箭头不代表他们的路线。",
+      "evidence": [
+        {
+          "source": "sgz-35",
+          "phrase": "五年，率諸軍北駐漢中"
+        },
+        {
+          "source": "sgz-35",
+          "phrase": "亮身率諸軍攻祁山"
+        },
+        {
+          "source": "sgz-35",
+          "phrase": "使趙雲、鄧芝為疑軍，據箕谷，魏大將軍曹真舉眾拒之。"
+        },
+        {
+          "source": "sgz-35",
+          "phrase": "魏明帝西鎮長安，命張郃拒亮"
+        },
+        {
+          "source": "sgz-35",
+          "phrase": "六年春，揚聲由斜谷道取眉"
+        }
+      ],
+      "route_note": "前期汉中驻军地域至祁山战区的方向关系；具体出师营地和途中道路未定位。",
+      "date": {
+        "year": 228,
+        "label": "建兴六年春，具体月日未详",
+        "season": "春",
+        "calendar": "shu"
+      }
+    },
+    {
+      "id": "r-xiapi",
+      "title": "曹操进攻下邳",
+      "world": "romance",
+      "origin": null,
+      "target": "xiapi",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "lu",
+        "name": "吕布军",
+        "commanders": [
+          "吕布",
+          "陈宫"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "小说写曹操得徐州后攻下邳；本条未将小说中的“徐州”自动等同某一个精确出发营地。刘备另守淮南径路。",
+      "evidence": [
+        {
+          "source": "romance-019",
+          "phrase": "曹操自引兵攻下邳。"
+        },
+        {
+          "source": "romance-019",
+          "phrase": "玄德留糜竺、簡雍在徐州，帶孫乾、關、張引軍往守淮南徑路。"
+        }
+      ],
+      "route_note": "",
+      "chapter": 19
+    },
+    {
+      "id": "r-wuchao",
+      "title": "曹操夜袭乌巢",
+      "world": "romance",
+      "origin": "guandu",
+      "target": "wuchao",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操劫粮军",
+        "commanders": [
+          "曹操",
+          "张辽",
+          "许褚",
+          "徐晃",
+          "于禁"
+        ],
+        "strength": "马步军五千；本回劫粮部队",
+        "model": "infantry",
+        "unit_label": "步骑混合示意"
+      },
+      "defender": {
+        "faction": "yuan",
+        "name": "乌巢守军",
+        "commanders": [
+          "淳于琼"
+        ],
+        "strength": "所引本回劫粮段未载守军总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "小说写曹操采用许攸之计，选马步军五千，张辽、许褚在前，徐晃、于禁在后，向乌巢进发。",
+      "evidence": [
+        {
+          "source": "romance-030",
+          "phrase": "曹操屯軍官渡，與我相持已久"
+        },
+        {
+          "source": "romance-030",
+          "phrase": "次日，操自選馬步軍士五千，準備往烏巢劫糧。"
+        },
+        {
+          "source": "romance-030",
+          "phrase": "教張遼、許褚在前，徐晃、于禁在後，操自引諸將居中，共五千人馬"
+        },
+        {
+          "source": "romance-030",
+          "phrase": "今撥淳于瓊把守。"
+        }
+      ],
+      "route_note": "官渡至乌巢的小说进攻方向。地名采用地理参照，兵力与将领仅按本回记载。",
+      "chapter": 30
+    },
+    {
+      "id": "r-guandu",
+      "title": "张郃、高览进攻曹营",
+      "world": "romance",
+      "origin": null,
+      "target": "guandu",
+      "attacker": {
+        "faction": "yuan",
+        "name": "袁绍攻营军",
+        "commanders": [
+          "张郃",
+          "高览"
+        ],
+        "strength": "五千；攻官渡曹营部队",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹营守军",
+        "commanders": [
+          "荀攸",
+          "贾诩",
+          "曹洪"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "袁绍遣张郃、高览五千人进攻官渡曹营，同时另遣蒋奇一万人救乌巢。两军分属不同任务，不能合并成这支进攻军。",
+      "evidence": [
+        {
+          "source": "romance-030",
+          "phrase": "便教荀攸、賈詡、曹洪同許攸守大寨"
+        },
+        {
+          "source": "romance-030",
+          "phrase": "紹乃遣張郃、高覽引軍五千，往官渡擊曹營；遣蔣奇領兵一萬，往救烏巢。"
+        }
+      ],
+      "route_note": "",
+      "chapter": 30
+    },
+    {
+      "id": "r-changban",
+      "title": "曹操铁骑追击当阳",
+      "world": "romance",
+      "origin": "xiangyang",
+      "target": "changban",
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操追击骑兵",
+        "commanders": [
+          "曹操",
+          "文聘"
+        ],
+        "strength": "五千铁骑；小说追击部队",
+        "model": "cavalry",
+        "unit_label": "铁骑示意"
+      },
+      "defender": {
+        "faction": "liu",
+        "name": "刘备军与百姓",
+        "commanders": [
+          "刘备",
+          "张飞",
+          "赵云"
+        ],
+        "strength": "小说记三千余军马、十数万百姓；二者分列",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操定襄阳后命精选五千铁骑追击；刘备带百姓向江陵移动，在当阳一带遇袭。本回地图只展示这一进度内的战事。",
+      "evidence": [
+        {
+          "source": "romance-041",
+          "phrase": "襄陽既定"
+        },
+        {
+          "source": "romance-041",
+          "phrase": "操教各部下精選五千鐵騎，星夜前進，限一日一夜，趕上劉備。"
+        },
+        {
+          "source": "romance-041",
+          "phrase": "卻說玄德引十數萬百姓、三千餘軍馬，一程程挨著往江陵進發。"
+        },
+        {
+          "source": "romance-041",
+          "phrase": "前面是當陽縣。"
+        },
+        {
+          "source": "romance-041",
+          "phrase": "文聘當先攔住。"
+        }
+      ],
+      "route_note": "当阳战事用长坂地域作概略锚点，不认定小说景山营地的精确位置。",
+      "chapter": 41
+    },
+    {
+      "id": "r-fancheng",
+      "title": "关羽渡襄江攻樊城",
+      "world": "romance",
+      "origin": "xiangyang",
+      "target": "fancheng",
+      "attacker": {
+        "faction": "liu",
+        "name": "关羽军",
+        "commanders": [
+          "关羽",
+          "关平"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹仁军",
+        "commanders": [
+          "曹仁",
+          "满宠",
+          "吕常"
+        ],
+        "strength": "吕常出迎二千；仅为出迎支队，非全城守军",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "本回关羽取得襄阳后，令关平备船，渡襄江攻樊城。小说中“攻取襄阳”与正史不能混为同一套事件。",
+      "evidence": [
+        {
+          "source": "romance-073",
+          "phrase": "雲長令關平準備船隻渡襄江，攻打樊城。"
+        },
+        {
+          "source": "romance-073",
+          "phrase": "仁即與兵二千，令呂常出樊城迎戰。"
+        },
+        {
+          "source": "romance-073",
+          "phrase": "曹仁折了二將，退守樊城，謂滿寵曰："
+        }
+      ],
+      "route_note": "襄阳至樊城的渡江方向，箭头不代表已考证渡口。",
+      "chapter": 73
+    }
+  ]
+}

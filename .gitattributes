@@ -1,0 +1,8 @@
+* text=auto eol=lf
+web/assets/* -text -whitespace
+*.sqlite -text
+*.png -text
+# Keep pinned upstream calendar bytes, including original whitespace.
+data/references/chinese-calendar/* -text -whitespace
+# Preserve downloaded reference SVG bytes for source hash verification.
+data/references/hydrology-2026-11-06/*.svg -text -whitespace

@@ -1,0 +1,112 @@
+{
+  "checked_on": "2026-11-06",
+  "files": [
+    {
+      "id": "french",
+      "title": "File:Trois royaumes de Chine carte.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Trois_royaumes_de_Chine_carte.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Trois_royaumes_de_Chine_carte.svg",
+      "local_path": "data/references/hydrology-2026-11-06/trois-royaumes-c260.svg",
+      "bytes": 510598,
+      "sha256": "be43931ac97da7b5ef42bafbc6a7e4aeb7d14e68c4aa04748d9cf6857813265f",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author_html": "<a href=\"//commons.wikimedia.org/wiki/User:Zunkir\" title=\"User:Zunkir\">Zunkir</a>",
+      "source_description_html": "This file was derived from:  <a href=\"//commons.wikimedia.org/wiki/File:Eastern_China_blank_relief_map.svg\" title=\"File:Eastern China blank relief map.svg\">Eastern China blank relief map.svg</a>: <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Eastern_China_blank_relief_map.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Eastern_China_blank_relief_map.svg/60px-Eastern_China_blank_relief_map.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"55\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Eastern_China_blank_relief_map.svg/120px-Eastern_China_blank_relief_map.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"920\" data-file-height=\"1006\"></a></span><br> Auteur : <a href=\"//commons.wikimedia.org/w/index.php?title=User:Kanguole&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kanguole (page does not exist)\">Kanguole</a>",
+      "description_html": "Carte de la Chine durant la période des Trois royaumes, vers 260.",
+      "source_file_timestamp": "2016-10-02 10:34:09",
+      "svg_dimensions": {
+        "id": "svg2",
+        "version": "1.1",
+        "{http://www.inkscape.org/namespaces/inkscape}version": "0.48.4 r9939",
+        "width": "920",
+        "height": "1006",
+        "{http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname": "Trois royaumes.svg"
+      },
+      "element_counts": {
+        "svg": 1,
+        "metadata": 1,
+        "RDF": 1,
+        "Work": 1,
+        "format": 1,
+        "type": 1,
+        "title": 1,
+        "defs": 1,
+        "namedview": 1,
+        "image": 1,
+        "path": 19,
+        "text": 20,
+        "tspan": 37
+      },
+      "redistributed_unchanged": true
+    },
+    {
+      "id": "zh-admin",
+      "title": "File:三國時期行政區劃圖.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%9C%8B%E6%99%82%E6%9C%9F%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83%E5%9C%96.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%E4%B8%89%E5%9C%8B%E6%99%82%E6%9C%9F%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83%E5%9C%96.svg",
+      "local_path": "data/references/hydrology-2026-11-06/three-kingdoms-administrative.svg",
+      "bytes": 1290175,
+      "sha256": "3acdd5ce9cbca522ed77a48326ab8a1c19bf99fb62658877b03ca283973efdf8",
+      "license": "Public domain",
+      "license_url": null,
+      "author_html": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:%E4%B8%89%E5%9C%8B%E6%99%82%E6%9C%9F%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83%E5%9C%96.png\" title=\"File:三國時期行政區劃圖.png\">三國時期行政區劃圖.png</a>: <b><a href=\"https://zh.wikipedia.org/wiki/User:Jason22\" class=\"extiw\" title=\"zh:User:Jason22\">Jason22</a> </b></li>\n<li>derivative work: <a href=\"//commons.wikimedia.org/w/index.php?title=User:%E7%8E%96%E5%B7%A7%E4%BB%94&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:玖巧仔 (page does not exist)\">玖巧仔</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:%E7%8E%96%E5%B7%A7%E4%BB%94\" title=\"User talk:玖巧仔\"><span class=\"signature-talk\">talk</span></a>)</li></ul>",
+      "source_description_html": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:%E4%B8%89%E5%9C%8B%E6%99%82%E6%9C%9F%E8%A1%8C%E6%94%BF%E5%8D%80%E5%8A%83%E5%9C%96.png\" title=\"File:三國時期行政區劃圖.png\">三國時期行政區劃圖.png</a></li></ul>",
+      "description_html": "​三國時期行政區劃圖，其中綠色為蜀漢、紅色為孫吳、藍色為曹魏。",
+      "source_file_timestamp": "2011-01-12 16:09:05",
+      "svg_dimensions": {
+        "version": "1.1",
+        "baseProfile": "tiny",
+        "x": "0px",
+        "y": "0px",
+        "width": "778px",
+        "height": "596px",
+        "viewBox": "698.827 1145.683 778 596",
+        "{http://www.w3.org/XML/1998/namespace}space": "preserve"
+      },
+      "element_counts": {
+        "svg": 1,
+        "defs": 1,
+        "rect": 1,
+        "path": 418,
+        "image": 5,
+        "g": 71,
+        "polygon": 1,
+        "linearGradient": 1,
+        "stop": 2
+      },
+      "redistributed_unchanged": true
+    },
+    {
+      "id": "changban",
+      "title": "File:Bataille de Changban.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bataille_de_Changban.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Bataille_de_Changban.svg",
+      "local_path": "data/references/hydrology-2026-11-06/changban-battle.svg",
+      "bytes": 26076,
+      "sha256": "197dc96a76ecfd56458845f1f9f83b5c836b611f8d17881dbd12a58a1d510f9c",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "author_html": "The original uploader was <a href=\"https://en.wikipedia.org/wiki/fr:User:Sixsous\" class=\"extiw\" title=\"w:fr:User:Sixsous\">Sixsous</a> at <a href=\"https://en.wikipedia.org/wiki/fr:\" class=\"extiw\" title=\"w:fr:\">French Wikipedia</a>.",
+      "source_description_html": "<bdi lang=\"en\" dir=\"ltr\">Transferred from <span class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//fr.wikipedia.org\" href=\"https://fr.wikipedia.org\">fr.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Bloody-libu\" title=\"User:Bloody-libu\">Bloody-libu</a> using <a href=\"https://iw.toolforge.org/commonshelper/\" class=\"extiw\" title=\"toollabs:commonshelper/\">CommonsHelper</a>.</bdi>",
+      "description_html": "<p>Carte de la bataille de Changban\n</p>\n<ul><li>Image originale : <a href=\"//commons.wikimedia.org/wiki/File:Changbanzhizhan.png\" title=\"File:Changbanzhizhan.png\">File:Changbanzhizhan.png</a> de <a href=\"https://en.wikipedia.org/wiki/User:Deadkid_dk\" class=\"extiw\" title=\"en:User:Deadkid dk\">en:User:Deadkid_dk</a>, d'après <a href=\"//commons.wikimedia.org/wiki/File:Chibizhizhan.png\" title=\"File:Chibizhizhan.png\">File:Chibizhizhan.png</a> de <a href=\"https://zh-classical.wikipedia.org/wiki/User:Zhuwq\" class=\"extiw\" title=\"zh-classical:User:Zhuwq\">zh-classical:User:Zhuwq</a>, toutes deux sous licence GNU 1.2</li>\n<li>Traduite en français et vectorialisée par <a href=\"https://fr.wikipedia.org/wiki/Utilisateur:Sixsous\" class=\"extiw\" title=\"fr:Utilisateur:Sixsous\">fr:Utilisateur:Sixsous</a> le 31 mai 2007</li></ul>",
+      "source_file_timestamp": "2012-08-15 17:05:39",
+      "svg_dimensions": {
+        "version": "1.0",
+        "width": "461.45108",
+        "height": "409.48682",
+        "id": "svg2"
+      },
+      "element_counts": {
+        "svg": 1,
+        "defs": 1,
+        "g": 11,
+        "rect": 3,
+        "path": 32,
+        "text": 16,
+        "tspan": 17
+      },
+      "redistributed_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {"name":"曹操","source":"sgz-01","phrase":"字孟德","courtesy":"孟德","origin":"沛国谯"},
+  {"name":"吕布","source":"sgz-07","phrase":"呂布字奉先，五原郡九原人也","courtesy":"奉先","origin":"五原郡九原"},
+  {"name":"陈宫","source":"sgz-07","phrase":"陳宮字公臺，東郡人也","courtesy":"公台","origin":"东郡","note":"出自裴注所引《典略》，与正文分开标识。"},
+  {"name":"陶谦","source":"sgz-08","phrase":"陶謙字恭祖，丹楊人","courtesy":"恭祖","origin":"丹杨"},
+  {"name":"荀彧","source":"sgz-10","phrase":"荀彧字文若，潁川潁陰人也","courtesy":"文若","origin":"颍川颍阴"},
+  {"name":"郭嘉","source":"sgz-14","phrase":"郭嘉字奉孝，潁川陽翟人也","courtesy":"奉孝","origin":"颍川阳翟"},
+  {"name":"刘备","source":"sgz-32","phrase":"先主姓劉，諱備，字玄德，涿郡涿縣人","courtesy":"玄德","origin":"涿郡涿县"},
+  {"name":"诸葛亮","source":"sgz-35","phrase":"諸葛亮字孔明，琅邪陽都人也","courtesy":"孔明","origin":"琅邪阳都"},
+  {"name":"关羽","source":"sgz-36","phrase":"關羽字雲長，本字長生，河東解人也","courtesy":"云长，本字长生","origin":"河东解"},
+  {"name":"张飞","source":"sgz-36","phrase":"張飛字益德，涿郡人也","courtesy":"益德","origin":"涿郡"},
+  {"name":"赵云","source":"sgz-36","phrase":"趙雲字子龍，常山真定人也","courtesy":"子龙","origin":"常山真定"},
+  {"name":"糜竺","source":"sgz-38","phrase":"麋竺字子仲，東海朐人也","courtesy":"子仲","origin":"东海朐","note":"本传写作麋竺，本图以常见写法糜竺作检索名并保留原文。"},
+  {"name":"简雍","source":"sgz-38","phrase":"簡雍字憲和，涿郡人也","courtesy":"宪和","origin":"涿郡"},
+  {"name":"刘备","source":"romance-001","phrase":"姓劉，名備，字玄德","courtesy":"玄德","origin":"涿县相关叙述","note":"仅列小说本段已明确的身份，不引入后文结局。"},
+  {"name":"张飞","source":"romance-001","phrase":"某姓張，名飛，字翼德","courtesy":"翼德","origin":"涿郡","note":"小说为翼德，史料正文为益德，两版分别记录。"}
+]

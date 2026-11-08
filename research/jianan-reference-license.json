@@ -1,0 +1,26 @@
+{
+  "file": "web\\assets\\jianan-219.svg",
+  "sha256": "78d82bf455ea66f0ec6d1da93b89c38026b63a07c57ae031da28f75801188b5a",
+  "author": "Esiymbro",
+  "date": "2020-07-10",
+  "title": "Provinces and commanderies of the Han Dynasty in 219 CE",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jian%27an_Commanderies.svg",
+  "modifications": "Original SVG unchanged. Five legend/separator paths excluded; 138 geographic paths extracted and affinely registered against the original topographic tile family; Chinese label transcription and chronology caveats added. The application uses an unlabelled extracted terrain raster rather than embedding the Latin artwork.",
+  "limitations": "Some province borders are post-220 divisions. Yiyang chronology and short-lived Linchuan identity require correction. Registered lines are research data, not verified ancient cadastral boundaries or faction control polygons.",
+  "derived_research_files": [
+    "research/jianan-source-extraction.json",
+    "output/jianan-219-source.png",
+    "output/glyph-sheet.png",
+    "output/reference-viewer.png",
+    "web/jianan-reference.json",
+    "web/jianan-boundaries.geojson",
+    "web/assets/jianan-terrain.jpg",
+    "research/jianan-georeference.json",
+    "research/jianan-independent-coast-check.json",
+    "data/editorial/jianan-labels.json",
+    "data/editorial/jianan-epoch-review.json"
+  ],
+  "derivative_license": "CC BY-SA 4.0"
+}

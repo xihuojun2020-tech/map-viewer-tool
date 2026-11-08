@@ -1,0 +1,2122 @@
+{
+  "places": [
+    {
+      "id": "changshe",
+      "name": "长社",
+      "coordinates": [
+        113.77,
+        34.22
+      ],
+      "region": "颍川",
+      "kind": "县治",
+      "aliases": [],
+      "location_note": "长葛一带地域参照；汉长社古城具体城垣待考。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "archive": "data/references/activity-places-simplified-api.json",
+          "title": "长葛市",
+          "phrase": "[[秦朝|秦]]置'''长社县'''"
+        }
+      ]
+    },
+    {
+      "id": "guangzong",
+      "name": "广宗",
+      "coordinates": [
+        115.14,
+        37.08
+      ],
+      "region": "冀州",
+      "kind": "地域参照",
+      "aliases": [],
+      "location_note": "广宗地区参照；现代县名不能直接确定汉广宗县城或战场。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "盧植破黃巾，圍張角於廣宗。"
+        }
+      ]
+    },
+    {
+      "id": "xiaquyang",
+      "name": "下曲阳",
+      "coordinates": [
+        115.044,
+        38.034
+      ],
+      "region": "冀州",
+      "kind": "县治",
+      "aliases": [],
+      "location_note": "今晋州一带；使用现代地域中心，不是古营地坐标。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "archive": "data/references/activity-places-api.json",
+          "title": "晋州市 (河北省)",
+          "phrase": "[[西汉]]设'''下曲阳县'''，属巨鹿郡；[[东汉]]、[[曹魏]]皆因之"
+        }
+      ]
+    },
+    {
+      "id": "cangting",
+      "name": "仓亭",
+      "coordinates": [
+        115.9,
+        36.08
+      ],
+      "region": "东郡",
+      "kind": "地域参照",
+      "aliases": [],
+      "location_note": "今阳谷高庙王乡仓上一带的编辑锚点；古黄河渡口及战场待定位。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "archive": "data/references/activity-places-api.json",
+          "title": "倉亭",
+          "phrase": "'''倉亭津'''，位於今[[中國]][[山东省|山東省]][[陽谷縣]]高廟王鄉倉上"
+        }
+      ]
+    },
+    {
+      "id": "shouzhang",
+      "name": "寿张",
+      "coordinates": [
+        116.28,
+        35.82
+      ],
+      "region": "东平",
+      "kind": "地域参照",
+      "aliases": [],
+      "location_note": "汉寿张在今东平县西南的地域参照；不是后世迁治的阳谷寿张镇，寿张东战场未定位。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "archive": "data/references/activity-places-simplified-api.json",
+          "title": "寿张县",
+          "phrase": "在今山东省[[东平县]]西南，属东平国。"
+        }
+      ]
+    },
+    {
+      "id": "jibei",
+      "name": "济北",
+      "coordinates": [
+        116.45,
+        36.3
+      ],
+      "region": "兖州",
+      "kind": "地域参照",
+      "aliases": [],
+      "location_note": "济北区域编辑锚点；不表示受降地点已精确定位。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "追黃巾至濟北。"
+        }
+      ]
+    },
+    {
+      "id": "suiyang",
+      "name": "睢阳",
+      "coordinates": [
+        115.61,
+        34.39
+      ],
+      "region": "梁国",
+      "kind": "县治",
+      "aliases": [],
+      "location_note": "今商丘地域参照；不以现代城市范围代替汉城范围。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "archive": "data/references/activity-places-simplified-api.json",
+          "title": "睢阳县 (秦朝)",
+          "phrase": "中国古[[县]]名，在今[[河南省]][[商丘市]]境内。"
+        }
+      ]
+    },
+    {
+      "id": "yingchuan",
+      "name": "颍川",
+      "coordinates": [
+        113.5,
+        34.1
+      ],
+      "region": "豫州",
+      "kind": "区域",
+      "aliases": [],
+      "location_note": "颍川地域索引；仅指文献活动涉及的郡，不是控制范围或精确军营。",
+      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "source_ids": [
+        "editorial-geography"
+      ],
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "汝南、潁川黃巾何儀、劉辟、黃邵、何曼等"
+        }
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "id": "huangjin",
+      "name": "黄巾诸部（各地分别活动）",
+      "color": "#bb912b"
+    },
+    {
+      "id": "baibo",
+      "name": "白波集团",
+      "color": "#8d8067"
+    }
+  ],
+  "events": [
+    {
+      "id": "h-y-184-rising",
+      "title": "黄巾起事",
+      "date": {
+        "year": 184,
+        "month": 2,
+        "label": "中平元年二月，日不详"
+      },
+      "summary": "张角等起事。巨鹿是此处所记籍贯，不能据此放置起事大营。",
+      "places": [],
+      "people": [
+        "张角"
+      ],
+      "armies": [],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "鉅鹿人張角自稱「黃天」"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-luoyang",
+      "title": "何进屯洛阳都亭",
+      "date": {
+        "year": 184,
+        "month": 3,
+        "label": "中平元年三月戊申",
+        "ganzhi": "戊申"
+      },
+      "summary": "朝廷以何进为大将军，屯兵都亭；都亭在洛阳，具体营址未定位。",
+      "places": [
+        "luoyang"
+      ],
+      "people": [
+        "何进"
+      ],
+      "armies": [
+        {
+          "name": "朝廷都亭驻军",
+          "place_id": "luoyang",
+          "faction_id": "han",
+          "model": "army",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "三月戊申，以河南尹何進爲大將軍，將兵屯都亭。"
+        },
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "都亭在洛陽。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-nanyang",
+      "title": "南阳黄巾张曼成起兵",
+      "date": {
+        "year": 184,
+        "month": 3,
+        "label": "帝纪系于中平元年三月；庚子日与所用历表不合，暂保留月范围",
+        "original_ganzhi": "庚子"
+      },
+      "summary": "张曼成攻杀南阳郡守褚贡。地图仅作南阳地域提示，不推定整个南阳已被控制。",
+      "places": [
+        "wancheng"
+      ],
+      "people": [],
+      "armies": [
+        {
+          "name": "张曼成所部",
+          "place_id": "wancheng",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "庚子，南陽黃巾張曼成攻殺郡守褚貢。"
+        }
+      ],
+      "kind": "战事与活动",
+      "uncertainty": "原文三月戊申至庚子相距52天，不可能同处一个朔望月。保留原文，不强行换算为某日。"
+    },
+    {
+      "id": "h-y-184-changshe",
+      "title": "长社之战",
+      "date": {
+        "year": 184,
+        "month": 5,
+        "label": "中平元年五月，日不详"
+      },
+      "summary": "皇甫嵩、朱儁在长社大破波才等。只确定月份，不把战斗安排到某个星期。",
+      "places": [
+        "changshe"
+      ],
+      "people": [
+        "皇甫嵩",
+        "朱儁"
+      ],
+      "armies": [
+        {
+          "name": "波才等黄巾",
+          "place_id": "changshe",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        },
+        {
+          "name": "皇甫嵩、朱儁军",
+          "place_id": "changshe",
+          "faction_id": "han",
+          "model": "army",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "五月，皇甫嵩、朱儁復與波才等戰於長社，大破之。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-guangzong-siege",
+      "title": "卢植围广宗",
+      "date": {
+        "year": 184,
+        "month": 6,
+        "label": "中平元年六月，日不详"
+      },
+      "summary": "卢植围张角于广宗；随后董卓进攻未克。两条记载不给出精确先后日期。",
+      "places": [
+        "guangzong"
+      ],
+      "people": [
+        "卢植",
+        "张角",
+        "董卓"
+      ],
+      "armies": [
+        {
+          "name": "张角所部",
+          "place_id": "guangzong",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        },
+        {
+          "name": "卢植军",
+          "place_id": "guangzong",
+          "faction_id": "han",
+          "model": "army",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "盧植破黃巾，圍張角於廣宗。"
+        },
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "遣中郎將董卓攻張角，不剋。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-cangting",
+      "title": "仓亭之战",
+      "date": {
+        "year": 184,
+        "month": 8,
+        "label": "中平元年八月，日不详"
+      },
+      "summary": "皇甫嵩与黄巾战于仓亭，擒获其首领。古河道与战场位置未考定。",
+      "places": [
+        "cangting"
+      ],
+      "people": [
+        "皇甫嵩"
+      ],
+      "armies": [
+        {
+          "name": "仓亭黄巾",
+          "place_id": "cangting",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "八月，皇甫嵩與黃巾戰於倉亭，獲其帥。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-guangzong",
+      "title": "广宗黄巾败亡",
+      "date": {
+        "year": 184,
+        "month": 10,
+        "label": "中平元年十月，日不详"
+      },
+      "summary": "皇甫嵩击败张梁；张角此前已经病死，不能将张角死亡指定为十月战斗当日。",
+      "places": [
+        "guangzong"
+      ],
+      "people": [
+        "皇甫嵩",
+        "张梁",
+        "张角"
+      ],
+      "armies": [
+        {
+          "name": "张梁所部",
+          "place_id": "guangzong",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "冬十月，皇甫嵩與黃巾賊戰於廣宗，獲張角弟梁。角先死，乃戮其屍。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-xiaquyang",
+      "title": "下曲阳之战",
+      "date": {
+        "year": 184,
+        "month": 11,
+        "label": "中平元年十一月，日不详"
+      },
+      "summary": "皇甫嵩破下曲阳黄巾，张宝被杀。",
+      "places": [
+        "xiaquyang"
+      ],
+      "people": [
+        "皇甫嵩",
+        "张宝"
+      ],
+      "armies": [
+        {
+          "name": "张宝所部",
+          "place_id": "xiaquyang",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "十一月，皇甫嵩又破黃巾于下曲陽，斬張角弟寶。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-184-wan",
+      "title": "朱儁攻拔宛城",
+      "date": {
+        "year": 184,
+        "month": 11,
+        "label": "中平元年十一月癸巳",
+        "ganzhi": "癸巳"
+      },
+      "summary": "朱儁攻拔宛城，斩黄巾别帅孙夏。",
+      "places": [
+        "wancheng"
+      ],
+      "people": [
+        "朱儁"
+      ],
+      "armies": [
+        {
+          "name": "孙夏所部",
+          "place_id": "wancheng",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        },
+        {
+          "name": "朱儁军",
+          "place_id": "wancheng",
+          "faction_id": "han",
+          "model": "army",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "癸巳，朱儁拔宛城，斬黃巾別帥孫夏。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-188-baibo",
+      "title": "白波集团起事",
+      "date": {
+        "year": 188,
+        "month": 2,
+        "label": "中平五年二月，日不详"
+      },
+      "summary": "郭大等起于西河白波谷，进攻太原、河东。保留文献所述黄巾余部渊源，单列白波集团；太原仅为受攻地区参照。",
+      "places": [
+        "jinyang"
+      ],
+      "people": [],
+      "armies": [
+        {
+          "name": "白波集团（太原方向）",
+          "place_id": "jinyang",
+          "faction_id": "baibo",
+          "model": "army",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "黃巾餘賊郭大等起於西河白波谷，寇太原、河東。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-188-yi",
+      "title": "益州马相等起事",
+      "date": {
+        "year": 188,
+        "month": 6,
+        "label": "中平五年六月相关战事；起事日未详"
+      },
+      "summary": "马相、赵祗等在绵竹自号黄巾，攻破雒县，杀刺史郗俭。六月为帝纪记载的杀刺史时间，不等于起兵与行军每一步均在同一天。",
+      "places": [
+        "mianzhu",
+        "luoxian"
+      ],
+      "people": [],
+      "armies": [
+        {
+          "name": "马相等黄巾",
+          "place_id": "luoxian",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "益州黃巾馬相攻殺刺史郗儉，自稱天子"
+        },
+        {
+          "source": "sgz-31",
+          "phrase": "馬相、趙祗等於綿竹縣自號黃巾"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-188-qingxu",
+      "title": "青徐黄巾再起",
+      "date": {
+        "year": 188,
+        "month": 10,
+        "label": "中平五年十月，日不详"
+      },
+      "summary": "青州、徐州黄巾再起，攻掠郡县。尚无可定位的县或营地，本条不生成精确地图点。",
+      "places": [],
+      "people": [],
+      "armies": [],
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "青、徐黃巾復起，寇郡縣。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-192-shouzhang",
+      "title": "青州黄巾入兖与寿张东战事",
+      "date": {
+        "year": 192,
+        "label": "192年，月日不详"
+      },
+      "summary": "青州黄巾入兖州，曹操进击于寿张东。本条只定位地域，不将全年画成持续占领。",
+      "places": [
+        "shouzhang"
+      ],
+      "people": [
+        "曹操"
+      ],
+      "armies": [
+        {
+          "name": "青州黄巾（寿张战事）",
+          "place_id": "shouzhang",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "青州黃巾衆百萬入兖州"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "遂進兵擊黃巾於壽張東。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-192-surrender",
+      "title": "济北受降与青州兵改编",
+      "date": {
+        "year": 192,
+        "label": "初平三年冬，具体月日不详",
+        "season": "冬"
+      },
+      "summary": "曹操追至济北，冬季受降，收其精锐号青州兵。降卒三十余万与男女百余万口是不同统计；改编后的青州兵归曹操。",
+      "places": [
+        "jibei"
+      ],
+      "people": [
+        "曹操"
+      ],
+      "armies": [
+        {
+          "name": "青州兵（受降改编记录）",
+          "place_id": "jibei",
+          "faction_id": "cao",
+          "model": "army",
+          "note": "该冬某时完成改编，确切日期与后续驻地未详；不继续标作独立黄巾。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "追黃巾至濟北。乞降。冬，受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-y-196-ruying",
+      "title": "曹操讨汝南、颍川黄巾",
+      "date": {
+        "year": 196,
+        "month": 2,
+        "label": "建安元年二月，日不详"
+      },
+      "summary": "曹操讨何仪、刘辟、黄邵、何曼等。《武帝纪》的“斩辟”与官渡期间的刘辟活动存在冲突，暂不合并为确定人物生平。",
+      "places": [
+        "runan",
+        "yingchuan"
+      ],
+      "people": [
+        "曹操",
+        "何仪",
+        "何曼",
+        "刘辟"
+      ],
+      "armies": [
+        {
+          "name": "何仪等黄巾（汝颍地域）",
+          "place_id": "yingchuan",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "汝南、潁川黃巾何儀、劉辟、黃邵、何曼等，衆各數萬"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "二月，太祖進軍討破之，斬辟、邵等，儀及其衆皆降。"
+        }
+      ],
+      "kind": "战事与活动",
+      "uncertainty": "刘辟记载冲突待核；不得自动连成196年死亡后又于200年活动的无疑轨迹。"
+    },
+    {
+      "id": "h-y-200-runan",
+      "title": "官渡期间汝南黄巾应袁",
+      "date": {
+        "year": 200,
+        "label": "200年，月日不详"
+      },
+      "summary": "《先主传》记汝南黄巾刘辟等应袁绍，刘备参与；这是官渡阶段记录，月份未定。",
+      "places": [
+        "runan"
+      ],
+      "people": [
+        "刘备",
+        "刘辟"
+      ],
+      "armies": [
+        {
+          "name": "刘辟等部（记载冲突待核）",
+          "place_id": "runan",
+          "faction_id": "huangjin",
+          "model": "huangjin",
+          "note": "兵种组成未详；模型只表达部队身份。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "曹公與袁紹相拒於官渡，汝南黃巾劉辟等叛曹公應紹。"
+        }
+      ],
+      "kind": "战事与活动"
+    },
+    {
+      "id": "h-219-han-flood",
+      "title": "汉水泛溢与樊城战事",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年八月，日未详",
+        "month": 8
+      },
+      "summary": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "places": [
+        "fancheng"
+      ],
+      "people": [
+        "关羽",
+        "于禁",
+        "曹仁"
+      ],
+      "armies": [
+        {
+          "name": "关羽军（樊城战事）",
+          "place_id": "fancheng",
+          "faction_id": "liu",
+          "model": "army",
+          "note": "本月活动记录，兵种组成与精确营地未定。"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。"
+        },
+        {
+          "source": "sgz-36",
+          "phrase": "是歲，羽率眾攻曹仁於樊。"
+        }
+      ],
+      "kind": "水文与战事"
+    },
+    {
+      "id": "h-198-pengcheng",
+      "title": "曹操攻取彭城",
+      "date": {
+        "year": 198,
+        "label": "建安三年冬十月，日不详",
+        "month": 10
+      },
+      "summary": "曹操攻彭城，获侯谐，随后进至下邳。此时只改变彭城显示区块，不提前改为下邳城陷。",
+      "places": [
+        "pengcheng"
+      ],
+      "people": [
+        "曹操"
+      ],
+      "controls": {
+        "pengcheng": "cao"
+      },
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "冬十月，屠彭城，獲其相侯諧。進至下邳"
+        }
+      ],
+      "uncertainty": "月内具体日不详；地点控制不扩展为全郡或全州。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "曹操攻取彭城",
+          "faction_id": "cao",
+          "place_id": "pengcheng",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-204-ye",
+      "title": "曹操攻定邺城",
+      "date": {
+        "year": 204,
+        "label": "建安九年八月，日不详",
+        "month": 8
+      },
+      "summary": "审荣开城门纳曹军，审配败死，邺定。更新邺城点位；邺县控制面待考。",
+      "places": [
+        "ye"
+      ],
+      "people": [
+        "曹操"
+      ],
+      "controls": {
+        "ye": "cao"
+      },
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "八月，審配兄子榮夜開所守城東門內兵。配逆戰，敗，生禽配，斬之，鄴定。"
+        }
+      ],
+      "uncertainty": "月内具体日不详；地点控制不扩展为全郡或全州。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "曹操攻定邺城",
+          "faction_id": "cao",
+          "place_id": "ye",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-208-jing",
+      "title": "刘琮降曹与曹军进江陵",
+      "date": {
+        "year": 208,
+        "label": "建安十三年九月，日不详",
+        "month": 9
+      },
+      "summary": "刘琮降曹，刘备走夏口，曹军进江陵；只更新有记载的襄阳与江陵点位。",
+      "places": [
+        "xiangyang",
+        "jiangling"
+      ],
+      "people": [
+        "曹操",
+        "刘备"
+      ],
+      "controls": {
+        "xiangyang": "cao",
+        "jiangling": "cao"
+      },
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "九月，公到新野，琮遂降，備走夏口。公進軍江陵"
+        }
+      ],
+      "uncertainty": "月内具体日不详；地点控制不扩展为全郡或全州。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "刘琮降曹与曹军进江陵",
+          "faction_id": "cao",
+          "place_id": "xiangyang",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-214-chengdu",
+      "title": "刘璋降刘备",
+      "date": {
+        "year": 214,
+        "label": "建安十九年夏，具体月日待核",
+        "season": "夏"
+      },
+      "summary": "雒城破后围成都数十日，刘璋出降。只更新成都点位。",
+      "places": [
+        "chengdu"
+      ],
+      "people": [
+        "刘备",
+        "刘璋"
+      ],
+      "controls": {
+        "chengdu": "liu"
+      },
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "十九年夏，雒城破"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "進圍成都數十日，璋出降。"
+        }
+      ],
+      "uncertainty": "《先主传》系于夏；《后汉书》列在五月雨水之后，暂不凭编排缩窄为五月。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "刘璋降刘备",
+          "faction_id": "liu",
+          "place_id": "chengdu",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-215-zhanglu",
+      "title": "张鲁率余众降曹",
+      "date": {
+        "year": 215,
+        "label": "建安二十年十一月，日不详",
+        "month": 11
+      },
+      "summary": "张鲁自巴中率余众降。此为受降事件，不等同曹军七月攻入汉中的日期。",
+      "places": [
+        "hanzhong"
+      ],
+      "people": [
+        "曹操",
+        "张鲁"
+      ],
+      "controls": {},
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "十一月，魯自巴中將其餘衆降。"
+        }
+      ],
+      "uncertainty": "汉中只作事件地域索引；原文没有给出受降点坐标。",
+      "kind": "战事与接管",
+      "armies": []
+    },
+    {
+      "id": "h-219-jiangling",
+      "title": "吕蒙接管江陵",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年闰十月，日不详",
+        "month": -10
+      },
+      "summary": "糜芳以城降，吕蒙据江陵。点位更新为孙权控制，不扩大为整个荆州。",
+      "places": [
+        "jiangling"
+      ],
+      "people": [
+        "吕蒙"
+      ],
+      "controls": {
+        "jiangling": "sunquan"
+      },
+      "evidence": [
+        {
+          "source": "sgz-47",
+          "phrase": "閏月，權-{征}-羽"
+        },
+        {
+          "source": "sgz-47",
+          "phrase": "南郡太守糜芳以城降，蒙據江陵"
+        }
+      ],
+      "uncertainty": "月内具体日不详；地点控制不扩展为全郡或全州。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "吕蒙接管江陵",
+          "faction_id": "sunquan",
+          "place_id": "jiangling",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-222-yiling",
+      "title": "夷陵战局与刘备败退",
+      "date": {
+        "year": 222,
+        "label": "章武二年夏六月，日不详",
+        "month": 6,
+        "calendar": "shu"
+      },
+      "summary": "陆逊破刘备军，刘备由猇亭退归鱼复。夷陵为地域参照，不据此划定战线。",
+      "places": [
+        "yiling"
+      ],
+      "people": [
+        "刘备",
+        "陆逊"
+      ],
+      "controls": {},
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "夏六月，黃氣見自秭歸十餘里中"
+        },
+        {
+          "source": "sgz-32",
+          "phrase": "陸議大破先主軍於猇亭"
+        }
+      ],
+      "uncertainty": "按《先主传》六月；未把吴书的阶段性战果记述改为某日。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "夷陵战局与刘备败退",
+          "faction_id": "wu",
+          "place_id": "yiling",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-263-chengdu",
+      "title": "刘禅降邓艾",
+      "date": {
+        "year": 263,
+        "label": "炎兴元年冬，具体月日待核",
+        "season": "冬",
+        "calendar": "shu"
+      },
+      "summary": "邓艾破绵竹后，刘禅用谯周策降魏。只更新成都点位，未假定各郡同时接管。",
+      "places": [
+        "chengdu"
+      ],
+      "people": [
+        "刘禅",
+        "邓艾"
+      ],
+      "controls": {
+        "chengdu": "wei"
+      },
+      "evidence": [
+        {
+          "source": "sgz-33",
+          "phrase": "冬，鄧艾破衛將軍諸葛瞻於綿竹。"
+        },
+        {
+          "source": "sgz-33",
+          "phrase": "用光祿大夫譙周策，降於艾"
+        }
+      ],
+      "uncertainty": "本轮核读《后主传》只支持冬季区间，尚未核到独立月日出处。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "刘禅降邓艾",
+          "faction_id": "wei",
+          "place_id": "chengdu",
+          "model": "army"
+        }
+      ]
+    },
+    {
+      "id": "h-280-jianye",
+      "title": "王濬受孙皓之降",
+      "date": {
+        "year": 280,
+        "label": "天纪四年三月条；壬申与所用吴历表不合，暂按月",
+        "month": 3,
+        "calendar": "wu",
+        "original_ganzhi": "壬申"
+      },
+      "summary": "王濬先到建业，受孙皓之降。日历换算有疑，按月区间显示；仅更新建业点位，其他地区仍按阶段参照。",
+      "places": [
+        "jianye"
+      ],
+      "people": [
+        "孙皓"
+      ],
+      "controls": {
+        "jianye": "jin"
+      },
+      "evidence": [
+        {
+          "source": "sgz-48",
+          "phrase": "三月丙寅"
+        },
+        {
+          "source": "sgz-48",
+          "phrase": "壬申，王濬最先到，於是受皓之降"
+        }
+      ],
+      "uncertainty": "《孙皓传》三月条后记壬申；所用吴历三月无此干支，暂保留月区间，待核异历与脱文，不强行生成精确日。",
+      "kind": "战事与接管",
+      "armies": [
+        {
+          "name": "王濬受孙皓之降",
+          "faction_id": "jin",
+          "place_id": "jianye",
+          "model": "army"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "dian-early",
+      "person": "典韦",
+      "world": "history",
+      "entity_type": "person",
+      "date": null,
+      "place_id": "suiyang",
+      "relation": "event",
+      "action": "在睢阳为襄邑刘氏报仇；年月未知，不能排入投曹前的某个月。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-18",
+          "phrase": "襄邑劉氏與睢陽李永為讎，韋為報之。"
+        }
+      ]
+    },
+    {
+      "id": "dian-zhangmiao",
+      "person": "典韦",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 190,
+        "label": "初平年间（190—193年），营地未详",
+        "until_year": 193
+      },
+      "place_id": null,
+      "relation": "event",
+      "action": "从张邈为士，属司马赵宠；只知从军关系，不把张邈治所当作典韦位置。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-18",
+          "phrase": "初平中，張邈舉義兵，韋為士，屬司馬趙寵。"
+        }
+      ]
+    },
+    {
+      "id": "dian-wan",
+      "person": "典韦",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 197,
+        "month": 1,
+        "label": "建安二年正月宛城战事，日未详"
+      },
+      "place_id": "wancheng",
+      "relation": "event",
+      "action": "随曹操至宛，张绣复反时战死。纪年据《武帝纪》交叉核对。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "二年春正月，公到宛。張繡降，旣而悔之，復反。"
+        },
+        {
+          "source": "sgz-18",
+          "phrase": "太祖-{征}-荊州，至宛，張繡迎降。"
+        }
+      ]
+    },
+    {
+      "id": "zhuge-longzhong",
+      "person": "诸葛亮",
+      "world": "history",
+      "entity_type": "person",
+      "date": null,
+      "place_id": null,
+      "relation": "event",
+      "action": "《汉晋春秋》称家于南阳邓县、襄阳城西二十里隆中。保留出处与躬耕地争议，尚不发布精确草庐坐标。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-35",
+          "phrase": "亮家于南陽之鄧縣，在襄陽城西二十里，號曰隆中。"
+        }
+      ],
+      "note": "此为裴注引文，不能当作所有资料一致认可的精确遗址测绘。"
+    },
+    {
+      "id": "zhuge-study",
+      "person": "诸葛亮",
+      "world": "history",
+      "entity_type": "person",
+      "date": null,
+      "place_id": null,
+      "relation": "event",
+      "action": "《魏略》记建安初在荆州与石广元、徐元直、孟公威游学。建安初不是一个已确定起止日的区间。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-35",
+          "phrase": "亮在荊州，以建安初與潁川石廣元、徐元直、汝南孟公威等俱游學"
+        }
+      ]
+    },
+    {
+      "id": "zhuge-wuzhang",
+      "person": "诸葛亮",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 234,
+        "label": "蜀汉建兴十二年春，具体月日未详",
+        "calendar": "shu",
+        "season": "春"
+      },
+      "place_id": "wuzhang",
+      "relation": "event",
+      "action": "由斜谷出，至武功五丈原与司马懿相持；不插值生成行军路线。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-35",
+          "phrase": "十二年春，亮悉大眾由斜谷出，以流馬運，據武功五丈原，與司馬宣王對於渭南。"
+        }
+      ]
+    },
+    {
+      "id": "zhuge-death",
+      "person": "诸葛亮",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 234,
+        "month": 8,
+        "label": "蜀汉建兴十二年八月，日未详",
+        "calendar": "shu"
+      },
+      "place_id": "wuzhang",
+      "relation": "event",
+      "action": "诸葛亮病卒军中。地图以五丈原战区作参照，具体死亡地点存在不同记载。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-35",
+          "phrase": "其年八月，亮疾病，卒于軍，時年五十四。"
+        }
+      ],
+      "note": "八月以后只列为此前记载，地图不继续显示为仍驻留此地。"
+    },
+    {
+      "id": "h-y-184-luoyang-何进",
+      "person": "何进",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 3,
+        "label": "中平元年三月戊申",
+        "ganzhi": "戊申"
+      },
+      "place_id": "luoyang",
+      "relation": "event",
+      "action": "朝廷以何进为大将军，屯兵都亭；都亭在洛阳，具体营址未定位。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "三月戊申，以河南尹何進爲大將軍，將兵屯都亭。"
+        },
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "都亭在洛陽。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-changshe-皇甫嵩",
+      "person": "皇甫嵩",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 5,
+        "label": "中平元年五月，日不详"
+      },
+      "place_id": "changshe",
+      "relation": "event",
+      "action": "皇甫嵩、朱儁在长社大破波才等。只确定月份，不把战斗安排到某个星期。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "五月，皇甫嵩、朱儁復與波才等戰於長社，大破之。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-changshe-朱儁",
+      "person": "朱儁",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 5,
+        "label": "中平元年五月，日不详"
+      },
+      "place_id": "changshe",
+      "relation": "event",
+      "action": "皇甫嵩、朱儁在长社大破波才等。只确定月份，不把战斗安排到某个星期。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "五月，皇甫嵩、朱儁復與波才等戰於長社，大破之。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-guangzong-siege-卢植",
+      "person": "卢植",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 6,
+        "label": "中平元年六月，日不详"
+      },
+      "place_id": "guangzong",
+      "relation": "event",
+      "action": "卢植围张角于广宗；随后董卓进攻未克。两条记载不给出精确先后日期。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "盧植破黃巾，圍張角於廣宗。"
+        },
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "遣中郎將董卓攻張角，不剋。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-guangzong-siege-张角",
+      "person": "张角",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 6,
+        "label": "中平元年六月，日不详"
+      },
+      "place_id": "guangzong",
+      "relation": "event",
+      "action": "卢植围张角于广宗；随后董卓进攻未克。两条记载不给出精确先后日期。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "盧植破黃巾，圍張角於廣宗。"
+        },
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "遣中郎將董卓攻張角，不剋。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-cangting-皇甫嵩",
+      "person": "皇甫嵩",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 8,
+        "label": "中平元年八月，日不详"
+      },
+      "place_id": "cangting",
+      "relation": "event",
+      "action": "皇甫嵩与黄巾战于仓亭，擒获其首领。古河道与战场位置未考定。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "八月，皇甫嵩與黃巾戰於倉亭，獲其帥。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-guangzong-皇甫嵩",
+      "person": "皇甫嵩",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 10,
+        "label": "中平元年十月，日不详"
+      },
+      "place_id": "guangzong",
+      "relation": "event",
+      "action": "皇甫嵩击败张梁；张角此前已经病死，不能将张角死亡指定为十月战斗当日。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "冬十月，皇甫嵩與黃巾賊戰於廣宗，獲張角弟梁。角先死，乃戮其屍。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-guangzong-张梁",
+      "person": "张梁",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 10,
+        "label": "中平元年十月，日不详"
+      },
+      "place_id": "guangzong",
+      "relation": "event",
+      "action": "皇甫嵩击败张梁；张角此前已经病死，不能将张角死亡指定为十月战斗当日。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "冬十月，皇甫嵩與黃巾賊戰於廣宗，獲張角弟梁。角先死，乃戮其屍。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-xiaquyang-皇甫嵩",
+      "person": "皇甫嵩",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 11,
+        "label": "中平元年十一月，日不详"
+      },
+      "place_id": "xiaquyang",
+      "relation": "event",
+      "action": "皇甫嵩破下曲阳黄巾，张宝被杀。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "十一月，皇甫嵩又破黃巾于下曲陽，斬張角弟寶。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-xiaquyang-张宝",
+      "person": "张宝",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 11,
+        "label": "中平元年十一月，日不详"
+      },
+      "place_id": "xiaquyang",
+      "relation": "event",
+      "action": "皇甫嵩破下曲阳黄巾，张宝被杀。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "十一月，皇甫嵩又破黃巾于下曲陽，斬張角弟寶。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-184-wan-朱儁",
+      "person": "朱儁",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 184,
+        "month": 11,
+        "label": "中平元年十一月癸巳",
+        "ganzhi": "癸巳"
+      },
+      "place_id": "wancheng",
+      "relation": "event",
+      "action": "朱儁攻拔宛城，斩黄巾别帅孙夏。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "癸巳，朱儁拔宛城，斬黃巾別帥孫夏。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-192-shouzhang-曹操",
+      "person": "曹操",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 192,
+        "label": "192年，月日不详"
+      },
+      "place_id": "shouzhang",
+      "relation": "event",
+      "action": "青州黄巾入兖州，曹操进击于寿张东。本条只定位地域，不将全年画成持续占领。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "青州黃巾衆百萬入兖州"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "遂進兵擊黃巾於壽張東。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-192-surrender-曹操",
+      "person": "曹操",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 192,
+        "label": "初平三年冬，具体月日不详",
+        "season": "冬"
+      },
+      "place_id": "jibei",
+      "relation": "event",
+      "action": "曹操追至济北，冬季受降，收其精锐号青州兵。降卒三十余万与男女百余万口是不同统计；改编后的青州兵归曹操。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "追黃巾至濟北。乞降。冬，受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-200-runan-刘备",
+      "person": "刘备",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 200,
+        "label": "200年，月日不详"
+      },
+      "place_id": "runan",
+      "relation": "event",
+      "action": "《先主传》记汝南黄巾刘辟等应袁绍，刘备参与；这是官渡阶段记录，月份未定。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "曹公與袁紹相拒於官渡，汝南黃巾劉辟等叛曹公應紹。"
+        }
+      ]
+    },
+    {
+      "id": "h-y-200-runan-刘辟",
+      "person": "刘辟",
+      "world": "history",
+      "entity_type": "person",
+      "date": {
+        "year": 200,
+        "label": "200年，月日不详"
+      },
+      "place_id": "runan",
+      "relation": "event",
+      "action": "《先主传》记汝南黄巾刘辟等应袁绍，刘备参与；这是官渡阶段记录，月份未定。",
+      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "evidence": [
+        {
+          "source": "sgz-32",
+          "phrase": "曹公與袁紹相拒於官渡，汝南黃巾劉辟等叛曹公應紹。"
+        }
+      ]
+    },
+    {
+      "id": "danyang-xiapi",
+      "world": "history",
+      "entity_type": "army",
+      "name": "下邳丹阳兵",
+      "date": {
+        "year": 196,
+        "label": "196年，月日不详"
+      },
+      "place_id": "xiapi",
+      "faction_id": "lu",
+      "model": "danyang",
+      "relation": "event",
+      "action": "《英雄记》记丹阳兵屯西白城门内，开门纳吕布；表示这次迎纳事件的统属变化，不代表全年归吕布。",
+      "spatial_precision": "下邳地域参照，城门未定位",
+      "evidence": [
+        {
+          "source": "sgz-07",
+          "phrase": "丹楊兵有千人屯西白城門內"
+        },
+        {
+          "source": "sgz-07",
+          "phrase": "丹楊兵悉開門內布兵。"
+        }
+      ]
+    },
+    {
+      "id": "xianzhen-record",
+      "world": "history",
+      "entity_type": "army",
+      "name": "高顺陷阵营",
+      "date": null,
+      "place_id": null,
+      "faction_id": "lu",
+      "model": "xianzhen",
+      "relation": "description",
+      "action": "裴注引《英雄记》记七百余兵、号为千人，铠甲斗具精练齐整。本条没有可用于地图部署的确切时间地点。",
+      "spatial_precision": "未定位",
+      "evidence": [
+        {
+          "source": "sgz-07",
+          "phrase": "所將七百餘兵，號爲千人，鎧甲鬬具皆精練齊整，每所攻擊無不破者，名爲陷陣營。"
+        }
+      ]
+    },
+    {
+      "id": "r-liu-guangzong",
+      "person": "刘备",
+      "world": "romance",
+      "entity_type": "person",
+      "place_id": "guangzong",
+      "relation": "event",
+      "action": "刘备与关羽、张飞来到广宗；仅定位这一已读段落。",
+      "spatial_precision": "小说地点的地域参照",
+      "evidence": [
+        {
+          "source": "romance-001",
+          "phrase": "玄德與關、張引本部五百人投廣宗來。至盧植軍中"
+        }
+      ]
+    },
+    {
+      "id": "r-huangjin-yingchuan",
+      "person": "张梁",
+      "world": "romance",
+      "entity_type": "person",
+      "place_id": "yingchuan",
+      "relation": "event",
+      "action": "小说叙述张梁、张宝在颍川；不混入正史活动。",
+      "spatial_precision": "小说地点的地域参照",
+      "evidence": [
+        {
+          "source": "romance-001",
+          "phrase": "張梁、張寶在潁川"
+        }
+      ]
+    },
+    {
+      "id": "fancheng-219-关羽",
+      "world": "history",
+      "entity_type": "person",
+      "person": "关羽",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年八月，日未详",
+        "month": 8
+      },
+      "place_id": "fancheng",
+      "relation": "event",
+      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "spatial_precision": "樊城战区参照；营地与洪泛范围待考",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。"
+        },
+        {
+          "source": "sgz-36",
+          "phrase": "是歲，羽率眾攻曹仁於樊。"
+        }
+      ]
+    },
+    {
+      "id": "fancheng-219-于禁",
+      "world": "history",
+      "entity_type": "person",
+      "person": "于禁",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年八月，日未详",
+        "month": 8
+      },
+      "place_id": "fancheng",
+      "relation": "event",
+      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "spatial_precision": "樊城战区参照；营地与洪泛范围待考",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。"
+        },
+        {
+          "source": "sgz-36",
+          "phrase": "是歲，羽率眾攻曹仁於樊。"
+        }
+      ]
+    },
+    {
+      "id": "fancheng-219-曹仁",
+      "world": "history",
+      "entity_type": "person",
+      "person": "曹仁",
+      "date": {
+        "year": 219,
+        "label": "建安二十四年八月，日未详",
+        "month": 8
+      },
+      "place_id": "fancheng",
+      "relation": "event",
+      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "spatial_precision": "樊城战区参照；营地与洪泛范围待考",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。"
+        },
+        {
+          "source": "sgz-36",
+          "phrase": "是歲，羽率眾攻曹仁於樊。"
+        }
+      ]
+    }
+  ],
+  "hydrology": [
+    {
+      "id": "yi-si-huai",
+      "name": "沂—泗—淮与下邳",
+      "places": [
+        "xiapi",
+        "huaiyin"
+      ],
+      "period": "《水经注》成书于北魏；所引较早材料须分层判断",
+      "status": "已核源流与城河关系；河曲坐标待考",
+      "summary": "原文记下邳为沂泗之会，泗水东南流注淮。只支持汇流与流向关系，不能把几座城市的连线当作汉末真实河道。",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-shuijing-river-sources.json",
+          "title": "水經注/25",
+          "phrase": "縣爲沂、泗之會也。"
+        },
+        {
+          "archive": "research/2026-11-05-shuijing-river-sources.json",
+          "title": "水經注/25",
+          "phrase": "泗水又東逕角城北，而東南流注于淮。"
+        }
+      ]
+    },
+    {
+      "id": "wangjing",
+      "name": "王景治河与东汉黄河",
+      "places": [],
+      "period": "东汉永平十二年至次年（69—70年）",
+      "status": "治河路线关系有据；不等于184年逐段河道已复原",
+      "summary": "记自荥阳东至千乘海口的治河工程。现代黄河、治河文字路线和汉末河道不能直接视为同一几何。",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-revolt-sources.json",
+          "title": "後漢書/卷76",
+          "phrase": "自滎陽東至千乘海口千餘里。"
+        }
+      ]
+    },
+    {
+      "id": "han-xiangfan",
+      "name": "汉水与襄阳、樊城",
+      "places": [
+        "xiangyang",
+        "fancheng"
+      ],
+      "period": "《水经注》北魏成书，包含汉晋故事与后世地貌",
+      "status": "城河关系与洪水文字有据；具体河曲、城垣及洪泛边界待考",
+      "summary": "卷二十八记沔水过襄阳县北，并叙樊城及建安水患。可用于核对城河相对关系，不能将其所有北魏描述倒推为219年河岸。",
+      "evidence": [
+        {
+          "archive": "data/references/han-river-chronicle-api.json",
+          "title": "水經注/28",
+          "phrase": "又東過襄陽縣北"
+        },
+        {
+          "archive": "data/references/han-river-chronicle-api.json",
+          "title": "水經注/28",
+          "phrase": "會沔水泛溢，三丈有餘"
+        }
+      ]
+    },
+    {
+      "id": "jiang-jiangling",
+      "name": "长江与江陵、公安",
+      "places": [
+        "jiangling"
+      ],
+      "period": "《水经注》江水篇，叙述跨汉、吴、晋及后世",
+      "status": "主干城河关系已录；古湖泽与河岸没有发布精确多边形",
+      "summary": "卷三十四记江水过江陵南，卷三十五叙公安筑城。云梦、洞庭、彭蠡不以现代湖界或流行“大湖图”直接代替古范围。",
+      "evidence": [
+        {
+          "archive": "data/references/han-river-chronicle-api.json",
+          "title": "水經注/34",
+          "phrase": "又南過江陵縣南"
+        },
+        {
+          "archive": "data/references/han-river-chronicle-api.json",
+          "title": "水經注/35",
+          "phrase": "又東逕公安縣北，劉備之奔江陵，使築而鎮之。"
+        }
+      ]
+    }
+  ],
+  "administrative_changes": [
+    {
+      "id": "xiapi-184",
+      "date": {
+        "year": 184,
+        "label": "中平元年年内，月日未详"
+      },
+      "title": "下邳国除",
+      "units": [
+        "下邳"
+      ],
+      "summary": "《孝灵帝纪》记下邳王无子国除；不能把约140年下邳国身份无条件沿用至全部汉末年代。",
+      "evidence": [
+        {
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "title": "後漢書/卷8",
+          "phrase": "是歲，下邳王意薨，無子，國除。"
+        }
+      ],
+      "geometry_status": "尚未取得可发布的同期完整辖界；本条不自动改画边界"
+    },
+    {
+      "id": "jing-208",
+      "date": {
+        "year": 208,
+        "label": "建安十三年，月日未详"
+      },
+      "title": "荆州分置襄阳、南乡等郡",
+      "units": [
+        "荆州",
+        "襄阳",
+        "南乡",
+        "南郡",
+        "南阳"
+      ],
+      "summary": "《晋书》记分南郡立襄阳、分南阳西界立南乡等。这里记录建置，不据此推定所述全部地区的稳定实际控制。",
+      "evidence": [
+        {
+          "archive": "data/references/jin-geography-api.json",
+          "title": "晉書/卷015",
+          "phrase": "分南郡以北立襄陽郡，又分南陽西界立南鄉郡，分枝江以西立臨江郡。"
+        }
+      ],
+      "geometry_status": "尚未取得可发布的同期完整辖界；本条不自动改画边界"
+    },
+    {
+      "id": "states-213",
+      "date": {
+        "year": 213,
+        "label": "建安十八年正月庚寅",
+        "month": 1,
+        "ganzhi": "庚寅"
+      },
+      "title": "诏令并州为九州",
+      "units": [
+        "司隶",
+        "冀州",
+        "并州",
+        "幽州",
+        "凉州",
+        "交州",
+        "荆州",
+        "益州"
+      ],
+      "summary": "正史所记朝廷行政调整；名义诏令与曹、孙、刘各方实际辖境不能等同。研究图保留原断面，不伪造全国同步九州实控图。",
+      "evidence": [
+        {
+          "archive": "data/references/han-river-chronicle-api.json",
+          "title": "後漢書/卷9",
+          "phrase": "十八年春正月庚寅，復禹貢九州。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "詔書并十四州，復爲九州。"
+        }
+      ],
+      "geometry_status": "尚未取得可发布的同期完整辖界；本条不自动改画边界"
+    },
+    {
+      "id": "guang-226",
+      "date": {
+        "year": 226,
+        "label": "孙吴黄武五年，月日未详",
+        "calendar": "wu"
+      },
+      "title": "分交州置广州，后复旧",
+      "units": [
+        "交州",
+        "广州"
+      ],
+      "summary": "《晋书》记黄武五年分四郡置广州后不久恢复旧制，未给恢复具体日期；不能显示为此后永久持续。",
+      "evidence": [
+        {
+          "archive": "data/references/jin-geography-api.json",
+          "title": "晉書/卷015",
+          "phrase": "分交州之南海、蒼梧、郁林、高梁四郡立為廣州，俄復舊。"
+        }
+      ],
+      "geometry_status": "尚未取得可发布的同期完整辖界；本条不自动改画边界"
+    },
+    {
+      "id": "guang-263",
+      "date": {
+        "year": 263,
+        "label": "孙吴永安六年，月日未详",
+        "calendar": "wu"
+      },
+      "title": "再次分交州置广州",
+      "units": [
+        "交州",
+        "广州"
+      ],
+      "summary": "永安六年再次分交州置广州；改名与辖界须分别考证。",
+      "evidence": [
+        {
+          "archive": "data/references/jin-geography-api.json",
+          "title": "晉書/卷015",
+          "phrase": "{{YL|永安六年}}，復分交州置廣州"
+        }
+      ],
+      "geometry_status": "尚未取得可发布的同期完整辖界；本条不自动改画边界"
+    }
+  ],
+  "event_dates": [
+    {
+      "id": "h-194-liu",
+      "date": {
+        "year": 194,
+        "label": "兴平元年，月日不详"
+      },
+      "summary": "陶谦卒，刘备领徐州；保留核心控制的概略表达，不证明每县同时易手。",
+      "uncertainty": "《武帝纪》仅称“是岁”，不能将前段月份套用到本事。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "陶謙死，劉備代之"
+        }
+      ]
+    },
+    {
+      "id": "h-196",
+      "date": {
+        "year": 196,
+        "label": "建安元年，月日不详"
+      },
+      "summary": "吕布袭取下邳，刘备归吕布后屯小沛。",
+      "uncertainty": "编年材料的相邻段落不足以独立证明具体月份，仍保留全年区间。",
+      "evidence": [
+        {
+          "source": "sgz-07",
+          "phrase": "備東擊術，布襲取下邳，備還歸布。布遣備屯小沛。"
+        }
+      ]
+    },
+    {
+      "id": "h-198-flood",
+      "date": {
+        "year": 198,
+        "label": "建安三年冬，水攻具体月日不详",
+        "season": "冬"
+      },
+      "summary": "下邳围城期间决泗、沂水灌城；围城、水攻与城陷分别记录。",
+      "uncertainty": "只知冬季围城期间，不能从“月余”倒推精确水攻日。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "遂決泗、沂水以灌城。"
+        }
+      ]
+    },
+    {
+      "id": "h-199-defeat",
+      "date": {
+        "year": 198,
+        "label": "建安三年十二月癸酉",
+        "month": 12,
+        "ganzhi": "癸酉"
+      },
+      "summary": "侯成、宋宪、魏续等降曹，吕布下白门楼投降。原历为198年十二月，儒略历已进入199年。",
+      "uncertainty": "日级依据《资治通鉴》；《三国志》本纪只记战事次序。概略控制块不等于当天全州每县接管。",
+      "evidence": [
+        {
+          "archive": "data/references/dated-control-sources.json",
+          "title": "資治通鑑/卷062",
+          "phrase": "十二月，癸酉，成與諸將宋憲、魏續等共執陳宮、高順，率其眾降。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "舉城降，生禽布、宮"
+        }
+      ]
+    },
+    {
+      "id": "h-199-revolt",
+      "date": {
+        "year": 199,
+        "label": "建安四年，月日不详"
+      },
+      "summary": "刘备杀车胄，留关羽守下邳，身还小沛。",
+      "uncertainty": "原文未在这项行动上给出独立月日，保持年级区间。",
+      "evidence": [
+        {
+          "archive": "data/references/dated-control-sources.json",
+          "title": "資治通鑑/卷063",
+          "phrase": "備遂殺徐州刺史車冑，留關羽守下邳，行太守事，身還小沛。"
+        }
+      ]
+    },
+    {
+      "id": "h-200",
+      "date": {
+        "year": 200,
+        "label": "建安五年春正月，日不详",
+        "month": 1
+      },
+      "summary": "曹操东征击败刘备，继而进攻下邳，关羽降；在正月区间结束时显示已知结果。",
+      "uncertainty": "董承被杀的干支日不用于推定这场战役日期。",
+      "evidence": [
+        {
+          "source": "sgz-01",
+          "phrase": "五年春正月，董承等謀泄，皆伏誅。"
+        },
+        {
+          "source": "sgz-01",
+          "phrase": "備將關羽屯下邳，復進攻之，羽降。"
+        }
+      ]
+    },
+    {
+      "id": "h-220",
+      "date": {
+        "year": 220,
+        "label": "延康元年十月，受禅干支有异文",
+        "month": 10
+      },
+      "summary": "曹丕受禅，样区政权归属改为曹魏；本纪和裴注所引材料存在一日差异。",
+      "uncertainty": "本纪作庚午，所引《献帝传》作辛未，暂按十月而不独取某日。",
+      "evidence": [
+        {
+          "source": "sgz-02",
+          "phrase": "庚午，王升壇即阼"
+        },
+        {
+          "source": "sgz-02",
+          "phrase": "辛未，魏王登壇受禪"
+        }
+      ]
+    },
+    {
+      "id": "h-265",
+      "date": {
+        "year": 265,
+        "label": "咸熙二年十二月，交接过程跨儒略历266年",
+        "month": 12
+      },
+      "summary": "魏帝下诏禅晋并遣使奉策；样区所属政权更新为西晋，保留原历265年十二月。",
+      "uncertainty": "壬戌诏禅、甲子奉策是不同环节；未以其中一日冒充完整受禅仪式日期。",
+      "evidence": [
+        {
+          "source": "sgz-04",
+          "phrase": "十二月壬戌，天祿永終，歷數在晉。"
+        },
+        {
+          "source": "sgz-04",
+          "phrase": "甲子，使使者奉策。"
+        }
+      ]
+    }
+  ]
+}

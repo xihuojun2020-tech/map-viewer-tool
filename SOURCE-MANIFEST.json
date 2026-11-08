@@ -1,0 +1,2127 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "d51f151e9187ee7ac9e087fad094aaca3097dbad61dc22ac6eabe179bad154d2",
+    "bytes": 333
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "c97154d72acc5215954200739d37bee8046d1d85702317ccd7f4520273253726",
+    "bytes": 515
+  },
+  {
+    "path": ".gitleaks.toml",
+    "sha256": "2d4690914754411d3fa428f46046a73f2650e380d3d2752b1b926c079efe24e7",
+    "bytes": 435
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "326513b977b9a133646a36381b64f0bdc9528d21b5e84b8138f79e8b702e920c",
+    "bytes": 1462
+  },
+  {
+    "path": "android/app/build.gradle.kts",
+    "sha256": "851d7b964df15e5e05b02df3ee8ea6672699121934e4af88a2f7cab699c61734",
+    "bytes": 1233
+  },
+  {
+    "path": "android/app/src/main/AndroidManifest.xml",
+    "sha256": "249d83b4c04d23c4b36793b332c68d25910aff7238d308e206738e9846a1ba09",
+    "bytes": 1776
+  },
+  {
+    "path": "android/app/src/main/java/cn/maptool/reader/AppUpdates.kt",
+    "sha256": "9c291cacc63ad442073c95f512e9c34c9ca7be2685e2133c54b0fd27b949d785",
+    "bytes": 6422
+  },
+  {
+    "path": "android/app/src/main/java/cn/maptool/reader/CaptureService.kt",
+    "sha256": "a0915410eea9cb733f241737284c9c456b520e7ae96810eaac63ee3a78839d49",
+    "bytes": 7558
+  },
+  {
+    "path": "android/app/src/main/java/cn/maptool/reader/DocumentImporter.kt",
+    "sha256": "4c3d2fdf83a5bbafa277cc1027c3e040785702bc9ccd47cca98dacf12c5db0b1",
+    "bytes": 5337
+  },
+  {
+    "path": "android/app/src/main/java/cn/maptool/reader/MainActivity.kt",
+    "sha256": "2aee8a3dd43c790235449074cd15dbbd3fb47094839455ff03aaeb192610169f",
+    "bytes": 14603
+  },
+  {
+    "path": "android/app/src/main/java/cn/maptool/reader/OcrText.kt",
+    "sha256": "2fc5ce2e4b344b96509118b8018ae4d15cbe90b6c4eb4d8547db72781c4480d5",
+    "bytes": 411
+  },
+  {
+    "path": "android/app/src/main/java/cn/maptool/reader/PrivateSettings.kt",
+    "sha256": "ec14b311a1d5eb013feaa223b15cab25177892f6fad8d2a57da96ee33cf6d152",
+    "bytes": 1979
+  },
+  {
+    "path": "android/app/src/main/res/drawable/app_icon.xml",
+    "sha256": "b6e909351a781c3fccb770617fdcdc634e995b651d30b19d7e28e434d0ef9e49",
+    "bytes": 400
+  },
+  {
+    "path": "android/app/src/main/res/xml/file_paths.xml",
+    "sha256": "cbd2e82ac26086503deb30448bd9143211a664d384d83ecb448f117fc05fbd45",
+    "bytes": 120
+  },
+  {
+    "path": "android/build.gradle.kts",
+    "sha256": "839f7e0de27d63af5785063c1a62fa16b8bc4d6758290eac8b5b473e7f2229f2",
+    "bytes": 142
+  },
+  {
+    "path": "android/gradle.properties",
+    "sha256": "fa078c27c9e4bde28a029d673875b028884505efa436b68cf60e1ac0be5b679b",
+    "bytes": 103
+  },
+  {
+    "path": "android/settings.gradle.kts",
+    "sha256": "523bbe4359175190fee7c15be43a90ef99d52c97e8e0508cd154de4a233e60bd",
+    "bytes": 275
+  },
+  {
+    "path": "android/update-public.der",
+    "sha256": "0b5109cd861cd9b8c04e6788586b845b614bd0bbb8e4d71c593897652b75244c",
+    "bytes": 422
+  },
+  {
+    "path": "backend/analysis.py",
+    "sha256": "ddd35170bd830b890b157c189a5b88b41a6306ee95cdd6ab1f8cd77c898176bc",
+    "bytes": 17760
+  },
+  {
+    "path": "backend/book_worker.py",
+    "sha256": "54ccd823016f38ab81b7affac9b418b4a2fd8841760b76b94704602f656b3245",
+    "bytes": 8715
+  },
+  {
+    "path": "backend/layer_publish.py",
+    "sha256": "70a8e96fa4d3be320137420ac74978c1ae1df3fa5a58d3658a8a5258f0765a44",
+    "bytes": 2340
+  },
+  {
+    "path": "backend/library.py",
+    "sha256": "59fe611ebc9cb42cefbba256aabd7432a7b7d20723188ac4576a8d4770c67726",
+    "bytes": 24399
+  },
+  {
+    "path": "backend/novel_source.py",
+    "sha256": "eefba4a050b8f8fc493033e12122a76dbc3898afa4bdb38799c7ca60998344f5",
+    "bytes": 4721
+  },
+  {
+    "path": "backend/service.py",
+    "sha256": "f83e1a340fbf3d9f3ad244339c30d74e2383ffed5ed4fa16ae555985873ff3cd",
+    "bytes": 13344
+  },
+  {
+    "path": "contracts/scene.schema.json",
+    "sha256": "61e3ebc0a7a5d7f04146f306221b582c69ee19fd3c722a788957145347d2a9ed",
+    "bytes": 16671
+  },
+  {
+    "path": "data/corpus/romance-001.json",
+    "sha256": "db70669a2c48a45fc3ac3b28ee1dfa5013037c52bf7855d1726489dccf08df4b",
+    "bytes": 30214
+  },
+  {
+    "path": "data/corpus/romance-002.json",
+    "sha256": "0c26ddc9b1dd77c37e6abc9953b30de735b8274052e9dcc7b7564d824621aebf",
+    "bytes": 36878
+  },
+  {
+    "path": "data/corpus/romance-003.json",
+    "sha256": "6b479fe2e8fe0dad925f1e885cd9ae8f1f019172ddf89534dcf4a6665a6fd5ee",
+    "bytes": 31712
+  },
+  {
+    "path": "data/corpus/romance-004.json",
+    "sha256": "5cbef43f362c6d1a7e96efed891e73cd505895a0e5a737a29d478af4f9e85fef",
+    "bytes": 27020
+  },
+  {
+    "path": "data/corpus/romance-005.json",
+    "sha256": "cea39b52c70f9c61cebc4725255e8754f74ec0fe9d8fc8f608a072cea30fe263",
+    "bytes": 36458
+  },
+  {
+    "path": "data/corpus/romance-006.json",
+    "sha256": "2e989c330b4a1fa3e7dea876c94926bb458dfa4ca6b88782a2f68880a6fa0e20",
+    "bytes": 26780
+  },
+  {
+    "path": "data/corpus/romance-007.json",
+    "sha256": "473967cc835dd959e6214ced0e51754010e236bf5fdbbad3e9f2729c6900a085",
+    "bytes": 29546
+  },
+  {
+    "path": "data/corpus/romance-008.json",
+    "sha256": "6eb39dcc9df5226d3f49dea58b738487b39b1c69482fe6c6d5a3c98d8afd02af",
+    "bytes": 27232
+  },
+  {
+    "path": "data/corpus/romance-009.json",
+    "sha256": "f7cd1e8033d194f2636a7017f215314890156fec6cef3ee0173255057fea3da8",
+    "bytes": 34022
+  },
+  {
+    "path": "data/corpus/romance-010.json",
+    "sha256": "288ca23c0b5e47761ca8aab5069cb3d9d04b1b10ef9e8bbe27b2f077b99a80fb",
+    "bytes": 27195
+  },
+  {
+    "path": "data/corpus/romance-011.json",
+    "sha256": "a8ff684601245b7f2a8a7ec667bb2a21f700844ed297f2391fd5ff949fe8d1a4",
+    "bytes": 37061
+  },
+  {
+    "path": "data/corpus/romance-012.json",
+    "sha256": "bbd3d46574b9029b4d1727bda35ecf42c7b388903d1bbe337897af4bb79aa63b",
+    "bytes": 29723
+  },
+  {
+    "path": "data/corpus/romance-013.json",
+    "sha256": "2683347c6e9967d8a914b8f5d8bf9eddafb51a722324ad55c3957fc35f5d4e66",
+    "bytes": 38501
+  },
+  {
+    "path": "data/corpus/romance-014.json",
+    "sha256": "4f8e25aaf0152bca29e7543ca0b25137e355ffe8dee791cc51639fc94c1169ff",
+    "bytes": 41083
+  },
+  {
+    "path": "data/corpus/romance-015.json",
+    "sha256": "dfb4b32bf252602d415faafdbb8ba76f51e5f418f50d6b606b829e4675198eb3",
+    "bytes": 46793
+  },
+  {
+    "path": "data/corpus/romance-016.json",
+    "sha256": "774d0a951cf6a3e14eb46e72e517191d4b28fc6a1d82a0373bd178a9d51c23bb",
+    "bytes": 43551
+  },
+  {
+    "path": "data/corpus/romance-017.json",
+    "sha256": "4596cc33d6b9293e79f80bef3e7b35ac61457e90e31866681d2076f4abe64d13",
+    "bytes": 28425
+  },
+  {
+    "path": "data/corpus/romance-018.json",
+    "sha256": "aa3910082322f4b11795d5bbf7faed2e20a07d95d070d487669e9c6cb8441f9f",
+    "bytes": 25015
+  },
+  {
+    "path": "data/corpus/romance-019.json",
+    "sha256": "589d6b2df0d6331cc28a4c307dc632a1a761b0c5cf98b63e8593e7763e5702f5",
+    "bytes": 42105
+  },
+  {
+    "path": "data/corpus/romance-020.json",
+    "sha256": "2e43f4f2cdbadcfc0b0d280dc26f7998bb62015ccb60164239bb763774af7f51",
+    "bytes": 29145
+  },
+  {
+    "path": "data/corpus/romance-021.json",
+    "sha256": "3292e58a6e9076d52fbd37af340eccf0f6080c26b16699fceb7fd9dc979e17ae",
+    "bytes": 30945
+  },
+  {
+    "path": "data/corpus/romance-022.json",
+    "sha256": "978d7bb04369b87f87302130620efef6c6ed4033bbb61faea5c0ccd4d4e45e72",
+    "bytes": 35205
+  },
+  {
+    "path": "data/corpus/romance-023.json",
+    "sha256": "5639dbe2dbd1353b637ee00b6511f5e1a41865352474be1ac1eda77ee8888274",
+    "bytes": 36485
+  },
+  {
+    "path": "data/corpus/romance-024.json",
+    "sha256": "21b049e679314368168490787b10535fd8206214131aa98aded20db99d952797",
+    "bytes": 18433
+  },
+  {
+    "path": "data/corpus/romance-025.json",
+    "sha256": "6fd22741afaf93b90003a9e0ed419896e47f90bbf9e8b93aff1e79ff385d1942",
+    "bytes": 32517
+  },
+  {
+    "path": "data/corpus/romance-026.json",
+    "sha256": "a8be470f44fd37b4bfc27544e2b08f528ad7a572d5b810334cc3ab82f18815c2",
+    "bytes": 26873
+  },
+  {
+    "path": "data/corpus/romance-027.json",
+    "sha256": "11d0171f600fbbcc474945921a5d2a6603c1db961aea3a044d6e3a8a075cbf2b",
+    "bytes": 32386
+  },
+  {
+    "path": "data/corpus/romance-028.json",
+    "sha256": "82419f675752112c2cec278b6c97fd097ec13125d59cd2808a0e6a4ff3ccb061",
+    "bytes": 38943
+  },
+  {
+    "path": "data/corpus/romance-029.json",
+    "sha256": "5b4145902d1280f1220e915a87fe71e552ef2930561ea2363281ce77a12ad05e",
+    "bytes": 32715
+  },
+  {
+    "path": "data/corpus/romance-030.json",
+    "sha256": "97566462012fac636f56fdee0918c6be1bb861c6f38a59da661f2229dfb0e212",
+    "bytes": 37343
+  },
+  {
+    "path": "data/corpus/romance-031.json",
+    "sha256": "4ea1a95a51719807ba0de7b6b29098b1f7073ff9b4a47246d881cea97b98cf87",
+    "bytes": 31251
+  },
+  {
+    "path": "data/corpus/romance-032.json",
+    "sha256": "0f4ba2a2d7a639c27c02d08607f63eb65289dad07ea7876e5c0823fb3ae139e5",
+    "bytes": 35943
+  },
+  {
+    "path": "data/corpus/romance-033.json",
+    "sha256": "9eb50e0ce2abcd97c7f72307428e6117ea8535e11075d1d9e87bc5c17e5426e3",
+    "bytes": 33715
+  },
+  {
+    "path": "data/corpus/romance-034.json",
+    "sha256": "444fa5c0c6d3e4f84bd33623952d4cec8c877c20f8be1e1b0f2d1d65da62dcc5",
+    "bytes": 28555
+  },
+  {
+    "path": "data/corpus/romance-035.json",
+    "sha256": "0b7006fcef3a1ac14de1f172441b4a9a714432de48c0a0504db3ced7f1c5f802",
+    "bytes": 25179
+  },
+  {
+    "path": "data/corpus/romance-036.json",
+    "sha256": "e2032bebc8266d9f9bd07056b700d6d02e6f86e728fc2233bf2d821a0bce3694",
+    "bytes": 27475
+  },
+  {
+    "path": "data/corpus/romance-037.json",
+    "sha256": "29487fa1db41d4561e2ba8df54a167ba3c95b18e2638792d13bf98fa5f6ca8f9",
+    "bytes": 30967
+  },
+  {
+    "path": "data/corpus/romance-038.json",
+    "sha256": "da3c941a24244c3170d862b9f1da5e0d518921a1307d891fca0db6c9baedd072",
+    "bytes": 32595
+  },
+  {
+    "path": "data/corpus/romance-039.json",
+    "sha256": "95dd88c27298ff4bede29144c8c1e4b283dd27d0fc4ac43e934709e396d5cc4a",
+    "bytes": 31219
+  },
+  {
+    "path": "data/corpus/romance-040.json",
+    "sha256": "c5a83e599d17084bfe2491a4741f53eda2e52485d76e5b80d76efcca7f62a584",
+    "bytes": 29649
+  },
+  {
+    "path": "data/corpus/romance-041.json",
+    "sha256": "0ca179662b8e3948e201ad8fca3e96531efd8cf524acb1b35dcf4e17866323bf",
+    "bytes": 39591
+  },
+  {
+    "path": "data/corpus/romance-042.json",
+    "sha256": "3ce1b47f8ec3dc8d395fed40905c8fbb7adb2a3a59111dc3058a0063c63d5275",
+    "bytes": 24745
+  },
+  {
+    "path": "data/corpus/romance-043.json",
+    "sha256": "5406f11d340a6d18435f220ce768b74fd9c2312a44095d1a05047558da575c67",
+    "bytes": 34819
+  },
+  {
+    "path": "data/corpus/romance-044.json",
+    "sha256": "60f6c14a69b1211c2060881b8a8120eb3ecb2fe8c6cbe2a8ada370c9b65d11e3",
+    "bytes": 30563
+  },
+  {
+    "path": "data/corpus/romance-045.json",
+    "sha256": "f5e25f9843eb6df70ad4c0ae817ae15decb559908ec0b7d3cd641d1dcd3e6b5e",
+    "bytes": 35977
+  },
+  {
+    "path": "data/corpus/romance-046.json",
+    "sha256": "4f4170489d5c2e03dee3303f6e89866c0b951a65467df81320721b6e606a4229",
+    "bytes": 31438
+  },
+  {
+    "path": "data/corpus/romance-047.json",
+    "sha256": "4344d7529dfab30d1a0feac42fcbf8fc33bd37fc61a312c1fa667af807ba9035",
+    "bytes": 26532
+  },
+  {
+    "path": "data/corpus/romance-048.json",
+    "sha256": "04438aebe9398b86f24e784b8d70af79975693f40b0f5b5099fd841b1ace1e75",
+    "bytes": 22577
+  },
+  {
+    "path": "data/corpus/romance-049.json",
+    "sha256": "adcb76c4b4ba56d090edf6e7f24d34161ae9af1be8152adc0cc6d36562779430",
+    "bytes": 34418
+  },
+  {
+    "path": "data/corpus/romance-050.json",
+    "sha256": "fed32ebcb0ab2ca0be08bff984023ccb82d903a2b4101f37f5f73ac3bef7d853",
+    "bytes": 25721
+  },
+  {
+    "path": "data/corpus/romance-051.json",
+    "sha256": "6e164da04628ca6426730664b59d90aa408d3093656586a85f9593fd34c5332d",
+    "bytes": 29255
+  },
+  {
+    "path": "data/corpus/romance-052.json",
+    "sha256": "b8045c409fa1f7582abadd5d45a27571a3e0e58e1b8b47cfbef7fb24f4aad776",
+    "bytes": 29729
+  },
+  {
+    "path": "data/corpus/romance-053.json",
+    "sha256": "5a9dfb5f3c0a0d5073297bb9d9107dc0904e4781cc5852a5eadade7c48446e66",
+    "bytes": 30771
+  },
+  {
+    "path": "data/corpus/romance-054.json",
+    "sha256": "b1a2ff5e0ea3c795e1297d1376fd684cb08cd75ee4f610c1414bba6c7af71ef5",
+    "bytes": 33707
+  },
+  {
+    "path": "data/corpus/romance-055.json",
+    "sha256": "8f96571e1886904db2b54638abaf7d4dd66bd61f312ba28f7e400ce3b22b189f",
+    "bytes": 27927
+  },
+  {
+    "path": "data/corpus/romance-056.json",
+    "sha256": "83e9aaf8fa3bae5c7eb53e310d07c335e29feaa3262c969875138d7571024ae2",
+    "bytes": 30937
+  },
+  {
+    "path": "data/corpus/romance-057.json",
+    "sha256": "22759684aa3c9a7b17ee8a541714d507ff5f15ceb188de4112c5644512f7b558",
+    "bytes": 36191
+  },
+  {
+    "path": "data/corpus/romance-058.json",
+    "sha256": "7644d92251e42f5ada630c6506fbc69e7d7b1297df68b9d338bf1901fa1ff582",
+    "bytes": 33603
+  },
+  {
+    "path": "data/corpus/romance-059.json",
+    "sha256": "7af3e7c8ba2150597aa3f4dedbfa4c438644c3d434de3b2823400496ede834e2",
+    "bytes": 34439
+  },
+  {
+    "path": "data/corpus/romance-060.json",
+    "sha256": "69906cb6f1c88de6075489760897e2a22ff2465c1c175aaaa2418a3888df68b8",
+    "bytes": 46701
+  },
+  {
+    "path": "data/corpus/romance-061.json",
+    "sha256": "4b4f67d7b3617a0788e0f38cf6d5136bd3df08c9356c0d33a2f058a14d7de1a2",
+    "bytes": 31369
+  },
+  {
+    "path": "data/corpus/romance-062.json",
+    "sha256": "fbafbc0c6d4c14f79dab980099bcfacf15c7d9c4068dcc950082d343995554ed",
+    "bytes": 35367
+  },
+  {
+    "path": "data/corpus/romance-063.json",
+    "sha256": "1ba4d4abb078561194b0aaa7f539a071cacfbb2ecbe9bcbbace86df1de701e78",
+    "bytes": 34545
+  },
+  {
+    "path": "data/corpus/romance-064.json",
+    "sha256": "07353aa1929e16db734893c3802a06d1a159852c14292ceee8bfd6fabeb754ae",
+    "bytes": 33887
+  },
+  {
+    "path": "data/corpus/romance-065.json",
+    "sha256": "7b6be02eb2420f281910fc2b5649023fbc4f8595d0bc1b1d961dc70e55202f0c",
+    "bytes": 38726
+  },
+  {
+    "path": "data/corpus/romance-066.json",
+    "sha256": "f9ddd0a6ea694e3d2eaa7b67dd641b540107d53e54d1bc5790d8eecf29df53ac",
+    "bytes": 33531
+  },
+  {
+    "path": "data/corpus/romance-067.json",
+    "sha256": "5d0b1a831eca7ccc15835ea7a0cd299bc912d6d9b4bde165f8d1c941ccfba34b",
+    "bytes": 35029
+  },
+  {
+    "path": "data/corpus/romance-068.json",
+    "sha256": "b4b21039c4d0e436fa9017b416cf2abef4d334a5fa29b8ce9e627790cdf7b08a",
+    "bytes": 32537
+  },
+  {
+    "path": "data/corpus/romance-069.json",
+    "sha256": "58972533f37ae8f21a55bcc8751e92866f4cfde4fc366b6c5bc8199a6ede1dcc",
+    "bytes": 31863
+  },
+  {
+    "path": "data/corpus/romance-070.json",
+    "sha256": "1a28224c93da24977f0c910dc3db45937dfdbd320cc04605acec9a0a07febb5d",
+    "bytes": 33227
+  },
+  {
+    "path": "data/corpus/romance-071.json",
+    "sha256": "e989748c99c0542ad9d1bfa65c0e4fd39097a4b4ee8c27ff6c47b356bfe069e2",
+    "bytes": 35337
+  },
+  {
+    "path": "data/corpus/romance-072.json",
+    "sha256": "c4ad5eaad27e2282b0257976bbc89780fa2f5a55864e10f3db4e85d90cbc6aec",
+    "bytes": 27255
+  },
+  {
+    "path": "data/corpus/romance-073.json",
+    "sha256": "6edd6c0292492a6771f2d6b0d288cd2fafdcc4fc68e4864a2cd6dc2187a2a4c4",
+    "bytes": 32062
+  },
+  {
+    "path": "data/corpus/romance-074.json",
+    "sha256": "dedb57f702c166a5ddc5d805015dc2b90d4d630fe81b7fbb4bd48532aa1e45e0",
+    "bytes": 28547
+  },
+  {
+    "path": "data/corpus/romance-075.json",
+    "sha256": "0ff1f40f45c89191d0ad033274ba3b12e14cc00892db6de5c620a70e083dd6b1",
+    "bytes": 25897
+  },
+  {
+    "path": "data/corpus/romance-076.json",
+    "sha256": "4c01ba5df466be5341914338457f6705080343eff3f48444cc0971e3dff3090e",
+    "bytes": 30433
+  },
+  {
+    "path": "data/corpus/romance-077.json",
+    "sha256": "e3ac72a0e5a3e276e7567d08be54e6b41c285bd268535e73cb8e07b5f2820b29",
+    "bytes": 28530
+  },
+  {
+    "path": "data/corpus/romance-078.json",
+    "sha256": "eb9e6ff52936c2e11be0543bd1280ac92ed99324e8684ae65cd604c61a3fe4eb",
+    "bytes": 26177
+  },
+  {
+    "path": "data/corpus/romance-079.json",
+    "sha256": "56051ebb3bc05df2c0e4fe411f4fcd3cfadbe990e40985d629e795c7bbd484ea",
+    "bytes": 25361
+  },
+  {
+    "path": "data/corpus/romance-080.json",
+    "sha256": "517ade795268e9434a25116ba1de76f03c5dc3d7b33f10ed4f460adeb0aae48b",
+    "bytes": 28235
+  },
+  {
+    "path": "data/corpus/romance-081.json",
+    "sha256": "7233d3c7233da05566ed9bbb369e24c6eca34f5465cac9a36d5c68889f8bd3f9",
+    "bytes": 25676
+  },
+  {
+    "path": "data/corpus/romance-082.json",
+    "sha256": "f4044641de2f1f4cba02a79a3886993988c598ad353f19099aa7b93423b10cb3",
+    "bytes": 28039
+  },
+  {
+    "path": "data/corpus/romance-083.json",
+    "sha256": "79415a31d534fd525d105b52923b26454c67a09d7eea7b4bca0e478ff34521c4",
+    "bytes": 36649
+  },
+  {
+    "path": "data/corpus/romance-084.json",
+    "sha256": "c2be1be8f063a4d0557cab8a4a90bd0200cfaf1590653690da0d68921f00a904",
+    "bytes": 31613
+  },
+  {
+    "path": "data/corpus/romance-085.json",
+    "sha256": "f50531291aa908f66d3adbd6df6cb881355f638abf24b3ec294df650ce207d88",
+    "bytes": 34255
+  },
+  {
+    "path": "data/corpus/romance-086.json",
+    "sha256": "6d0bc0dada5f5ed57f1048c1b0a30b78addad908ad422fd65d5042bf8eec201e",
+    "bytes": 33226
+  },
+  {
+    "path": "data/corpus/romance-087.json",
+    "sha256": "05fb2a9126b001ee7d9fd445dfa13e6b99f39d4ed74d7fa080c60d9b249073f3",
+    "bytes": 36204
+  },
+  {
+    "path": "data/corpus/romance-088.json",
+    "sha256": "75cc50fb635d3329305dcd8ddfeb4b454b3992ccd2e2b875dc53f6511b538cdd",
+    "bytes": 31481
+  },
+  {
+    "path": "data/corpus/romance-089.json",
+    "sha256": "b8809859ef5be93c375044b35e151bc02822d2086a755092546c23d591be39ec",
+    "bytes": 34867
+  },
+  {
+    "path": "data/corpus/romance-090.json",
+    "sha256": "46dfc49ef563d9de52f0c30437f638e5aa170d748d6d8acec89385ceb962bdf1",
+    "bytes": 43052
+  },
+  {
+    "path": "data/corpus/romance-091.json",
+    "sha256": "30361b33482083f6dd2c6a042e8165bbd54b8744c3e735886a862788bae7f979",
+    "bytes": 35231
+  },
+  {
+    "path": "data/corpus/romance-092.json",
+    "sha256": "9b9e23b1b73353fe83636fc43ea9f9129714e3fafa42fe24806d36fd381121ea",
+    "bytes": 31502
+  },
+  {
+    "path": "data/corpus/romance-093.json",
+    "sha256": "7a5ce6290e37e716128876a97cd5fe22453dc083977ced1df1ae885ee30fe2b3",
+    "bytes": 34250
+  },
+  {
+    "path": "data/corpus/romance-094.json",
+    "sha256": "d20043ff26a298fbfa6214808dfbd74d8d02300667324a2a9fd6e4f0a892598d",
+    "bytes": 34517
+  },
+  {
+    "path": "data/corpus/romance-095.json",
+    "sha256": "8345fcaf7beaa1cfdbfea6b7ecadc17c50e825b0500a4a5113ef76f6ddc059d2",
+    "bytes": 37696
+  },
+  {
+    "path": "data/corpus/romance-096.json",
+    "sha256": "2574fa70235a202e5149a2ba98ce5374955901f84921b3341473cd8f5e87ae64",
+    "bytes": 29385
+  },
+  {
+    "path": "data/corpus/romance-097.json",
+    "sha256": "ab3eb6704fd51bb7f55f3dc7472477d57e2a41d18a326273030783102aa1979c",
+    "bytes": 30679
+  },
+  {
+    "path": "data/corpus/romance-098.json",
+    "sha256": "0dceffc101af0b28045046e44d06a444d339c61ba486dfae904777ed407ca5b6",
+    "bytes": 32588
+  },
+  {
+    "path": "data/corpus/romance-099.json",
+    "sha256": "895527d00617c915d97cb919d21deaa5886820a5ddb4ea83bfce2bc7b27aeed4",
+    "bytes": 36095
+  },
+  {
+    "path": "data/corpus/romance-100.json",
+    "sha256": "c9a9ac18c0c2ba7119ff38da14a9a89ec370c2309781e6bdfa99db47b9d43b0a",
+    "bytes": 33520
+  },
+  {
+    "path": "data/corpus/romance-101.json",
+    "sha256": "8c36de7fe4558dafe86dc36ca113bcc8da59e258d1893e05e7653d159bdb4e69",
+    "bytes": 36231
+  },
+  {
+    "path": "data/corpus/romance-102.json",
+    "sha256": "f435c75c9417ecb3b0382f2250417393856309f136d959224b34f037230d24e8",
+    "bytes": 41518
+  },
+  {
+    "path": "data/corpus/romance-103.json",
+    "sha256": "aa092c6b09b7040723816949abc54eecea18facb7a21d8ddf87ef8eb53aa3387",
+    "bytes": 36559
+  },
+  {
+    "path": "data/corpus/romance-104.json",
+    "sha256": "043590ce6e4c435db624e3b360771c41e3c9ab00014a73a34613097b4380e1fe",
+    "bytes": 24900
+  },
+  {
+    "path": "data/corpus/romance-105.json",
+    "sha256": "d9e5a2946598d3260821add0c7e8f27513a99411188990d154a77e7b71104da8",
+    "bytes": 34572
+  },
+  {
+    "path": "data/corpus/romance-106.json",
+    "sha256": "accee54fc23ddee8eed87965144193b511377ab290c3497bc890e40963d8bfe8",
+    "bytes": 32366
+  },
+  {
+    "path": "data/corpus/romance-107.json",
+    "sha256": "8db9b561e1dcdaef589c6e70dea0504d4ae796ef35197bc7449b7be930c64f31",
+    "bytes": 34780
+  },
+  {
+    "path": "data/corpus/romance-108.json",
+    "sha256": "e77d9c1a9c6dc9a9a05fc78a9e7652e770f9f8e1f78cc483eb0db4577a737a6a",
+    "bytes": 25704
+  },
+  {
+    "path": "data/corpus/romance-109.json",
+    "sha256": "e7b03ec09317521ed35f7b570ba7b2872d63911c44eac5ab4297891a126ff5e5",
+    "bytes": 28044
+  },
+  {
+    "path": "data/corpus/romance-110.json",
+    "sha256": "e8e23c570a19e495026d52cfed0a3b11bcccfc9d280c8cbcaf89b5a58c112185",
+    "bytes": 29028
+  },
+  {
+    "path": "data/corpus/romance-111.json",
+    "sha256": "9b8f0d2f2e717ff8001950576eee4ba6670a6fde906215670e4bdc46b4f481a1",
+    "bytes": 24896
+  },
+  {
+    "path": "data/corpus/romance-112.json",
+    "sha256": "fba2cae9ece9f90a9e4e2ab31419b086eb5baee9e09bb6c8820a62791997536f",
+    "bytes": 25800
+  },
+  {
+    "path": "data/corpus/romance-113.json",
+    "sha256": "1055bc3aaff4f3794880830894a41f640944af2cf03ef67ed9aa8db9fa02016d",
+    "bytes": 28800
+  },
+  {
+    "path": "data/corpus/romance-114.json",
+    "sha256": "4635fe4f3386cb1d42acbad130ef8489ae79c019e6c28f6614767837fea137e6",
+    "bytes": 25204
+  },
+  {
+    "path": "data/corpus/romance-115.json",
+    "sha256": "fccd1362ae41b07949c6a69c927feaec1e9d5807465e3eb6a3c1ddca9419d9d2",
+    "bytes": 26298
+  },
+  {
+    "path": "data/corpus/romance-116.json",
+    "sha256": "9ea2f61d2866f54a34c7ac847fcb5bad3cf9e8ca92501b95f619c17e190aedb7",
+    "bytes": 27542
+  },
+  {
+    "path": "data/corpus/romance-117.json",
+    "sha256": "a99985598c1f576d32066eeab9c65ad03b53647987cd48a491dd06d08015226c",
+    "bytes": 29421
+  },
+  {
+    "path": "data/corpus/romance-118.json",
+    "sha256": "15d379fc7b47e5f0bdfa61e0366bd8733d38b8dee7778c4242c820d4f28a9c7b",
+    "bytes": 23324
+  },
+  {
+    "path": "data/corpus/romance-119.json",
+    "sha256": "175e587b6681c61d9fe14e84cb6343de040c9cdf54af652f9df42d129ae37a99",
+    "bytes": 31396
+  },
+  {
+    "path": "data/corpus/romance-120.json",
+    "sha256": "329e3239509a34e28e303c0bfc89da9d2e4eabb2cd7bdf6abe4ef182de49d536",
+    "bytes": 42214
+  },
+  {
+    "path": "data/corpus/sgz-01.json",
+    "sha256": "6a8b6381e635df3dc6a77beba943e2b52b0e92cc42a38a1f929f2d75ebb52d7b",
+    "bytes": 105117
+  },
+  {
+    "path": "data/corpus/sgz-02.json",
+    "sha256": "2b636b5f35545eae676a3fa447416cc7f5d65aea286821cadd74638f1a3cb05d",
+    "bytes": 70126
+  },
+  {
+    "path": "data/corpus/sgz-03.json",
+    "sha256": "8115a3ded262af29bc22c59edd871ee4f88adab71f5e6b5ac9875f7ed065ab8b",
+    "bytes": 49476
+  },
+  {
+    "path": "data/corpus/sgz-04.json",
+    "sha256": "bba61e4c4953d03b4d79c77349ad9f8c7488661c3e177ae5acebf541db7f4aa0",
+    "bytes": 73986
+  },
+  {
+    "path": "data/corpus/sgz-05.json",
+    "sha256": "4712d2c251e45a67a256efc83801617b46b0dab77c45326cb22e4d91808de482",
+    "bytes": 27855
+  },
+  {
+    "path": "data/corpus/sgz-06.json",
+    "sha256": "21e2430eea21f28367e56745eef41506ac90ac73d572a8d34d43228c6cdf1377",
+    "bytes": 95068
+  },
+  {
+    "path": "data/corpus/sgz-07.json",
+    "sha256": "08b3719afc436322ca681f4cddf80f90a0d49cae6e3267a5d65a88bb16567cc8",
+    "bytes": 37607
+  },
+  {
+    "path": "data/corpus/sgz-08.json",
+    "sha256": "1c9912bb5f488e04011aa75956ea6cd84aa3658005c19c8be1a2dd8a51d760f0",
+    "bytes": 60361
+  },
+  {
+    "path": "data/corpus/sgz-09.json",
+    "sha256": "2af13c00293b4f84f5a1bc1e559db32e134930a0b3cf93ce66e5b89a0ea2dc12",
+    "bytes": 76454
+  },
+  {
+    "path": "data/corpus/sgz-10.json",
+    "sha256": "2648e582c49c59562ce43144dae220b77f37af075fce2706e80c93fe4b0cf4ba",
+    "bytes": 52388
+  },
+  {
+    "path": "data/corpus/sgz-11.json",
+    "sha256": "3a7917d3f554305deef7d6f0c921c748aae86286b7598d0025415b0795ff7d34",
+    "bytes": 68222
+  },
+  {
+    "path": "data/corpus/sgz-12.json",
+    "sha256": "24feffd1d334b807e1b6be07364789672dbbd79d36c6881b5b7ffb355c691b64",
+    "bytes": 44903
+  },
+  {
+    "path": "data/corpus/sgz-13.json",
+    "sha256": "ca87a654a72fc61991401b26be97c039b909bb02d62f3d0f079469037cb5edee",
+    "bytes": 64130
+  },
+  {
+    "path": "data/corpus/sgz-14.json",
+    "sha256": "611d182e07d30ee8266c928ed318d325b44ffea1b9efd67f6f437d87c59a8d2f",
+    "bytes": 73754
+  },
+  {
+    "path": "data/corpus/sgz-15.json",
+    "sha256": "d6c781b4c76ebe0974336863e826c4f300dbf21bbeaf09a0b54cd70f0ed4b994",
+    "bytes": 43530
+  },
+  {
+    "path": "data/corpus/sgz-16.json",
+    "sha256": "9dad7768a2b3192fdcc72f46e45de392b81bfadb476ddf508c83f88317056351",
+    "bytes": 49456
+  },
+  {
+    "path": "data/corpus/sgz-17.json",
+    "sha256": "ccbb9f6661d0da371ed60ec5c5d17e1cf41742c2cfbd31d4fc1c70cc60b85ceb",
+    "bytes": 26000
+  },
+  {
+    "path": "data/corpus/sgz-18.json",
+    "sha256": "f801fb4aa5a0754c07e67a65fac0113cf8abbbeae2fdf02b1c5a69865ebf0962",
+    "bytes": 81130
+  },
+  {
+    "path": "data/corpus/sgz-19.json",
+    "sha256": "18e55c64e53ecdf3549c8c440db331d262267259e246ce36849eed22d945cf53",
+    "bytes": 87829
+  },
+  {
+    "path": "data/corpus/sgz-20.json",
+    "sha256": "fa1c13b139b2a3f5ef3cff0c6a0574fa6f5a628b05174444ba47c020b01d2b4c",
+    "bytes": 70804
+  },
+  {
+    "path": "data/corpus/sgz-21.json",
+    "sha256": "01097385990774fea93ab592c976ca23a652b7a88a2d99021ea8b176ba151638",
+    "bytes": 67053
+  },
+  {
+    "path": "data/corpus/sgz-22.json",
+    "sha256": "d69cf77e52cd342f4f675ca1d51eaa13c605ff7b6c212fe90c59ee2f3b3591c4",
+    "bytes": 42516
+  },
+  {
+    "path": "data/corpus/sgz-23.json",
+    "sha256": "12c0b255c95e3a1f5946bbb1f6615b9f8a220cb1ac1b73590110e125925d757d",
+    "bytes": 85822
+  },
+  {
+    "path": "data/corpus/sgz-24.json",
+    "sha256": "0bd6cd8a0acc09efefc53b5d94d81601cd44793e483c6a8e3b993168736a2b93",
+    "bytes": 65192
+  },
+  {
+    "path": "data/corpus/sgz-25.json",
+    "sha256": "f9c2c99e04691d6f78024a8488a0f403ed5400de2509c9f4252eb9dab62feb4e",
+    "bytes": 88162
+  },
+  {
+    "path": "data/corpus/sgz-26.json",
+    "sha256": "6c9aa9965ff2c7f734ef38fbbb4cf4616271ab6ac385bc65728ac6963f51d5b1",
+    "bytes": 29840
+  },
+  {
+    "path": "data/corpus/sgz-27.json",
+    "sha256": "d2423239631788bb281862ed2f156e626ecaffa53e7fc87274caf2e347d80c15",
+    "bytes": 63930
+  },
+  {
+    "path": "data/corpus/sgz-28.json",
+    "sha256": "6c4e98baa9543bbda949fd7f770687749420551b2edeb759beab833df6681aff",
+    "bytes": 158050
+  },
+  {
+    "path": "data/corpus/sgz-29.json",
+    "sha256": "5621b912c0649d69d7596100bcc5bcbf76496c2e0f642d8fbd93f76be676f49f",
+    "bytes": 128923
+  },
+  {
+    "path": "data/corpus/sgz-30.json",
+    "sha256": "1a53ad384c60f063a9a0f7e45ddc8d4036873d80cb3ed60d97444859c7d845fe",
+    "bytes": 126618
+  },
+  {
+    "path": "data/corpus/sgz-31.json",
+    "sha256": "f96a3b5a19e3bc8ccd600874ac63df376ac0886cae74ee83b83a01b49678bd92",
+    "bytes": 23116
+  },
+  {
+    "path": "data/corpus/sgz-32.json",
+    "sha256": "a1dd888708c3ec9ad13cc58f2756620abb4cd367c7e701836c78074734bc3aa8",
+    "bytes": 79098
+  },
+  {
+    "path": "data/corpus/sgz-33.json",
+    "sha256": "234e028629ae5bfcea40cca593d5a172a28739d19fc14a147aee9a324203d7da",
+    "bytes": 37738
+  },
+  {
+    "path": "data/corpus/sgz-34.json",
+    "sha256": "86f3574504a306da652250897bc5627c0fecee2aaae2a787a141856edcb4c331",
+    "bytes": 13832
+  },
+  {
+    "path": "data/corpus/sgz-35.json",
+    "sha256": "3d0826daa34d7b15c642dec38982a10da7afdba1fe2253d3f2bfb52e40d2f21a",
+    "bytes": 106222
+  },
+  {
+    "path": "data/corpus/sgz-36.json",
+    "sha256": "264f96260c52f6f29eb1e968e14c4dd505a4bbab01d8c48d5ceeb40608c36ba6",
+    "bytes": 48044
+  },
+  {
+    "path": "data/corpus/sgz-37.json",
+    "sha256": "3305ded71cd5a424a2d49299aab893e7ab207effd811984509ac6b934d0388a4",
+    "bytes": 35847
+  },
+  {
+    "path": "data/corpus/sgz-38.json",
+    "sha256": "6aafc53327329878c2d89ab7599c54c4ab5f67bd64feec77ed0a6c335aabc17e",
+    "bytes": 51617
+  },
+  {
+    "path": "data/corpus/sgz-39.json",
+    "sha256": "85cf943490850fe7d36c5402e5016e644dce7ccbe5cb661eff4dd865ab98d2bb",
+    "bytes": 37220
+  },
+  {
+    "path": "data/corpus/sgz-40.json",
+    "sha256": "7e75a346775f7c39253e6a2d87a4abb4981719230c23141449264210b90c709c",
+    "bytes": 59910
+  },
+  {
+    "path": "data/corpus/sgz-41.json",
+    "sha256": "da2505868745ae541dc63258def0fdcab6287953cba45a0d8af70d24c043f1e3",
+    "bytes": 39437
+  },
+  {
+    "path": "data/corpus/sgz-42.json",
+    "sha256": "160ddcb63f5f595271e1596ae760e35abb9324ab9adc4e3c55c60c4c1bbdc4f2",
+    "bytes": 85874
+  },
+  {
+    "path": "data/corpus/sgz-43.json",
+    "sha256": "daa0064f02becf420d98f7a54c450bdbfb63eeb30efb72247a9c6e03a232e68e",
+    "bytes": 42492
+  },
+  {
+    "path": "data/corpus/sgz-44.json",
+    "sha256": "f0d5de63e8a87bb637eccee4dc879bf9bbfca794970394e5b0e745ebb1cc4112",
+    "bytes": 46620
+  },
+  {
+    "path": "data/corpus/sgz-45.json",
+    "sha256": "e447a060cd52b897c00e4ea8ba5e618a876a263573a7d9fbc4c218f8607e7605",
+    "bytes": 76917
+  },
+  {
+    "path": "data/corpus/sgz-46.json",
+    "sha256": "198393d86160bb91557e4186f0914e554aa2ef1e82eda4c118b08bd397257852",
+    "bytes": 132223
+  },
+  {
+    "path": "data/corpus/sgz-47.json",
+    "sha256": "c177f47e06563da088281ca92b68d10fdb02d8a6c8a477bf741adbd422b2c039",
+    "bytes": 138104
+  },
+  {
+    "path": "data/corpus/sgz-48.json",
+    "sha256": "8d3c91d944914b9562a5777500e895244fb4d6c8577f6d76822266f37d702b73",
+    "bytes": 126810
+  },
+  {
+    "path": "data/corpus/sgz-49.json",
+    "sha256": "743680e92419fab3ea0d0f26493917eb13c163c991333340bc5fc2791bd25740",
+    "bytes": 40912
+  },
+  {
+    "path": "data/corpus/sgz-50.json",
+    "sha256": "22f55665a25eabb59688fdbe1f00f557d7f0fc270aba1196c1a755445488d467",
+    "bytes": 28840
+  },
+  {
+    "path": "data/corpus/sgz-51.json",
+    "sha256": "adaafbca612da668b4afb4e6cbc6a671ecb2c933ad4d50b1def4ff0f3771c41e",
+    "bytes": 47790
+  },
+  {
+    "path": "data/corpus/sgz-52.json",
+    "sha256": "01c035e2d32123947af0c467c95adcc9acf76ed04e1c273dc1e6aaef7f8e2111",
+    "bytes": 88315
+  },
+  {
+    "path": "data/corpus/sgz-53.json",
+    "sha256": "1517f51aa0184d2fa1474eeb5c0ba7e154f9df019a9b85849f1aea1217ce8382",
+    "bytes": 52680
+  },
+  {
+    "path": "data/corpus/sgz-54.json",
+    "sha256": "52b7e6f20e27941b6eb928119d1d03ab2d08e1c908fe977f48d3f69e411d95be",
+    "bytes": 84173
+  },
+  {
+    "path": "data/corpus/sgz-55.json",
+    "sha256": "034e95117bb620339f858d2e591e02eb0d7c957fe4f42642abb67c33ad9da8e2",
+    "bytes": 66368
+  },
+  {
+    "path": "data/corpus/sgz-56.json",
+    "sha256": "d15169c6d9e444f9245ca94ae8f84ca54fbb6117dbd223551fe9075d80fe947b",
+    "bytes": 48152
+  },
+  {
+    "path": "data/corpus/sgz-57.json",
+    "sha256": "bb03025afd7fe3968ff5037706ca6d67874b3db74bf14cda65877cf75a3f95a9",
+    "bytes": 94089
+  },
+  {
+    "path": "data/corpus/sgz-58.json",
+    "sha256": "1890b5b1f6001d5a72ead9cdfd0bc8aff4b6e9d9fe075e8f4e7111bac25be565",
+    "bytes": 66698
+  },
+  {
+    "path": "data/corpus/sgz-59.json",
+    "sha256": "985bb04720df9f0c6a2d66f463de9dda21795f5fcb2493301ee05c686e0c523d",
+    "bytes": 46776
+  },
+  {
+    "path": "data/corpus/sgz-60.json",
+    "sha256": "ba137a8e9d63cf075d7f03c5707f60eedb37794ef03cf6a5866cf19959c626b6",
+    "bytes": 65505
+  },
+  {
+    "path": "data/corpus/sgz-61.json",
+    "sha256": "55e0f4f8b35bb85998cf0c564940c847117d4c8e2e07822a234615b1bae6bd96",
+    "bytes": 48972
+  },
+  {
+    "path": "data/corpus/sgz-62.json",
+    "sha256": "1ec18ebfd962579a69bdc3d3939c507d6720d015fc727a4f8668d42110e1f28d",
+    "bytes": 27630
+  },
+  {
+    "path": "data/corpus/sgz-63.json",
+    "sha256": "1b0a97ae25daa64381983794cef507b1b1453597b005bae8cd02483c9d74e45a",
+    "bytes": 25588
+  },
+  {
+    "path": "data/corpus/sgz-64.json",
+    "sha256": "7c07c85a9cd5665d054981bce1c89f5da4399e7328d120d7801068e316f4c688",
+    "bytes": 84613
+  },
+  {
+    "path": "data/corpus/sgz-65.json",
+    "sha256": "0d2a816ff26ba6114f39b97bc02cae8d8b7d11e393e34e2ac5e9a089e36146ef",
+    "bytes": 58563
+  },
+  {
+    "path": "data/editorial/campaigns.json",
+    "sha256": "9c5e05600afd52b602b1637fb65f819f16251273dec9256d15fbdbb016f55d4d",
+    "bytes": 26524
+  },
+  {
+    "path": "data/editorial/catalog.json",
+    "sha256": "7b0bbc4b1addc054132f444149b38d97925633912c3fe3c0e549253ae67c50b4",
+    "bytes": 121663
+  },
+  {
+    "path": "data/editorial/jianan-epoch-review.json",
+    "sha256": "95eac8c8e636a0bacdbb7a6a66c5a093fd03afb145a34d4dd5f0a82db879ef03",
+    "bytes": 3225
+  },
+  {
+    "path": "data/editorial/jianan-labels.json",
+    "sha256": "0d6624634d737ba7a3979a9c1e26d6a0d6ab4f51138a2d74b3d1c46980f8e626",
+    "bytes": 31166
+  },
+  {
+    "path": "data/editorial/miniatures.json",
+    "sha256": "f962aadd9ec4297756711bb2201f3fb0c49aa38e8bc942d113a6f8bb9c60e7f4",
+    "bytes": 92554
+  },
+  {
+    "path": "data/editorial/national-geography.json",
+    "sha256": "9ed82bd9aa8c83362bfc53b7996f61d6d90c87cf72328604d038de1ec1da5c11",
+    "bytes": 61043
+  },
+  {
+    "path": "data/editorial/profiles.json",
+    "sha256": "afdce418c5a6d16c937040d72843900a1ad51d9212a7f556dc01238f14ba0e16",
+    "bytes": 2228
+  },
+  {
+    "path": "data/editorial/README.md",
+    "sha256": "a5d84a0eba1ec2b1f43cfb9a5ad826444b657af5e447675b01a824bcae696ff6",
+    "bytes": 370
+  },
+  {
+    "path": "data/editorial/scene-examples/xuzhou-letter.json",
+    "sha256": "58d77d142e9a060ab2a68ce1c1c76aab5ec2be278af41f2ff991891d58baeb56",
+    "bytes": 13898
+  },
+  {
+    "path": "data/editorial/spacetime.json",
+    "sha256": "c2d08057096a0656a015bf8f5e0c2dcf1cb01e68634d2256488350f40773b8dd",
+    "bytes": 67390
+  },
+  {
+    "path": "data/editorial/story-geography.json",
+    "sha256": "ee94a2d4f75f9a20501e2a92fd60ab42c2b8c462b7e4a7c2d29e6ef138b12442",
+    "bytes": 31966
+  },
+  {
+    "path": "data/editorial/territory-phases.json",
+    "sha256": "5dfd36486e422aba7735a0b3ea8eeef4a0111d6b8cfd84eed27aedec554a86ce",
+    "bytes": 91201
+  },
+  {
+    "path": "data/editorial/youzhou-review.json",
+    "sha256": "eb6f11836f6ea89281706cd63366ab36660b5b8cdb9185998cc17707e35ae0fa",
+    "bytes": 2691
+  },
+  {
+    "path": "data/references/activity-places-api.json",
+    "sha256": "8cc16ab47f356800929a97c883f6d459873e1cb1869d82d2126f3d9da08c53a8",
+    "bytes": 11036
+  },
+  {
+    "path": "data/references/activity-places-simplified-api.json",
+    "sha256": "295138019f3ce04cbd8ee9f4ee3608650300c6bb2036454a85c0d598ce769e51",
+    "bytes": 49180
+  },
+  {
+    "path": "data/references/chinese-calendar/calendarData.js",
+    "sha256": "fdb8bc61e485022f20b258890e009347b7c187b7672a932a1d41a016e6b18dfc",
+    "bytes": 695460
+  },
+  {
+    "path": "data/references/chinese-calendar/LICENSE.txt",
+    "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+    "bytes": 35821
+  },
+  {
+    "path": "data/references/chinese-calendar/README.md",
+    "sha256": "665183b6faa932f397ea56962eea3129117c8740746516fe8c50d24e8d4d0f27",
+    "bytes": 2483
+  },
+  {
+    "path": "data/references/chinese-calendar/split.js",
+    "sha256": "f026a1fb1bc9f55e66818b9374c2c20b853eb1d121f96fe8692ca6c1454e56f2",
+    "bytes": 30982
+  },
+  {
+    "path": "data/references/chinese-calendar/ThreeKingdoms_calendars_simp.html",
+    "sha256": "e777fa1ffdeb412e3f899d449193e8bfbce8b7b00baa55b6d13118ca699b6189",
+    "bytes": 82764
+  },
+  {
+    "path": "data/references/commandery-seats-api.json",
+    "sha256": "7fa4980819426b5617956636072f1c5a8fa7fc97e65355edda467d1634304e64",
+    "bytes": 65128
+  },
+  {
+    "path": "data/references/dated-control-sources.json",
+    "sha256": "ee751e0b06bb0a2de93490ded993da768e3d0e667d40b9389a8d4b900343f256",
+    "bytes": 99855
+  },
+  {
+    "path": "data/references/eastern-china-base.json",
+    "sha256": "ac3b859bed31e7ac27484b7ca5e0ff6011d294082d4997aed9b715b20bbb691f",
+    "bytes": 1126
+  },
+  {
+    "path": "data/references/eastern-china-base.svg",
+    "sha256": "351bf5975528af0e33d1985ba58bff4cbc7432e4a7f14efd4aa974b6d8602999",
+    "bytes": 471528
+  },
+  {
+    "path": "data/references/han-orientaux-140.svg",
+    "sha256": "02f7140c439f90f1b8b4dde0137b2d37398db891ade617ec372acab4ad67611b",
+    "bytes": 537821
+  },
+  {
+    "path": "data/references/han-river-chronicle-api.json",
+    "sha256": "9902bb6e7cffcd8abb480ac37de30376ba7fb6176f9718fdaaf31f7fd7b1b67b",
+    "bytes": 88760
+  },
+  {
+    "path": "data/references/hhs-geography-api.json",
+    "sha256": "c3ce4a30dc32282902610d34201227d7072b22868a4af0cc5931c923b9f75289",
+    "bytes": 237060
+  },
+  {
+    "path": "data/references/hydrology-2026-11-06/changban-battle.svg",
+    "sha256": "197dc96a76ecfd56458845f1f9f83b5c836b611f8d17881dbd12a58a1d510f9c",
+    "bytes": 26076
+  },
+  {
+    "path": "data/references/hydrology-2026-11-06/three-kingdoms-administrative.svg",
+    "sha256": "3acdd5ce9cbca522ed77a48326ab8a1c19bf99fb62658877b03ca283973efdf8",
+    "bytes": 1290175
+  },
+  {
+    "path": "data/references/hydrology-2026-11-06/trois-royaumes-c260.svg",
+    "sha256": "be43931ac97da7b5ef42bafbc6a7e4aeb7d14e68c4aa04748d9cf6857813265f",
+    "bytes": 510598
+  },
+  {
+    "path": "data/references/hydrology-2026-11-06/来源与许可.md",
+    "sha256": "d1a89861787bc4adf09880a3f57b4d721815184d5b826822cd5440df8d53f79e",
+    "bytes": 2513
+  },
+  {
+    "path": "data/references/jin-geography-api.json",
+    "sha256": "2fab463ca119f38fa8a65673edc5a3732e6e25fdcae585de878c9b09ab75ead7",
+    "bytes": 96216
+  },
+  {
+    "path": "data/references/jinshu-youzhou-api.json",
+    "sha256": "804ccf5d3e904eff7b69721ef7188768602a11415b51ab2177514a4fe410223d",
+    "bytes": 116119
+  },
+  {
+    "path": "data/references/late-han-seats-api.json",
+    "sha256": "dfd0e9ae3b7216811d44c032696ebebd63fcd8adf98caa6a4f1caf2750cd97c4",
+    "bytes": 118789
+  },
+  {
+    "path": "data/references/natural-earth-land-50m.geojson",
+    "sha256": "e874b27a51d146452be360cafb3cc50c86001074a67d534113e6534682f9826b",
+    "bytes": 1636166
+  },
+  {
+    "path": "data/references/Topographic30deg N0E90.png",
+    "sha256": "4a6e89adc5a88ac4e688cc763e847d015669c8a684ebb15384be28f506546883",
+    "bytes": 1350767
+  },
+  {
+    "path": "data/references/Topographic30deg N30E120.png",
+    "sha256": "692231ab46aea23600991f3206b4a1ab9f49dd66d0dbd8411a2e8fcc545b85dd",
+    "bytes": 1212762
+  },
+  {
+    "path": "data/references/Topographic30deg N30E90.png",
+    "sha256": "f35957e97ef1a5d99949765a32c798f0d1511bb820d016192020ab903df9d90c",
+    "bytes": 1895517
+  },
+  {
+    "path": "data/references/yellow-river-courses.svg",
+    "sha256": "b6e3342e6111fd7b7e5fa8fcc9fbceaa5ba883e1f7aee3d866fe5218c1d08b81",
+    "bytes": 380547
+  },
+  {
+    "path": "deploy/map-source.service",
+    "sha256": "5b7c1cf49de2e6b5b76dabb910dcc4771f63b9257a160f89bebf65cff9f047a8",
+    "bytes": 578
+  },
+  {
+    "path": "deploy/map-tool.nginx.conf",
+    "sha256": "8c7af5880cc124388ff1be52aeb8aa4e950498f65fe8575de88105bb40a93b08",
+    "bytes": 348
+  },
+  {
+    "path": "deploy/map-tool.service",
+    "sha256": "75641105c5657c81a8ff82e0c0519e5ee1ef83b4b43ed4eaa053771deaff8cb8",
+    "bytes": 673
+  },
+  {
+    "path": "deploy/service.env.example",
+    "sha256": "348c171418042fd9bbd9b57295114d9d57303be0245e9e75414e2596ecc925be",
+    "bytes": 152
+  },
+  {
+    "path": "deploy/source.env.example",
+    "sha256": "ebbcff5981b257d94b53929aa43884790eb6d2ba5a8131827c7d72fa2546dde2",
+    "bytes": 127
+  },
+  {
+    "path": "deploy/source.lock.json",
+    "sha256": "4611e984cb47aa0fa87e111cad90df2a91fda1ec2a2f8bc04ef3c3039c44652e",
+    "bytes": 362
+  },
+  {
+    "path": "deploy/公开部署说明.md",
+    "sha256": "b2897030af728b81b94b0161bf27666b0a38c6414ff7f743e61506b3f2d22780",
+    "bytes": 4500
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+    "bytes": 35821
+  },
+  {
+    "path": "README.md",
+    "sha256": "b9b43304f8037493ae9fff64acbfe8184f4e032eeed78bd9aa5d1ce94b7edd4b",
+    "bytes": 6822
+  },
+  {
+    "path": "research/han-140-base-metadata.json",
+    "sha256": "26c4ccead93aa9d290342a36ef04cb70aae30e790c9ec63dfbde48cb0014d739",
+    "bytes": 5457
+  },
+  {
+    "path": "research/historical-water-build.json",
+    "sha256": "25a635991ab9e66bafcd80a77999a21455835b406fbfd526d7e495ff012f92a7",
+    "bytes": 3306
+  },
+  {
+    "path": "research/hydrology-reference-downloads-2026-11-06.json",
+    "sha256": "25aaca52f205e0c2289125c89735fbb234a5d9ba476f90493cc4c74478dc22f0",
+    "bytes": 7856
+  },
+  {
+    "path": "research/jianan-georeference.json",
+    "sha256": "762af3831094fa7d208ea3aab7e9610fc1cb746dfa329b4c32ca7968fb24a1f7",
+    "bytes": 16331
+  },
+  {
+    "path": "research/jianan-reference-license.json",
+    "sha256": "ae797161af06e61e85dc1662fa5638fddb6210d6b16b8275cb92b3830f1d1ed8",
+    "bytes": 1548
+  },
+  {
+    "path": "research/jianan-source-extraction.json",
+    "sha256": "6b1d27ec741aa6129f34a6d44fadc99681479b593809ccb2f46f1f9fcc5fb029",
+    "bytes": 1099141
+  },
+  {
+    "path": "research/three-assets.json",
+    "sha256": "52f94c1366a385f77b7e6fdb84e92cbbcb4a228b3867a2566324110413699b13",
+    "bytes": 1063
+  },
+  {
+    "path": "research/topographic-tile-descriptions.json",
+    "sha256": "79267b456b012c8f83b038acd3c85f9e76c145a16af865127d402fa918d35027",
+    "bytes": 6429
+  },
+  {
+    "path": "research/topographic-tile-metadata.json",
+    "sha256": "a815a600a2a34f5c44557768d72ec7d06d754916fba553b6e819301c34d89cb8",
+    "bytes": 5337
+  },
+  {
+    "path": "scripts/build_administrative_labels.py",
+    "sha256": "b9ef52ad33b76e907826a135668fe4e756c391413b1fe462ea5819184722d572",
+    "bytes": 7742
+  },
+  {
+    "path": "scripts/build_android.ps1",
+    "sha256": "32ae794d0d248bab2c1767cd4e4d4e1f409df5561840641f9295a3692f3cbd31",
+    "bytes": 1825
+  },
+  {
+    "path": "scripts/build_android_assets.py",
+    "sha256": "1e87bbf040935b717b2eb8f666ef2a3474db9dfdd0e866bd232c69de26c72576",
+    "bytes": 2172
+  },
+  {
+    "path": "scripts/build_calendar.cjs",
+    "sha256": "4b1582331d343124d76361e271fabb0065e81c052add6551518f5f73f5f396db",
+    "bytes": 3626
+  },
+  {
+    "path": "scripts/build_campaigns.py",
+    "sha256": "90f9b289cbeefcdb148b7b9b6bdd76468aeaba04013ae3f4eea74fa725fa9225",
+    "bytes": 2866
+  },
+  {
+    "path": "scripts/build_data.py",
+    "sha256": "8bcdb703f3dcede7fb7d158be24e1db9de83194a5ebfb357d641c58eda3f25a6",
+    "bytes": 12307
+  },
+  {
+    "path": "scripts/build_faction_labels.mjs",
+    "sha256": "af6651f96d874f55d296bc0002af723e756b841eb6bc210566b18de9bcdbb275",
+    "bytes": 1726
+  },
+  {
+    "path": "scripts/build_faction_labels.py",
+    "sha256": "14c16530cbc6643664ab3922fbce107cac3b5bfc6e3c71d9494dd22fc5d2e7f6",
+    "bytes": 1100
+  },
+  {
+    "path": "scripts/build_han_administration.py",
+    "sha256": "a410b36179f592591bcaf27a119062da14bee67638b3516591240e47faeaf567",
+    "bytes": 11135
+  },
+  {
+    "path": "scripts/build_historical_water.py",
+    "sha256": "836b6d35dba607a04fb60e81bb6fa3cee891d0c9151f2d9e6be270ad00669920",
+    "bytes": 8681
+  },
+  {
+    "path": "scripts/build_jianan_reference.py",
+    "sha256": "520fcc94da52f3b0f2dea28742798b2fbc6a52430ec2b8c8b4104bc7d25fb891",
+    "bytes": 3560
+  },
+  {
+    "path": "scripts/build_map_surface.py",
+    "sha256": "18c1c34f680c332b95eebb8607f6bfee96ec7099831e5b97a8e6592f0e86861d",
+    "bytes": 1351
+  },
+  {
+    "path": "scripts/build_miniature_catalog.py",
+    "sha256": "aa8a1710c89cf42bcafa92c6c88313e32133a2bef70520886568add0453ab1ce",
+    "bytes": 14140
+  },
+  {
+    "path": "scripts/build_models.py",
+    "sha256": "4bc8da819511e3d542275d6a73c077f29ac98566683b0b3a649fc1ed7858ab22",
+    "bytes": 8867
+  },
+  {
+    "path": "scripts/build_national_map.py",
+    "sha256": "7f59d16fffe486c652d1daa615a8d36cf50c281d1d41d0684da2424dd32c20ef",
+    "bytes": 12390
+  },
+  {
+    "path": "scripts/build_spacetime.py",
+    "sha256": "742284a26c09dcf94a45cce674ffbd0a193dc69474bc6157852e2f631242aa1c",
+    "bytes": 7078
+  },
+  {
+    "path": "scripts/build_strategic_regions.py",
+    "sha256": "6196fcdc915de65971d08c6a1474553171e0b88a725b88a82f01af979909dac9",
+    "bytes": 14730
+  },
+  {
+    "path": "scripts/build_user_regions.py",
+    "sha256": "9192d652fe70e732c9e0cda36b1fe3f68105951ca44f87c06f02bbc196ecc7d6",
+    "bytes": 6747
+  },
+  {
+    "path": "scripts/build_wide_terrain.py",
+    "sha256": "6812718d0de11e86913ec8a20ac9012229bd6222cadbf6d15b511437bdc1cfb4",
+    "bytes": 4121
+  },
+  {
+    "path": "scripts/check_jianan_coasts.py",
+    "sha256": "b9d8dc5d3676543f01950c4c07ea2c246531878ff8bb5788b67b281080b05439",
+    "bytes": 3135
+  },
+  {
+    "path": "scripts/compile_layer.mjs",
+    "sha256": "ef35ba4e2cd4ad3e63cfeae644ddd3e09effe7b83eff1fe3c430ab0314c942ce",
+    "bytes": 1209
+  },
+  {
+    "path": "scripts/export_open_source.py",
+    "sha256": "1994e9b3cd10bcf16616c9375aa6c1dd154a61cb781145388cbbcc1d580e8fc8",
+    "bytes": 7236
+  },
+  {
+    "path": "scripts/extract_jianan_reference.py",
+    "sha256": "bd476ae4cbc91386351588b9b433ced4124ae2ee302eb79447c0d4d7fd4c429c",
+    "bytes": 6570
+  },
+  {
+    "path": "scripts/fetch_sources.py",
+    "sha256": "262e3527cb13dd992feca674115eb38cfac85d946d64cb9d38b99c7819b0fed6",
+    "bytes": 5144
+  },
+  {
+    "path": "scripts/finish_miniatures.py",
+    "sha256": "b56d7d1155c8d8f557138340c7e6be5f3e64bd55b32ab99616b68448c38920f3",
+    "bytes": 4588
+  },
+  {
+    "path": "scripts/generate_miniatures.py",
+    "sha256": "a5861bdf445dec545a3bd1471773b63e5f40cb5410d2ffd9ba50c9baf2482b5c",
+    "bytes": 4088
+  },
+  {
+    "path": "scripts/georeference_jianan.py",
+    "sha256": "cc1ba41f52be120e5db8b295ade1a379199ee8c61158c737856389287403a773",
+    "bytes": 6748
+  },
+  {
+    "path": "scripts/issue_library_token.py",
+    "sha256": "0f6c389da4c4fc863cfa1f84316811c7a633bbde58788831522ca568580d396f",
+    "bytes": 755
+  },
+  {
+    "path": "scripts/make_android_update.py",
+    "sha256": "7086639f7c5d787b12267a5d2e326e0bc0b47391e3951cfa8189fea71c864362",
+    "bytes": 1884
+  },
+  {
+    "path": "scripts/prepare_assets.py",
+    "sha256": "c651ed723473b18f1d4500910e101ec1e34ddb2bcce881964c722c6c21b54cee",
+    "bytes": 2432
+  },
+  {
+    "path": "scripts/publish_miniatures.py",
+    "sha256": "8f748b12d5acac0e312367a778ec7098f10c418fdd568f3ebda4a6b6314200df",
+    "bytes": 1737
+  },
+  {
+    "path": "scripts/render_model_previews.cjs",
+    "sha256": "50a09c17ef11d3ff5e1353301a6d61c4ae1fe096a71eae75952cf8792110366c",
+    "bytes": 2200
+  },
+  {
+    "path": "scripts/seed_catalog.py",
+    "sha256": "285a03af76be467b84e9090ca5ebe7f7556f2dc0f6ebc30be6b9f9da27e60a36",
+    "bytes": 22903
+  },
+  {
+    "path": "scripts/source_text.py",
+    "sha256": "6ed1debcc53e2e217642fd5163acf2df89aeca6736f47a6b230fe1812cd271ad",
+    "bytes": 2959
+  },
+  {
+    "path": "server.py",
+    "sha256": "1818279fc4e86284cf82f3b3bc9e01f42e6799f7c30dedefeafd8a51841a9758",
+    "bytes": 3258
+  },
+  {
+    "path": "tests/administration-browser.cjs",
+    "sha256": "60eeba63584f644f06d94970b8cb27c1703801db13bcf7d37db49db0ebc46920",
+    "bytes": 6128
+  },
+  {
+    "path": "tests/administration_data_test.py",
+    "sha256": "365f4d3854fdb0d4eaf48a8862267e6f995b81361a557071d64d31dc0ef49f44",
+    "bytes": 2558
+  },
+  {
+    "path": "tests/analysis_test.py",
+    "sha256": "affb77275ece355a67551e7f5e3953d29a3953029015d1032e145d4d4b468ec4",
+    "bytes": 1498
+  },
+  {
+    "path": "tests/browser.cjs",
+    "sha256": "ea9bb7a3eac1c57bad1d75d1b76d6f171841d114359a708183c9d23eb3a4aec8",
+    "bytes": 6719
+  },
+  {
+    "path": "tests/campaigns-browser.cjs",
+    "sha256": "ae8b8acda864b176581d7f43bf353c208a698f40f57b8948e680dec9dff445b2",
+    "bytes": 6526
+  },
+  {
+    "path": "tests/campaigns.test.mjs",
+    "sha256": "67af9b365dc1ace018ecf49293e324a886f20f1f8b05466186b8b089ef5ca757",
+    "bytes": 2880
+  },
+  {
+    "path": "tests/chinese-browser.cjs",
+    "sha256": "c083675b1cc733074a772032cc5bb192bb374f7aaa04fc0a45fc6ab5e8fb8547",
+    "bytes": 6672
+  },
+  {
+    "path": "tests/chronology.test.mjs",
+    "sha256": "78b4582b705e1ff503f492bfdb2042b180b9186241e00b203663ea479f529161",
+    "bytes": 4204
+  },
+  {
+    "path": "tests/data_test.py",
+    "sha256": "abe8df14e18f48100b85b6544560c3b41872e65bdc79a50d1699a609af4851f8",
+    "bytes": 3494
+  },
+  {
+    "path": "tests/extract.test.mjs",
+    "sha256": "fa743f44e247bcab8f19ae57320401c6ed4e1b9b0fb16d7b756fd96c5cb2475a",
+    "bytes": 2482
+  },
+  {
+    "path": "tests/faction-format-browser.cjs",
+    "sha256": "b2b86c04bc845a45fbce724f13358e6ad9c2be0144a99248b0b9e7c3a2597b12",
+    "bytes": 3260
+  },
+  {
+    "path": "tests/faction-layout.test.mjs",
+    "sha256": "575e4bf4b9f7b4fab6a75fbb6984059a275517c6bad5667a82092ffd5dbea94e",
+    "bytes": 1836
+  },
+  {
+    "path": "tests/faction-visibility-browser.cjs",
+    "sha256": "a42ecc89f3fdb060caec3c03d8213dcffe092401ce9b3c76354dc10670245cb5",
+    "bytes": 4446
+  },
+  {
+    "path": "tests/jianan_data_test.py",
+    "sha256": "ae21440f33699a8f5424d06de0a9410fa8570d986a4ab7d16f87f19a67e7a0fa",
+    "bytes": 3283
+  },
+  {
+    "path": "tests/layer-client.test.mjs",
+    "sha256": "1a09f69e52d51a667c73c3badc41bfca8173d860028ba5437d9cdd8ad1a4458b",
+    "bytes": 1385
+  },
+  {
+    "path": "tests/layer-publish.test.mjs",
+    "sha256": "10bb2775d49c8822db12fe94aef3365ab64ca99c501405a5150056847699cb11",
+    "bytes": 922
+  },
+  {
+    "path": "tests/library_http_test.py",
+    "sha256": "4481ff4861cef09e483b5d9a314a29e1819434bba5473e17910f12601c18ff01",
+    "bytes": 2243
+  },
+  {
+    "path": "tests/library_test.py",
+    "sha256": "613b1ce4bd32674a25f26a93fd871f42b9142672149f93c09076e8d41ce475d5",
+    "bytes": 5621
+  },
+  {
+    "path": "tests/miniatures-browser.cjs",
+    "sha256": "3e1c51a8bb7b801d9761bb0e1e6b87d308fefdeb9ca3c1dd18adfbbaf60ad338",
+    "bytes": 5339
+  },
+  {
+    "path": "tests/monthly-control-browser.cjs",
+    "sha256": "d6cf500e4b46e976644b34eff3a0782a721105ed81c22f681535553c8d0d2347",
+    "bytes": 4678
+  },
+  {
+    "path": "tests/national-browser.cjs",
+    "sha256": "8f329be9f01f77dcf0995b6f56a9b0b9fe4b3c6110c8411d5725c150a7652cb2",
+    "bytes": 5575
+  },
+  {
+    "path": "tests/national_data_test.py",
+    "sha256": "a1d70d0f28df987118d51992a5152cb5eccc0e0996a773262876c0825cf8514f",
+    "bytes": 2392
+  },
+  {
+    "path": "tests/novel-chapters-browser.cjs",
+    "sha256": "2567985fb781e04b8bf05d9205d06863d2abde41312803264fd1356d427c9b3f",
+    "bytes": 4079
+  },
+  {
+    "path": "tests/novel_source_test.py",
+    "sha256": "263ec90e6b4eee81ec7cb27216af01b4335c2b906f617a187c6d30326962dd91",
+    "bytes": 1718
+  },
+  {
+    "path": "tests/political-browser.cjs",
+    "sha256": "a8190b3e306c2d976a59b4f88ebcac6ed43b71db8efa061dafb9dc8911688504",
+    "bytes": 8793
+  },
+  {
+    "path": "tests/province-labels-browser.cjs",
+    "sha256": "83abbd7e08f844ca0ab18181ff7d17544a48bf1bf663a5084040668488f69842",
+    "bytes": 4078
+  },
+  {
+    "path": "tests/reading_data_test.py",
+    "sha256": "a43258031d872f3356fa9c5203070e56962addaadd3b1f7e5047349d816eb543",
+    "bytes": 1886
+  },
+  {
+    "path": "tests/reference-browser.cjs",
+    "sha256": "2d9ea43e737ed7350ebc514bd20f4b4e842da2f5d64194db4887d2fd85490481",
+    "bytes": 2534
+  },
+  {
+    "path": "tests/regional-preview-browser.cjs",
+    "sha256": "eb75f4bb3bfe4b31830f3732dbc8f0b4dc881483788dd9c9829778f66c27c4b3",
+    "bytes": 5455
+  },
+  {
+    "path": "tests/scene-browser.cjs",
+    "sha256": "53bc3bb1f0b3f9a5f8517a85d407a906a211c31fd43d2fc5826e0d207cc38ece",
+    "bytes": 8932
+  },
+  {
+    "path": "tests/scene-state.test.mjs",
+    "sha256": "b300e0e5845d2fa5577b56be6dbd953e4ca8faed82203c4d72e47415690f00bf",
+    "bytes": 5278
+  },
+  {
+    "path": "tests/scene_contract_test.py",
+    "sha256": "6303044133a503a103571ba5b2c06cf0dc6dc57f25a6f9dc620c20025f814824",
+    "bytes": 1270
+  },
+  {
+    "path": "tests/spacetime-browser.cjs",
+    "sha256": "b150fada3cbc88a8d0dc7d0db77aaf3d4b739a1f2afea6ee026aaf3f74a4c3e1",
+    "bytes": 5316
+  },
+  {
+    "path": "tests/speed_pipeline_test.py",
+    "sha256": "068d80335176303b0d6b5d25732418bc2a14bf9ebe89e2bc2d4605b3d4bff7a6",
+    "bytes": 4465
+  },
+  {
+    "path": "tests/state.test.mjs",
+    "sha256": "3c0b2ecadeea6479033058fd8be0120ae405e1a13c667b85436067215dab1238",
+    "bytes": 10006
+  },
+  {
+    "path": "tests/story-compile.test.mjs",
+    "sha256": "3eb519cd75d0e1e76874479a749b56a858d4a724c0751d47a7a3807cd62de3e3",
+    "bytes": 5875
+  },
+  {
+    "path": "tests/story-geography-browser.cjs",
+    "sha256": "956400d8a4ae7ef27bf3c14f6d5581835db6c2253e0c20753364ac7d6d8b3e16",
+    "bytes": 4977
+  },
+  {
+    "path": "tests/story_geography_test.py",
+    "sha256": "d1bd79a1105c9b3ca4ec1216985f60f47d8f0f3415916261b0e2c3a53e8d4015",
+    "bytes": 2438
+  },
+  {
+    "path": "tests/strategic_data_test.py",
+    "sha256": "a93efe62ccccf72e95decfdac63d8ad090f1d405fee66d2895c8be03efcaf274",
+    "bytes": 4182
+  },
+  {
+    "path": "tests/user_regions_test.py",
+    "sha256": "8e9f4f10a309619d0b509b7093b789c1e0792cf00fceea421b72e4e09bad9d44",
+    "bytes": 2962
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "sha256": "4396db491ff8ddaaecda832dd7a410abd6004964e77be48a8da3f1de2aa25b36",
+    "bytes": 2620
+  },
+  {
+    "path": "web/analysis-config.json",
+    "sha256": "0071e9499117247455321ff4432e6e5ad4fa67f5cd334ceb909cc342a08e0146",
+    "bytes": 5615
+  },
+  {
+    "path": "web/app.mjs",
+    "sha256": "0e5328fb0506856a9d8fc5f23dd52711cc39697a30d097531b97f7f06c6cfa04",
+    "bytes": 105264
+  },
+  {
+    "path": "web/assets/BufferGeometryUtils.js",
+    "sha256": "3a6701d824adfe05dc28c09b6c1d64aeab9a183bc3b944d85f15f596e5c6c2b3",
+    "bytes": 31918
+  },
+  {
+    "path": "web/assets/CALENDAR-LICENSE.txt",
+    "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+    "bytes": 35821
+  },
+  {
+    "path": "web/assets/DATA-NOTICES.txt",
+    "sha256": "03b2761327dac591e12b155c8505d284741d49c137deface1a51c44e0c92daa1",
+    "bytes": 11131
+  },
+  {
+    "path": "web/assets/GLTFLoader.js",
+    "sha256": "1f9b02acfbf219a6ebb77f09e355500449a3ba9e6a77d87e0de72c0b9315ea4e",
+    "bytes": 108527
+  },
+  {
+    "path": "web/assets/jianan-219.svg",
+    "sha256": "78d82bf455ea66f0ec6d1da93b89c38026b63a07c57ae031da28f75801188b5a",
+    "bytes": 7726886
+  },
+  {
+    "path": "web/assets/jianan-terrain.jpg",
+    "sha256": "e6bb9c3e07551c34284e5af9a0bbc3afe91ebd20e03620a6f1c936b61ec3c7a7",
+    "bytes": 4885878
+  },
+  {
+    "path": "web/assets/leaflet/leaflet.css",
+    "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+    "bytes": 14806
+  },
+  {
+    "path": "web/assets/leaflet/leaflet.js",
+    "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+    "bytes": 147552
+  },
+  {
+    "path": "web/assets/leaflet/LICENSE",
+    "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+    "bytes": 1395
+  },
+  {
+    "path": "web/assets/maplibre-gl.css",
+    "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+    "bytes": 69422
+  },
+  {
+    "path": "web/assets/maplibre-gl.js",
+    "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+    "bytes": 939308
+  },
+  {
+    "path": "web/assets/MAPLIBRE-LICENSE.txt",
+    "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+    "bytes": 5984
+  },
+  {
+    "path": "web/assets/OPENCC-LICENSE.txt",
+    "sha256": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308",
+    "bytes": 9165
+  },
+  {
+    "path": "web/assets/STCharacters.txt",
+    "sha256": "ed1d268e0ad028511dcf5b0089faed0a980ad332449ec11d481ceefde6879f41",
+    "bytes": 34353
+  },
+  {
+    "path": "web/assets/terrain-wide.png",
+    "sha256": "1599dbd7a77bbea9bd713288ea89c3342b1b59ef1e98bc64d8efc647a47aea5d",
+    "bytes": 738657
+  },
+  {
+    "path": "web/assets/terrain.png",
+    "sha256": "6f40d86acd93ccd66e6d1875ad8f1b5ecd614a5b24bcf155627a5d70c39de722",
+    "bytes": 1418943
+  },
+  {
+    "path": "web/assets/THREE-LICENSE.txt",
+    "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+    "bytes": 1081
+  },
+  {
+    "path": "web/assets/three.module.js",
+    "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+    "bytes": 1272972
+  },
+  {
+    "path": "web/atlas.json",
+    "sha256": "a06ed77d4d8f9e9294c28d47cbb0944ef20102f0a878075b40846099a6329cf6",
+    "bytes": 13312731
+  },
+  {
+    "path": "web/calendar.json",
+    "sha256": "09f1c5ecc414c71c8714186c794fda3e7f2d09875713c3275e89e7e7f730be89",
+    "bytes": 158723
+  },
+  {
+    "path": "web/campaigns.json",
+    "sha256": "502c1fd2dd791080ad713d0cc0b5028b2d77ecd94f15fae254f222e123baf808",
+    "bytes": 63392
+  },
+  {
+    "path": "web/campaigns.mjs",
+    "sha256": "2d03bac09e16b5039538a1cbdc4b0ba3cf7897933902066c2e942a019963280f",
+    "bytes": 4828
+  },
+  {
+    "path": "web/chronology.mjs",
+    "sha256": "51fa0ca8a6e6a94fcc70ddf0465f0083057b372ec554a45de2513cb3bc7a2e80",
+    "bytes": 3299
+  },
+  {
+    "path": "web/coastal-reference.json",
+    "sha256": "96737ed57877c8266d99c904222d3a9f848c0e2d59096d39d684c4da3608a82d",
+    "bytes": 200581
+  },
+  {
+    "path": "web/faction-labels.json",
+    "sha256": "06aa585a8f0b6919ec8a9133d799bf832cb58f20bfaf871cacea740096682c09",
+    "bytes": 2268265
+  },
+  {
+    "path": "web/faction-layout.mjs",
+    "sha256": "bea0f395d227ccd99e2d26988e409e490b3ed2ebdee1161cc1d79c75719df4af",
+    "bytes": 3755
+  },
+  {
+    "path": "web/han-administration.json",
+    "sha256": "b5a4c68b15dc7c9e721eff44b172c8ebf0f5f068f1334dd19a4a91382bbdda95",
+    "bytes": 174188
+  },
+  {
+    "path": "web/historical-water.json",
+    "sha256": "f887efe6420ed7267a61bc1e2482ccbcab659367ec86c2da803537db10f3b277",
+    "bytes": 40254
+  },
+  {
+    "path": "web/index.html",
+    "sha256": "41053068834607cc59bec62311eb04d16cc9dfc77a24a3830ffbd4d26186a71c",
+    "bytes": 10804
+  },
+  {
+    "path": "web/jianan-boundaries.geojson",
+    "sha256": "961473e746d5208104111e243a4669d4074e877d9ea84ead499084840397bff1",
+    "bytes": 1098230
+  },
+  {
+    "path": "web/jianan-reference.json",
+    "sha256": "9e76d24eebc9dc77010eba9479163baa93290e01ebed8ecd8ff11484843ddbc8",
+    "bytes": 473588
+  },
+  {
+    "path": "web/library-ui.mjs",
+    "sha256": "de353dbc2d4b6d327e3c669e07b0e12e3d3d5e0e56b0fe8bffb1308bbbc46a2d",
+    "bytes": 10586
+  },
+  {
+    "path": "web/model-gallery.mjs",
+    "sha256": "f6a2a2fa9ee76c7d6162be81ba8e8d01e53f35bc4f207360c114231195ba1bf3",
+    "bytes": 3031
+  },
+  {
+    "path": "web/model-layer.mjs",
+    "sha256": "365e1a408780ae82a2e0609d4648db3e9569c37096c1902f5949c51d105568ac",
+    "bytes": 2453
+  },
+  {
+    "path": "web/models/archer.glb",
+    "sha256": "3d462065b6846fe748377613a3f393d503bf71b77f80f4da526a7270227bfa4f",
+    "bytes": 32192
+  },
+  {
+    "path": "web/models/archer.png",
+    "sha256": "7db4a1d6b2b0308739864fc94ac9c3535759eee533003a9fbf5a98fe3505bc9e",
+    "bytes": 10056
+  },
+  {
+    "path": "web/models/cavalry.glb",
+    "sha256": "8ac336cb2a3639680d3fcc3981709602528892057ede9f7dcdaa40db0628a4d2",
+    "bytes": 47784
+  },
+  {
+    "path": "web/models/cavalry.png",
+    "sha256": "bd84ee547106cff375a5259cf67003d31ac531ac0512bc1dfdc26e920cf017b4",
+    "bytes": 8590
+  },
+  {
+    "path": "web/models/city-capital.glb",
+    "sha256": "46bcdfd939befa071ccd471e5dc7d039426f6f1aa236c505399a7b3093a7491a",
+    "bytes": 102472
+  },
+  {
+    "path": "web/models/city-capital.png",
+    "sha256": "a08c99887541419cd9a46189ba6ee230f7d31e3b0e367ef0a7ec4ad65b6ef96c",
+    "bytes": 17108
+  },
+  {
+    "path": "web/models/city-commandery.glb",
+    "sha256": "6bd22aae17d348de170a15f79bd982c96cb9a758a5ab8341099031c6a9cc289a",
+    "bytes": 89308
+  },
+  {
+    "path": "web/models/city-commandery.png",
+    "sha256": "d74cb7740a4ac76d799fc6f62e5339727f1c67cd36e14c6088f777381843db21",
+    "bytes": 17667
+  },
+  {
+    "path": "web/models/city-county.glb",
+    "sha256": "60069f227907faeeb7a2ec0d8457e7727fec4f8d29b848b3c9951a687f88ab96",
+    "bytes": 89240
+  },
+  {
+    "path": "web/models/city-county.png",
+    "sha256": "22c769799661fcd07ebe6903e7404e071e4c2e7b2ffc72f601149d8b95307ea0",
+    "bytes": 20987
+  },
+  {
+    "path": "web/models/crossbow.glb",
+    "sha256": "c90de98073721cdd5fa393903ddbf9800ca41124e16dc489c78a63cfe29f7831",
+    "bytes": 28732
+  },
+  {
+    "path": "web/models/crossbow.png",
+    "sha256": "a7504963aa6100fdece2407d87dd691ba7b30dd8da8580282b03ce3ef4ac9d30",
+    "bytes": 13027
+  },
+  {
+    "path": "web/models/danyang.glb",
+    "sha256": "bd107f96962d89abbf7bc78276d4d8d72a82e6f3c570287def66682e49932bb6",
+    "bytes": 20380
+  },
+  {
+    "path": "web/models/danyang.png",
+    "sha256": "0c07a54f394b978d3e946f58ee6c1f5472c61e871f87961186d132982085b8aa",
+    "bytes": 11240
+  },
+  {
+    "path": "web/models/huangjin.glb",
+    "sha256": "670958adfb700ed6c34a2766f886a60f74e6dbf34cf91c25d31bbb028cd9c842",
+    "bytes": 23780
+  },
+  {
+    "path": "web/models/huangjin.png",
+    "sha256": "9146612847041849fa5bd668d843630abac7fa31f3713b3c9657c84784dc351b",
+    "bytes": 6698
+  },
+  {
+    "path": "web/models/infantry.glb",
+    "sha256": "893801880fc4e1a7a0b47f1799219492e7d62f96dd7ffef08dd838e44ef86bd9",
+    "bytes": 26952
+  },
+  {
+    "path": "web/models/infantry.png",
+    "sha256": "c639e0b31277de9fdd29df3d4f55a2b986c43ad37afe847d1aa5bbafadf3eceb",
+    "bytes": 8108
+  },
+  {
+    "path": "web/models/manifest.json",
+    "sha256": "4cd52488bf61f370a3ffb3303641fb2e1680fcdb4a08a9fce6fde1850a184aa6",
+    "bytes": 2136
+  },
+  {
+    "path": "web/models/xianzhen.glb",
+    "sha256": "c008e2576f6f3d01406ac367176a9b2cfcd51ef21e1a118e895772c395758421",
+    "bytes": 75908
+  },
+  {
+    "path": "web/models/xianzhen.png",
+    "sha256": "598c13d065a784661c20ec32546476e0551eb878e32feb8597e00b1c8b45f4c4",
+    "bytes": 12028
+  },
+  {
+    "path": "web/models.html",
+    "sha256": "e2ae59f35bed4e09c3c59a058b30ca0f5ce313af50cc3e810aa293ee8d775136",
+    "bytes": 2170
+  },
+  {
+    "path": "web/national-map.json",
+    "sha256": "39edf34248547a29f9f1848085f9433068cda4b02842f14e7224cade26f00af1",
+    "bytes": 1971305
+  },
+  {
+    "path": "web/reference.css",
+    "sha256": "415c2fb46c599656e189ea284c938819e7d81b8bcc25b9d1dec1b8de47035460",
+    "bytes": 3090
+  },
+  {
+    "path": "web/reference.html",
+    "sha256": "a6d3a910f2778b8b3d5a5e15bd5ce6a123e9592245315ac23b1b41dd6d5d3fb6",
+    "bytes": 2662
+  },
+  {
+    "path": "web/reference.json",
+    "sha256": "ee7a629c1fadd92557d62a321e3ea04dc32b68023801044b09cb1335188364af",
+    "bytes": 276487
+  },
+  {
+    "path": "web/reference.mjs",
+    "sha256": "a0d884158579bc8ff679ee8e12e07e108ce67dd53fba33c5d5b50ba56eb38602",
+    "bytes": 4130
+  },
+  {
+    "path": "web/regional-preview.css",
+    "sha256": "7a772e5c5173e75ef61881e252b83988faca3c5bcea67a111b79c567a117d167",
+    "bytes": 7506
+  },
+  {
+    "path": "web/regional-preview.html",
+    "sha256": "9dabf681bdc51bc2e114b85e4f1aea6b4eec47389253eb8e5a51a3f870bc90cd",
+    "bytes": 2774
+  },
+  {
+    "path": "web/regional-preview.mjs",
+    "sha256": "9e34cac858628e5b75a098d50d443d8f4860c60732ebb1c6b435cf6accfe95b8",
+    "bytes": 17796
+  },
+  {
+    "path": "web/river-style.mjs",
+    "sha256": "6bc5a87a5ba42454dd6002d07978aace343b2d2b50e94a299878f9f46ff5d6e4",
+    "bytes": 230
+  },
+  {
+    "path": "web/scene/compile.mjs",
+    "sha256": "de33835e2b60ddf6206bed08d51fa050430c9cb46557f1742b2321bb18f557f6",
+    "bytes": 10241
+  },
+  {
+    "path": "web/scene/dossiers.mjs",
+    "sha256": "dbd310bd579a9581457220c5512c24d5309842cce80ee42ce80e399976724d20",
+    "bytes": 11867
+  },
+  {
+    "path": "web/scene/extract.mjs",
+    "sha256": "06302446b513f3b79c0b4c4ae8276f1bc43f700b08419b2d7fc9646107432deb",
+    "bytes": 6472
+  },
+  {
+    "path": "web/scene/layer.mjs",
+    "sha256": "1fc1fddafed9d9eb22423f30e3e267c0ebc6cda18f313f58c7dba01f69c98c0f",
+    "bytes": 1512
+  },
+  {
+    "path": "web/scene/renderer.mjs",
+    "sha256": "dd9e331e542d22a5c69395335c2cd5c5eedc91b8d0107d86452b08784ec936f0",
+    "bytes": 9026
+  },
+  {
+    "path": "web/scene/state.mjs",
+    "sha256": "3316434343a19d6caee3688c2a4098f34e7363c1880e5e9fee9abea6c80a34b1",
+    "bytes": 3868
+  },
+  {
+    "path": "web/scene/store.mjs",
+    "sha256": "f95dd745bc001eb117b162c99a4bc843e745c1f79a03027f9188ad5303d3a6fe",
+    "bytes": 3720
+  },
+  {
+    "path": "web/scene/xuzhou-letter.json",
+    "sha256": "58d77d142e9a060ab2a68ce1c1c76aab5ec2be278af41f2ff991891d58baeb56",
+    "bytes": 13898
+  },
+  {
+    "path": "web/state.mjs",
+    "sha256": "df4f3498533197b3d0e37d2fcb7c1ac21429e3d5ca8fd0e2ed02060c1e61a76c",
+    "bytes": 5662
+  },
+  {
+    "path": "web/strategic-regions.json",
+    "sha256": "722e521778c59a3d5e7a935688f419d8b473ecd24d28da914b8892ce309d14a2",
+    "bytes": 1062268
+  },
+  {
+    "path": "web/style.css",
+    "sha256": "4fe07b99f5fb09ee91ffd40bea5dfe4398d112ba0ce43bed6f3a2ea91c43031f",
+    "bytes": 32748
+  },
+  {
+    "path": "web/tools.css",
+    "sha256": "fdf095caa228f484617b40b26b1935e7bc19b6f1be566e5360d0d4862dccc45e",
+    "bytes": 5094
+  },
+  {
+    "path": "web/tools.html",
+    "sha256": "28472650fb869b4ec575d1b521f88aaf32e3d0644fcef6baf7d4157fdfc78cdf",
+    "bytes": 6255
+  },
+  {
+    "path": "web/tools.mjs",
+    "sha256": "6cbc8d327f60605850ef4ca088db58e8edd6be183bc794085079655e5c1f5cb5",
+    "bytes": 13950
+  },
+  {
+    "path": "启动地图.ps1",
+    "sha256": "1cc7b235806b4bbcc637cd089e8fe4d52561660aae0859c5439d4634c14640f5",
+    "bytes": 379
+  }
+]

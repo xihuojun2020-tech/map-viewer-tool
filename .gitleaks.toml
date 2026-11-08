@@ -1,0 +1,17 @@
+title = "地图查看工具密钥检查"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+[[rules.allowlists]]
+description = "固定史料响应的公开 SHA-256 摘要，不是 API 凭据"
+regexTarget = "match"
+regexes = ['''api_response_sha256":\s*"[a-f0-9]{64}"?''']
+
+[[rules]]
+id = "opencode-secret-key"
+description = "OpenCode 私有模型接口密钥"
+regex = '''\boc_sk_[A-Za-z0-9_]{20,}\b'''
+keywords = ["oc_sk_"]

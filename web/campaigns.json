@@ -1,0 +1,1466 @@
+{
+  "note": "首批逐条核对的战役，尚未覆盖全部三国战争；箭头仅表示文献支持的进攻方向。",
+  "campaigns": [
+    {
+      "id": "h-changshe",
+      "title": "长社之战",
+      "world": "history",
+      "origin": null,
+      "target": {
+        "id": "changshe",
+        "name": "长社",
+        "coordinates": [
+          113.77,
+          34.22
+        ],
+        "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+        "location_note": "长葛一带地域参照；汉长社古城具体城垣待考。"
+      },
+      "attacker": {
+        "faction": "han",
+        "name": "汉军",
+        "commanders": [
+          "皇甫嵩",
+          "朱儁"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "huangjin",
+        "name": "黄巾军",
+        "commanders": [
+          "波才"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "huangjin",
+        "unit_label": "黄巾兵示意"
+      },
+      "summary": "皇甫嵩、朱儁在长社击破波才等。当前资料只能定位交战地域，尚不能确定此次出击的起点。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "supplement-19816",
+          "title": "後漢書/卷8",
+          "revision": 2457393,
+          "paragraph": "专题引文",
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2457393",
+          "display_quote": "五月，皇甫嵩、朱儁復與波才等戰於長社，大破之。",
+          "quote": "五月，皇甫嵩、朱儁復與波才等戰於長社，大破之。",
+          "archive": "research/2026-11-05-han-water-index-sources.json",
+          "phrase": "五月，皇甫嵩、朱儁復與波才等戰於長社，大破之。"
+        }
+      ],
+      "time": {
+        "start": 1788412,
+        "end": 1788440,
+        "precision": "month",
+        "label": "中平元年五月，日不详",
+        "original": {
+          "year": 184,
+          "label": "中平元年五月，日不详",
+          "month": 5
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-jibei",
+      "title": "曹操追黄巾至济北",
+      "world": "history",
+      "origin": {
+        "id": "shouzhang",
+        "name": "寿张",
+        "coordinates": [
+          116.28,
+          35.82
+        ],
+        "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+        "location_note": "汉寿张在今东平县西南的地域参照；不是后世迁治的阳谷寿张镇，寿张东战场未定位。"
+      },
+      "target": {
+        "id": "jibei",
+        "name": "济北",
+        "coordinates": [
+          116.45,
+          36.3
+        ],
+        "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+        "location_note": "济北区域编辑锚点；不表示受降地点已精确定位。"
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "huangjin",
+        "name": "青州黄巾",
+        "commanders": [
+          "所引本段未记姓名"
+        ],
+        "strength": "受降卒三十余万、男女百余万口；均不是本次交战兵力",
+        "model": "huangjin",
+        "unit_label": "黄巾兵示意"
+      },
+      "summary": "寿张战事后曹操追黄巾至济北，冬季受降并选精锐改编为青州兵。三十余万降卒与百余万男女不能相加当作战兵数。",
+      "route_note": "连接寿张与济北地域参照点，具体追击道路未考定。",
+      "citations": [
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 18,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "，必寧生民。」鮑信等亦謂之然。〉信乃與州吏萬潛等至東郡迎太祖領兖州牧。遂進兵擊黃巾於壽張東。",
+          "phrase": "遂進兵擊黃巾於壽張東。",
+          "display_quote": "，必寧生民。」鮑信等亦謂之然。〉信乃與州吏萬潛等至東郡迎太祖領兖州牧。遂進兵擊黃巾於壽張東。"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 18,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "會戰，戰輙禽獲，賊乃退走。〉購求信喪不得，衆乃刻木如信形狀，祭而哭焉。追黃巾至濟北。乞降。冬，受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。",
+          "phrase": "追黃巾至濟北。乞降。冬，受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。",
+          "display_quote": "會戰，戰輙禽獲，賊乃退走。〉購求信喪不得，衆乃刻木如信形狀，祭而哭焉。追黃巾至濟北。乞降。冬，受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。"
+        }
+      ],
+      "time": {
+        "start": 1791217,
+        "end": 1791600,
+        "precision": "year",
+        "label": "初平三年；追击月日不详，受降在冬季",
+        "original": {
+          "year": 192,
+          "label": "初平三年；追击月日不详，受降在冬季"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-xiapi",
+      "title": "曹操由彭城进攻下邳",
+      "world": "history",
+      "origin": {
+        "id": "pengcheng",
+        "name": "彭城",
+        "coordinates": [
+          117.19,
+          34.26
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "今徐州市区级参照；小说中的“徐州”须逐处辨别为城或州。"
+      },
+      "target": {
+        "id": "xiapi",
+        "name": "下邳",
+        "coordinates": [
+          117.9,
+          33.91
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "今睢宁古邳一带区域参照，不是现代邳州市中心。"
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "lu",
+        "name": "吕布军",
+        "commanders": [
+          "吕布"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操攻取彭城后进至下邳，击败吕布出迎的骑兵，追至城下。本条显示到达与接战，不把随后围城结束提前到十月。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 39,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "爲袁術使高順攻劉備，公遣夏侯惇救之，不利。備爲順所敗。九月，公東征布。冬十月，屠彭城，獲其相侯諧。進至下邳，布自將騎逆擊。大破之，獲其驍將成廉。追至城下",
+          "phrase": "冬十月，屠彭城，獲其相侯諧。進至下邳，布自將騎逆擊。大破之，獲其驍將成廉。追至城下",
+          "display_quote": "爲袁術使高順攻劉備，公遣夏侯惇救之，不利。備爲順所敗。九月，公東征布。冬十月，屠彭城，獲其相侯諧。進至下邳，布自將騎逆擊。大破之，獲其驍將成廉。追至城下"
+        }
+      ],
+      "time": {
+        "start": 1793698,
+        "end": 1793726,
+        "precision": "month",
+        "label": "建安三年十月，日不详",
+        "original": {
+          "year": 198,
+          "label": "建安三年十月，日不详",
+          "month": 10
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-guandu",
+      "title": "袁绍进逼官渡",
+      "world": "history",
+      "origin": null,
+      "target": {
+        "id": "guandu",
+        "name": "官渡",
+        "coordinates": [
+          114.05,
+          34.78
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "中牟一带区域定位；战场精确范围未复原。"
+      },
+      "attacker": {
+        "faction": "yuan",
+        "name": "袁绍军",
+        "commanders": [
+          "袁绍"
+        ],
+        "strength": "本段裴注转引“绍众十余万”；本条不据此断定同一时刻的到场人数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "正文称“不满万”；裴松之明确质疑，不能作为确定数值",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "袁绍进临官渡，起土山地道，与曹军对峙。曹军兵数存在史料争议；袁军此次前推起点尚未定位。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 48,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "二千餘匹以給軍。」本紀及《世語》並云公時有騎六百餘匹，繇馬爲安在哉？〉紹復進臨官渡，起土山地道。",
+          "phrase": "紹復進臨官渡，起土山地道。",
+          "display_quote": "二千餘匹以給軍。」本紀及《世語》並云公時有騎六百餘匹，繇馬爲安在哉？〉紹復進臨官渡，起土山地道。"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 48,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "徑從他道迎天子，則事立濟矣。」紹不從，曰：「吾要當先圍取之。」攸怒。〉時公兵不滿萬，傷者十二三。",
+          "phrase": "時公兵不滿萬，傷者十二三。",
+          "display_quote": "徑從他道迎天子，則事立濟矣。」紹不從，曰：「吾要當先圍取之。」攸怒。〉時公兵不滿萬，傷者十二三。"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 48,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "吞并，不可悉紀；雖征戰損傷，未應如此之少也。夫結營相守，異於摧鋒決戰。本紀云：「紹衆十餘萬，屯營東西數十里。」",
+          "phrase": "本紀云：「紹衆十餘萬，屯營東西數十里。」",
+          "display_quote": "吞并，不可悉紀；雖征戰損傷，未應如此之少也。夫結營相守，異於摧鋒決戰。本紀云：「紹衆十餘萬，屯營東西數十里。」"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 48,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "十里。」魏太祖雖機變無方，略不世出，安有以數千之兵，而得逾時相抗者哉？以理而言，竊謂不然。",
+          "phrase": "以理而言，竊謂不然。",
+          "display_quote": "十里。」魏太祖雖機變無方，略不世出，安有以數千之兵，而得逾時相抗者哉？以理而言，竊謂不然。"
+        }
+      ],
+      "time": {
+        "start": 1794318,
+        "end": 1794406,
+        "precision": "season",
+        "label": "建安五年秋；对峙过程的逐月界限未定",
+        "original": {
+          "year": 200,
+          "label": "建安五年秋；对峙过程的逐月界限未定",
+          "season": "秋"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-wuchao",
+      "title": "曹操夜袭乌巢",
+      "world": "history",
+      "origin": {
+        "id": "guandu",
+        "name": "官渡",
+        "coordinates": [
+          114.05,
+          34.78
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "中牟一带区域定位；战场精确范围未复原。"
+      },
+      "target": {
+        "id": "wuchao",
+        "name": "乌巢",
+        "coordinates": [
+          114.27,
+          35.04
+        ],
+        "precision": "地域级概略锚点，非遗址或军营测绘",
+        "location_note": "按公开地名资料所述延津东南设置阅读用地域锚点；县内具体遗址位置尚未考订。",
+        "location_source": {
+          "title": "维基百科：乌巢（地名索引）",
+          "url": "https://zh.wikipedia.org/wiki/%E7%83%8F%E5%B7%A2",
+          "note": "仅用于延津东南的地理关系，不用于核定兵力或营地坐标；摘录保存在研究目录。"
+        }
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操袭粮军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "步骑五千人；此次夜袭部队，非曹军总兵力",
+        "model": "infantry",
+        "unit_label": "步骑混合示意"
+      },
+      "defender": {
+        "faction": "yuan",
+        "name": "袁绍护粮军",
+        "commanders": [
+          "淳于琼等五将"
+        ],
+        "strength": "护送粮秣的兵万余人；非袁绍全军",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操留曹洪守营，亲率步骑五千夜袭淳于琼等护粮军。乌巢地名由裴注《曹瞒传》补明。",
+      "route_note": "官渡营区至乌巢地域的进攻方向；乌巢坐标仅为延津东南的概略锚点，非营地遗址。",
+      "citations": [
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 47,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "六百，遂縱兵擊，大破之，斬醜。醜、良皆紹名將也，再戰，悉禽，紹軍大震。公還軍官渡。",
+          "phrase": "公還軍官渡。",
+          "display_quote": "六百，遂縱兵擊，大破之，斬醜。醜、良皆紹名將也，再戰，悉禽，紹軍大震。公還軍官渡。"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 51,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "，然衆少糧盡，士卒疲乏。公謂運者曰：「却十五日爲汝破紹，不復勞汝矣。」冬十月，紹遣車運穀，使淳于瓊等五人將兵萬餘人送之，宿紹營北四十里。",
+          "phrase": "冬十月，紹遣車運穀，使淳于瓊等五人將兵萬餘人送之，宿紹營北四十里。",
+          "display_quote": "，然衆少糧盡，士卒疲乏。公謂運者曰：「却十五日爲汝破紹，不復勞汝矣。」冬十月，紹遣車運穀，使淳于瓊等五人將兵萬餘人送之，宿紹營北四十里。"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 51,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "謀臣許攸貪財，紹不能足，來奔，因說公擊瓊等。左右疑之，荀攸、賈詡勸公。公乃留曹洪守，自將步騎五千人夜往，會明至。",
+          "phrase": "公乃留曹洪守，自將步騎五千人夜往，會明至。",
+          "display_quote": "謀臣許攸貪財，紹不能足，來奔，因說公擊瓊等。左右疑之，荀攸、賈詡勸公。公乃留曹洪守，自將步騎五千人夜往，會明至。"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 51,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "月，爲之柰何？」攸曰：「公孤軍獨守，外無救援而糧穀已盡，此危急之日也。今袁氏輜重有萬餘乘，在故市、烏巢，屯軍無嚴備；",
+          "phrase": "今袁氏輜重有萬餘乘，在故市、烏巢，屯軍無嚴備；",
+          "display_quote": "月，爲之柰何？」攸曰：「公孤軍獨守，外無救援而糧穀已盡，此危急之日也。今袁氏輜重有萬餘乘，在故市、烏巢，屯軍無嚴備；"
+        }
+      ],
+      "time": {
+        "start": 1794407,
+        "end": 1794435,
+        "precision": "month",
+        "label": "建安五年十月，日不详",
+        "original": {
+          "year": 200,
+          "label": "建安五年十月，日不详",
+          "month": 10
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-changban",
+      "title": "曹操精骑追击长坂",
+      "world": "history",
+      "origin": {
+        "id": "xiangyang",
+        "name": "襄阳",
+        "coordinates": [
+          112.14,
+          32.04
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "襄阳古城区域参照。"
+      },
+      "target": {
+        "id": "changban",
+        "name": "长坂",
+        "coordinates": [
+          111.79,
+          30.83
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "当阳附近区域参照，战斗路线未复原。"
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操追击骑兵",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "精骑五千；追击部队，非曹军总数",
+        "model": "cavalry",
+        "unit_label": "精骑示意"
+      },
+      "defender": {
+        "faction": "liu",
+        "name": "刘备军与随行百姓",
+        "commanders": [
+          "刘备",
+          "张飞",
+          "赵云"
+        ],
+        "strength": "随行众十余万，且“被甲者少”；战兵总数未载",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操轻军到襄阳后，以五千精骑追上刘备于当阳长坂。刘备随行十余万众包含百姓，不能显示为十余万军队。",
+      "route_note": "襄阳至长坂的追击方向示意；史书记载一日一夜，不据此生成逐小时军队位置。",
+      "citations": [
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 12,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "曹公以江陵有軍實，恐先主據之，乃釋輜重，輕軍到襄陽。聞先主已過，曹公將精騎五千急追之，一日一夜行三百餘里，及於當陽之長坂。",
+          "phrase": "曹公以江陵有軍實，恐先主據之，乃釋輜重，輕軍到襄陽。聞先主已過，曹公將精騎五千急追之，一日一夜行三百餘里，及於當陽之長坂。",
+          "display_quote": "曹公以江陵有軍實，恐先主據之，乃釋輜重，輕軍到襄陽。聞先主已過，曹公將精騎五千急追之，一日一夜行三百餘里，及於當陽之長坂。"
+        },
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 11,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "右及荊州人多歸先主。 {{*|《典略》曰：備過辭表墓，遂涕泣而去。}}比到當陽，眾十餘萬，輜重數千兩，日行十餘里，",
+          "phrase": "比到當陽，眾十餘萬，輜重數千兩，日行十餘里，",
+          "display_quote": "起。琮左右及荊州人多歸先主。 〈《典略》曰：備過辭表墓，遂涕泣而去。〉比到當陽，眾十餘萬，輜重數千兩，日行十餘里，"
+        },
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 11,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "日行十餘里，別遣關羽乘船數百艘，使會江陵。或謂先主曰：「宜速行保江陵，今雖擁大眾，被甲者少",
+          "phrase": "今雖擁大眾，被甲者少",
+          "display_quote": "日行十餘里，別遣關羽乘船數百艘，使會江陵。或謂先主曰：「宜速行保江陵，今雖擁大眾，被甲者少"
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 73,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "秋七月，公南征劉表。八月，表卒，其子琮代，屯襄陽，劉備屯樊。九月，公到新野，琮遂降，備走夏口。",
+          "phrase": "九月，公到新野，琮遂降，備走夏口。",
+          "display_quote": "秋七月，公南征劉表。八月，表卒，其子琮代，屯襄陽，劉備屯樊。九月，公到新野，琮遂降，備走夏口。"
+        }
+      ],
+      "time": {
+        "start": 1797301,
+        "end": 1797329,
+        "precision": "month",
+        "label": "建安十三年九月相关进军；长坂具体日不详",
+        "original": {
+          "year": 208,
+          "label": "建安十三年九月相关进军；长坂具体日不详",
+          "month": 9
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-chibi",
+      "title": "孙刘联军迎击赤壁",
+      "world": "history",
+      "origin": {
+        "id": "xiakou",
+        "name": "夏口",
+        "coordinates": [
+          114.3,
+          30.55
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "武汉长江汉水交汇区参照，古河岸未复原。"
+      },
+      "target": {
+        "id": "chibi",
+        "name": "赤壁",
+        "coordinates": [
+          113.63,
+          29.88
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "蒲圻赤壁候选；战场定位存在不同说法。"
+      },
+      "attacker": {
+        "faction": "sunquan",
+        "name": "孙刘联军",
+        "commanders": [
+          "周瑜",
+          "程普",
+          "刘备",
+          "黄盖"
+        ],
+        "strength": "孙权选发三万人；这是孙权所发部队，非孙刘联军合计",
+        "model": "infantry",
+        "unit_label": "水战部队·步卒代示"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引交战段未给出可确认的总数；不采用“八十万”号称数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "刘备进住夏口并联孙权，周瑜、程普与刘备并力迎击曹操，遇于赤壁。箭头表示联军会合地域到战场的关系，不是周瑜单独军营的精确航线。",
+      "route_note": "夏口为联军会合地域锚点；赤壁采用现有地域参照，古战场具体范围有争议。箭头不沿现代河道推定航线。",
+      "citations": [
+        {
+          "source": "sgz-54",
+          "title": "三國志/卷54",
+          "paragraph": 7,
+          "revision": 2387393,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2387393",
+          "quote": "時劉備為曹公所破，欲引南渡江。與魯肅遇於當陽，遂共圖計，因進住夏口，遣諸葛亮詣權。權遂遣瑜及程普等與備並力逆曹公，遇於赤壁。",
+          "phrase": "因進住夏口，遣諸葛亮詣權。權遂遣瑜及程普等與備並力逆曹公，遇於赤壁。",
+          "display_quote": "時劉備為曹公所破，欲引南渡江。與魯肅遇於當陽，遂共圖計，因進住夏口，遣諸葛亮詣權。權遂遣瑜及程普等與備並力逆曹公，遇於赤壁。"
+        },
+        {
+          "source": "sgz-54",
+          "title": "三國志/卷54",
+          "paragraph": 6,
+          "revision": 2387393,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2387393",
+          "quote": "各顧妻子，挾持私慮，深失所望，獨卿與子敬與孤同耳，此天以卿二人讚孤也。五萬兵難卒合，已選三萬人，船糧戰具俱辦",
+          "phrase": "五萬兵難卒合，已選三萬人，船糧戰具俱辦",
+          "display_quote": "各顧妻子，挾持私慮，深失所望，獨卿與子敬與孤同耳，此天以卿二人讚孤也。五萬兵難卒合，已選三萬人，船糧戰具俱辦"
+        },
+        {
+          "source": "sgz-54",
+          "title": "三國志/卷54",
+          "paragraph": 7,
+          "revision": 2387393,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2387393",
+          "quote": "於赤壁。時曹公軍眾已有疾病，初一交戰，公軍敗退，引次江北。瑜等在南岸。瑜部將黃蓋曰：",
+          "phrase": "瑜部將黃蓋曰：",
+          "display_quote": "於赤壁。時曹公軍眾已有疾病，初一交戰，公軍敗退，引次江北。瑜等在南岸。瑜部將黃蓋曰："
+        },
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 73,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "，孫權爲備攻合肥。公自江陵征備，至巴丘，遣張憙救合肥。權聞憙至，乃走。公至赤壁，與備戰，不利。",
+          "phrase": "公至赤壁，與備戰，不利。",
+          "display_quote": "，孫權爲備攻合肥。公自江陵征備，至巴丘，遣張憙救合肥。權聞憙至，乃走。公至赤壁，與備戰，不利。"
+        }
+      ],
+      "time": {
+        "start": 1797064,
+        "end": 1797447,
+        "precision": "year",
+        "label": "建安十三年；本批保留年级，具体月份未核",
+        "original": {
+          "year": 208,
+          "label": "建安十三年；本批保留年级，具体月份未核"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-chengdu",
+      "title": "刘备由雒城进围成都",
+      "world": "history",
+      "origin": {
+        "id": "luoxian",
+        "name": "雒",
+        "coordinates": [
+          104.28,
+          30.98
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "今广汉附近区域参照。"
+      },
+      "target": {
+        "id": "chengdu",
+        "name": "成都",
+        "coordinates": [
+          104.07,
+          30.67
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "今成都城区级参照。"
+      },
+      "attacker": {
+        "faction": "liu",
+        "name": "刘备军",
+        "commanders": [
+          "刘备"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "liuzhang",
+        "name": "刘璋军",
+        "commanders": [
+          "刘璋"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "雒城攻破后，刘备进围成都数十日，刘璋出降。入蜀初期的兵数不能直接用作此战参战数。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 16,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "十九年夏，雒城破",
+          "phrase": "十九年夏，雒城破",
+          "display_quote": "十九年夏，雒城破"
+        },
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 16,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "，令軍降之，任厲聲曰：「老臣終不復事二主矣。」乃殺之。先主嘆惜焉。}}進圍成都數十日，璋出降。",
+          "phrase": "進圍成都數十日，璋出降。",
+          "display_quote": "勇，令軍降之，任厲聲曰：「老臣終不復事二主矣。」乃殺之。先主嘆惜焉。〉進圍成都數十日，璋出降。"
+        }
+      ],
+      "time": {
+        "start": 1799338,
+        "end": 1799455,
+        "precision": "season",
+        "label": "建安十九年夏，具体月日未详",
+        "original": {
+          "year": 214,
+          "label": "建安十九年夏，具体月日未详",
+          "season": "夏"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-dingjun",
+      "title": "黄忠进击定军山",
+      "world": "history",
+      "origin": null,
+      "target": {
+        "id": "dingjun",
+        "name": "定军山",
+        "coordinates": [
+          106.68,
+          33.12
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "勉县南部山区参照。"
+      },
+      "attacker": {
+        "faction": "liu",
+        "name": "刘备军",
+        "commanders": [
+          "刘备",
+          "黄忠"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "夏侯渊军",
+        "commanders": [
+          "夏侯渊"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "刘备在定军山一带立营，夏侯渊来争。黄忠奉命乘高进击，击破并斩夏侯渊。战术出击位置未考定，只显示战场兵人。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 19,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "二十四年春，自陽平南渡沔水，緣山稍前，於定軍山勢作營。淵將兵來爭其地。先主命黃忠乘高鼓譟攻之，大破淵軍，斬淵及曹公所署益州刺史趙顒等。",
+          "phrase": "二十四年春，自陽平南渡沔水，緣山稍前，於定軍山勢作營。淵將兵來爭其地。先主命黃忠乘高鼓譟攻之，大破淵軍，斬淵及曹公所署益州刺史趙顒等。",
+          "display_quote": "二十四年春，自陽平南渡沔水，緣山稍前，於定軍山勢作營。淵將兵來爭其地。先主命黃忠乘高鼓譟攻之，大破淵軍，斬淵及曹公所署益州刺史趙顒等。"
+        }
+      ],
+      "time": {
+        "start": 1801081,
+        "end": 1801168,
+        "precision": "season",
+        "label": "建安二十四年春，具体月日未详",
+        "original": {
+          "year": 219,
+          "label": "建安二十四年春，具体月日未详",
+          "season": "春"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-hanzhong",
+      "title": "曹操由长安南征汉中",
+      "world": "history",
+      "origin": {
+        "id": "changan",
+        "name": "长安",
+        "coordinates": [
+          108.86,
+          34.37
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "汉长安城附近区域参照。"
+      },
+      "target": {
+        "id": "hanzhong",
+        "name": "汉中",
+        "coordinates": [
+          107.03,
+          33.07
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "汉中盆地区域参照，古县治另考。 此名称在本索引代表郡级区域，不作为已核定的古县城显示；实际治所另行编录。"
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "liu",
+        "name": "刘备军",
+        "commanders": [
+          "刘备"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "夏侯渊战死后曹操自长安南征，刘备据险拒守。本条只表示南征方向，尚不能恢复穿越秦岭的确切行军道路。",
+      "route_note": "长安至汉中战区的战略方向，非穿越秦岭古道的复原。",
+      "citations": [
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 19,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "其地。先主命黃忠乘高鼓譟攻之，大破淵軍，斬淵及曹公所署益州刺史趙顒等。曹公自長安舉眾南征。",
+          "phrase": "曹公自長安舉眾南征。",
+          "display_quote": "其地。先主命黃忠乘高鼓譟攻之，大破淵軍，斬淵及曹公所署益州刺史趙顒等。曹公自長安舉眾南征。"
+        },
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 19,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "公自長安舉眾南征。先主遙策之曰：「曹公雖來，無能為也，我必有漢川矣。」及曹公至，先主斂眾拒險，終不交鋒",
+          "phrase": "及曹公至，先主斂眾拒險，終不交鋒",
+          "display_quote": "公自長安舉眾南征。先主遙策之曰：「曹公雖來，無能為也，我必有漢川矣。」及曹公至，先主斂眾拒險，終不交鋒"
+        },
+        {
+          "source": "sgz-32",
+          "title": "三國志/卷32",
+          "paragraph": 19,
+          "revision": 2583378,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583378",
+          "quote": "二十四年春，自陽平南渡沔水",
+          "phrase": "二十四年春，自陽平南渡沔水",
+          "display_quote": "二十四年春，自陽平南渡沔水"
+        }
+      ],
+      "time": {
+        "start": 1801081,
+        "end": 1801168,
+        "precision": "season",
+        "label": "建安二十四年春相关进军；月日未详",
+        "original": {
+          "year": 219,
+          "label": "建安二十四年春相关进军；月日未详",
+          "season": "春"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-fancheng",
+      "title": "关羽围攻樊城",
+      "world": "history",
+      "origin": null,
+      "target": {
+        "id": "fancheng",
+        "name": "樊城",
+        "coordinates": [
+          112.14,
+          32.07
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "汉水北岸区域参照。"
+      },
+      "attacker": {
+        "faction": "liu",
+        "name": "关羽军",
+        "commanders": [
+          "关羽"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "樊城与援军",
+        "commanders": [
+          "曹仁",
+          "于禁"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "汉水泛溢，于禁军被淹，关羽俘于禁并围曹仁。当前史料确认樊城战事，未据此将江陵任意设成这次出击起点。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "sgz-01",
+          "title": "三國志/卷01",
+          "paragraph": 118,
+          "revision": 2585429,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2585429",
+          "quote": "秋七月，以夫人卞氏爲王后。遣于禁助曹仁擊關羽。八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。",
+          "phrase": "八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。",
+          "display_quote": "秋七月，以夫人卞氏爲王后。遣于禁助曹仁擊關羽。八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。"
+        },
+        {
+          "source": "sgz-36",
+          "title": "三國志/卷36",
+          "paragraph": 7,
+          "revision": 2583383,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2583383",
+          "quote": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率眾攻曹仁於樊。",
+          "phrase": "是歲，羽率眾攻曹仁於樊。",
+          "display_quote": "二十四年，先主為漢中王，拜羽為前將軍，假節鉞。是歲，羽率眾攻曹仁於樊。"
+        }
+      ],
+      "time": {
+        "start": 1801287,
+        "end": 1801316,
+        "precision": "month",
+        "label": "建安二十四年八月，日不详",
+        "original": {
+          "year": 219,
+          "label": "建安二十四年八月，日不详",
+          "month": 8
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "h-qishan",
+      "title": "诸葛亮北伐祁山",
+      "world": "history",
+      "origin": {
+        "id": "hanzhong",
+        "name": "汉中",
+        "coordinates": [
+          107.03,
+          33.07
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "汉中盆地区域参照，古县治另考。 此名称在本索引代表郡级区域，不作为已核定的古县城显示；实际治所另行编录。"
+      },
+      "target": {
+        "id": "qishan",
+        "name": "祁山",
+        "coordinates": [
+          105.21,
+          34.23
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "礼县东部山区级参照。"
+      },
+      "attacker": {
+        "faction": "shu",
+        "name": "蜀汉北伐主力",
+        "commanders": [
+          "诸葛亮"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "wei",
+        "name": "曹魏诸军",
+        "commanders": [
+          "曹真",
+          "张郃"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "诸葛亮此前率军北驻汉中，建兴六年春主力攻祁山。赵云、邓芝据箕谷的疑军另行行动，本箭头不代表他们的路线。",
+      "route_note": "前期汉中驻军地域至祁山战区的方向关系；具体出师营地和途中道路未定位。",
+      "citations": [
+        {
+          "source": "sgz-35",
+          "title": "三國志/卷35",
+          "paragraph": 8,
+          "revision": 2115776,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "quote": "留兵，不運糧，而綱紀粗定，夷、漢粗安故耳。」}}乃治戎講武，以俟大舉。五年，率諸軍北駐漢中",
+          "phrase": "五年，率諸軍北駐漢中",
+          "display_quote": "不留兵，不運糧，而綱紀粗定，夷、漢粗安故耳。」〉乃治戎講武，以俟大舉。五年，率諸軍北駐漢中"
+        },
+        {
+          "source": "sgz-35",
+          "title": "三國志/卷35",
+          "paragraph": 13,
+          "revision": 2115776,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "quote": "，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏大將軍曹真舉眾拒之。亮身率諸軍攻祁山",
+          "phrase": "亮身率諸軍攻祁山",
+          "display_quote": "，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏大將軍曹真舉眾拒之。亮身率諸軍攻祁山"
+        },
+        {
+          "source": "sgz-35",
+          "title": "三國志/卷35",
+          "paragraph": 13,
+          "revision": 2115776,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "quote": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏大將軍曹真舉眾拒之。",
+          "phrase": "使趙雲、鄧芝為疑軍，據箕谷，魏大將軍曹真舉眾拒之。",
+          "display_quote": "六年春，揚聲由斜谷道取眉，使趙雲、鄧芝為疑軍，據箕谷，魏大將軍曹真舉眾拒之。"
+        },
+        {
+          "source": "sgz-35",
+          "title": "三國志/卷35",
+          "paragraph": 13,
+          "revision": 2115776,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "quote": "以略無備預；而卒聞亮出，朝野恐懼，隴右、祁山尤甚，故三郡同時應亮。}}魏明帝西鎮長安，命張郃拒亮",
+          "phrase": "魏明帝西鎮長安，命張郃拒亮",
+          "display_quote": "是以略無備預；而卒聞亮出，朝野恐懼，隴右、祁山尤甚，故三郡同時應亮。〉魏明帝西鎮長安，命張郃拒亮"
+        },
+        {
+          "source": "sgz-35",
+          "title": "三國志/卷35",
+          "paragraph": 13,
+          "revision": 2115776,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2115776",
+          "quote": "六年春，揚聲由斜谷道取眉",
+          "phrase": "六年春，揚聲由斜谷道取眉",
+          "display_quote": "六年春，揚聲由斜谷道取眉"
+        }
+      ],
+      "time": {
+        "start": 1804388,
+        "end": 1804476,
+        "precision": "season",
+        "label": "建兴六年春，具体月日未详",
+        "original": {
+          "year": 228,
+          "label": "建兴六年春，具体月日未详",
+          "season": "春",
+          "calendar": "shu"
+        },
+        "conversion": "公开历法复原；保留原文精度与政权历法差异"
+      }
+    },
+    {
+      "id": "r-xiapi",
+      "title": "曹操进攻下邳",
+      "world": "romance",
+      "origin": null,
+      "target": {
+        "id": "xiapi",
+        "name": "下邳",
+        "coordinates": [
+          117.9,
+          33.91
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "今睢宁古邳一带区域参照，不是现代邳州市中心。"
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操军",
+        "commanders": [
+          "曹操"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "lu",
+        "name": "吕布军",
+        "commanders": [
+          "吕布",
+          "陈宫"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "小说写曹操得徐州后攻下邳；本条未将小说中的“徐州”自动等同某一个精确出发营地。刘备另守淮南径路。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "romance-019",
+          "title": "三國演義/第019回",
+          "paragraph": 16,
+          "revision": 2567981,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567981",
+          "quote": "有違？」次日，玄德留糜竺、簡雍在徐州，帶孫乾、關、張引軍往守淮南徑路。曹操自引兵攻下邳。",
+          "phrase": "曹操自引兵攻下邳。",
+          "display_quote": "有違？」次日，玄德留糜竺、簡雍在徐州，帶孫乾、關、張引軍往守淮南徑路。曹操自引兵攻下邳。"
+        },
+        {
+          "source": "romance-019",
+          "title": "三國演義/第019回",
+          "paragraph": 16,
+          "revision": 2567981,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567981",
+          "quote": "東諸路。其淮南徑路請玄德當之。」玄德曰：「丞相將令，安敢有違？」次日，玄德留糜竺、簡雍在徐州，帶孫乾、關、張引軍往守淮南徑路。",
+          "phrase": "玄德留糜竺、簡雍在徐州，帶孫乾、關、張引軍往守淮南徑路。",
+          "display_quote": "東諸路。其淮南徑路請玄德當之。」玄德曰：「丞相將令，安敢有違？」次日，玄德留糜竺、簡雍在徐州，帶孫乾、關、張引軍往守淮南徑路。"
+        }
+      ],
+      "position": 19016,
+      "until": 20000,
+      "chapter": 19
+    },
+    {
+      "id": "r-wuchao",
+      "title": "曹操夜袭乌巢",
+      "world": "romance",
+      "origin": {
+        "id": "guandu",
+        "name": "官渡",
+        "coordinates": [
+          114.05,
+          34.78
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "中牟一带区域定位；战场精确范围未复原。"
+      },
+      "target": {
+        "id": "wuchao",
+        "name": "乌巢",
+        "coordinates": [
+          114.27,
+          35.04
+        ],
+        "precision": "地域级概略锚点，非遗址或军营测绘",
+        "location_note": "按公开地名资料所述延津东南设置阅读用地域锚点；县内具体遗址位置尚未考订。",
+        "location_source": {
+          "title": "维基百科：乌巢（地名索引）",
+          "url": "https://zh.wikipedia.org/wiki/%E7%83%8F%E5%B7%A2",
+          "note": "仅用于延津东南的地理关系，不用于核定兵力或营地坐标；摘录保存在研究目录。"
+        }
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操劫粮军",
+        "commanders": [
+          "曹操",
+          "张辽",
+          "许褚",
+          "徐晃",
+          "于禁"
+        ],
+        "strength": "马步军五千；本回劫粮部队",
+        "model": "infantry",
+        "unit_label": "步骑混合示意"
+      },
+      "defender": {
+        "faction": "yuan",
+        "name": "乌巢守军",
+        "commanders": [
+          "淳于琼"
+        ],
+        "strength": "所引本回劫粮段未载守军总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "小说写曹操采用许攸之计，选马步军五千，张辽、许褚在前，徐晃、于禁在后，向乌巢进发。",
+      "route_note": "官渡至乌巢的小说进攻方向。地名采用地理参照，兵力与将领仅按本回记载。",
+      "citations": [
+        {
+          "source": "romance-030",
+          "title": "三國演義/第030回",
+          "paragraph": 14,
+          "revision": 2567996,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "quote": "友，此時卻在袁紹處為謀士。當下搜得使者所齎曹操催糧書信，逕來見紹曰：「曹操屯軍官渡，與我相持已久",
+          "phrase": "曹操屯軍官渡，與我相持已久",
+          "display_quote": "友，此時卻在袁紹處為謀士。當下搜得使者所齎曹操催糧書信，逕來見紹曰：「曹操屯軍官渡，與我相持已久"
+        },
+        {
+          "source": "romance-030",
+          "title": "三國演義/第030回",
+          "paragraph": 19,
+          "revision": 2567996,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "quote": "次日，操自選馬步軍士五千，準備往烏巢劫糧。",
+          "phrase": "次日，操自選馬步軍士五千，準備往烏巢劫糧。",
+          "display_quote": "次日，操自選馬步軍士五千，準備往烏巢劫糧。"
+        },
+        {
+          "source": "romance-030",
+          "title": "三國演義/第030回",
+          "paragraph": 19,
+          "revision": 2567996,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "quote": "守大寨，夏侯惇、夏侯淵領一軍伏於左，曹仁、李典領一軍伏於右，以備不虞。教張遼、許褚在前，徐晃、于禁在後，操自引諸將居中，共五千人馬",
+          "phrase": "教張遼、許褚在前，徐晃、于禁在後，操自引諸將居中，共五千人馬",
+          "display_quote": "守大寨，夏侯惇、夏侯淵領一軍伏於左，曹仁、李典領一軍伏於右，以備不虞。教張遼、許褚在前，徐晃、于禁在後，操自引諸將居中，共五千人馬"
+        },
+        {
+          "source": "romance-030",
+          "title": "三國演義/第030回",
+          "paragraph": 18,
+          "revision": 2567996,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "quote": "明公還肯聽否？」操喜曰：「願聞良策。」攸曰：「袁紹軍糧輜重，盡積烏巢，今撥淳于瓊把守。",
+          "phrase": "今撥淳于瓊把守。",
+          "display_quote": "明公還肯聽否？」操喜曰：「願聞良策。」攸曰：「袁紹軍糧輜重，盡積烏巢，今撥淳于瓊把守。"
+        }
+      ],
+      "position": 30019,
+      "until": 31000,
+      "chapter": 30
+    },
+    {
+      "id": "r-guandu",
+      "title": "张郃、高览进攻曹营",
+      "world": "romance",
+      "origin": null,
+      "target": {
+        "id": "guandu",
+        "name": "官渡",
+        "coordinates": [
+          114.05,
+          34.78
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "中牟一带区域定位；战场精确范围未复原。"
+      },
+      "attacker": {
+        "faction": "yuan",
+        "name": "袁绍攻营军",
+        "commanders": [
+          "张郃",
+          "高览"
+        ],
+        "strength": "五千；攻官渡曹营部队",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹营守军",
+        "commanders": [
+          "荀攸",
+          "贾诩",
+          "曹洪"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "袁绍遣张郃、高览五千人进攻官渡曹营，同时另遣蒋奇一万人救乌巢。两军分属不同任务，不能合并成这支进攻军。",
+      "route_note": "",
+      "citations": [
+        {
+          "source": "romance-030",
+          "title": "三國演義/第030回",
+          "paragraph": 19,
+          "revision": 2567996,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "quote": "，君請勿疑。」遼曰：「亦須防袁紹乘虛來襲。」操笑曰：「吾已籌之熟矣。」便教荀攸、賈詡、曹洪同許攸守大寨",
+          "phrase": "便教荀攸、賈詡、曹洪同許攸守大寨",
+          "display_quote": "，君請勿疑。」遼曰：「亦須防袁紹乘虛來襲。」操笑曰：「吾已籌之熟矣。」便教荀攸、賈詡、曹洪同許攸守大寨"
+        },
+        {
+          "source": "romance-030",
+          "title": "三國演義/第030回",
+          "paragraph": 22,
+          "revision": 2567996,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2567996",
+          "quote": "吾屬皆被擒矣。」郭圖曰：「曹操只顧劫糧，豈留兵在寨耶？」再三請劫曹營。紹乃遣張郃、高覽引軍五千，往官渡擊曹營；遣蔣奇領兵一萬，往救烏巢。",
+          "phrase": "紹乃遣張郃、高覽引軍五千，往官渡擊曹營；遣蔣奇領兵一萬，往救烏巢。",
+          "display_quote": "吾屬皆被擒矣。」郭圖曰：「曹操只顧劫糧，豈留兵在寨耶？」再三請劫曹營。紹乃遣張郃、高覽引軍五千，往官渡擊曹營；遣蔣奇領兵一萬，往救烏巢。"
+        }
+      ],
+      "position": 30022,
+      "until": 31000,
+      "chapter": 30
+    },
+    {
+      "id": "r-changban",
+      "title": "曹操铁骑追击当阳",
+      "world": "romance",
+      "origin": {
+        "id": "xiangyang",
+        "name": "襄阳",
+        "coordinates": [
+          112.14,
+          32.04
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "襄阳古城区域参照。"
+      },
+      "target": {
+        "id": "changban",
+        "name": "长坂",
+        "coordinates": [
+          111.79,
+          30.83
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "当阳附近区域参照，战斗路线未复原。"
+      },
+      "attacker": {
+        "faction": "cao",
+        "name": "曹操追击骑兵",
+        "commanders": [
+          "曹操",
+          "文聘"
+        ],
+        "strength": "五千铁骑；小说追击部队",
+        "model": "cavalry",
+        "unit_label": "铁骑示意"
+      },
+      "defender": {
+        "faction": "liu",
+        "name": "刘备军与百姓",
+        "commanders": [
+          "刘备",
+          "张飞",
+          "赵云"
+        ],
+        "strength": "小说记三千余军马、十数万百姓；二者分列",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "曹操定襄阳后命精选五千铁骑追击；刘备带百姓向江陵移动，在当阳一带遇袭。本回地图只展示这一进度内的战事。",
+      "route_note": "当阳战事用长坂地域作概略锚点，不认定小说景山营地的精确位置。",
+      "citations": [
+        {
+          "source": "romance-041",
+          "title": "三國演義/第041回",
+          "paragraph": 20,
+          "revision": 2568004,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568004",
+          "quote": "襄陽既定",
+          "phrase": "襄陽既定",
+          "display_quote": "襄陽既定"
+        },
+        {
+          "source": "romance-041",
+          "title": "三國演義/第041回",
+          "paragraph": 20,
+          "revision": 2568004,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568004",
+          "quote": "引軍開道。探馬報說：「劉備帶領百姓，日行止十數里，計程只有三百餘里。」操教各部下精選五千鐵騎，星夜前進，限一日一夜，趕上劉備。",
+          "phrase": "操教各部下精選五千鐵騎，星夜前進，限一日一夜，趕上劉備。",
+          "display_quote": "引軍開道。探馬報說：「劉備帶領百姓，日行止十數里，計程只有三百餘里。」操教各部下精選五千鐵騎，星夜前進，限一日一夜，趕上劉備。"
+        },
+        {
+          "source": "romance-041",
+          "title": "三國演義/第041回",
+          "paragraph": 21,
+          "revision": 2568004,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568004",
+          "quote": "卻說玄德引十數萬百姓、三千餘軍馬，一程程挨著往江陵進發。",
+          "phrase": "卻說玄德引十數萬百姓、三千餘軍馬，一程程挨著往江陵進發。",
+          "display_quote": "卻說玄德引十數萬百姓、三千餘軍馬，一程程挨著往江陵進發。"
+        },
+        {
+          "source": "romance-041",
+          "title": "三國演義/第041回",
+          "paragraph": 22,
+          "revision": 2568004,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568004",
+          "quote": "日：「主公若戀而不棄，禍不遠矣。」玄德問：「前面是何處？」左右答曰：「前面是當陽縣。",
+          "phrase": "前面是當陽縣。",
+          "display_quote": "日：「主公若戀而不棄，禍不遠矣。」玄德問：「前面是何處？」左右答曰：「前面是當陽縣。"
+        },
+        {
+          "source": "romance-041",
+          "title": "三國演義/第041回",
+          "paragraph": 23,
+          "revision": 2568004,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568004",
+          "quote": "玄德死戰。正在危迫之際，幸得張飛引軍至，殺開一條血路，救玄德望東而走。文聘當先攔住。",
+          "phrase": "文聘當先攔住。",
+          "display_quote": "玄德死戰。正在危迫之際，幸得張飛引軍至，殺開一條血路，救玄德望東而走。文聘當先攔住。"
+        }
+      ],
+      "position": 41023,
+      "until": 42000,
+      "chapter": 41
+    },
+    {
+      "id": "r-fancheng",
+      "title": "关羽渡襄江攻樊城",
+      "world": "romance",
+      "origin": {
+        "id": "xiangyang",
+        "name": "襄阳",
+        "coordinates": [
+          112.14,
+          32.04
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "襄阳古城区域参照。"
+      },
+      "target": {
+        "id": "fancheng",
+        "name": "樊城",
+        "coordinates": [
+          112.14,
+          32.07
+        ],
+        "precision": "区域级编辑定位，非古城测绘点",
+        "location_note": "汉水北岸区域参照。"
+      },
+      "attacker": {
+        "faction": "liu",
+        "name": "关羽军",
+        "commanders": [
+          "关羽",
+          "关平"
+        ],
+        "strength": "所引原文未载本次参战总数",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "defender": {
+        "faction": "cao",
+        "name": "曹仁军",
+        "commanders": [
+          "曹仁",
+          "满宠",
+          "吕常"
+        ],
+        "strength": "吕常出迎二千；仅为出迎支队，非全城守军",
+        "model": "infantry",
+        "unit_label": "步卒示意"
+      },
+      "summary": "本回关羽取得襄阳后，令关平备船，渡襄江攻樊城。小说中“攻取襄阳”与正史不能混为同一套事件。",
+      "route_note": "襄阳至樊城的渡江方向，箭头不代表已考证渡口。",
+      "citations": [
+        {
+          "source": "romance-073",
+          "title": "三國演義/第073回",
+          "paragraph": 23,
+          "revision": 2568035,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568035",
+          "quote": "累現掌糧料，亦是重事。汝勿多疑，只與我築烽火臺去。」王甫怏怏拜辭而行。雲長令關平準備船隻渡襄江，攻打樊城。",
+          "phrase": "雲長令關平準備船隻渡襄江，攻打樊城。",
+          "display_quote": "累現掌糧料，亦是重事。汝勿多疑，只與我築烽火臺去。」王甫怏怏拜辭而行。雲長令關平準備船隻渡襄江，攻打樊城。"
+        },
+        {
+          "source": "romance-073",
+          "title": "三國演義/第073回",
+          "paragraph": 24,
+          "revision": 2568035,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568035",
+          "quote": "可擊』？今雲長半渡襄江，何不擊之？若兵臨城下，將至壕邊，急難抵當矣。」仁即與兵二千，令呂常出樊城迎戰。",
+          "phrase": "仁即與兵二千，令呂常出樊城迎戰。",
+          "display_quote": "可擊』？今雲長半渡襄江，何不擊之？若兵臨城下，將至壕邊，急難抵當矣。」仁即與兵二千，令呂常出樊城迎戰。"
+        },
+        {
+          "source": "romance-073",
+          "title": "三國演義/第073回",
+          "paragraph": 24,
+          "revision": 2568035,
+          "url": "https://zh.wikisource.org/w/index.php?oldid=2568035",
+          "quote": "卻說曹仁折了二將，退守樊城，謂滿寵曰：",
+          "phrase": "曹仁折了二將，退守樊城，謂滿寵曰：",
+          "display_quote": "卻說曹仁折了二將，退守樊城，謂滿寵曰："
+        }
+      ],
+      "position": 73024,
+      "until": 74000,
+      "chapter": 73
+    }
+  ]
+}

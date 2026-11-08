@@ -1,0 +1,173 @@
+Data source and modification notices
+
+Han orientaux 140 (2017-01-24), by Zunkir.
+https://commons.wikimedia.org/wiki/File:Han_orientaux_140.svg
+CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+Base by Kanguole: Eastern China blank relief map.svg, CC BY-SA 4.0.
+https://commons.wikimedia.org/wiki/File:Eastern_China_blank_relief_map.svg
+The base declares equirectangular projection, longitude 99.5 to 125.7 degrees,
+latitude 18 to 42.5 degrees. We extracted vector boundary lines and transcribed
+thirteen province labels into Chinese; foreign source text and artwork are not
+embedded in the application. Source lines are clipped only at the original
+image extent, never closed into complete provinces using the image rectangle.
+Derivative boundary data are CC BY-SA 4.0. The original SVG and metadata are
+preserved in data/references and research. This is an approximate circa-140 CE
+reconstruction with cropped western/northeastern coverage; no cadastral or
+county-level accuracy is asserted. It is separate from the 219 CE source below.
+
+The source author's stated references are Rafe de Crespigny, A Biographical
+Dictionary of Later Han to the Three Kingdoms (23-220 AD), 2007, p.1310, and
+The Cambridge History of China, vol.1, 1986, pp.252-253. These references do not
+mean this project has obtained and reviewed the full books.
+
+Jian'an Commanderies (2020-07-10), by Esiymbro.
+Source: https://commons.wikimedia.org/wiki/File:Jian%27an_Commanderies.svg
+Original SVG SHA-256: 78d82bf455ea66f0ec6d1da93b89c38026b63a07c57ae031da28f75801188b5a
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+https://creativecommons.org/licenses/by-sa/4.0/
+Author identity: https://commons.wikimedia.org/wiki/User:Esiymbro
+Changes by this project: boundary paths extracted; Latin glyph labels and source
+legend omitted from the application; Chinese labels transcribed separately;
+embedded unlabelled topographic JPEG extracted with its original pixel extent.
+Derivative boundary/label data are distributed under CC BY-SA 4.0.
+This license does not require unrelated application code to use the same license.
+The original legend explicitly uses some post-220 province divisions.
+It is a modern reconstruction, not an ancient cadastral survey.
+
+Topographic background: Koba-chan.
+https://commons.wikimedia.org/wiki/User:Koba-chan/Topographic_map
+Topographic30deg tiles: CC BY-SA 3.0 (migrated GFDL), as recorded by Commons.
+https://creativecommons.org/licenses/by-sa/3.0/
+The DEMIS terrain source is described as public domain by the tile author;
+this project retains the author's CC BY-SA 3.0 attribution and does not erase
+that license on the tile renderings. Source-page descriptions and metadata
+are archived in research/topographic-tile-descriptions.json and
+research/topographic-tile-metadata.json.
+The author and attribution chain are retained in the source metadata supplied
+with the project. This topography/hydrography is a modern reference.
+
+Natural Earth 1:10m river vectors and 1:50m land vectors. Public domain.
+https://www.naturalearthdata.com/about/terms-of-use/
+The current land/water mask uses ne_50m_land.geojson (scale 1:50,000,000).
+https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_land.geojson
+The numbers denote map scales, not ten-metre or fifty-metre resolution.
+
+Terrain Tiles / Mapzen Terrarium.
+https://registry.opendata.aws/terrain-tiles/
+Global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey.
+Global ETOPO1 terrain data: U.S. National Oceanic and Atmospheric Administration.
+Cropped, resampled and shaded for this atlas.
+https://github.com/tilezen/joerd/blob/master/docs/attribution.md
+
+MapLibre GL JS 5.6.1: BSD-3-Clause, see MAPLIBRE-LICENSE.txt.
+Leaflet 1.9.4: BSD-2-Clause, see leaflet/LICENSE.
+OpenCC 1.1.9 dictionary: Apache-2.0, see OPENCC-LICENSE.txt.
+All upstream copyright and license files remain unchanged.
+
+Classical texts: pinned revisions of Chinese Wikisource, with document-specific
+source URLs/revision identifiers. The ancient text and modern editorial material
+have distinct rights. Original corpus files are preserved; website navigation,
+style rules and formatting templates are removed only from the reading display.
+Commandery-seat verification excerpts: Chinese Wikipedia contributors,
+articles 會稽郡 and 廣陵郡. Pinned revision IDs and source URLs appear with each
+excerpt in web/han-administration.json; original responses are retained in
+data/references/commandery-seats-api.json. Modern Wikipedia text is CC BY-SA
+4.0; authorship history is available from the linked revision pages. These are
+secondary-source checks, not claims of independently surveyed ancient city sites.
+
+November 2026 spacetime additions:
+ChineseCalendar by Yuk Tung Liu, https://github.com/ytliu0/ChineseCalendar
+GPL-3.0; see CALENDAR-LICENSE.txt. Original inputs and README are retained in
+data/references/chinese-calendar. scripts/build_calendar.cjs is an offline
+GPL-3.0 adapter. web/calendar.json records original SHA-256 hashes. Calendar
+conversion does not resolve uncertain or inconsistent dates in historical texts.
+
+Three.js r160, MIT; see THREE-LICENSE.txt. GLTFLoader and BufferGeometryUtils
+imports were changed to local relative paths; copyright notices retained.
+Pinned source URLs and hashes: research/three-assets.json.
+
+City and troop GLB meshes are original procedural category illustrations,
+generated by scripts/build_models.py; no 0 A.D. mesh or texture is incorporated.
+Previews are rendered from the same GLB files. Original 0 A.D. research documents
+and their separate CC BY-SA terms remain in research/2026-11-05-model-*.json.
+
+Supplemental quotations from Chinese Wikisource and Chinese Wikipedia retain
+revision IDs, links and source archives in each citation. Wikipedia contributors'
+text is CC BY-SA 4.0; linked revision pages provide authorship history. Location
+anchors are explicitly regional references, not surveyed ancient city limits.
+
+Administrative SVG changes: only gaps covered by the original strokes were
+connected (21 in the 140 CE reference; 185 in the Jian'an reference). Source
+paths remain intact. 57 label centers were placed inside uniquely named
+research faces; these faces are not certified historical administrative borders.
+Source-derived geometry and label placement retain the respective CC BY-SA 4.0
+attribution and license already listed above.
+
+November 2026 political display parcels and label extents:
+web/strategic-regions.json is an adapted display coverage derived from
+Esiymbro's Jian'an Commanderies and Zunkir/Kanguole's Han orientaux 140.
+CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+Changes: source-line-constrained interpolation of unclosed areas, modern land
+clipping, local display parcels, shared-edge simplification, and interior labels.
+These interpolated parcels are NOT surveyed or certified ancient boundaries.
+Original source links and notices above remain applicable.
+web/faction-labels.json contains interior centres computed from unions of those
+display parcels under the current recorded ownership. It retains the same
+source attribution and CC BY-SA 4.0 terms; these are display label positions.
+
+Yellow River research overlay: Stevenliuyi, Yellow River watercourse changes.svg
+https://commons.wikimedia.org/wiki/File:Yellow_River_watercourse_changes.svg
+Base: Kanguole, Eastern China blank relief map.svg
+https://commons.wikimedia.org/wiki/File:Eastern_China_blank_relief_map.svg
+Both CC BY-SA 4.0. Changes: extracted path4550 (source's Eastern Han course),
+converted the source's declared equirectangular grid to geographic coordinates,
+styled as a dashed blue research line, and added Chinese dispute/scope notices.
+Source files and metadata remain in data/references; hashes and extraction
+details are in research/historical-water-build.json. The source page flags
+historical inaccuracies. The extracted line is disputed research context,
+disabled by default, NOT a verified Three Kingdoms river course.
+
+Changban research overlay (208 CE only): Sixsous (vectorization/translation),
+Deadkid_dk and Zhuwq (upstream map), Bataille de Changban.svg.
+https://commons.wikimedia.org/wiki/File:Bataille_de_Changban.svg
+CC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0/
+Changes: extracted RivièreHan, Yangzi1, Yangzi2, sampled curves, applied one
+five-control-point affine registration, and added Chinese research labels.
+The corresponding three features in web/historical-water.json are licensed
+under CC BY-SA 3.0. Original bytes remain in data/references/hydrology-2026-11-06.
+This battle diagram is NOT a certified ancient river course. Registration
+leave-one-out errors reach about 57.19 km. Missing Yangtze segments were not
+connected. Controls, coefficients and errors: research/historical-water-build.json.
+
+Faction label geometry now also includes disconnected components and holes,
+for viewport-aware placement. Source-derived polygon attribution and CC BY-SA
+4.0 terms above continue to apply.
+
+Reading geography overview (November 2026):
+The 25 features in data/editorial/story-geography.json and the story_geography
+collection in web/atlas.json are editorial, generalized scene geography.
+Modern public-domain Natural Earth data and existing terrain/location references
+provide orientation only; these lines are not surveyed ancient river banks.
+The Yellow River downstream segment adapts Stevenliuyi's path4550, based on
+Kanguole's relief map, under CC BY-SA 4.0. The source links and dispute notice
+for Yellow River watercourse changes.svg above remain applicable.
+Changes: joined the extracted downstream segment to an editorial upstream
+overview and rendered it as a continuous reading-guide line. The resulting
+Yellow River overview geometry is distributed under CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
+Novel quotations retain their pinned Wikisource revision and paragraph links.
+Lake points do not assert an ancient shoreline; passes and valleys are regional
+location guides. All other research layers retain their prior separate notices.
+
+The private user-region archive and its derivatives are not included in this public export.
+
+The wider modern sea/land reference reuses the previously downloaded public-domain
+Natural Earth 1:50m land data. The raw source is now pinned at
+data/references/natural-earth-land-50m.geojson. Source:
+https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_land.geojson
+Changes: clipped to the preview extent, derived modern water and coastline, and
+combined with existing terrain, reading geography and city reference points.
+Existing terrain and reading-geography attributions above continue to apply.
+The shared river appearance was changed to thinner, less saturated lines.
+
+公开版使用 Natural Earth 现代海陆参照；不包含许可待核的用户原包及其沿海补丁，也不代表古岸线复原。

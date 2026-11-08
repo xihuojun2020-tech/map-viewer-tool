@@ -1,0 +1,44 @@
+const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs');
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8790/');await page.waitForFunction(()=>window.atlas&&window.atlas.map.loaded());
+ assert.equal(await page.locator('[data-layer="story-geography"]').isChecked(),true);
+ assert.ok(await page.evaluate(()=>window.atlas.map.queryRenderedFeatures({layers:['story-rivers']}).length)>10);
+ for(const id of ['yangtze','yellow'])assert.equal(await page.locator(`[data-geography="story-${id}"]`).isVisible(),true,`${id}全国视图应有河名`);
+ await page.screenshot({path:'output/story-geography-national.png'});
+ await page.locator('#romance-mode').click();
+ async function search(name){await page.locator('#search').fill(name);await page.locator('#search-results button').filter({hasText:'原著山川'}).first().click();}
+ await search('白河');assert.equal(await page.locator('#panel-content h1').innerText(),'白河');
+ assert.equal(await page.locator('#panel-content blockquote').count(),0,'未读段落不泄露战事');
+ assert.match(await page.locator('#panel-content').innerText(),/尚未读到/);
+ await page.locator('#chapter-select').selectOption('40');await search('白河');
+ assert.match(await page.locator('#panel-content blockquote').innerText(),/白河/);
+ await page.waitForFunction(()=>window.atlas.map.loaded()&&!window.atlas.map.isMoving());
+ await page.screenshot({path:'output/story-geography-xinye.png'});
+ await page.getByRole('button',{name:'返回当前局势',exact:true}).click();
+ const riverPoint=await page.evaluate(()=>{
+  const {map,data}=window.atlas,b=map.getContainer().getBoundingClientRect();
+  const points=data.story_geography.features.find(f=>f.properties.id==='story-bai').geometry.coordinates;
+  return points.slice(1).map((p,i)=>map.project([(p[0]+points[i][0])/2,(p[1]+points[i][1])/2])).map(p=>({x:p.x+b.left,y:p.y+b.top,local:[p.x,p.y]})).find(p=>document.elementFromPoint(p.x,p.y)?.classList.contains('maplibregl-canvas')&&map.queryRenderedFeatures(p.local,{layers:['story-rivers']})[0]?.properties.id==='story-bai');
+ });
+ assert.ok(riverPoint,'白河有未被标牌遮挡的可点击河段');await page.mouse.click(riverPoint.x,riverPoint.y);
+ assert.equal(await page.locator('#panel-content h1').innerText(),'白河','点击河线应打开对应山川资料');
+ await page.locator('#chapter-select').selectOption('7');await search('沔水');
+ assert.equal(await page.locator('#panel-content h1').innerText(),'汉水');
+ assert.equal(await page.locator('#panel-content blockquote').count(),1,'第七十六回的引文尚未开放');
+ await page.locator('#layers-button').click();await page.locator('#story-geography-button').click();await page.locator('#layers-button').click();
+ assert.equal(await page.locator('#panel-content h1').innerText(),'原著中的山川关隘');
+ await page.getByRole('button',{name:'秦岭',exact:true}).click();assert.equal(await page.locator('#panel-content h1').innerText(),'秦岭');
+ await page.locator('#layers-button').click();await page.locator('[data-layer="story-geography"]').uncheck();await page.locator('#layers-button').click();
+ assert.equal(await page.locator('.geography-label:visible').count(),0);
+ assert.equal(await page.evaluate(()=>window.atlas.map.getLayoutProperty('story-rivers','visibility')),'none');
+ await page.locator('#layers-button').click();await page.locator('[data-layer="story-geography"]').check();await page.locator('#layers-button').click();
+ await page.setViewportSize({width:390,height:844});await page.locator('#close-panel').click();await search('泗水');
+ await page.locator('#close-panel').click();await page.waitForFunction(()=>window.atlas.map.loaded()&&!window.atlas.map.isMoving());
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+ await page.screenshot({path:'output/story-geography-mobile.png'});
+ const english=await page.evaluate(()=>document.body.innerText.split('\n').filter(t=>/[A-Za-z]/.test(t)));assert.deepEqual(english,[]);assert.deepEqual(errors,[]);
+ const result={checks:['默认展示主要河网及全国大河名称','白河检索与场景说明','实际点击河线打开资料','未读情节隐藏、已读原文展开','汉水沔水别名关联','山川名录及秦岭定位','图层开关','中文手机布局'],errors};
+ fs.writeFileSync('output/story-geography-verification.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

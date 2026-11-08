@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>建安郡国边界研究底稿 · 地图查看工具</title>
+<link rel="stylesheet" href="assets/leaflet/leaflet.css">
+<link rel="stylesheet" href="reference.css">
+<script src="assets/leaflet/leaflet.js" defer></script>
+<script src="reference.mjs" type="module"></script>
+</head>
+<body>
+<header><div><h1>建安郡国边界研究底稿</h1><p>来自研究图的边线与中文对读；固定年代参考，不随小说剧情改变。</p></div><nav><button id="fit-reference">查看全图</button><a class="action" href="./">返回阅读地图</a></nav></header>
+<main>
+  <div id="reference-map" role="region" aria-label="可缩放拖动的建安郡国中文参考图"></div>
+  <div id="load-status" role="status">正在载入中文边界底稿…</div>
+  <details class="reference-key" aria-label="底稿图例" open>
+    <summary>图例与年代说明</summary>
+    <span><i class="key-commandery"></i>郡国界线</span><span><i class="key-province"></i>州级界线</span><span><i class="key-imperial"></i>汉境外缘</span>
+    <p>原图题名为219年；部分州界采用220年后划分，义阳等建置年代仍需纠正。县域边界未考定。</p>
+    <label><input id="reference-terrain" type="checkbox" checked>现代地势与水系参照</label>
+    <small>河道及海岸不能直接视为三国时期的形态。</small>
+  </details>
+</main>
+<footer>
+<p>原图为现代研究复原；<a href="https://commons.wikimedia.org/wiki/User:Esiymbro" target="_blank" rel="noopener">原作者署名</a>、<a href="https://commons.wikimedia.org/wiki/File:Jian%27an_Commanderies.svg" target="_blank" rel="noopener">原始来源与书目</a>。按<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener">知识共享署名—相同方式共享4.0许可</a>制作；边线衍生数据同许可共享。<a href="assets/DATA-NOTICES.txt" download>下载完整署名与变更说明</a> · <a href="assets/jianan-219.svg" download>下载原始矢量档案</a></p>
+<p>原图参考李晓杰《东汉政区地理》、谭其骧《中国历史地图集》第三册；本项目尚未读取这两部书的完整图幅。原图部分州界采用220年后的分划，不能认作219年精确建制。中文标签为源图对读，标注位置不等于古城精确坐标。</p>
+<p>本页按原图坐标展示；主地图已接入配准研究边线，仍待逐界核验。不以自动补线、平滑或现代县界制造完整古界。</p>
+</footer>
+</body>
+</html>

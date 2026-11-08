@@ -1,0 +1,88 @@
+const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs');
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+ try{
+  const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));page.on('console',e=>{if(e.type()==='error')errors.push(e.text());});
+  await page.goto('http://127.0.0.1:8790/?scene=xuzhou-letter');
+  await page.waitForFunction(()=>window.atlas?.scene&&!window.atlas.map.isMoving()&&window.atlas.map.isStyleLoaded());
+  const timelineOptions=async()=>{if(!await page.locator('#timeline-options').isVisible())await page.locator('#timeline-toggle').click();};
+  const scene=()=>page.evaluate(()=>({controls:atlas.scene.controls,actions:atlas.scene.actions,people:atlas.scene.people,units:atlas.scene.units}));
+  const baseline=(await scene()).controls;
+  assert.equal(await page.locator('#panel-content h1').innerText(),'徐州夹击计划');
+  assert.equal(await page.locator('.scene-unit').count(),3,'进攻意图不能伪造孙策的一支部队');
+  assert.equal(await page.locator('.scene-arrow').count(),2);
+  assert.equal(await page.evaluate(()=>atlas.map.getSource('political-cells')._data.features.length),134);
+  assert.deepEqual(await page.locator('#legend .legend-colors i').evaluateAll(nodes=>nodes.map(n=>n.style.backgroundColor)),['rgb(64, 121, 92)','rgb(149, 98, 152)','rgb(170, 119, 50)']);
+  assert.ok(await page.evaluate(()=>atlas.map.getLayer('story-rivers')&&atlas.map.getLayer('commanderies-line')));
+  for(const name of ['刘备','吕布','袁术'])assert.ok(await page.locator('.faction-label').evaluateAll((nodes,name)=>nodes.some(n=>n.textContent===name&&n.style.display!=='none'),name));
+  const factionButton=page.locator('.faction-label[data-faction="liu"]:visible');
+  await factionButton.click();assert.equal(await page.locator('#panel-content h1').innerText(),'刘备');
+  assert.match(await page.locator('#panel-content').innerText(),/江东相关区域|当前关联军队/);
+  assert.equal(await page.locator('#panel-content details').first().getAttribute('open'),null);
+  await page.locator('.scene-unit[data-scene-action="ji-north"]').click();
+  assert.equal(await page.locator('#panel-content h1').innerText(),'纪灵军');
+  assert.match(await page.locator('#panel-content').innerText(),/70,000人/);
+  assert.match(await page.locator('#panel-content').innerText(),/非袁术全部兵力/);
+  await page.locator('#panel-content summary').click();assert.match(await page.locator('#panel-content').innerText(),/七万大军/);
+  async function arrowClick(id){
+   const point=await page.locator(`.scene-arrow[data-scene-action="${id}"] .campaign-hit`).evaluate(n=>{
+    for(const fraction of [.5,.6,.4,.7,.3]){const p=n.getPointAtLength(n.getTotalLength()*fraction),m=n.getScreenCTM(),x=m.a*p.x+m.c*p.y+m.e,y=m.b*p.x+m.d*p.y+m.f;
+     if(document.elementFromPoint(x,y)?.closest('.scene-arrow')===n.parentNode)return {x,y};}
+    return null;
+   });
+   assert.ok(point,'箭头应有无遮挡的点击位置');await page.mouse.click(point.x,point.y);
+  }
+  await arrowClick('liu-cut');assert.equal(await page.locator('#panel-content h1').innerText(),'刘备拟北上淮陵');
+  await timelineOptions();await page.locator('[data-scene-view="current"]').click();
+  assert.equal(await page.locator('.scene-arrow').count(),1);assert.equal(await page.locator('.scene-unit').count(),1);
+  await timelineOptions();await page.locator('[data-scene-view="plan"]').click();await page.locator('#scene-step').selectOption('3');
+  assert.deepEqual((await scene()).controls,baseline);
+  assert.equal(await page.evaluate(()=>atlas.map.getSource('scene-agreements')._data.features.length),3);
+  assert.match(await page.locator('#panel-content').innerText(),/战后约定/);
+  await page.locator('#close-timeline').click();
+  await page.screenshot({path:'output/scene-agreement.png',fullPage:true});
+  await timelineOptions();await page.locator('[data-scene-view="analysis"]').click();assert.equal(await page.evaluate(()=>atlas.map.getSource('scene-agreements')._data.features.length),0);
+  assert.match(await page.locator('#panel-content').innerText(),/原文只确认张勋截信/);
+  await page.locator('#scene-branch').selectOption('delay');assert.match(await page.locator('#panel-content').innerText(),/刘备到达淮陵晚于吕布出军/);
+  assert.deepEqual((await scene()).controls,baseline);
+  await page.locator('#scene-progress').fill('1');
+  assert.equal((await scene()).people.some(p=>p.id==='zhangxun'),false);
+  assert.equal((await scene()).units.find(u=>u.id==='ji-army').strength,null);
+  await page.locator('[data-tab="text"]').click();assert.doesNotMatch(await page.locator('#panel-content').innerText(),/截获|七万|契约/);
+  await page.locator('#scene-progress').fill('5');await timelineOptions();await page.locator('[data-scene-view="plan"]').click();await page.locator('#scene-step').selectOption('2');
+  await page.locator('#search').fill('刘备');await page.locator('#search-results button').click();assert.equal(await page.locator('#panel-content h1').innerText(),'刘备');
+  await page.locator('#layers-button').click();await page.locator('[data-layer="campaigns"]').uncheck();
+  assert.equal(await page.locator('.scene-unit,.scene-arrow').count(),0);
+  await page.locator('[data-layer="campaigns"]').check();await page.locator('[data-layer="regions"]').uncheck();
+  assert.equal(await page.locator('.faction-label:visible').count(),0);
+  await page.locator('[data-layer="regions"]').check();await page.locator('#layers-button').click();
+  await page.locator('#history-mode').click();assert.equal(await page.evaluate(()=>atlas.scene),null);
+  assert.equal(await page.locator('.scene-unit,.scene-arrow,.scene-point').count(),0);
+  assert.equal(await page.evaluate(()=>atlas.map.getSource('scene-agreements')._data.features.length),0);
+  await page.locator('#romance-mode').click();await timelineOptions();await page.locator('#chapter-select').selectOption('16');
+  assert.equal(await page.locator('#map-time').innerText(),'第 16 回');
+  await page.locator('#scene-mode').click();await page.waitForFunction(()=>!atlas.map.isMoving());
+  await page.locator('#search').fill('淮水');await page.locator('#search-results button').click();
+  assert.equal(await page.locator('#panel-content h1').innerText(),'淮水');
+  assert.equal(await page.locator('#panel-content .source-quote').count(),0,'演义的引文不能混入匿名小说');
+  await page.locator('#scene-mode').click();await page.waitForFunction(()=>!atlas.map.isMoving());
+  const oldPath=await page.locator('.scene-arrow[data-scene-action="liu-cut"] .campaign-line').getAttribute('d');
+  await page.evaluate(()=>atlas.map.jumpTo({zoom:7,bearing:20,pitch:20}));
+  assert.notEqual(await page.locator('.scene-arrow[data-scene-action="liu-cut"] .campaign-line').getAttribute('d'),oldPath);
+  await page.evaluate(()=>atlas.map.jumpTo({bearing:0,pitch:0}));await page.locator('#scene-mode').click();await page.waitForFunction(()=>!atlas.map.isMoving());
+  await page.screenshot({path:'output/scene-desktop.png',fullPage:true});
+  await page.setViewportSize({width:390,height:844});await page.locator('#scene-mode').click();await page.waitForFunction(()=>!atlas.map.isMoving());
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+  for(const name of ['刘备','吕布','袁术'])assert.ok(await page.locator('.faction-label').evaluateAll((nodes,name)=>nodes.some(n=>n.textContent===name&&n.style.display!=='none'),name));
+  await page.screenshot({path:'output/scene-mobile.png',fullPage:true});
+  await page.locator('.scene-unit[data-scene-action="ji-north"]').click();assert.equal(await page.locator('#sidebar').isVisible(),true);
+  assert.equal(await page.locator('#panel-content h1').innerText(),'纪灵军');
+  await page.screenshot({path:'output/scene-mobile-details.png',fullPage:true});
+  assert.deepEqual(await page.evaluate(()=>document.body.innerText.split('\n').filter(x=>/[A-Za-z]/.test(x))),[]);
+  assert.deepEqual(errors,[]);
+  const result={checks:['完整底图与134个共用区域','势力名称可见','诸侯档案','兵人与原文引句','实际点击计划箭头','三视图隔离','斜线约定不改归属','段落回看无后文','场景搜索','图层清理','史实与演义切换','地图旋转缩放','手机布局与点击','中文界面'],errors};
+  fs.writeFileSync('output/scene-verification.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1});

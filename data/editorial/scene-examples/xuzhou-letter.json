@@ -1,0 +1,567 @@
+{
+  "version": 1,
+  "id": "xuzhou-letter",
+  "title": "徐州夹击计划",
+  "example": true,
+  "baseMap": {
+    "id": "jianan-219",
+    "note": "建安郡国研究底图，部分建置跨期；用于地理参照，不确定小说年份。",
+    "revision": "722e521778c59a3d5e7a935688f419d8b473ecd24d28da914b8892ce309d14a2"
+  },
+  "book": null,
+  "storyDate": null,
+  "chapterHint": "原创功能演示",
+  "sourceNote": "项目编写的架空功能演示，非历史结论或小说原文。",
+  "coverage": "只覆盖本片段。色块为根据文意推断的势力关联范围，沿用现有概略区块；未证明逐郡实控。其余地区归属未明。",
+  "focus": [
+    [
+      115.5,
+      30.4
+    ],
+    [
+      121.1,
+      35.5
+    ]
+  ],
+  "steps": [
+    "进攻缘起",
+    "陈宫求盟",
+    "回信被截",
+    "淮陵拦截",
+    "夹击设想",
+    "战后约定"
+  ],
+  "evidence": [
+    {
+      "id": "q0",
+      "at": 0,
+      "text": "演示场景：一封刘备给吕布的信说明双方的联络。"
+    },
+    {
+      "id": "q1",
+      "at": 0,
+      "text": "演示设定：孙策准备进攻徐州，袁术命纪灵向北行军。"
+    },
+    {
+      "id": "q2",
+      "at": 1,
+      "text": "为应对威胁，陈宫代吕布向江东的刘备提出合作。"
+    },
+    {
+      "id": "q3",
+      "at": 2,
+      "text": "随后张勋截获刘备的回信，得知这项计划。"
+    },
+    {
+      "id": "q4",
+      "at": 3,
+      "text": "回信拟定刘备北上淮陵，切断纪灵后方交通；此时仍是计划。"
+    },
+    {
+      "id": "q5",
+      "at": 4,
+      "text": "信中提出同时从两侧进攻；纪灵所部在这段演示中设为七万大军。"
+    },
+    {
+      "id": "q6",
+      "at": 4,
+      "text": "信中继续讨论击败纪灵后的局势；这不能证明纪灵或其部队已经覆灭。"
+    },
+    {
+      "id": "q7",
+      "at": 5,
+      "text": "双方还讨论战后如何分配淮南与广陵。契约属于约定，并非当前占领事实。"
+    }
+  ],
+  "places": [
+    {
+      "id": "xuzhou",
+      "name": "徐州",
+      "mode": "province",
+      "baseId": "徐州",
+      "note": "指徐州战区；不能自动等同彭城城内。"
+    },
+    {
+      "id": "shouchun",
+      "name": "寿春",
+      "mode": "place",
+      "baseId": "shouchun",
+      "note": "沿用底图的区域级城池定位。"
+    },
+    {
+      "id": "jiangdong",
+      "name": "江东",
+      "mode": "region",
+      "regionIds": [
+        "g2840",
+        "g2858"
+      ],
+      "note": "以丹阳、吴郡区块帮助理解江东，非小说确认的完整辖境。"
+    },
+    {
+      "id": "huainan",
+      "name": "淮南",
+      "mode": "region",
+      "regionIds": [
+        "g2820",
+        "g2802"
+      ],
+      "note": "以九江、庐江参考区块表达淮南，非考定的淮南边界。"
+    },
+    {
+      "id": "guangling",
+      "name": "广陵",
+      "mode": "region",
+      "regionIds": [
+        "g3640"
+      ],
+      "note": "本片段指广陵之地，以郡级参考区块表示。"
+    },
+    {
+      "id": "huailing",
+      "name": "淮陵",
+      "mode": "relative",
+      "between": [
+        "shouchun",
+        "xuzhou"
+      ],
+      "note": "仅按“寿春和徐州之间”放置相对示意标记，古城位置待核；不是实际营地。"
+    }
+  ],
+  "factions": [
+    {
+      "id": "liu",
+      "name": "刘备",
+      "leader": "liubei",
+      "color": "#40795c",
+      "at": 0
+    },
+    {
+      "id": "lu",
+      "name": "吕布",
+      "leader": "lvbu",
+      "color": "#956298",
+      "at": 0
+    },
+    {
+      "id": "shu-yuan",
+      "name": "袁术",
+      "leader": "yuanshu",
+      "color": "#aa7732",
+      "at": 0
+    },
+    {
+      "id": "sunce",
+      "name": "孙策",
+      "leader": "sunce",
+      "color": "#bd6650",
+      "at": 0
+    }
+  ],
+  "people": [
+    {
+      "id": "liubei",
+      "name": "刘备",
+      "role": "回信者",
+      "faction": "liu",
+      "at": 0
+    },
+    {
+      "id": "lvbu",
+      "name": "吕布",
+      "role": "收信者",
+      "faction": "lu",
+      "at": 0
+    },
+    {
+      "id": "yuanshu",
+      "name": "袁术",
+      "role": "派遣纪灵北上的诸侯",
+      "faction": "shu-yuan",
+      "at": 0
+    },
+    {
+      "id": "jiling",
+      "name": "纪灵",
+      "role": "受袁术派遣的北上主将",
+      "faction": "shu-yuan",
+      "at": 0
+    },
+    {
+      "id": "sunce",
+      "name": "孙策",
+      "role": "意欲进攻徐州的诸侯",
+      "faction": "sunce",
+      "at": 0
+    },
+    {
+      "id": "chengong",
+      "name": "陈宫",
+      "role": "吕布麾下谋士、结盟策划者",
+      "faction": "lu",
+      "at": 1
+    },
+    {
+      "id": "zhangxun",
+      "name": "张勋",
+      "role": "截获回信者；本片段未说明其归属",
+      "faction": null,
+      "at": 2
+    }
+  ],
+  "units": [
+    {
+      "id": "ji-army",
+      "name": "纪灵军",
+      "faction": "shu-yuan",
+      "commander": "jiling",
+      "model": "infantry",
+      "at": 0
+    },
+    {
+      "id": "liu-army",
+      "name": "刘备拟出兵部队",
+      "faction": "liu",
+      "commander": "liubei",
+      "model": "infantry",
+      "at": 3
+    },
+    {
+      "id": "lu-army",
+      "name": "吕布拟出兵部队",
+      "faction": "lu",
+      "commander": "lvbu",
+      "model": "infantry",
+      "at": 4
+    }
+  ],
+  "strengths": [
+    {
+      "id": "ji-strength",
+      "unit": "ji-army",
+      "value": 70000,
+      "scope": "文中称纪灵这支大军七万，非袁术全部兵力，也不是战损数。",
+      "at": 4,
+      "evidence": [
+        "q5",
+        "q6"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "sun-intent",
+      "subjects": [
+        "sunce"
+      ],
+      "at": 0,
+      "status": "planned",
+      "summary": "欲攻徐州；是否出兵、从何处出兵均未说明。",
+      "place": "xuzhou",
+      "evidence": [
+        "q1"
+      ]
+    },
+    {
+      "id": "yuan-order",
+      "subjects": [
+        "yuanshu",
+        "jiling"
+      ],
+      "at": 0,
+      "status": "narrated",
+      "summary": "袁术派遣纪灵北上；没有确切日期、营地或已攻下城池的记载。",
+      "place": "xuzhou",
+      "evidence": [
+        "q1"
+      ]
+    },
+    {
+      "id": "chen-letter",
+      "subjects": [
+        "chengong",
+        "lvbu",
+        "liubei"
+      ],
+      "at": 1,
+      "status": "narrated",
+      "summary": "陈宫为吕布向江东刘备求盟；刘备与江东相关联，具体驻城未明。",
+      "place": "jiangdong",
+      "evidence": [
+        "q2"
+      ]
+    },
+    {
+      "id": "intercept-letter",
+      "subjects": [
+        "zhangxun",
+        "liubei",
+        "lvbu"
+      ],
+      "at": 2,
+      "status": "narrated",
+      "summary": "张勋已经截获刘备回信；不能据此确认纪灵已知夹击计划。",
+      "place": null,
+      "evidence": [
+        "q3"
+      ]
+    },
+    {
+      "id": "alliance",
+      "subjects": [
+        "liubei",
+        "lvbu",
+        "chengong"
+      ],
+      "at": 3,
+      "status": "reported",
+      "summary": "刘备在信中同意结盟，表示愿意北上淮陵截断后路和粮道。",
+      "place": "huailing",
+      "evidence": [
+        "q4"
+      ]
+    },
+    {
+      "id": "pincer",
+      "subjects": [
+        "liubei",
+        "lvbu",
+        "jiling"
+      ],
+      "at": 4,
+      "status": "planned",
+      "summary": "刘备在后拦截，吕布配合出兵，拟对纪灵形成前后夹击。",
+      "place": "xuzhou",
+      "evidence": [
+        "q5"
+      ]
+    },
+    {
+      "id": "conditional-loss",
+      "subjects": [
+        "jiling",
+        "yuanshu"
+      ],
+      "at": 4,
+      "status": "hypothetical",
+      "summary": "“纪灵一死、七万军尽灭”是计划预期；尚未发生，也不保证能够实现。",
+      "place": "huainan",
+      "evidence": [
+        "q6"
+      ]
+    },
+    {
+      "id": "allocation",
+      "subjects": [
+        "liubei",
+        "lvbu"
+      ],
+      "at": 5,
+      "status": "planned",
+      "summary": "契约约定战后刘备取淮南、吕布复得广陵；尚未实现。",
+      "place": null,
+      "evidence": [
+        "q7"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "lu-area",
+      "faction": "lu",
+      "regionIds": [
+        "g3618-pengcheng",
+        "g3618-remainder",
+        "g2706-xiapi",
+        "g2706-remainder"
+      ],
+      "basis": "inferred",
+      "at": 1,
+      "note": "依据吕布一方应对徐州来敌的文意，以彭城、下邳显示区块表达守方关联范围；不涂满徐州，不证明逐郡实控。",
+      "evidence": [
+        "q1",
+        "q2"
+      ]
+    },
+    {
+      "id": "liu-area",
+      "faction": "liu",
+      "regionIds": [
+        "g2840",
+        "g2858"
+      ],
+      "basis": "inferred",
+      "at": 1,
+      "note": "“江东刘备”只确认地域关联；丹阳、吴郡色块是概略推断，不代表小说已明确这两郡全部归刘备。",
+      "evidence": [
+        "q2"
+      ]
+    },
+    {
+      "id": "yuan-area",
+      "faction": "shu-yuan",
+      "regionIds": [
+        "g2820",
+        "g2802"
+      ],
+      "basis": "inferred",
+      "at": 4,
+      "note": "根据纪灵后路、粮道及淮南抵抗的文意，推断淮南为袁术一方后方；两郡显示区块不是精确控制线。",
+      "evidence": [
+        "q4",
+        "q6"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "id": "ji-north",
+      "name": "纪灵北上",
+      "unit": "ji-army",
+      "actor": "jiling",
+      "faction": "shu-yuan",
+      "from": null,
+      "to": "xuzhou",
+      "status": "narrated",
+      "originBasis": "unknown",
+      "at": 0,
+      "step": 0,
+      "summary": "原文明示袁术派纪灵北上。箭头只表示朝徐州北上的方向，起点、营地与具体道路未明。",
+      "evidence": [
+        "q1"
+      ],
+      "direction": "north"
+    },
+    {
+      "id": "liu-cut",
+      "name": "刘备拟北上淮陵",
+      "unit": "liu-army",
+      "actor": "liubei",
+      "faction": "liu",
+      "from": "jiangdong",
+      "to": "huailing",
+      "status": "planned",
+      "originBasis": "inferred",
+      "at": 3,
+      "step": 1,
+      "summary": "拟在淮陵拦截，阻断纪灵后路与粮道；江东是地域参照，淮陵按文意相对定位。",
+      "evidence": [
+        "q4"
+      ]
+    },
+    {
+      "id": "lu-pincer",
+      "name": "吕布拟配合夹击",
+      "unit": "lu-army",
+      "actor": "lvbu",
+      "faction": "lu",
+      "from": null,
+      "to": "xuzhou",
+      "status": "planned",
+      "originBasis": "unknown",
+      "at": 4,
+      "step": 2,
+      "summary": "吕布拟出军配合夹击，具体出发地点未明，只显示战区兵人和任务。",
+      "evidence": [
+        "q5"
+      ]
+    },
+    {
+      "id": "sun-attack",
+      "name": "孙策欲攻徐州",
+      "unit": null,
+      "actor": "sunce",
+      "faction": "sunce",
+      "from": null,
+      "to": "xuzhou",
+      "status": "planned",
+      "originBasis": "unknown",
+      "at": 0,
+      "step": 0,
+      "summary": "只有进攻意图，出发地点与兵数均未明；不能画成已占领徐州。",
+      "evidence": [
+        "q1"
+      ]
+    }
+  ],
+  "agreements": [
+    {
+      "id": "liu-huainan",
+      "faction": "liu",
+      "place": "huainan",
+      "regionIds": [
+        "g2820",
+        "g2802"
+      ],
+      "at": 5,
+      "note": "若计划成功，约定刘备取淮南；当前归属不改变。",
+      "evidence": [
+        "q7"
+      ]
+    },
+    {
+      "id": "lu-guangling",
+      "faction": "lu",
+      "place": "guangling",
+      "regionIds": [
+        "g3640"
+      ],
+      "at": 5,
+      "note": "战后吕布复得广陵的约定；不能据此确定广陵现在由谁控制。",
+      "evidence": [
+        "q7"
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "id": "leak",
+      "name": "如果纪灵获知计划",
+      "at": 3,
+      "assumption": "假设张勋将截信内容及时传给纪灵。原文只确认张勋截信，没有确认传信成功。",
+      "analysis": "纪灵可能调整北上行动或加强后路警戒。刘备能否在淮陵拦住粮道，取决于抵达时机、渡河条件及对方反应；不能据此判断胜负。",
+      "focusPlaces": [
+        "huailing",
+        "huainan"
+      ],
+      "evidence": [
+        "q3",
+        "q4"
+      ]
+    },
+    {
+      "id": "delay",
+      "name": "如果刘备未及时到达",
+      "at": 4,
+      "assumption": "假设刘备到达淮陵晚于吕布出军。片段没有说明行程或实际抵达时间。",
+      "analysis": "前后夹击可能无法同时形成。吕布出击前需要确认盟军位置；地图只强调拦截点与战区的协同关系，不推算具体天数或战损。",
+      "focusPlaces": [
+        "huailing",
+        "xuzhou"
+      ],
+      "evidence": [
+        "q4",
+        "q5"
+      ]
+    }
+  ],
+  "textRevision": 2,
+  "locations": [
+    {
+      "id": "liu-jiangdong",
+      "person": "liubei",
+      "place": "jiangdong",
+      "at": 1,
+      "note": "原文为地域关联，具体驻城未明。",
+      "evidence": [
+        "q2"
+      ]
+    }
+  ],
+  "planSteps": [
+    "进攻意图",
+    "北上拦截",
+    "前后夹击",
+    "战后约定"
+  ]
+}
