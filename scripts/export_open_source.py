@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 import shutil
 
@@ -73,13 +74,12 @@ def export(destination):
         target.write_text(json.dumps(demo, ensure_ascii=False, indent=2), encoding='utf-8')
     index = destination/'web/index.html'
     text = index.read_text(encoding='utf-8')
-    text = text.replace('<a href="regional-preview.html" target="_blank" rel="noopener">打开独立区域预览版</a>', '<p>用户区域对照资料未随公开版提供，可自行导入有权使用的资料。</p>')
-    text = text.replace('<a href="miniatures.html" target="_blank" rel="noopener">查看将领与特色部队造型审核版</a>', '<p>精细造型审核资源暂未随公开版提供。</p>')
+    text = re.sub(r'<a href="regional-preview\.html"[^>]*>[^<]*</a>', '<p>用户区域对照资料未随公开版提供，可自行导入有权使用的资料。</p>', text)
+    text = re.sub(r'<a href="miniatures\.html"[^>]*>[^<]*</a>', '<p>精细造型审核资源暂未随公开版提供。</p>', text)
     index.write_text(text, encoding='utf-8')
     models = destination/'web/models.html'
-    models.write_text(models.read_text(encoding='utf-8').replace(
-        '<a href="miniatures.html">打开新版将领与特色部队造型审核</a>',
-        '精细造型审核资源暂未随公开版提供。'), encoding='utf-8')
+    models.write_text(re.sub(r'<a href="miniatures\.html"[^>]*>[^<]*</a>',
+        '精细造型审核资源暂未随公开版提供。', models.read_text(encoding='utf-8')), encoding='utf-8')
     for name in ['web/index.html', 'web/app.mjs']:
         target = destination/name
         target.write_text(target.read_text(encoding='utf-8').replace('沿海按原包补齐显示，非考定古岸线。', '沿海仅作现代地理参照，非考定古岸线。'), encoding='utf-8')

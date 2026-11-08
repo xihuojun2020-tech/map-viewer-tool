@@ -1346,8 +1346,8 @@
   },
   {
     "path": "scripts/build_android_assets.py",
-    "sha256": "1e87bbf040935b717b2eb8f666ef2a3474db9dfdd0e866bd232c69de26c72576",
-    "bytes": 2172
+    "sha256": "dab84fd6476eef304f506f18ec401cdd64861c4f9e3f93093fe2c665781869f6",
+    "bytes": 2083
   },
   {
     "path": "scripts/build_calendar.cjs",
@@ -1441,8 +1441,8 @@
   },
   {
     "path": "scripts/export_open_source.py",
-    "sha256": "1994e9b3cd10bcf16616c9375aa6c1dd154a61cb781145388cbbcc1d580e8fc8",
-    "bytes": 7236
+    "sha256": "ed666ad0ea1c3d0ae2d05927ba8e0bbd2921ec09ebfe83e3671c7b499256d2c1",
+    "bytes": 7097
   },
   {
     "path": "scripts/extract_jianan_reference.py",

@@ -1,5 +1,6 @@
 """Bundle the existing map and offline corpus; exclude deferred model reviews."""
 import json
+import re
 from pathlib import Path
 import shutil
 import sys
@@ -20,13 +21,12 @@ for source in (ROOT/'web').rglob('*'):
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, destination); count += 1
 index = target/'index.html'
-text = index.read_text(encoding='utf-8').replace('<a href="miniatures.html" target="_blank" rel="noopener">查看将领与特色部队造型审核版</a>',
-    '<p>精细造型审核资源暂未随手机版本提供。</p>')
+text = re.sub(r'<a href="miniatures\.html"[^>]*>[^<]*</a>',
+    '<p>精细造型审核资源暂未随手机版本提供。</p>', index.read_text(encoding='utf-8'))
 index.write_text(text, encoding='utf-8')
 models = target/'models.html'
-models.write_text(models.read_text(encoding='utf-8').replace(
-    '<a href="miniatures.html">打开新版将领与特色部队造型审核</a>',
-    '精细造型审核资源暂未随手机版本提供。'), encoding='utf-8')
+models.write_text(re.sub(r'<a href="miniatures\.html"[^>]*>[^<]*</a>',
+    '精细造型审核资源暂未随手机版本提供。', models.read_text(encoding='utf-8')), encoding='utf-8')
 corpus = target/'api/corpus'; corpus.mkdir(parents=True, exist_ok=True)
 for source in (ROOT/'data/corpus').glob('*.json'):
     document = json.loads(source.read_text(encoding='utf-8')); document['paragraphs'] = reading_paragraphs(document)
