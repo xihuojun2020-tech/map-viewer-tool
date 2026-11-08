@@ -14,60 +14,60 @@
 <body>
   <header class="topbar">
     <a class="brand" href="./"><span class="brand-seal" aria-hidden="true">图</span><span>地图查看工具<small>当前底图：汉末三国</small></span></a>
-    <nav class="world-switch" aria-label="地图版本">
+    <nav class="world-switch" aria-label="地图模式">
       <button id="history-mode" class="selected" aria-pressed="true">史实考证</button>
       <button id="romance-mode" aria-pressed="false">三国演义</button>
       <button id="scene-mode" aria-pressed="false">小说片段</button>
     </nav>
     <div id="map-search" class="search-wrap">
-      <label for="search" class="sr-only">搜索城池、山川或人物</label>
+      <label for="search" class="sr-only">搜索城池、山川、人物</label>
       <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
       <input id="search" type="search" placeholder="搜索城池、山川、人物" autocomplete="off">
       <div id="search-results" class="search-results" hidden></div>
     </div>
-    <div class="header-tools"><button id="search-toggle" class="quiet-button" aria-expanded="false" aria-controls="map-search">搜索</button><a class="quiet-button" href="tools.html">小说工具</a></div>
+    <div class="header-tools"><button id="search-toggle" class="quiet-button" aria-expanded="false" aria-controls="map-search">搜索</button><a class="quiet-button" href="tools.html">小说阅读</a></div>
   </header>
   <main>
-    <section class="map-workspace" aria-label="交互历史地图">
-      <div id="map" role="region" aria-label="可缩放拖动的历史地图"></div>
-      <div class="map-heading"><span id="world-label">史实考证</span><strong id="map-time">公元 194 年</strong><small id="time-note">按年汇总已录事件</small></div>
-      <div class="view-actions"><button id="focus-all" aria-label="查看天下全图">全图</button><button id="layers-button" aria-expanded="false" aria-controls="layer-panel">图层</button></div>
+    <section class="map-workspace" aria-label="历史地图">
+      <div id="map" role="region" aria-label="三国历史地图"></div>
+      <div class="map-heading"><span id="world-label">史实考证</span><strong id="map-time">194年</strong><small id="time-note"></small></div>
+      <div class="view-actions"><button id="focus-all" aria-label="全图">全图</button><button id="layers-button" aria-expanded="false" aria-controls="layer-panel">图层</button></div>
       <div id="layer-panel" class="layer-panel" hidden>
-        <div class="panel-heading"><strong>地图选项</strong><button id="close-layers" aria-label="关闭地图选项">关闭</button></div>
-        <div id="map-quick-actions" class="inline-buttons"><button id="campaign-button">查看战役</button><button id="political-button" aria-pressed="true">势力填色：开</button><button id="focus-xuzhou">徐州细看</button><button id="coverage-button">资料进度</button><button id="reference-button" onclick="window.open('reference.html','_blank','noopener')">建安边界底稿</button></div>
+        <div class="panel-heading"><strong>图层与显示</strong><button id="close-layers" aria-label="关闭图层面板">关闭</button></div>
+        <div id="map-quick-actions" class="inline-buttons"><button id="campaign-button">战役</button><button id="political-button" aria-pressed="true">势力填色：开</button><button id="focus-xuzhou">聚焦徐州</button><button id="coverage-button">资料与来源</button><button id="reference-button" onclick="window.open('reference.html','_blank','noopener')">建安底图原稿</button></div>
         <p>行政底图：建安郡国研究（219年）</p>
         <label><input type="checkbox" data-layer="terrain" checked>现代地势参照</label>
-        <label><input type="checkbox" data-layer="regions" checked>势力区域填色（概略复原）</label>
-        <label><input type="checkbox" data-layer="provinces" checked>州级行政参考线与名称</label>
-        <label><input type="checkbox" data-layer="commanderies" checked>郡国边线与名称</label>
-        <label><input type="checkbox" data-layer="story-geography" checked>原著山川与关隘（概略）</label>
+        <label><input type="checkbox" data-layer="regions" checked>势力范围填色</label>
+        <label><input type="checkbox" data-layer="provinces" checked>州界与州名</label>
+        <label><input type="checkbox" data-layer="commanderies" checked>郡国边界与名称</label>
+        <label><input type="checkbox" data-layer="story-geography" checked>原著山川与关隘</label>
         <button id="story-geography-button">查看原著山川</button>
         <p>用户区域对照资料未随公开版提供，可自行导入有权使用的资料。</p>
-        <label><input type="checkbox" data-layer="historical-water">文献地点关联示意（非古河道）</label>
-        <label><input type="checkbox" data-layer="research-water">历史河道研究示意（含争议）</label>
+        <label><input type="checkbox" data-layer="historical-water">文献地点关联</label>
+        <label><input type="checkbox" data-layer="research-water">历史河道研究</label>
         <label><input type="checkbox" data-layer="modern-water">现代河网对照</label>
         <label><input type="checkbox" data-layer="places" checked>城池与地名</label>
-        <label><input type="checkbox" data-layer="activities" checked>本窗口的人物与军事记载</label>
+        <label><input type="checkbox" data-layer="activities" checked>人物与军事记载</label>
         <label><input type="checkbox" data-layer="campaigns" checked>进攻箭头与战役兵人</label>
-        <label><input type="checkbox" data-layer="models" checked>城池与兵人模型（示意大小与摆放）</label>
+        <label><input type="checkbox" data-layer="models" checked>城池与兵人模型</label>
         <a href="models.html" target="_blank" rel="noopener">查看全部城池与兵人模型</a>
         <p>精细造型审核资源暂未随公开版提供。</p>
         <button id="hydrology-button">历史水文资料</button>
         <label><input type="checkbox" data-layer="mountains">山系与地势标签</label>
-        <div class="geography-key"><span><i class="key-coast"></i>蓝色实线：沿海轮廓参照</span><span><i class="key-province"></i>深色实线：州级参考线</span><span><i class="key-commandery"></i>紫色虚线：郡级参考线</span><span><i class="key-outer"></i>棕色断线：底稿行政外缘参考</span><span><i class="key-water"></i>青色断线：地点关系，非古河道</span><span>紫点：都城　朱红点：州治</span><span>金黄点：郡治　青蓝点：县城；灰点：待核</span></div>
-        <p id="administrative-note">行政参考沿用建安郡国研究底稿，屏内边线与填色共用区块几何，原始研究线见底稿页。势力显示区块沿建安底稿整理，缺口与局部区块为概略复原，不是当前年份考定的郡县界。颜色表示阶段形势推定，单独地点记录仅改变局部区块；点击色块可查依据。州名按建安参考范围计算内部中心。</p>
+        <div class="geography-key"><span><i class="key-coast"></i>蓝色实线：海岸线</span><span><i class="key-province"></i>深色实线：州界</span><span><i class="key-commandery"></i>紫色虚线：郡国界</span><span><i class="key-outer"></i>棕色断线：底图外缘</span><span><i class="key-water"></i>青色断线：文献地点关联</span><span>紫点：都城　朱红点：州治</span><span>金黄点：郡治　青蓝点：县城　灰点：级别待考</span></div>
+        <p id="administrative-note">行政底图：建安郡国研究（219年，部分建置跨期）。势力范围按阶段概略复原；单点记录只改对应区块，点击色块可查依据。</p>
         <p id="coastal-note"></p>
       </div>
-      <details id="legend-disclosure" class="legend-disclosure"><summary>图例与说明</summary><div class="legend-content"><div id="legend" class="legend" aria-label="势力图例"></div><div class="map-disclaimer" id="map-disclaimer">行政区划与势力覆盖分别显示；沿海仅作现代地理参照，非考定古岸线。</div></div></details>
+      <details id="legend-disclosure" class="legend-disclosure"><summary>图例与说明</summary><div class="legend-content"><div id="legend" class="legend" aria-label="地图图例"></div><div class="map-disclaimer" id="map-disclaimer">行政底图：建安郡国研究（219年，部分建置跨期）；海域为现代参照。</div></div></details>
       <div id="county-tooltip" class="county-tooltip" hidden></div>
-      <button id="mobile-panel-button" class="mobile-panel-button" aria-expanded="false" aria-controls="sidebar">查看资料</button>
-      <div id="loading" class="loading">正在载入本地地图与资料…</div>
+      <button id="mobile-panel-button" class="mobile-panel-button" aria-expanded="false" aria-controls="sidebar">打开资料</button>
+      <div id="loading" class="loading">正在载入地图与资料…</div>
       <div id="map-error" class="map-error" role="alert" hidden></div>
     </section>
-    <aside id="sidebar" aria-label="地图资料">
-      <div class="sidebar-top"><strong id="sidebar-heading">天下形势</strong><button id="close-panel" aria-label="收起资料">×</button></div>
+    <aside id="sidebar" aria-label="地图资料与详情">
+      <div class="sidebar-top"><strong id="sidebar-heading">天下形势</strong><button id="close-panel" aria-label="收起面板">×</button></div>
       <nav class="panel-tabs" aria-label="资料分类">
-        <button data-tab="administration" class="selected">行政</button><button data-tab="overview">局势</button><button data-tab="campaigns">战役</button><button data-tab="activities">活动</button><button data-tab="events">事件</button><button data-tab="people">人物</button><button data-tab="text">原文</button>
+        <button data-tab="administration" class="selected">行政</button><button data-tab="overview">形势</button><button data-tab="campaigns">战役</button><button data-tab="activities">活动</button><button data-tab="events">事件</button><button data-tab="people">人物</button><button data-tab="text">原文</button>
       </nav>
       <div id="panel-content" tabindex="-1"></div>
     </aside>
@@ -76,18 +76,18 @@
     <div class="timeline-title"><strong id="cursor-label">194 年</strong><button id="timeline-toggle" aria-expanded="false" aria-controls="timeline-options">时间设置</button></div>
     <div id="timeline-options" class="timeline-options" hidden>
       <div class="panel-heading"><strong>时间与阅读设置</strong><button id="close-timeline">关闭</button></div>
-      <p id="timeline-position">194 年</p><p id="cursor-description">年末已知状态 · 年内精确顺序待考</p>
+      <p id="timeline-position">194 年</p><p id="cursor-description"></p>
       <div id="history-options" class="history-options">
-        <label for="time-scale">浏览精度<select id="time-scale"><option value="year">按年</option><option value="month">按月</option><option value="week">按周</option></select></label>
+        <label for="time-scale">时间单位<select id="time-scale"><option value="year">按年</option><option value="month">按月</option><option value="week">按七日</option></select></label>
         <label for="calendar-select">历法<select id="calendar-select"><option value="han">汉魏晋历</option><option value="shu">蜀汉历</option><option value="wu">孙吴历</option></select></label>
         <label for="year-input">公元年份<input id="year-input" type="number" min="184" max="280" value="194"></label>
         <label id="month-label" for="month-select">月份<select id="month-select"></select></label>
-        <label id="day-label" for="day-input" hidden>七日窗口起始日<input id="day-input" type="number" min="1" max="30" value="1" required hidden></label>
+        <label id="day-label" for="day-input" hidden>七日时段起始日<input id="day-input" type="number" min="1" max="30" value="1" required hidden></label>
       </div>
       <div id="romance-options" hidden><label for="chapter-select">跳转回目<select id="chapter-select"></select></label></div>
-      <nav id="scene-options" class="scene-views" aria-label="片段地图视图" hidden>
-        <button data-scene-view="current" aria-pressed="false">当前局势</button>
-        <button data-scene-view="plan" aria-pressed="true" class="selected">文中计策</button>
+      <nav id="scene-options" class="scene-views" aria-label="片段视图" hidden>
+        <button data-scene-view="current" aria-pressed="false">当前形势</button>
+        <button data-scene-view="plan" aria-pressed="true" class="selected">文中计划</button>
         <button data-scene-view="analysis" aria-pressed="false">条件推演</button>
         <label id="scene-step-label">计划阶段 <select id="scene-step"><option value="0">进攻意图</option><option value="1">北上拦截</option><option value="2" selected>前后夹击</option><option value="3">战后约定</option></select></label>
         <label id="scene-branch-label" hidden>假设条件 <select id="scene-branch"></select></label>
@@ -102,7 +102,7 @@
       <button id="previous-chapter" aria-label="上一回">−</button><label class="sr-only" for="chapter-slider">阅读回目</label><input id="chapter-slider" type="range" min="1" max="120" step="1" value="1"><output id="chapter-label">1 / 120</output><button id="next-chapter" aria-label="下一回">+</button>
     </div>
     <div id="scene-controls" hidden>
-      <div class="scene-reading"><label for="scene-progress">已读片段</label><input id="scene-progress" type="range" min="0" max="5" step="1" value="5"><output id="scene-progress-label" for="scene-progress">6 / 6</output></div>
+      <div class="scene-reading"><label for="scene-progress">片段进度</label><input id="scene-progress" type="range" min="0" max="5" step="1" value="5"><output id="scene-progress-label" for="scene-progress">6 / 6</output></div>
     </div>
   </footer>
   <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>

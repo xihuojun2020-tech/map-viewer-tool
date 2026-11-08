@@ -78,24 +78,24 @@ def main():
             repair={'source_path':id,'target_path':target,'gap_pixels':distance,'ink_overlap_pixels':(width+target_width)/2}
             repairs.append(repair)
             features.append({'type':'Feature','properties':dict(repair,kind=kind,year=140,junction_repair=True,
-                status='原图笔画覆盖相交的接点修正；不是新考定古界'),'geometry':{'type':'LineString','coordinates':[project(*point),project(destination.x,destination.y)]}})
+                status='原图笔画接点修正，不构成新界'),'geometry':{'type':'LineString','coordinates':[project(*point),project(destination.x,destination.y)]}})
     gazetteer=json.loads((ROOT/'data/references/hhs-geography-api.json').read_text(encoding='utf-8'))
     pages={p['title']:p for p in gazetteer['query']['pages']}
     atlas=json.loads((ROOT/'web/atlas.json').read_text(encoding='utf-8'))
     provinces=[]
     for name in ORDER:
         province={'name':name,'label':next(p['coordinates']for p in labels if p['name']==name),
-            'note':'按《郡国志》所录时期组织；不代表汉末各年建置沿革已经完成。',
+            'note':'按《郡国志》所录时期组织；已收录的建置变化见沿革。',
             'commanderies':[p['properties']['id']for p in atlas['national']['commanderies']if p['properties']['province']==name]}
         if name=='幽州':province['review']=json.loads((ROOT/'data/editorial/youzhou-review.json').read_text(encoding='utf-8'))
         if name in CENTERS:
             city,place_id,title,quote=CENTERS[name]
             page=pages[title];revision=page['revisions'][0]
             assert quote in revision['slots']['main']['content']
-            province['center']={'name':city,'place_id':place_id,'level':'州治参考','note':'治所依据所录时期，未据此认定当前时间条年份仍在此。',
+            province['center']={'name':city,'place_id':place_id,'level':'州治参考','note':'治所据《郡国志》；已收录的建置变化见沿革。',
                 'citation':{'title':title,'revision':revision['revid'],'url':f'https://zh.wikisource.org/w/index.php?oldid={revision["revid"]}',
                             'display_quote':plain_text(quote),'paragraph':'治所条目'}}
-            if name=='扬州':province['center']['note']='正文记历阳，注引《汉官》记寿春并称与志不同；地图只定位已有的寿春参考点，不把两处合成一座城。'
+            if name=='扬州':province['center']['note']='正文记历阳，注引《汉官》记寿春，两说并存；地图定位寿春参考点。'
         else:
             province['center']=None
         provinces.append(province)
@@ -115,17 +115,17 @@ def main():
             at=section.index('〖'+raw);stop=section.find('\n\n',at)
             quote=section[at:stop if stop>=0 else len(section)]
             counties.append({'name':name,'parent':parent,'place_id':place_id,'boundary_status':'待考',
-                'note':'文献所录县级条目；古县界与古治所精确位置分别考订。不得把本郡所有县一并视作某势力的实控区。',
+                'note':'文献所录县级条目；古县界与治所分别考订。',
                 'citation':{'title':page['title'],'revision':revision['revid'],
                     'url':f'https://zh.wikisource.org/w/index.php?oldid={revision["revid"]}',
                     'display_quote':plain_text(quote),'paragraph':f'{parent} · {name}条'}})
     seats=json.loads((ROOT/'data/references/commandery-seats-api.json').read_text(encoding='utf-8'))
     seat_specs=[('kuaiji','會稽郡','山阴县','郡治参考','commandery',
         '會稽郡治所移至[[山阴县_(浙江省)|山陰縣]]（在今浙江[[紹興]]城區），領十五縣',
-        '此处标为东汉会稽郡治山阴县的区域参照；郡名、县城和会稽山不合并。定位仍非古城测绘。'),
-        ('guangling','廣陵郡','广陵县','县城（郡治分期待核）','local',
+        '东汉会稽郡治山阴县的区域参照；郡名、县城、会稽山分列。'),
+        ('guangling','廣陵郡','广陵县','县城 · 郡治分期未定','local',
         '魏遷郡治於[[淮阴县|淮阴]]，吴[[广陵县]]仍於今[[扬州市]]',
-        '二手资料指出三国时期魏迁郡治淮阴、吴仍有广陵县；当前不把扬州参照点当作整个三国时期固定的广陵郡治。')]
+        '二手资料：三国魏迁郡治淮阴，吴仍置广陵县；本参照点不固定为整个三国时期的郡治。')]
     centers={}
     for place_id,title,name,role,level,quote,note in seat_specs:
         page=next(p for p in seats['query']['pages']if p['title']==title);revision=page['revisions'][0]
@@ -137,7 +137,7 @@ def main():
     result={'type':'FeatureCollection','features':features,'labels':labels,'provinces':provinces,
         'counties':counties,'commandery_centers':centers,'junction_repairs':repairs,
         'year':140,'bounds':[99.5,18,125.7,42.5],
-        'note':'约140年十三州概略复原。源图未覆盖河西西段及东北外缘；裁切边不能当完整州界。交州在此作规范标签，所录时期为交趾刺史部。',
+        'note':'约140年十三州概略复原。源图未覆盖河西西段及东北外缘，裁切外缘不构成州界。交州为规范标签，所录时期为交趾刺史部。',
         'source_url':'https://commons.wikimedia.org/wiki/File:Han_orientaux_140.svg',
         'author':'Zunkir; base by Kanguole','license':'CC BY-SA 4.0','source_sha256':sha256(source_path.read_bytes()).hexdigest()}
     (ROOT/'web/han-administration.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

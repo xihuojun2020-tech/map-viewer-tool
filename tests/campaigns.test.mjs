@@ -30,7 +30,7 @@ test('兵数口径与原典保留：步骑、百姓、降卒和争议数不能�
   assert.match(get('h-changban').defender.strength,/被甲者少/);
   assert.match(get('r-changban').defender.strength,/三千余军马、十数万百姓/);
   assert.match(get('h-jibei').defender.strength,/受降卒/);
-  assert.match(get('h-guandu').defender.strength,/裴松之明确质疑/);
+  assert.match(get('h-guandu').defender.strength,/裴松之质疑/);
   for(const r of records)for(const c of r.citations){
     assert.ok(c.display_quote&&c.url&&c.revision);
     if(r.world==='romance')assert.equal(c.source,`romance-${String(r.chapter).padStart(3,'0')}`);

@@ -1,3 +1,4 @@
+const {openTimeline,openSearch,openLayers,closeDetails}=require('./map-ui.cjs');
 const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
@@ -27,22 +28,23 @@ async function chinese(page,context){
     await chinese(page,'主页面、控件与比例尺');
     await page.locator('.maplibregl-ctrl-attrib-button').click();await chinese(page,'展开版权来源');
     await page.locator('#layers-button').click();await chinese(page,'图层菜单');await page.locator('#layers-button').click();
-    await page.locator('#search').fill('无此地名');await chinese(page,'无搜索结果');
-    await page.locator('#search').fill('下邳');await page.locator('#search-results button').first().click();
+    await openSearch(page);await page.locator('#search').fill('无此地名');await chinese(page,'无搜索结果');
+    await openSearch(page);await page.locator('#search').fill('下邳');await page.locator('#search-results button').first().click();
     await chinese(page,'地点与县界缺失说明');
-    await page.locator('#search').fill('魏郡');await page.locator('#search-results button').first().click();await chinese(page,'郡国引用');
-    await page.locator('#search').fill('曹操');await page.locator('#search-results button').first().click();await chinese(page,'人物提及与基础资料');
-    await page.locator('#coverage-button').click();await chinese(page,'资料、来源与下载许可');
-    await page.locator('#year-input').fill('300');await page.locator('#year-input').dispatchEvent('change');
+    await openSearch(page);await page.locator('#search').fill('魏郡');await page.locator('#search-results button').first().click();await chinese(page,'郡国引用');
+    await openSearch(page);await page.locator('#search').fill('曹操');await page.locator('#search-results button').first().click();await chinese(page,'人物提及与基础资料');
+    await openLayers(page);await page.locator('#coverage-button').click();await chinese(page,'资料、来源与下载许可');
+    await openTimeline(page);await page.locator('#year-input').fill('300');await page.locator('#year-input').dispatchEvent('change');
     assert.equal(await page.locator('#year-input').evaluate(n=>n.validationMessage),'请输入184至280之间的整数年份。');
     await page.locator('#history-mode').click();
     await page.locator('#romance-mode').click();await page.locator('[data-tab="events"]').click();await chinese(page,'小说事件');
     await page.locator('[data-tab="text"]').click();await page.waitForSelector('.paragraph');await chinese(page,'小说正文');
     await page.route('**/api/corpus/romance-020',route=>route.fulfill({status:404,body:'English upstream failure'}));
-    await page.locator('#chapter-select').selectOption('20');
-    await page.getByText('本地原文读取失败（错误编号：2001）。请检查原文文件与本地服务。',{exact:true}).waitFor();await chinese(page,'原文加载失败');
+    await openTimeline(page);await page.locator('#chapter-select').selectOption('20');
+    await page.getByText('原文载入失败。请确认本地资料服务已启动后重试。',{exact:true}).waitFor();await chinese(page,'原文加载失败');
     await page.unroute('**/api/corpus/romance-020');
-    await page.setViewportSize({width:390,height:844});await page.locator('#close-panel').click();await page.locator('#mobile-panel-button').click();
+    await page.locator('#close-timeline').click();
+    await page.setViewportSize({width:390,height:844});await closeDetails(page);await page.locator('#mobile-panel-button').click();
     await chinese(page,'手机尺寸');assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
     await page.goto('http://127.0.0.1:8790/models.html');await page.waitForFunction(()=>window.modelPreview);await chinese(page,'三维模型预览');
     await page.goto('http://127.0.0.1:8790/reference.html');await page.waitForFunction(()=>window.referenceAtlas);
@@ -62,7 +64,7 @@ async function chinese(page,context){
       const response=await page.goto('http://127.0.0.1:8790'+url);assert.equal(response.status(),status);await chinese(page,`服务错误 ${status}`);
     }
     await page.route('**/atlas.json',route=>route.fulfill({status:503,body:'English server failure'}));
-    await page.goto('http://127.0.0.1:8790/');await page.getByText('地图与资料载入失败（错误编号：1001）。请通过本地服务打开地图，并检查本地资料文件。详情已记录到开发日志。',{exact:true}).waitFor();await chinese(page,'启动资料加载失败');
+    await page.goto('http://127.0.0.1:8790/');await page.getByText('地图载入失败：资料载入失败，响应编号：503',{exact:true}).waitFor();await chinese(page,'启动资料加载失败');
     await page.unroute('**/atlas.json');
     await page.route('**/terrain-wide.png',route=>route.abort('failed'));
     await page.goto('http://127.0.0.1:8790/');await page.locator('#map-error').waitFor();await chinese(page,'地形资源失败且持续显示');

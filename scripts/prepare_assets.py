@@ -36,7 +36,7 @@ def main():
     manifest.append({'file': 'terrain.png', 'derived_from': '原项目中由公开Terrain Tiles生成的现代区域地势渲染；无先秦政治数据。',
                      'sha256': sha256(target.read_bytes()).hexdigest(), 'metadata': geo['terrain'], 'sources': geo['sources']})
     reference = {'land': geo['land'], 'rivers': geo['rivers'], 'sources': geo['sources'],
-                 'note': '现代地理参照。河道及海岸不代表汉末三国；默认不显示现代河网。'}
+                 'note': '现代地理参照；河道与海岸为今貌，默认隐藏现代河网。'}
     (ROOT / 'web' / 'reference.json').write_text(json.dumps(reference, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     (ROOT / 'research' / 'assets.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f'prepared {len(manifest)} local assets')

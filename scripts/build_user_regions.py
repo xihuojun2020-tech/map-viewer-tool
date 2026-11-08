@@ -45,7 +45,7 @@ def main():
         group=ownership.get(key,'其他参考区')
         props={'id':f'user-region-{i}','name':name,'group':group,'color':colors[name],'group_color':GROUP_COLORS[group],
                'label':interior_center(area),'bounds':list(area.bounds),'source':'三国历史地图.kml','geometry_hash':key}
-        if name in ['夫挹','余娄','葱茈羌','呼得']:props['name_note']='保留原文件名称，尚待核对制图底稿。'
+        if name in ['夫挹','余娄','葱茈羌','呼得']:props['name_note']='保留原文件名称，制图依据待考。'
         regions.append(feature(area,props));name_groups[name].append(area);country_groups[group].append(area)
     labels=[{'name':name,'coordinates':interior_center(unary_union(areas)),'ids':[f['properties']['id'] for f in regions if f['properties']['name']==name],
              'frontier':all(f['properties']['group']=='周边部落' for f in regions if f['properties']['name']==name)} for name,areas in name_groups.items()]
@@ -61,7 +61,7 @@ def main():
         city={k:p[k] for k in ['id','name','aliases','coordinates','location_note']}
         city['level']=seats[p['id']]['level'] if p['id'] in seats else ('county' if p['kind']=='县治' else 'local')
         city['regions']=[f['properties']['id'] for f in regions if shape(f['geometry']).covers(Point(p['coordinates']))]
-        if p['id'] in ['hefei','shouchun']:city['group_note']='原包将此地分入东吴；未说明年代，不能直接作为魏吴对峙时期的控制归属。'
+        if p['id'] in ['hefei','shouchun']:city['group_note']='原包归属东吴；年代与归属待考。'
         cities.append(city)
     geography=fc([{'type':'Feature','geometry':f['geometry'],'properties':{k:f['properties'][k] for k in ['id','name','kind','aliases','label','min_zoom','summary','precision','geometry_note']}} for f in atlas['story_geography']['features']])
     extent=box(68,12,146,60)
@@ -75,7 +75,7 @@ def main():
     land=unary_union([land,*[shape(f['geometry']) for f in patches]])
     surface={'land':fc([feature(land,{})]),'water':fc([feature(extent.difference(land),{})]),
              'coastline':fc([feature(land.boundary.difference(extent.boundary),{})]),'coastal_patches':fc(patches),
-             'coastal_note':'现代海陆底图结合原包沿海轮廓补齐陆地显示。仅修正原包范围被现代海域遮盖的部分；未扣除现代新增陆地，不是考定的三国古海岸。补齐处为平面底色，不生成高程。'}
+             'coastal_note':'现代海陆底图结合原包沿海轮廓补齐陆地显示，补齐处为平面底色。按现代海陆裁切，非三国古海岸。'}
     (ROOT/'web/coastal-reference.json').write_text(json.dumps(surface,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     reference=read('web/reference.json')
     result={'regions':fc(regions),'boundaries':fc([feature(unary_union([shape(f['geometry']).boundary for f in regions]),{})]),'labels':labels,'groups':groups,

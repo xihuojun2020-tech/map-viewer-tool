@@ -1,0 +1,22 @@
+{
+  "canonical": {
+    "baseMapId": "jianan-219",
+    "baseMapRevision": "722e521778c59a3d5e7a935688f419d8b473ecd24d28da914b8892ce309d14a2",
+    "atlasRevision": "a06ed77d4d8f9e9294c28d47cbb0944ef20102f0a878075b40846099a6329cf6",
+    "sceneSchemaVersion": 1
+  },
+  "pairs": [
+    {
+      "baseMapRevision": "722e521778c59a3d5e7a935688f419d8b473ecd24d28da914b8892ce309d14a2",
+      "atlasRevision": "a06ed77d4d8f9e9294c28d47cbb0944ef20102f0a878075b40846099a6329cf6"
+    },
+    {
+      "baseMapRevision": "b864810e95bd4b4b8bc7d04df4286b5608a7ede965380776e616fdf3a2170e14",
+      "atlasRevision": "3e3d1adc7e75f10634f2c6f7256a38d03e6e5725c63c4a81b68cc46e23bc6da4"
+    },
+    {
+      "baseMapRevision": "b864810e95bd4b4b8bc7d04df4286b5608a7ede965380776e616fdf3a2170e14",
+      "atlasRevision": "e31858fa1effa13da406acbfb293b2606355605d51ae622f9299104c51314b4b"
+    }
+  ]
+}

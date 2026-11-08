@@ -56,7 +56,7 @@ class PublishedData(unittest.TestCase):
     def test_retained_names_have_real_matches_without_claiming_biography(self):
         for person in self.data['people']:
             self.assertTrue(person['mentions'])
-            self.assertIn('待逐条编录',person['status'])
+            self.assertIn('提及索引',person['status'])
             for mention in person['mentions'][:2]:
                 doc = self.corpus[mention['source']]
                 paragraph = next(p for p in doc['paragraphs'] if p['id']==mention['paragraph'])

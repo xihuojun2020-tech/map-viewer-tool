@@ -16,8 +16,8 @@
       ],
       "kind": "县治",
       "region": "徐州",
-      "location_note": "徐州治所相关地点；郯城县域级定位，古城精确范围待考。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "徐州治所相关地点，县域级定位；古城范围待考。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -36,7 +36,7 @@
       "kind": "城池",
       "region": "徐州",
       "location_note": "今徐州市区级参照；小说中的“徐州”须逐处辨别为城或州。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -54,8 +54,8 @@
       ],
       "kind": "城池",
       "region": "徐州",
-      "location_note": "今睢宁古邳一带区域参照，不是现代邳州市中心。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "今睢宁古邳一带的区域参照。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -74,7 +74,7 @@
       "kind": "城池",
       "region": "徐州",
       "location_note": "今沛县一带区域参照；与彭城、下邳分列。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -91,8 +91,8 @@
       ],
       "kind": "郡治",
       "region": "徐州",
-      "location_note": "今扬州市区级参照，古城址边界待考。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "今扬州市区的区域参照；古城址边界待考。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -109,8 +109,8 @@
       ],
       "kind": "区域",
       "region": "徐州",
-      "location_note": "古郡范围不等于一个城市；本点仅为鲁东南区域标签。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "鲁东南区域标签，表示郡级范围。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -127,8 +127,8 @@
       ],
       "kind": "区域",
       "region": "徐州",
-      "location_note": "此处为历史郡名索引，不是现代东海县中心。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "历史郡名索引点，不采用现代东海县中心。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -146,7 +146,7 @@
       "kind": "城池",
       "region": "徐州",
       "location_note": "今盱眙区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -164,7 +164,7 @@
       "kind": "城池",
       "region": "徐州",
       "location_note": "今淮安区域参照，汉县治具体点待考。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -182,7 +182,7 @@
       "kind": "区域",
       "region": "徐州",
       "location_note": "古县定位有待专项核对；苏北沿海走廊级候选。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -199,8 +199,8 @@
       ],
       "kind": "县治",
       "region": "徐州",
-      "location_note": "郯城北部区域级参照，古县址待核。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "郯城北部区域级参照，古县址待考。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -218,7 +218,7 @@
       "kind": "县治",
       "region": "徐州",
       "location_note": "临沂一带区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -237,7 +237,7 @@
       "kind": "县治",
       "region": "徐州",
       "location_note": "莒县区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -255,7 +255,7 @@
       "kind": "区域",
       "region": "青州",
       "location_note": "北海郡国索引，以寿光附近作区域锚点。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -273,7 +273,7 @@
       "kind": "城池",
       "region": "青州",
       "location_note": "今平原附近区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -291,7 +291,7 @@
       "kind": "城池",
       "region": "青州",
       "location_note": "今临淄区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -309,7 +309,7 @@
       "kind": "区域",
       "region": "兖州",
       "location_note": "郡级索引，区域锚点不表示全郡界线。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -327,7 +327,7 @@
       "kind": "城池",
       "region": "兖州",
       "location_note": "今濮阳区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -345,7 +345,7 @@
       "kind": "城池",
       "region": "兖州",
       "location_note": "今鄄城区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -363,7 +363,7 @@
       "kind": "城池",
       "region": "兖州",
       "location_note": "开封东南区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -383,8 +383,8 @@
       ],
       "kind": "城池",
       "region": "豫州",
-      "location_note": "汉许县区域参照，不等于现代许昌全市。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "汉许县区域参照。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -402,7 +402,7 @@
       "kind": "城池",
       "region": "豫州",
       "location_note": "今亳州区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -420,7 +420,7 @@
       "kind": "区域",
       "region": "豫州",
       "location_note": "今汝南附近区域锚点。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -438,7 +438,7 @@
       "kind": "战场",
       "region": "豫州",
       "location_note": "中牟一带区域定位；战场精确范围未复原。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -458,7 +458,7 @@
       "kind": "都城",
       "region": "司隶",
       "location_note": "汉魏洛阳故城附近区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -476,7 +476,7 @@
       "kind": "都城",
       "region": "司隶",
       "location_note": "汉长安城附近区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -494,7 +494,7 @@
       "kind": "关隘",
       "region": "司隶",
       "location_note": "古关位置随时代变化，此为走廊级参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -513,7 +513,7 @@
       "kind": "关隘",
       "region": "司隶",
       "location_note": "汜水一带参照；演义关隘故事与史实分开。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -532,7 +532,7 @@
       "kind": "城池",
       "region": "冀州",
       "location_note": "临漳邺城遗址区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -550,7 +550,7 @@
       "kind": "城池",
       "region": "并州",
       "location_note": "太原晋源一带参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -569,7 +569,7 @@
       "kind": "城池",
       "region": "幽州",
       "location_note": "北京西南城区区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -588,7 +588,7 @@
       "kind": "城池",
       "region": "幽州",
       "location_note": "今涿州附近区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -606,7 +606,7 @@
       "kind": "营垒",
       "region": "幽州",
       "location_note": "易县附近区域级候选，具体遗址待考。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -625,7 +625,7 @@
       "kind": "城池",
       "region": "辽东",
       "location_note": "今辽阳区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -645,7 +645,7 @@
       "kind": "城池",
       "region": "扬州",
       "location_note": "今寿县区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -663,7 +663,7 @@
       "kind": "城池",
       "region": "扬州",
       "location_note": "今合肥区域参照；各期城址需另考。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -683,7 +683,7 @@
       "kind": "都城",
       "region": "扬州",
       "location_note": "南京城区级参照，名称按时序补充。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -701,7 +701,7 @@
       "kind": "城池",
       "region": "扬州",
       "location_note": "今镇江区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -721,7 +721,7 @@
       "kind": "城池",
       "region": "扬州",
       "location_note": "今苏州区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -739,7 +739,7 @@
       "kind": "郡治",
       "region": "扬州",
       "location_note": "绍兴区域参照；郡名与山名分辨仍需补充。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -759,7 +759,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "今南阳区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -777,7 +777,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "襄阳古城区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -795,7 +795,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "汉水北岸区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -813,7 +813,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "今新野区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -830,8 +830,8 @@
       ],
       "kind": "城池",
       "region": "荆州",
-      "location_note": "今荆州古城区域参照，不是现代江陵县城。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "今荆州古城的区域参照。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -849,7 +849,7 @@
       "kind": "战场",
       "region": "荆州",
       "location_note": "蒲圻赤壁候选；战场定位存在不同说法。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -867,7 +867,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "武汉长江汉水交汇区参照，古河岸未复原。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -885,7 +885,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "孙吴武昌对应今鄂州一带，不等同今武汉武昌区。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -902,8 +902,8 @@
       ],
       "kind": "区域",
       "region": "荆州",
-      "location_note": "今长沙城区级参照。 此名称在本索引代表郡级区域，不作为已核定的古县城显示；实际治所另行编录。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "今长沙城区的区域参照；本索引中代表郡级区域，治所见县级记录。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -921,7 +921,7 @@
       "kind": "区域",
       "region": "荆州",
       "location_note": "永州一带区域参照，郡与治所分列待扩充。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -939,7 +939,7 @@
       "kind": "区域",
       "region": "荆州",
       "location_note": "郴州一带郡级区域锚点。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -958,7 +958,7 @@
       "kind": "区域",
       "region": "荆州",
       "location_note": "常德一带区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -976,7 +976,7 @@
       "kind": "城池",
       "region": "荆州",
       "location_note": "宜昌一带区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -995,7 +995,7 @@
       "kind": "城池",
       "region": "益州",
       "location_note": "奉节附近参照；现代库区岸线不代表古代。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1013,7 +1013,7 @@
       "kind": "城池",
       "region": "益州",
       "location_note": "今重庆渝中半岛一带参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1031,7 +1031,7 @@
       "kind": "都城",
       "region": "益州",
       "location_note": "今成都城区级参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1050,7 +1050,7 @@
       "kind": "城池",
       "region": "益州",
       "location_note": "今广汉附近区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1068,7 +1068,7 @@
       "kind": "城池",
       "region": "益州",
       "location_note": "德阳一带区域级候选；不直接套用现代绵竹市。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1087,7 +1087,7 @@
       "kind": "关隘",
       "region": "益州",
       "location_note": "剑门山地走廊参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1106,8 +1106,8 @@
       ],
       "kind": "区域",
       "region": "益州",
-      "location_note": "汉中盆地区域参照，古县治另考。 此名称在本索引代表郡级区域，不作为已核定的古县城显示；实际治所另行编录。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "汉中盆地区域参照；本索引代表郡级区域，治所见县级记录。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1125,7 +1125,7 @@
       "kind": "战场",
       "region": "益州",
       "location_note": "勉县南部山区参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1143,7 +1143,7 @@
       "kind": "山地",
       "region": "凉州",
       "location_note": "礼县东部山区级参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1162,7 +1162,7 @@
       "kind": "区域",
       "region": "凉州",
       "location_note": "古天水郡范围与现代市不同；甘谷一带锚点。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1180,7 +1180,7 @@
       "kind": "战场",
       "region": "凉州",
       "location_note": "秦安陇城附近候选，保留战场位置争议。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1198,7 +1198,7 @@
       "kind": "战场",
       "region": "司隶",
       "location_note": "岐山渭水南侧区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1215,8 +1215,8 @@
       ],
       "kind": "区域",
       "region": "凉州",
-      "location_note": "今武威区域参照。 此名称在本索引代表郡级区域，不作为已核定的古县城显示；实际治所另行编录。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "location_note": "今武威区域参照；本索引代表郡级区域，治所见县级记录。",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1234,7 +1234,7 @@
       "kind": "区域",
       "region": "凉州",
       "location_note": "兰州附近郡级区域锚点，具体治所随时期考订。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1252,7 +1252,7 @@
       "kind": "区域",
       "region": "南中",
       "location_note": "保山附近郡级区域锚点。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1271,7 +1271,7 @@
       "kind": "区域",
       "region": "南中",
       "location_note": "曲靖附近区域参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1291,7 +1291,7 @@
       "kind": "区域",
       "region": "交州",
       "location_note": "越南北部区域锚点，不表示古治所已考定。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1310,7 +1310,7 @@
       "kind": "城池",
       "region": "交州",
       "location_note": "今广州城区级参照。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1330,7 +1330,7 @@
       "kind": "战场",
       "region": "荆州",
       "location_note": "当阳附近区域参照，战斗路线未复原。",
-      "precision": "区域级编辑定位，非古城测绘点",
+      "precision": "区域级编辑定位",
       "source_ids": [
         "editorial-geography"
       ]
@@ -1345,112 +1345,112 @@
         "太祖"
       ],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p002",
       "name": "曹丕",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p003",
       "name": "曹叡",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p004",
       "name": "曹芳",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p005",
       "name": "曹髦",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p006",
       "name": "曹奂",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p007",
       "name": "曹嵩",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p008",
       "name": "曹昂",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p009",
       "name": "曹冲",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p010",
       "name": "曹植",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p011",
       "name": "曹彰",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p012",
       "name": "曹熊",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p013",
       "name": "曹宇",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p014",
       "name": "曹爽",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p015",
       "name": "曹真",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p016",
       "name": "曹休",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p017",
@@ -1461,49 +1461,49 @@
         "先主"
       ],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p018",
       "name": "刘禅",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p019",
       "name": "刘封",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p020",
       "name": "刘永",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p021",
       "name": "刘理",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p022",
       "name": "孙坚",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p023",
       "name": "孙策",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p024",
@@ -1514,224 +1514,224 @@
         "仲謀"
       ],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p025",
       "name": "孙亮",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p026",
       "name": "孙休",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p027",
       "name": "孙皓",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p028",
       "name": "孙登",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p029",
       "name": "孙和",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p030",
       "name": "孙霸",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p031",
       "name": "孙翊",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p032",
       "name": "孙匡",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p033",
       "name": "刘协",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p034",
       "name": "刘辩",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p035",
       "name": "刘宏",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p036",
       "name": "何进",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p037",
       "name": "何太后",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p038",
       "name": "董太后",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p039",
       "name": "董卓",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p040",
       "name": "董旻",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p041",
       "name": "董承",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p042",
       "name": "袁绍",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p043",
       "name": "袁术",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p044",
       "name": "袁谭",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p045",
       "name": "袁熙",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p046",
       "name": "袁尚",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p047",
       "name": "袁遗",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p048",
       "name": "韩馥",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p049",
       "name": "刘表",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p050",
       "name": "刘琮",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p051",
       "name": "刘琦",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p052",
       "name": "刘焉",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p053",
       "name": "刘璋",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p054",
       "name": "刘繇",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p055",
       "name": "刘虞",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p056",
@@ -1741,77 +1741,77 @@
         "恭祖"
       ],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p057",
       "name": "公孙瓒",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p058",
       "name": "公孙度",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p059",
       "name": "公孙康",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p060",
       "name": "公孙渊",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p061",
       "name": "马腾",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p062",
       "name": "韩遂",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p063",
       "name": "张鲁",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p064",
       "name": "张燕",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p065",
       "name": "张绣",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p066",
       "name": "张杨",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p067",
@@ -1823,35 +1823,35 @@
         "溫侯"
       ],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p068",
       "name": "丁原",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p069",
       "name": "孔融",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p070",
       "name": "士燮",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p071",
       "name": "孟获",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p072",
@@ -1862,28 +1862,28 @@
         "仲達"
       ],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p073",
       "name": "司马师",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p074",
       "name": "司马昭",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p075",
       "name": "司马炎",
       "aliases": [],
       "group": "群雄与宗室",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p076",
@@ -1894,7 +1894,7 @@
         "雲長"
       ],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p077",
@@ -1905,833 +1905,833 @@
         "益德"
       ],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p078",
       "name": "赵云",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p079",
       "name": "马超",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p080",
       "name": "黄忠",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p081",
       "name": "魏延",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p082",
       "name": "姜维",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p083",
       "name": "王平",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p084",
       "name": "廖化",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p085",
       "name": "马岱",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p086",
       "name": "关平",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p087",
       "name": "关兴",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p088",
       "name": "张苞",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p089",
       "name": "关索",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p090",
       "name": "周仓",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p091",
       "name": "裴元绍",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p092",
       "name": "夏侯惇",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p093",
       "name": "夏侯渊",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p094",
       "name": "夏侯霸",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p095",
       "name": "夏侯尚",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p096",
       "name": "曹仁",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p097",
       "name": "曹洪",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p098",
       "name": "曹纯",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p099",
       "name": "张辽",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p100",
       "name": "徐晃",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p101",
       "name": "张郃",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p102",
       "name": "于禁",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p103",
       "name": "乐进",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p104",
       "name": "李典",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p105",
       "name": "臧霸",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p106",
       "name": "孙观",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p107",
       "name": "吴敦",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p108",
       "name": "尹礼",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p109",
       "name": "昌豨",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p110",
       "name": "高顺",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p111",
       "name": "成廉",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p112",
       "name": "魏续",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p113",
       "name": "宋宪",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p114",
       "name": "侯成",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p115",
       "name": "侯谐",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p116",
       "name": "郝萌",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p117",
       "name": "曹性",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p118",
       "name": "曹豹",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p119",
       "name": "许耽",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p120",
       "name": "章诳",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p121",
       "name": "纪灵",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p122",
       "name": "荀正",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p123",
       "name": "李傕",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p124",
       "name": "郭汜",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p125",
       "name": "张济",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p126",
       "name": "樊稠",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p127",
       "name": "李肃",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p128",
       "name": "华雄",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p129",
       "name": "胡轸",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p130",
       "name": "张闿",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p131",
       "name": "许褚",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p132",
       "name": "典韦",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p133",
       "name": "典满",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p134",
       "name": "郭淮",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p135",
       "name": "邓艾",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p136",
       "name": "邓忠",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p137",
       "name": "钟会",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p138",
       "name": "胡烈",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p139",
       "name": "杜预",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p140",
       "name": "羊祜",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p141",
       "name": "王濬",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p142",
       "name": "王浑",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p143",
       "name": "文鸯",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p144",
       "name": "文钦",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p145",
       "name": "毌丘俭",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p146",
       "name": "诸葛诞",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p147",
       "name": "诸葛绪",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p148",
       "name": "孙韶",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p149",
       "name": "丁奉",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p150",
       "name": "徐盛",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p151",
       "name": "凌统",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p152",
       "name": "凌操",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p153",
       "name": "甘宁",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p154",
       "name": "黄盖",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p155",
       "name": "程普",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p156",
       "name": "韩当",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p157",
       "name": "祖茂",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p158",
       "name": "朱治",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p159",
       "name": "朱然",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p160",
       "name": "潘璋",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p161",
       "name": "马忠",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p162",
       "name": "蒋钦",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p163",
       "name": "周泰",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p164",
       "name": "陈武",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p165",
       "name": "董袭",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p166",
       "name": "孙桓",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p167",
       "name": "全琮",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p168",
       "name": "贺齐",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p169",
       "name": "吕范",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p170",
       "name": "吕蒙",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p171",
       "name": "鲁肃",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p172",
       "name": "周瑜",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p173",
       "name": "陆逊",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p174",
       "name": "陆抗",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p175",
       "name": "朱桓",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p176",
       "name": "朱异",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p177",
       "name": "太史慈",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p178",
       "name": "张任",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p179",
       "name": "严颜",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p180",
       "name": "李严",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p181",
       "name": "吴懿",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p182",
       "name": "吴班",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p183",
       "name": "高翔",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p184",
       "name": "陈到",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p185",
       "name": "霍峻",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p186",
       "name": "霍弋",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p187",
       "name": "张翼",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p188",
       "name": "张嶷",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p189",
       "name": "傅佥",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p190",
       "name": "诸葛瞻",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p191",
       "name": "诸葛尚",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p192",
       "name": "董厥",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p193",
       "name": "夏侯博",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p194",
       "name": "孙礼",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p195",
       "name": "牛金",
       "aliases": [],
       "group": "将领与军士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p196",
@@ -2741,28 +2741,28 @@
         "孔明"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p197",
       "name": "庞统",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p198",
       "name": "徐庶",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p199",
       "name": "法正",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p200",
@@ -2772,7 +2772,7 @@
         "糜子仲"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p201",
@@ -2781,21 +2781,21 @@
         "麋芳"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p202",
       "name": "孙乾",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p203",
       "name": "简雍",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p204",
@@ -2806,7 +2806,7 @@
         "元龍"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p205",
@@ -2815,7 +2815,7 @@
         "陳珪"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p206",
@@ -2826,63 +2826,63 @@
         "公臺"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p207",
       "name": "田丰",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p208",
       "name": "沮授",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p209",
       "name": "审配",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p210",
       "name": "逢纪",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p211",
       "name": "许攸",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p212",
       "name": "郭图",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p213",
       "name": "辛评",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p214",
       "name": "辛毗",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p215",
@@ -2891,14 +2891,14 @@
         "文若"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p216",
       "name": "荀攸",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p217",
@@ -2907,889 +2907,889 @@
         "奉孝"
       ],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p218",
       "name": "程昱",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p219",
       "name": "贾诩",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p220",
       "name": "刘晔",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p221",
       "name": "毛玠",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p222",
       "name": "任峻",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p223",
       "name": "满宠",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p224",
       "name": "董昭",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p225",
       "name": "蒋济",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p226",
       "name": "陈群",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p227",
       "name": "钟繇",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p228",
       "name": "王朗",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p229",
       "name": "华歆",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p230",
       "name": "荀恽",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p231",
       "name": "杨修",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p232",
       "name": "司马朗",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p233",
       "name": "司马孚",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p234",
       "name": "张昭",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p235",
       "name": "张纮",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p236",
       "name": "顾雍",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p237",
       "name": "步骘",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p238",
       "name": "诸葛瑾",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p239",
       "name": "诸葛恪",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p240",
       "name": "薛综",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p241",
       "name": "虞翻",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p242",
       "name": "陆绩",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p243",
       "name": "阚泽",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p244",
       "name": "严畯",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p245",
       "name": "程秉",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p246",
       "name": "张温",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p247",
       "name": "骆统",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p248",
       "name": "蒋琬",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p249",
       "name": "费祎",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p250",
       "name": "董允",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p251",
       "name": "邓芝",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p252",
       "name": "杨仪",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p253",
       "name": "黄权",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p254",
       "name": "许靖",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p255",
       "name": "刘巴",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p256",
       "name": "杜微",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p257",
       "name": "秦宓",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p258",
       "name": "谯周",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p259",
       "name": "郤正",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p260",
       "name": "来敏",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p261",
       "name": "马良",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p262",
       "name": "马谡",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p263",
       "name": "向朗",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p264",
       "name": "向宠",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p265",
       "name": "伊籍",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p266",
       "name": "傅肜",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p267",
       "name": "赵累",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p268",
       "name": "邓贤",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p269",
       "name": "冷苞",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p270",
       "name": "刘循",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p271",
       "name": "郑玄",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p272",
       "name": "管宁",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p273",
       "name": "邴原",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p274",
       "name": "陈纪",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p275",
       "name": "陈寔",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p276",
       "name": "王允",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p277",
       "name": "蔡邕",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p278",
       "name": "卢植",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p279",
       "name": "皇甫嵩",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p280",
       "name": "朱儁",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p281",
       "name": "赵昱",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p282",
       "name": "曹宏",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p283",
       "name": "陶商",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p284",
       "name": "陶应",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p285",
       "name": "车胄",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p286",
       "name": "王忠",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p287",
       "name": "刘岱",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p288",
       "name": "桥瑁",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p289",
       "name": "鲍信",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p290",
       "name": "应劭",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p291",
       "name": "王匡",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p292",
       "name": "胡母班",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p293",
       "name": "韩胤",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p294",
       "name": "金尚",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p295",
       "name": "陈瑀",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p296",
       "name": "张邈",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p297",
       "name": "张超",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p298",
       "name": "杨奉",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p299",
       "name": "韩暹",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p300",
       "name": "眭固",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p301",
       "name": "杨丑",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p302",
       "name": "史涣",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p303",
       "name": "孔伷",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p304",
       "name": "刘子惠",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p305",
       "name": "边让",
       "aliases": [],
       "group": "文臣与谋士",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p306",
       "name": "貂蝉",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p307",
       "name": "吕玲绮",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p308",
       "name": "严氏",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p309",
       "name": "糜夫人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p310",
       "name": "甘夫人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p311",
       "name": "孙夫人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p312",
       "name": "吴国太",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p313",
       "name": "吴夫人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p314",
       "name": "卞夫人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p315",
       "name": "丁夫人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p316",
       "name": "甄氏",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p317",
       "name": "郭女王",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p318",
       "name": "蔡琰",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p319",
       "name": "黄月英",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p320",
       "name": "夏侯氏",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p321",
       "name": "大乔",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p322",
       "name": "小乔",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p323",
       "name": "董贵人",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p324",
       "name": "伏皇后",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p325",
       "name": "华佗",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p326",
       "name": "董奉",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p327",
       "name": "张仲景",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p328",
       "name": "于吉",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p329",
       "name": "左慈",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p330",
       "name": "管辂",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p331",
       "name": "祢衡",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p332",
       "name": "许劭",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p333",
       "name": "吉平",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p334",
       "name": "吉本",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p335",
       "name": "秦庆童",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p336",
       "name": "卢马",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p337",
       "name": "张角",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p338",
       "name": "张宝",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p339",
       "name": "张梁",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p340",
       "name": "何仪",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p341",
       "name": "何曼",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p342",
       "name": "黄劭",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p343",
       "name": "龚都",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p344",
@@ -3798,266 +3798,266 @@
         "劉辟"
       ],
       "group": "黄巾相关人物",
-      "status": "提及索引；身份与生平待逐条编录"
+      "status": "提及索引"
     },
     {
       "id": "p345",
       "name": "廖立",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p346",
       "name": "彭羕",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p347",
       "name": "胡车儿",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p348",
       "name": "邢道荣",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p349",
       "name": "潘凤",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p350",
       "name": "刘三刀",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p351",
       "name": "淳于琼",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p352",
       "name": "颜良",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p353",
       "name": "文丑",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p354",
       "name": "高览",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p355",
       "name": "蒋干",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p356",
       "name": "黄祖",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p357",
       "name": "苏飞",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p358",
       "name": "张允",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p359",
       "name": "蔡瑁",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p360",
       "name": "蒯良",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p361",
       "name": "蒯越",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p362",
       "name": "张松",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p363",
       "name": "孟达",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p364",
       "name": "鄧芝",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p365",
       "name": "祝融",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p366",
       "name": "兀突骨",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p367",
       "name": "朵思大王",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p368",
       "name": "木鹿大王",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p369",
       "name": "忙牙长",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p370",
       "name": "孟优",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p371",
       "name": "董荼那",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p372",
       "name": "阿会喃",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p373",
       "name": "金环三结",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p374",
       "name": "带来洞主",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p375",
       "name": "土安",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p376",
       "name": "奚泥",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p377",
       "name": "沙摩柯",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p378",
       "name": "蹋顿",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p379",
       "name": "轲比能",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p380",
       "name": "去卑",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     },
     {
       "id": "p381",
       "name": "呼厨泉",
       "aliases": [],
-      "group": "女性、医者及其他角色",
-      "status": "提及索引；身份与生平待逐条编录"
+      "group": "女性、医者等人物",
+      "status": "提及索引"
     }
   ],
   "factions": [
@@ -4142,7 +4142,7 @@
         "tan": "tao"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控",
+      "precision": "年级汇总；不作年内逐日还原。",
       "interpretation": "显示起点为编辑分期；徐州全境的逐县实控尚未考定。"
     },
     {
@@ -4163,7 +4163,7 @@
       ],
       "controls": {},
       "kind": "战争",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "h-194-campaign",
@@ -4186,7 +4186,7 @@
       ],
       "controls": {},
       "kind": "战争",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "h-194-liu",
@@ -4214,7 +4214,7 @@
         "xiaopei": "liu"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "h-196",
@@ -4240,7 +4240,7 @@
         "xiaopei": "liu"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "h-198-flood",
@@ -4261,7 +4261,7 @@
       ],
       "controls": {},
       "kind": "围城",
-      "precision": "年级汇总；不表示年内每日实控",
+      "precision": "年级汇总；不作年内逐日还原。",
       "uncertainty": "建安三年冬战事延续至十二月；公历跨年不能仅按年号数直接换算。"
     },
     {
@@ -4288,7 +4288,7 @@
         "xiaopei": "cao"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控",
+      "precision": "年级汇总；不作年内逐日还原。",
       "order": 1
     },
     {
@@ -4314,7 +4314,7 @@
         "xiaopei": "liu"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控",
+      "precision": "年级汇总；不作年内逐日还原。",
       "order": 2
     },
     {
@@ -4341,7 +4341,7 @@
         "xiapi": "cao"
       },
       "kind": "战争",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "h-220",
@@ -4365,7 +4365,7 @@
         "xiaopei": "wei"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "h-265",
@@ -4390,7 +4390,7 @@
         "xiaopei": "jin"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-tao",
@@ -4412,7 +4412,7 @@
         "pengcheng": "tao"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-liu",
@@ -4441,7 +4441,7 @@
         "xiaopei": "liu"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-lu-attack",
@@ -4467,7 +4467,7 @@
         "pengcheng": "lu"
       },
       "kind": "战争",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-xuzhou-cao",
@@ -4495,7 +4495,7 @@
         "xiapi": "lu"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-flood",
@@ -4516,7 +4516,7 @@
       ],
       "controls": {},
       "kind": "围城",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-capture",
@@ -4538,7 +4538,7 @@
         "xiapi": "cao"
       },
       "kind": "局势",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     },
     {
       "id": "r-lu-end",
@@ -4558,7 +4558,7 @@
       ],
       "controls": {},
       "kind": "人物",
-      "precision": "年级汇总；不表示年内每日实控"
+      "precision": "年级汇总；不作年内逐日还原。"
     }
   ],
   "areas": [
@@ -4669,7 +4669,7 @@
           33.4
         ]
       ],
-      "note": "按郯—彭城—下邳相关地理编辑的走廊示意，非三国古河道测绘；下邳决水记载只证明水系关联。",
+      "note": "郯—彭城—下邳相关地理的走廊示意；下邳决水记载仅表明水系关联。",
       "evidence_event": "h-198-flood"
     },
     {
@@ -4701,7 +4701,7 @@
           33.91
         ]
       ],
-      "note": "流域及文献关联示意，古今河道不能等同；不得用于精确行军或水攻复原。",
+      "note": "流域及文献关联示意；古今河道不同，不作行军或水攻复原。",
       "evidence_event": "h-198-flood"
     }
   ],
@@ -4780,7 +4780,7 @@
       "title": "刘备如何接掌徐州？",
       "history_event": "h-194-liu",
       "romance_event": "r-liu",
-      "text": "正史记陶谦临终属意、麋竺迎立、陈登与孔融劝进；演义突出三让徐州、百姓哭拜与关张劝进。两版分别引用，不混成一条事实。"
+      "text": "史实记陶谦临终属意、麋竺迎立、陈登与孔融劝进；演义突出三让徐州、百姓哭拜与关张劝进。两版分别引用，不混成一条事实。"
     },
     {
       "id": "xiapi-capture",

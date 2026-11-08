@@ -26,29 +26,29 @@ function fit(bounds){map.fitBounds(bounds,{padding:insets(),duration:motion()});
 function showIntro(){
   selectedIds=[];if(map?.isStyleLoaded())highlight([]);
   const p=panel('循着山川，辨认州域','独立预览');
-  p.append(el('p','从中原到巴蜀，从江东到北方诸部。拖动地图查看区域，放大后寻找城池与山川。'));
+  p.append(el('p','覆盖中原、巴蜀、江东与北方诸部；拖动查看区域，放大后可见城池与山川。'));
   p.append(fact('区域轮廓','35 片'),fact('城池参照','62 处'),fact('原著山川','25 处'));
-  p.append(el('h3','两种看法'),el('p','“州域配色”辨认地理分区；“原包分组”查看文件中归入魏、蜀、吴的范围。','muted'));
-  p.append(el('p','原包没有注明年代，分组尚待校核。本页用于比较地图轮廓，不代表某年某月的实控局势。','note'));
+  p.append(el('h3','两种看法'),el('p','两种视角：“州域配色”按地理分区着色；“原包分组”沿用原文件对魏、蜀、吴的归组。','muted'));
+  p.append(el('p','原包未注明年代，分组待校核；本页比较地图轮廓，局势判断见阅读版。','note'));
   p.append(el('h3','从这些地方开始'));
   const links=el('div',undefined,'chips');
   for(const name of ['荆州','扬州','益州','鲜卑'])links.append(button(name,()=>showRegion(data.labels.find(l=>l.name===name).ids,true)));
   for(const id of ['hefei','xiangyang']){const city=data.cities.find(c=>c.id===id);links.append(button(city.name,()=>showCity(city,true)));}p.append(links);
   p.append(el('h3','城池符号'),el('p','紫：都城　朱红：州治　金：郡治　青：县城　灰：等级待核。城市等级沿用建安研究参照。','muted'));
-  const notes=el('details');notes.append(el('summary','来源与显示说明'),el('p','区域来自用户提供的《三国地图分布》。保留原始边界与名称，部族活动区不表示现代意义上的固定国界。'),el('p',data.source.license),el('p',data.coastal_note),el('p','地势沿用现有地形图。河流、山地与湖泽为原著阅读用概略示意。'));
+  const notes=el('details');notes.append(el('summary','来源与显示说明'),el('p','区域来自用户提供的《三国地图分布》，保留原始边界与名称；部族活动区为历史活动范围，与现代国界无关。'),el('p',data.source.license),el('p',data.coastal_note),el('p','地势沿用现有地形图；河流、山地与湖泽为阅读用概略示意。'));
   const link=el('a','下载地图资源署名');link.href='assets/DATA-NOTICES.txt';link.download='地图资源署名.txt';notes.append(link);p.append(notes);
 }
 function showRegion(ids,focus=false){
   selectedIds=ids;highlight(ids);
   const areas=ids.map(region),names=[...new Set(areas.map(f=>f.properties.name))],groups=[...new Set(areas.map(f=>f.properties.group))];
   const p=panel(names.join('、'),'来源区域');
-  p.append(fact('原包分组',groups.join('、')),fact('同名分片',`${ids.length} 片`),fact('资料年代','原文件未注明'));
+  p.append(fact('原包分组',groups.join('、')),fact('同名分片',`${ids.length} 片`),fact('资料年代','未注明'));
   if(areas.some(f=>f.properties.name_note))p.append(el('p',areas.find(f=>f.properties.name_note).properties.name_note,'note'));
-  p.append(el('p','边线来自原包的闭合轮廓。区域名称与势力控制需分开理解；这里没有郡县级边界。','muted'));
+  p.append(el('p','边线为原包闭合轮廓；区域名称与势力控制需分开理解，本层不含郡县级边界。','muted'));
   const cities=data.cities.filter(c=>c.regions.some(id=>ids.includes(id)));
   p.append(el('h3','区域内的城池参照点'));const links=el('div',undefined,'chips');
   for(const city of cities)links.append(button(city.name,()=>showCity(city,true)));
-  p.append(cities.length?links:el('p','当前城池目录尚无落入这片区域的参照点。','muted'));
+  p.append(cities.length?links:el('p','此区域暂无城池参照点。','muted'));
   p.append(button('返回地图介绍',showIntro));openDetail();
   if(focus){const bounds=areas.map(f=>f.properties.bounds);fit([[Math.min(...bounds.map(b=>b[0])),Math.min(...bounds.map(b=>b[1]))],[Math.max(...bounds.map(b=>b[2])),Math.max(...bounds.map(b=>b[3]))]]);}
 }
@@ -58,13 +58,13 @@ function showCity(city,focus=false){
   if(city.group_note)p.append(el('p',city.group_note,'note'));
   p.append(el('h3','参照点所在区域'));const links=el('div',undefined,'chips');
   for(const id of city.regions){const item=region(id).properties;links.append(button(`${item.name} · ${item.group}`,()=>showRegion([id])));}
-  p.append(city.regions.length?links:el('p','该参照点在原包区域之外或边缘，未作归属推定。','muted'));
-  p.append(el('p','这里只显示地理关系，不推断此时由谁驻守。','muted'),button('返回地图介绍',showIntro));openDetail();if(focus)focusPoint(city.coordinates);
+  p.append(city.regions.length?links:el('p','该参照点位于原包区域之外或边缘，归属未推定。','muted'));
+  p.append(el('p','此处仅示地理关系；驻守信息不在本页范围。','muted'),button('返回地图介绍',showIntro));openDetail();if(focus)focusPoint(city.coordinates);
 }
 function showGeography(feature,focus=false){
   selectedIds=[];highlight([]);const item=feature.properties,p=panel(item.name,item.kind);
   p.append(el('p',item.summary));if(item.aliases.length)p.append(fact('其他称呼',item.aliases.join('、')));
-  const details=el('details');details.append(el('summary','定位说明'),el('p',item.precision),el('p',item.geometry_note));p.append(details,el('p','本页只展示地理说明；原著引文与阅读进度请在阅读版查看。','muted'),button('返回地图介绍',showIntro));openDetail();if(focus)focusPoint(item.label,6.2);
+  const details=el('details');details.append(el('summary','定位说明'),el('p',item.precision),el('p',item.geometry_note));p.append(details,el('p','原著引文与阅读进度见阅读版。','muted'),button('返回地图介绍',showIntro));openDetail();if(focus)focusPoint(item.label,6.2);
 }
 function updateSearch(){
   const query=$('search').value.trim(),results=$('search-results');results.replaceChildren();results.hidden=!query;if(!query)return;
@@ -73,7 +73,7 @@ function updateSearch(){
     ...data.geography.features.map(f=>({name:f.properties.name,aliases:f.properties.aliases,kind:f.properties.kind,action:()=>showGeography(f,true)}))];
   const matches=entries.filter(e=>[e.name,...e.aliases].some(n=>n.includes(query))).slice(0,20);
   for(const item of matches){const node=button(item.name,()=>{results.hidden=true;item.action();});node.append(el('small',item.kind));results.append(node);}
-  if(!matches.length)results.append(el('p','当前目录未找到这个地名。','muted'));
+  if(!matches.length)results.append(el('p','未找到这个地名。','muted'));
 }
 function setMode(value){
   mode=value;for(const key of ['regions','groups'])$(`mode-${key}`).setAttribute('aria-pressed',String(key===mode));

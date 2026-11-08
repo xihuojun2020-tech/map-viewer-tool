@@ -8,6 +8,8 @@ import {buildSceneView,resolveScenePlaces,sceneFactionGroups} from './scene/stat
 import {createSceneRenderer} from './scene/renderer.mjs';
 import {renderScenePanel} from './scene/dossiers.mjs';
 import {readStories,readingPosition} from './scene/store.mjs';
+import {sha256} from './scene/layer.mjs';
+import {resolveMapVersion,assertPackCompatible} from './scene/map-version.mjs';
 
 const $ = id => document.getElementById(id);
 const el = (tag, text, className) => {
@@ -55,8 +57,8 @@ function districtName(name) {
 function placeName(place) {
   if(administration.commandery_centers[place.id])return administration.commandery_centers[place.id].name;
   if(place.kind==='县治')return `${place.name}县`;
-  if(place.id==='haixi')return '海西县（位置待考）';
-  if(place.kind==='区域')return `${place.name}（区域索引）`;
+  if(place.id==='haixi')return '海西县';
+  if(place.kind==='区域')return place.name;
   return ['城池','都城','郡治'].includes(place.kind)?`${place.name}城`:place.name;
 }
 function centerRecord(place) {
@@ -75,6 +77,7 @@ function closeMapOverlays() {
   $('legend-disclosure').open=false;
   document.body.classList.remove('search-open');$('search-toggle').setAttribute('aria-expanded','false');
   $('search-results').hidden=true;
+  requestAnimationFrame(refreshMarkers);
 }
 function openPanel() {
   closeMapOverlays();
@@ -84,6 +87,7 @@ function openPanel() {
 function closePanel() {
   $('sidebar').classList.remove('open');
   $('mobile-panel-button').setAttribute('aria-expanded', 'false');
+  requestAnimationFrame(refreshMarkers);
 }
 function panelTitle(text) { $('sidebar-heading').textContent = text; }
 function setPanel() {
@@ -97,6 +101,14 @@ function row(label, value) {
   const node = el('div', undefined, 'fact-row');
   node.append(el('span', label), el('span', value));
   return node;
+}
+function detailNotes(panel, items = []) {
+  const notes = items.filter(Boolean);
+  if (!notes.length) return;
+  const details = el('details');
+  details.append(el('summary', '资料与定位说明'));
+  for (const item of notes) details.append(item instanceof Node ? item : el('p', item, 'subtle'));
+  panel.append(details);
 }
 function sourceCard(citation) {
   const wrapper = el('div');
@@ -139,46 +151,47 @@ function jumpCampaign(record){
 function campaignDate(record){return record.world==='history'?record.time.label:`第 ${record.chapter} 回 · 本回读毕`;}
 
 function renderCampaigns(panel){
-  panelTitle('战役与进攻');panel.append(el('h1','进攻方向'),notice(campaignData.note,true));
+  panelTitle('战役');panel.append(el('h1','战役与进攻方向'),notice(campaignData.note,true));
   const current=activeCampaigns(campaignData.campaigns,data,cursor);
-  panel.append(el('p','兵人代表一支记载中的部队，箭头指向进攻目标。点击任一项查看主将、兵力口径和原文。','subtle'),el('h2',`当前窗口 · ${current.length} 条`));
+  panel.append(el('p','点击条目查看主将、兵力与出处。','subtle'),el('h2',`当前时段 · ${current.length} 条`));
   function entry(record){
     const node=el('article',undefined,'entry campaign-entry');node.dataset.campaign=record.id;
     const path=record.origin?`${record.origin.name} → ${record.target.name}`:`${record.target.name} · 起点待考`;
-    node.append(el('small',campaignDate(record)),button(record.title,()=>jumpCampaign(record),'entry-title'),el('p',path),el('small',`${record.attacker.commanders.join('、')} · ${record.origin?'有方向箭头':'仅定位战场'}`));
+    node.append(el('small',campaignDate(record)),button(record.title,()=>jumpCampaign(record),'entry-title'),el('p',path),el('small',`${record.attacker.commanders.join('、')} · ${record.origin?'方向已定位':'仅标战场'}`));
     return node;
   }
-  if(!current.length)panel.append(notice('本窗口暂无已编录战役，不代表当时没有战事。可从下方目录定位已有记录。',true));
+  if(!current.length)panel.append(notice('当前时段暂无收录战役。可在下方已收录目录中定位。',true));
   for(const record of current)panel.append(entry(record));
-  panel.append(el('h2',cursor.world==='history'?'已编录历史战役':'已读回目中的战役'));
+  panel.append(el('h2',cursor.world==='history'?'已收录历史战役':'已读回目中的战役'));
   const catalogue=campaignData.campaigns.filter(r=>r.world===cursor.world&&(cursor.world==='history'||r.position<=cursor.position));
   for(const record of catalogue.filter(r=>!current.includes(r)))panel.append(entry(record));
-  if(cursor.world==='romance')panel.append(el('p','只显示已读回目的记录；后续回目的战役名称和兵力均隐藏。','subtle'));
+  if(cursor.world==='romance')panel.append(el('p','显示范围：已读回目；后续回目暂不显示名称与兵力。','subtle'));
 }
 
 function renderCampaign(panel,record){
   panelTitle('战役详情');
-  panel.append(button('返回战役目录',()=>{selected=null;activeTab='campaigns';renderPanel();},'back-button'),el('h1',record.title),el('span',record.world==='history'?'史实考证':'三国演义','tag'),el('span',campaignDate(record),'tag'));
+  panel.append(button('返回战役目录',()=>{selected=null;activeTab='campaigns';renderPanel();},'back-button'),el('h1',record.title),el('span',record.world==='history'?'史实':'三国演义','tag'),el('span',campaignDate(record),'tag'));
   const uncertain=activityStatus(record,data,cursor)==='uncertain';
-  if(uncertain)panel.append(notice('记载时间范围与当前窗口相交，无法确定就在本月或本周发生。虚线箭头表示日期未定，不表示每天持续进攻。'));
+  if(uncertain)panel.append(notice('时间范围与当前时段相交，发生时机未定。虚线箭头：日期未定的进攻方向。'));
   panel.append(el('p',record.summary));
   panel.append(row('进攻方向',record.origin?`${record.origin.name} → ${record.target.name}`:`起点待考 → ${record.target.name}`));
   for(const [side,title]of [['attacker','进攻方'],['defender','交战对方']]){
     const army=record[side],card=el('section',undefined,'campaign-side');card.style.setProperty('--army-color',faction(army.faction).color);
-    const img=el('img');img.src=`models/${army.model}.png`;img.alt=`${army.unit_label}，不代表具体将领造型`;
+    const img=el('img');img.src=`models/${army.model}.png`;img.alt=`${army.unit_label}模型图`;
     card.append(img,el('h2',`${title} · ${army.name}`),row('将领',army.commanders.join('、')),row('兵力口径',army.strength));panel.append(card);
   }
-  panel.append(button('定位此战',()=>jumpCampaign(record)),el('h2','路线与地点精度'));
-  panel.append(el('p',record.origin?(record.route_note||'连接史料所记起点与目标；弧线便于阅读，不是考定的行军道路。'):'尚无已定位的出发点，只放置战场兵人，不绘制推测箭头。','subtle'),el('p','兵人用于识别部队，图标数量与大小不表示人数；起点旁的兵人不表示当前时刻实际驻军。','subtle'));
+  panel.append(button('定位此战',()=>jumpCampaign(record)));
+  const notes=[record.origin?(record.route_note||'弧线连接史料所记起点与目标，便于阅读。'):'尚未定位出发点，仅标注战场位置。','兵人：部队标识；兵力与驻军以文字记载为准。'];
   for(const point of [record.origin,record.target].filter(Boolean)){
-    panel.append(row(point.name,point.precision),el('p',point.location_note,'subtle'));
-    if(point.location_source){const link=el('a',point.location_source.title,'source-link');link.href=point.location_source.url;link.target='_blank';link.rel='noopener noreferrer';panel.append(link,el('p',point.location_source.note,'subtle'));}
+    notes.push(row(point.name,point.precision),point.location_note);
+    if(point.location_source){const link=el('a',point.location_source.title,'source-link');link.href=point.location_source.url;link.target='_blank';link.rel='noopener noreferrer';notes.push(link,point.location_source.note);}
   }
-  panel.append(el('h2','战事与兵力出处'));
+  panel.append(el('h2','战事与兵力来源'));
   for(const citation of record.citations)panel.append(sourceCard(citation));
+  detailNotes(panel,notes);
 }
 function back(panel) {
-  panel.append(button('返回当前局势', () => { selected = null; activeTab = 'overview'; renderPanel(); }, 'back-button'));
+  panel.append(button('返回当前形势', () => { selected = null; activeTab = 'overview'; renderPanel(); }, 'back-button'));
 }
 
 function eventEntry(event) {
@@ -186,7 +199,7 @@ function eventEntry(event) {
   entry.append(el('small', `${stamp(event)} · ${event.kind}`),
     button(event.title, () => { selected = {kind:'event', id:event.id}; renderPanel(); openPanel(); }, 'entry-title'),
     el('p', event.summary));
-  if(snapshot.uncertainEvents.includes(event))entry.append(el('span','日期范围与当前窗口相交，不能确定已发生','tag'));
+  if(snapshot.uncertainEvents.includes(event))entry.append(el('span','时间范围与当前时段相交，是否发生未定','tag'));
   return entry;
 }
 
@@ -222,41 +235,47 @@ function renderPlace(panel, place) {
   back(panel);
   const seat=centerRecord(place);
   panel.append(el('h1', placeName(place)), el('span', seat?seat.role:place.kind, 'tag'), el('span', place.region, 'tag'));
-  panel.append(el('p', place.location_note), notice(place.precision, true));
+  panel.append(el('p', place.location_note));
   panel.append(row('其他名称', place.aliases.join('、')), row('参考坐标', place.coordinates.map(x => x.toFixed(2)).join(', ')));
   const record = snapshot.controlRecords[place.id];
   const controller=record&&faction(record.controls[place.id]);
   const current=currentPlaceControl(place.id);
-  panel.append(row('当前显示归属',current.owner?faction(current.owner).name:'待考'));
-  if(current.event?.time)panel.append(row('当前归属时间依据',current.event.time.label));
-  panel.append(row('最近已录地点归属',controller?controller.name:'缺少本地点的单独记录'));
-  if(seat)panel.append(row('行政中心层级',seat.role),el('p',seat.note,'subtle'),sourceCard(seat.citation));
-  panel.append(row('最近单独事件', record ? `${faction(record.controls[place.id]).name} · ${stamp(record)}` : '暂无单独编录'));
+  panel.append(row('当前归属',current.owner?faction(current.owner).name:'待考'));
+  if(current.event?.time)panel.append(row('归属依据',current.event.time.label));
+  panel.append(row('最近收录归属',controller?controller.name:'暂无单独记录'));
+  if(seat)panel.append(row('行政级别',seat.role));
+  panel.append(row('最近事件', record ? `${faction(record.controls[place.id]).name} · ${stamp(record)}` : '暂无收录'));
   const county=data.national.counties.find(x=>x.properties.place_id===place.id);
-  if(county)panel.append(row('县级辖区',county.properties.name),row('郡级参考隶属',county.properties.commandery),notice('县域边界待考。仅高亮地点，原县域演示轮廓不作为真实县界显示。',true));
-  else panel.append(notice('县名与县域边界尚待考订。当前只显示区域参照点。',true));
-  if (record) panel.append(el('p', '这是最近一条明确记录；未核实的中间时期不能据此声称逐日未变。', 'subtle'));
+  if(county)panel.append(row('县级隶属',county.properties.name),row('郡级隶属',county.properties.commandery));
+  if(seat)panel.append(sourceCard(seat.citation));
   panel.append(el('h2', '当前进度中的相关事件'));
   const events = snapshot.events.filter(x => x.places.includes(place.id));
-  if (!events.length) panel.append(el('p', '此地已进入地名索引，当前进度尚无已编录事件。', 'subtle'));
+  if (!events.length) panel.append(el('p', '当前进度暂无收录事件。', 'subtle'));
   for (const event of events.toReversed()) panel.append(eventEntry(event));
-  panel.append(el('h2', '定位依据与下一步'), el('p', '本批坐标为编辑整理的今地或区域锚点，尚未逐点取得古城测绘证据。此处保留定位范围和待考说明；不会随缩放生成虚构城区。', 'subtle'));
   for(const cite of place.location_citations||[])panel.append(sourceCard(cite));
+  const notes=[];
+  if(place.id==='haixi')notes.push('海西县位置待考。');
+  notes.push(place.precision);
+  notes.push(county?'县域边界待考；高亮仅表示地点位置。':'县名与县界待考；此处显示区域参考点。');
+  if (record) notes.push('此处为最近一条明确记录；中间时段归属未定。');
+  if(seat)notes.push(seat.note);
+  notes.push('坐标为今地或区域锚点，古城位置尚未逐点测绘。');
+  detailNotes(panel, notes);
 }
 
 function renderPerson(panel, person) {
   panelTitle('人物与行踪');
   back(panel);
   panel.append(el('h1', person.name), el('span', person.group, 'tag'),
-    notice('下列为原文字符串提及候选，尚未全部完成同名消歧和生平考证。类别是检索分组，不等于史实身份判定。', true));
+    notice('人物条目来自原文提及；同名人物尚未全部区分。', true));
   if (person.aliases.length) panel.append(row('检索别名', person.aliases.join('、')));
   panel.append(el('h2','时间与行踪'));
   const records=data.activities.filter(a=>a.person_id===person.id&&activityStatus(a,data,cursor)!=='hidden');
   const current=records.filter(a=>['recorded','uncertain'].includes(activityStatus(a,data,cursor)));
-  if(!current.length)panel.append(notice('当前窗口没有已编录的明确位置；籍贯、任职与此前记载不自动当作实时位置。',true));
+  if(!current.length)panel.append(notice('当前时段无收录的明确位置。',true));
   for(const record of records)panel.append(activityEntry(record));
   if(person.facts.length) {
-    panel.append(el('h2','已编录基础资料'));
+    panel.append(el('h2','收录基础资料'));
     for(const fact of person.facts) {
       panel.append(row('字',fact.courtesy),row('原文籍贯',fact.origin));
       if(fact.note)panel.append(el('p',fact.note,'subtle'));
@@ -264,15 +283,15 @@ function renderPerson(panel, person) {
     }
   }
   const events = snapshot.events.filter(x => x.person_ids.includes(person.id));
-  panel.append(el('h2', '已编录事件'));
-  if (!events.length) panel.append(el('p', '此人在当前进度暂无已编录事件。', 'subtle'));
+  panel.append(el('h2', '收录事件'));
+  if (!events.length) panel.append(el('p', '此人在当前进度暂无收录事件。', 'subtle'));
   for (const event of events.toReversed()) panel.append(eventEntry(event));
   panel.append(el('h2', '当前进度内的原文提及'));
   for (const mention of person.mentions.slice(0, 8)) {
     const doc = source(mention.source);
     panel.append(sourceCard({display_quote:mention.display_quote,title:doc.title,paragraph:mention.paragraph,revision:doc.revision,url:doc.url}));
   }
-  if (person.mentions.length > 8) panel.append(el('p', `当前可见 ${person.mentions.length} 条候选，先列出前 8 条。`, 'subtle'));
+  if (person.mentions.length > 8) panel.append(el('p', `共 ${person.mentions.length} 条提及，显示前 8 条。`, 'subtle'));
 }
 
 function renderEvent(panel, event) {
@@ -293,48 +312,55 @@ function renderEvent(panel, event) {
 
 function activeActivities(){return sceneMode?[]:data.activities.filter(a=>['recorded','uncertain'].includes(activityStatus(a,data,cursor)));}
 function activityEntry(record){
-  const status=activityStatus(record,data,cursor),labels={recorded:cursor.world==='romance'?'本回有记载':'本窗口有记载',uncertain:'时间范围相交，是否在本窗口发生未定',earlier:'此前记载，不代表仍在此地',undated:'未精确编年'};
+  const status=activityStatus(record,data,cursor),labels={recorded:cursor.world==='romance'?'本回有记载':'当前时段有记载',uncertain:'时间范围相交，发生时机未定',earlier:'此前记载，位置未定',undated:'年代未详'};
   const article=el('article',undefined,'entry');
   article.append(el('small',labels[status]),button(record.name,()=>{selected={kind:'activity',id:record.id};renderPanel();openPanel();},'entry-title'),el('p',record.action));
   return article;
 }
 function renderActivity(panel,record){
-  panelTitle('活动与证据');back(panel);panel.append(el('h1',record.name),activityEntry(record));
-  panel.append(row('时间',record.world==='history'?(record.time?.label||'年月不详'):`第${Math.floor(record.position/1000)}回 · 第${record.position%1000}段`));
+  panelTitle('活动');back(panel);panel.append(el('h1',record.name),activityEntry(record));
+  panel.append(row('时间',record.world==='history'?(record.time?.label||'年月未详'):`第${Math.floor(record.position/1000)}回 · 第${record.position%1000}段`));
   const place=data.places.find(p=>p.id===record.place_id);
-  panel.append(row('地点',place?place.name:'尚无可发布坐标'),el('p',record.spatial_precision,'subtle'));
-  if(place)panel.append(button('定位地域参照点',()=>map.easeTo({center:place.coordinates,zoom:7.6,pitch:40,duration:400})));
-  if(record.faction_id)panel.append(row('本条所记集团',faction(record.faction_id).name));
-  if(record.note)panel.append(notice(record.note,true));
-  if(record.uncertainty)panel.append(notice(record.uncertainty));
-  if(record.model&&record.model!=='army'){const img=el('img');img.src=`models/${record.model}.png`;img.alt=`${record.name}类别模型`;img.className='model-card';panel.append(img,el('p','模型为艺术化类别示意；兵种组成、队列人数与精确装备不由图像推定。','subtle'));}
+  panel.append(row('地点',place?place.name:'地点未定位'));
+  if(place)panel.append(button('在地图查看参照点',()=>map.easeTo({center:place.coordinates,zoom:7.6,pitch:40,duration:400})));
+  if(record.faction_id)panel.append(row('所记势力',faction(record.faction_id).name));
+  const notes=[record.spatial_precision,record.note,record.uncertainty];
+  if(record.model&&record.model!=='army'){const img=el('img');img.src=`models/${record.model}.png`;img.alt=`${record.name}模型图`;img.className='model-card';panel.append(img);notes.push('模型为类别示意；兵种与装备以文字记载为准。');}
   for(const cite of record.citations)panel.append(sourceCard(cite));
+  detailNotes(panel,notes);
 }
 function renderActivities(panel){
   const novel=cursor.world==='romance';
-  panelTitle('人物与军事活动');panel.append(el('h1',novel?'本回的活动记载':'本窗口的记载'),notice(novel?'标记汇集本回已编录活动，表示本回曾在此处出现；不表示回末仍驻留于此，后续回目隐藏。':'地图标记表示记载涉及此时段，不表示人物或军队在整个时段持续驻留。虚线标记的时间范围较宽，不能确认落在当前七日内。',true));
+  panelTitle('人物与军事活动');panel.append(el('h1',novel?'本回活动记载':'当前时段记载'),notice(novel?'标记表示本回出现的地点；回末是否仍在原地未定。':'标记表示记载涉及当前时段；驻留时间未定。虚线：时间范围较宽。',true));
   const records=activeActivities();
-  if(!records.length)panel.append(el('p',novel?'本回尚无单独编录的人物或军队活动。全国势力仍按已读阶段显示。':'当前窗口尚无已编录活动。可查看184年黄巾、192年受降、196年汝颍或234年诸葛亮的记录。'));
+  if(!records.length)panel.append(el('p',novel?'本回暂无收录的人物或军队活动。势力范围按已读阶段显示。':'当前时段暂无收录活动。'));
   for(const record of records)panel.append(activityEntry(record));
   const undated=data.activities.filter(a=>a.entity_type==='army'&&activityStatus(a,data,cursor)==='undated');
-  if(undated.length){panel.append(el('h2','未编年部队档案'));for(const record of undated)panel.append(activityEntry(record));}
+  if(undated.length){panel.append(el('h2','时间未详的部队'));for(const record of undated)panel.append(activityEntry(record));}
 }
 function renderHydrology(panel){
-  panelTitle('历史水文资料');back(panel);panel.append(el('h1','古河道与文献'),notice('当前仍无考定的汉末全国河网。东汉黄河下游来源有争议；长坂图新增三段汉水、长江研究示意，仅在208年显示。研究图默认关闭，现代河网与文献地点关系另层显示。'));
+  panelTitle('历史水文资料');back(panel);panel.append(el('h1','古河道与文献'));
+  const notes=['东汉黄河下游水道存在争议。研究河道仅作对照，默认关闭；长坂汉水、长江示意图仅在208年显示。'];
   for(const feature of researchWater.features){
     const river=feature.properties;
-    panel.append(el('h2',river.name),row('适用年代',river.period),notice(river.warning),el('p',river.scope),el('p',river.georeference,'subtle'));
+    panel.append(el('h2',river.name),row('适用年代',river.period));
     const input=document.querySelector('[data-layer="research-water"]');
-    panel.append(button(river.from_year?`查看${river.from_year}年${river.name}`:'在地图查看这条研究河道',()=>{
+    panel.append(button(river.from_year?`查看${river.from_year}年${river.name}`:'在地图查看',()=>{
       input.checked=true;map.setLayoutProperty('research-water','visibility','visible');
       if(river.from_year){cursor.world='history';cursor.calendar='han';cursor.position=river.from_year;cursor.monthStart=yearMonths(data,cursor.position)[0].start;cursor.day=1;}
       const points=feature.geometry.coordinates;
       map.fitBounds([[Math.min(...points.map(p=>p[0])),Math.min(...points.map(p=>p[1]))],[Math.max(...points.map(p=>p[0])),Math.max(...points.map(p=>p[1]))]],{padding:65,duration:400});
       render();
     }));
-    const link=el('a','查看河道原图、争议说明与署名','source-link');link.href=river.source_url;link.target='_blank';link.rel='noopener noreferrer';panel.append(link);
+    notes.push(`${river.name}：${river.warning}`,river.scope,river.georeference);
+    const link=el('a','原图与争议说明','source-link');link.href=river.source_url;link.target='_blank';link.rel='noopener noreferrer';notes.push(link);
   }
-  for(const record of data.hydrology){panel.append(el('h2',record.name),row('材料年代',record.period),el('p',record.summary),notice(record.status,true));for(const cite of record.citations)panel.append(sourceCard(cite));}
+  for(const record of data.hydrology){
+    panel.append(el('h2',record.name),row('材料年代',record.period),el('p',record.summary));
+    notes.push(record.status);
+    for(const cite of record.citations)panel.append(sourceCard(cite));
+  }
+  detailNotes(panel,notes);
 }
 function showStoryGeography(id,focus=false){
   selected={kind:'story-geography',id};renderPanel();openPanel();
@@ -346,7 +372,7 @@ function showStoryGeography(id,focus=false){
 function renderStoryGeography(panel,id){
   panelTitle('原著山川');back(panel);
   if(!id){
-    panel.append(el('h1','原著中的山川关隘'),el('p','查看主要水道、山地与关隘，帮助理解城市之间的距离、方向和行军环境。位置采用阅读用概略示意。'));
+    panel.append(el('h1','原著中的山川关隘'),el('p','查看水道、山地与关隘，理解距离、方向与行军环境。'));
     for(const kind of ['河流','湖泽','山系','山地','峡谷','关隘','谷道']){
       panel.append(el('h2',kind));const group=el('div',undefined,'inline-buttons');
       for(const f of data.story_geography.features.filter(f=>f.properties.kind===kind))group.append(button(f.properties.name,()=>showStoryGeography(f.properties.id,true)));
@@ -362,7 +388,7 @@ function renderStoryGeography(panel,id){
   panel.append(el('h2','附近与相关地点'),related,el('h2','原著中的记载'));
   const quotes=!sceneMode&&cursor.world==='romance'?item.citations.filter(c=>c.position<=cursor.position):[];
   for(const cite of quotes)panel.append(sourceCard(cite));
-  if(!quotes.length)panel.append(el('p',sceneMode?'这里是底图地理参考，不把《三国演义》的剧情当成本书事实。':cursor.world==='romance'?'当前尚未读到已整理的相关段落。地理位置可以查看，后文情节保持隐藏。':'原著引文在“三国演义”模式中随阅读进度展开。此层不改变正史事件与归属。','subtle'));
+  if(!quotes.length)panel.append(el('p',sceneMode?'此处为底图地理参考。':cursor.world==='romance'?'尚未读到相关段落；后文情节不显示。':'原著引文在“三国演义”模式随阅读进度展开。','subtle'));
   const detail=el('details');detail.append(el('summary','资料与定位说明'),el('p',item.precision),el('p',item.geometry_note));panel.append(detail);
 }
 function refreshActivities(){
@@ -401,17 +427,17 @@ function updateModels(){
 }
 
 function renderRegion(panel,id) {
-  panelTitle('人物与势力');
+  panelTitle('势力');
   back(panel);
   const owner=faction(id);
-  panel.append(el('h1',owner.name),el('span',cursor.world==='history'?'史实资料':'本书已读资料','tag'));
+  panel.append(el('h1',owner.name),el('span',cursor.world==='history'?'史实':'已读小说','tag'));
   const person=visiblePeople(data,cursor).find(p=>p.name===owner.name||p.aliases.includes(owner.name));
   const current=activeCampaigns(campaignData.campaigns,data,cursor).filter(r=>r.attacker.faction===id||r.defender.faction===id);
   const activities=person?activeActivities().filter(a=>a.person_id===person.id):[];
-  panel.append(row('当前阶段',territory.phase.title),row('位置与任务',activities.length?activities.map(a=>`${a.name}：${a.action}`).join('；'):'本窗口没有明确的个人驻地记载'),
-    row('总兵力','未详；战役中的兵数不能直接当作全部军队'));
+  panel.append(row('当前阶段',territory.phase.title),row('位置与任务',activities.length?activities.map(a=>`${a.name}：${a.action}`).join('；'):'当前时段无明确驻地记载'),
+    row('总兵力','未详（仅列战役记载的兵数）'));
   panel.append(el('h2','当前有关联的军队与战事'));
-  if(!current.length)panel.append(el('p','本窗口暂无已编录的部队编制或战役记录，不代表没有军队。','subtle'));
+  if(!current.length)panel.append(el('p','当前时段暂无收录的部队或战役记录。','subtle'));
   for(const record of current){
     const army=record.attacker.faction===id?record.attacker:record.defender;
     const card=el('article',undefined,'entry');card.append(button(record.title,()=>showCampaign(record),'entry-title'),
@@ -419,16 +445,16 @@ function renderRegion(panel,id) {
   }
   panel.append(el('h2','截至当前的经历'));
   const events=person?snapshot.events.filter(e=>e.person_ids.includes(person.id)):[];
-  if(!events.length)panel.append(el('p','当前已编录资料尚不足以整理这段时期的完整经历。','subtle'));
+  if(!events.length)panel.append(el('p','收录资料不足以整理本时段的完整经历。','subtle'));
   for(const event of events.slice(-5))panel.append(eventEntry(event));
   if(person)panel.append(button('查看更多人物记载',()=>showPerson(person)));
   const ids=new Set(territory.records.filter(r=>r.owner===id).map(r=>r.id));
   const units=strategicRegions.features.filter(f=>ids.has(f.properties.id));
-  panel.append(el('h2',`控制地区 · ${units.length} 个概略区块`));
+  panel.append(el('h2',`控制地区 · ${units.length} 处`));
   const group=el('div',undefined,'inline-buttons');
   for(const item of units)group.append(button(item.properties.name,()=>{selected={kind:'territory',id:item.properties.id};renderPanel();}));
   panel.append(group);
-  const details=el('details');details.append(el('summary','查看阶段、精度与来源'),el('p',territory.phase.note),el('p','颜色表示概略范围，不是考定疆域；未编录资料不按真实历史补入小说。','subtle'));
+  const details=el('details');details.append(el('summary','阶段、定位与来源'),el('p',territory.phase.note),el('p','色块为阶段势力范围（概略）。','subtle'));
   if(territory.phase.citation)details.append(sourceCard(territory.phase.citation));
   for(const key of territory.phase.source_ids){const doc=source(key);const link=el('a',doc.title,'source-link');link.href=doc.url;link.target='_blank';link.rel='noopener noreferrer';details.append(el('p'),link);}
   panel.append(details);
@@ -437,38 +463,43 @@ function renderRegion(panel,id) {
 function renderTerritory(panel,id) {
   const cell=strategicRegions.features.find(f=>f.properties.id===id).properties;
   const record=territory.records.find(r=>r.id===id);
-  panelTitle('势力区块 · 概略复原');back(panel);
-  panel.append(el('h1',cell.name),row('当前显示归属',record.owner?faction(record.owner).name:'待考'),
-    row('归属依据类型',record.kind),row('显示区块分组',cell.province),notice(cell.precision),
-    row('底稿区域名',cell.source_name),row('阶段背景参照',cell.phase_key),
-    el('h2','当前时间与依据'),el('p',record.phase.title),el('p',record.phase.note,'subtle'));
+  panelTitle('势力区块');back(panel);
+  panel.append(el('h1',cell.name),row('当前归属',record.owner?faction(record.owner).name:'待考'),
+    row('归属依据',record.kind),row('所属分区',cell.province),
+    row('底图区域名',cell.source_name),row('阶段参照',cell.phase_key),
+    el('h2','当前时间与依据'),el('p',record.phase.title));
+  if(record.event?.time)panel.append(row('归属变更时间',record.event.time.label));
+  let reviewIssue='';
   if(cell.province==='幽州'&&['乐浪','带方'].includes(cell.source_name)){
     const review=administration.provinces.find(p=>p.name==='幽州').review;
-    panel.append(notice(review.map_issue),button('查看幽州与半岛范围核对',()=>{selected={kind:'province',name:'幽州'};renderPanel();}));
+    reviewIssue=review.map_issue;
+    panel.append(button('查看幽州范围核对',()=>{selected={kind:'province',name:'幽州'};renderPanel();}));
   }
-  if(record.phase.dating)panel.append(notice(record.phase.dating,true));
-  if(record.event?.time)panel.append(row('接管记录时间',record.event.time.label),el('p',record.event.uncertainty,'subtle'));
   if(record.event)panel.append(sourceCard(record.event.citation));
   else if(record.phase.citation)panel.append(sourceCard(record.phase.citation));
   for(const id of record.phase.source_ids){const doc=source(id),link=el('a',doc.title,'source-link');link.href=doc.url;link.target='_blank';link.rel='noopener noreferrer';panel.append(link);}
-  panel.append(el('h2','轮廓说明'),el('p',strategicRegions.note),
-    notice('郡国名与城池不是同一对象。颜色覆盖的是显示区块；驻守地点记录不能证明整个郡国同时被占领。',true));
-  const link=el('a','查看建安来源底稿与署名');link.href='reference.html';link.target='_blank';link.rel='noopener noreferrer';panel.append(link);
+  const notes=[cell.precision,record.phase.note];
+  if(reviewIssue)notes.push(reviewIssue);
+  if(record.phase.dating)notes.push(record.phase.dating);
+  if(record.event?.uncertainty)notes.push(record.event.uncertainty);
+  notes.push(strategicRegions.note,'色块为显示区块；地点记录对应具体地点。');
+  const link=el('a','建安底图来源与署名');link.href='reference.html';link.target='_blank';link.rel='noopener noreferrer';notes.push(link);
+  detailNotes(panel,notes);
 }
 
 function renderCommandery(panel,id) {
   const district=data.national.commanderies.find(x=>x.properties.id===id).properties;
   panelTitle('郡国名录');
   panel.append(button(`返回${district.province}`,()=>{selected={kind:'province',name:district.province};renderPanel();},'back-button'));
-  panel.append(el('h1',district.name),el('span',district.province,'tag'),notice(data.national.commandery_epoch,true));
-  panel.append(notice('本条记录行政名称与文献隶属。闭合辖界尚待核对，不据此推断整郡的实际控制方。',true));
+  panel.append(el('h1',district.name),el('span',district.province,'tag'));
   panel.append(el('h2','名称依据'),sourceCard({...district.citation,paragraph:'郡国名录'}));
-  panel.append(el('h2','文献所录县级条目'));
+  panel.append(el('h2','文献县级条目'));
   const counties=administration.counties.filter(x=>x.parent===district.name);
   const group=el('div',undefined,'inline-buttons');
   for(const county of counties)group.append(button(county.name,()=>{selected={kind:'county-record',parent:county.parent,name:county.name};renderPanel();}));
-  if(counties.length)panel.append(group,el('p','本层只录已逐项核对的文献条目，辖界另待考；未定位条目不显示为地图城池点。','subtle'));
-  else panel.append(el('p','本郡下级名录尚未逐项核对，当前不把旧县域草图列作已确认区划。','subtle'));
+  if(counties.length)panel.append(group);
+  else panel.append(el('p','本郡下级名录尚未逐项核对。','subtle'));
+  detailNotes(panel,[data.national.commandery_epoch,'本条目记录行政名称与文献隶属；辖界待考。','本级只收录已逐项核对的文献条目；辖界待考。']);
 }
 
 function renderCountyRecord(panel,parent,name) {
@@ -477,8 +508,8 @@ function renderCountyRecord(panel,parent,name) {
   panelTitle('县级行政条目');
   panel.append(button(`返回${parent}`,()=>{selected={kind:'commandery',id:district.properties.id};renderPanel();},'back-button'));
   panel.append(el('h1',name),el('span','县级条目','tag'),row('所录隶属',parent),notice(record.note,true),sourceCard(record.citation));
-  if(record.place_id){const place=data.places.find(x=>x.id===record.place_id);panel.append(button('定位已有区域参照点',()=>showPlace(place)));}
-  else panel.append(el('p','古治所未定位，当前只保留文献条目；县界待考。','subtle'));
+  if(record.place_id){const place=data.places.find(x=>x.id===record.place_id);panel.append(button('在地图查看参照点',()=>showPlace(place)));}
+  else panel.append(el('p','古治所位置未定；县界待考。','subtle'));
 }
 
 function renderReferenceCommandery(panel,name) {
@@ -486,79 +517,82 @@ function renderReferenceCommandery(panel,name) {
   const fullName=districtName(name);
   const label=boundaryReference.labels.find(x=>x.kind==='郡国名称'&&x.name===name);
   panel.append(el('h1',fullName),el('span','郡级行政区','tag'),
-    notice('紫色虚线为根据建安底稿整理的郡级概略显示边界，与势力填色共用几何。郡名对应区域，圆点表示治所或城池；局部实控区块不代表已经考定的县界。',true),
-    row('底稿年代','原图题名219年，部分建置跨期'),row('当前进度',cursor.world==='history'?`${cursor.position}年`:`小说第${currentChapter()}回`));
+    notice('紫色虚线为郡级概略边界，与势力填色共用几何。郡名对应区域，圆点表示治所或城池。',true),
+    row('底图年代','题名219年，部分建置跨期'),row('当前进度',cursor.world==='history'?`${cursor.position}年`:`小说第${currentChapter()}回`));
   if(label){panel.append(row('标注依据',label.placement));for(const review of label.epoch_reviews){panel.append(notice(review.note,true));for(const cite of review.citations)panel.append(sourceCard({...cite,paragraph:'建置沿革'}));}}
   if(name==='东海'){
-    panel.append(el('h2','东海郡与县城的区别'),el('p','东海是郡名。郯县、襄贲县是县级地点；原来名为“东海”的圆点只是郡名检索锚点，已退出城池点图层。'),
-      el('p','《后汉书·郡国志》在东海郡下列有郯、襄贲；这证明所录时期的隶属关系，不直接证明219年全部辖界。','subtle'));
+    panel.append(el('h2','东海郡与属县'),el('p','东海为郡名；郯县、襄贲县为其属县。'),
+      el('p','《后汉书·郡国志》东海郡下列有郯、襄贲，为所录时期的隶属依据；219年辖界另待考。','subtle'));
     const group=el('div',undefined,'inline-buttons');
     for(const id of ['tan','xiaben']){const place=data.places.find(x=>x.id===id);group.append(button(placeName(place),()=>showPlace(place)));}
     panel.append(group);
   }
-  if(name==='泰山')panel.append(el('p','泰山郡是行政区域；“▲ 泰山”是山体地形，二者采用不同的符号和名称。'));
+  if(name==='泰山')panel.append(el('p','泰山郡为行政区；地图上“▲ 泰山”为山体标注。'));
   const roster=data.national.commanderies.find(x=>x.properties.name===fullName);
   if(roster)panel.append(el('h2','东汉郡国名录出处'),sourceCard({...roster.properties.citation,paragraph:'郡国名录'}));
-  const link=el('a','查看建安底稿、年代说明与原图出处','source-link');link.href='reference.html';link.target='_blank';link.rel='noopener noreferrer';panel.append(link);
+  const link=el('a','建安底图、年代与原图出处','source-link');link.href='reference.html';link.target='_blank';link.rel='noopener noreferrer';panel.append(link);
 }
 
 function renderAdministration(panel) {
   panelTitle('行政地理底图');
-  panel.append(el('h1','建安郡国研究'),el('p','地图固定使用建安研究底稿。先查看州，再进入郡国与有依据的县级地点。行政底图不表示任何势力占领。'),
-    notice('原图题名219年，部分州界和建置跨期；作为行政参考，不表示当前年份的完整建制。',true));
-  if(cursor.world==='history')panel.append(button('查看截至此时的建置沿革',()=>{selected={kind:'administrative-changes'};renderPanel();}));
-  panel.append(el('h2','行政中心符号'),el('p','紫点为都城参考，朱红为州治，金黄为郡国治所，青蓝为县城，灰点为等级待核的地点。颜色依据建安研究资料；势力颜色另显示在外圈。','subtle'));
+  panel.append(el('h1','建安郡国研究'),el('p','底图为建安郡国研究（219年）。先选州，再进入郡国与县级地点。'),
+    notice('题名219年，部分州界与建置跨期。',true));
+  if(cursor.world==='history')panel.append(button('查看建置沿革',()=>{selected={kind:'administrative-changes'};renderPanel();}));
+  panel.append(el('h2','行政中心'));
   const group=el('div',undefined,'province-grid');
   for(const province of administration.provinces){
     const entry=button(province.name,()=>{selected={kind:'province',name:province.name};renderPanel();openPanel();map.easeTo({center:strategicRegions.province_labels['219'].find(p=>p.name===province.name).coordinates,zoom:5.8,duration:400});});
     entry.append(el('small',`${province.commanderies.length}项郡国名录`));group.append(entry);
   }
-  panel.append(group,el('p','下级名录与引文按文献所录时期展示，不能据此认定整个184—280年都未变，也不直接当作219年完整建制。','subtle'));
-  const link=el('a','建安底稿出处与作者署名','source-link');link.href='reference.html';link.target='_blank';link.rel='noopener noreferrer';panel.append(link);
+  panel.append(group,el('p','名录与引文按文献所录时期收录；建置变化见沿革。','subtle'));
+  const link=el('a','建安底图出处与署名','source-link');link.href='reference.html';link.target='_blank';link.rel='noopener noreferrer';panel.append(link);
 }
 
 function renderAdministrativeChanges(panel){
-  panelTitle('行政建置沿革');back(panel);panel.append(el('h1','沿革与参考年代'),notice('地图固定使用建安研究底稿。以下记录说明建置如何变化；没有同期辖界依据的条目不据此自动画线。'));
+  panelTitle('行政建置沿革');back(panel);panel.append(el('h1','沿革与参考年代'),notice('底图为建安郡国研究（219年）。以下记录说明建置变化；无同期辖界依据的条目仅作文字记录。'));
   const changes=data.administrative_changes.filter(r=>r.time.start<=snapshot.window.end);
-  for(const record of changes){panel.append(el('h2',record.title),el('small',record.time.label),el('p',record.summary),el('p',record.geometry_status,'subtle'));if(record.time.end>snapshot.window.end)panel.append(notice('日期范围与当前窗口相交，是否已发生未定。',true));for(const cite of record.citations)panel.append(sourceCard(cite));}
-  if(!changes.length)panel.append(el('p','当前窗口尚无已编录建置变化。'));
+  for(const record of changes){panel.append(el('h2',record.title),el('small',record.time.label),el('p',record.summary),el('p',record.geometry_status,'subtle'));if(record.time.end>snapshot.window.end)panel.append(notice('时间范围与当前时段相交，是否发生未定。',true));for(const cite of record.citations)panel.append(sourceCard(cite));}
+  if(!changes.length)panel.append(el('p','当前时段暂无收录建置变化。'));
 }
 
 function renderProvince(panel,name) {
   const province=administration.provinces.find(p=>p.name===name);
   panelTitle('州—郡国—县');
-  panel.append(button('返回十三州',()=>{selected=null;activeTab='administration';renderPanel();},'back-button'),el('h1',name),el('span','州级行政区','tag'),notice(province.note,true));
-  if(province.review){
-    const review=province.review;
-    panel.append(el('h2',review.title),el('p',review.scope),el('p',review.control),notice(review.map_issue));
-    const details=el('details');details.append(el('summary','年代区别与核对依据'),el('p',review.period));
-    for(const item of review.sources){const link=el('a',item.title,'source-link');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';details.append(el('p',item.quote),link);}
-    panel.append(details);
-  }
+  panel.append(button('返回十三州',()=>{selected=null;activeTab='administration';renderPanel();},'back-button'),el('h1',name),el('span','州级行政区','tag'));
   panel.append(el('h2','文献所录州治'));
   if(province.center){
     panel.append(row('治所参考',province.center.name),el('p',province.center.note,'subtle'),sourceCard(province.center.citation));
     if(province.center.place_id){const place=data.places.find(p=>p.id===province.center.place_id);panel.append(button('定位治所参考点',()=>showPlace(place)));}
-    else panel.append(el('p','古治所位置尚未定位，当前不绘制中心点。','subtle'));
-  }else panel.append(notice('本批尚未核对该行政区的治所，不以邻近大城代替。',true));
+    else panel.append(el('p','古治所位置未定。','subtle'));
+  }else panel.append(notice('本州治所尚未核对。',true));
   panel.append(el('h2','郡国名录'));
   const group=el('div',undefined,'inline-buttons');
   for(const id of province.commanderies){const unit=data.national.commanderies.find(p=>p.properties.id===id);group.append(button(unit.properties.name,()=>{selected={kind:'commandery',id};renderPanel();}));}
-  panel.append(group,el('p','本表来自《后汉书·郡国志》名录。郡国的闭合辖界及后续分置，不能用旧示意网格替代。','subtle'));
+  panel.append(group);
+  const notes=[province.note,'州郡名录录自《后汉书·郡国志》；郡国边界见底图。'];
+  if(province.review){
+    const review=province.review;
+    panel.append(el('h2',review.title));
+    const details=el('details');details.append(el('summary','年代区别与核对依据'),el('p',review.period));
+    for(const item of review.sources){const link=el('a',item.title,'source-link');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';details.append(el('p',item.quote),link);}
+    panel.append(details);
+    notes.push(review.scope,review.control,review.map_issue);
+  }
+  detailNotes(panel,notes);
 }
 
 function renderFrontier(panel,id) {
   const item=data.national.frontier.find(x=>x.properties.id===id).properties;
   panelTitle('关外与周边');back(panel);
   panel.append(el('h1',item.name),el('span',item.kind,'tag'),notice(item.precision,true));
-  panel.append(el('p','活动区可与中原政权的名义行政区重叠。对部族的统称不表示这些部众拥有一个统一国家。'));
+  panel.append(el('p','活动区可与州郡范围重叠。部族名称为族群统称。'));
   if(item.citation&&cursor.world==='history')panel.append(sourceCard(item.citation));
-  else if(item.citation)panel.append(el('p',`地理背景参考：${item.citation.title}。此处不以史书后续战事替代小说剧情。`,'subtle'));
-  else panel.append(el('p','该区域尚未取得足以细分各部的资料，暂作为周边地理背景。','subtle'));
+  else if(item.citation)panel.append(el('p',`地理背景：${item.citation.title}`,'subtle'));
+  else panel.append(el('p','该区资料尚不足以细分各部，现作周边地理背景。','subtle'));
 }
 
 function renderFactions(panel) {
-  panelTitle('势力分期背景');back(panel);panel.append(el('h1','势力与关外诸部'),notice('这里保留粗略分期背景，不能视为当前月份或七日窗口的完整实控状态。地点归属与活动分别查看。',true));
+  panelTitle('势力分期背景');back(panel);panel.append(el('h1','势力与关外诸部'),notice('此处为阶段分期背景；地点归属与活动分图层显示。',true));
   const items=[...(snapshot.frame?snapshot.frame.features:[]),...data.national.frontier];
   for(const item of items){const props=item.properties;const entry=button(props.name,()=>{selected={kind:data.national.frontier.includes(item)?'frontier':'region',id:props.id};renderPanel();},'faction-list-item');
     const swatch=el('i');swatch.style.background=props.color;entry.prepend(swatch);panel.append(entry);}
@@ -566,16 +600,15 @@ function renderFactions(panel) {
 
 function renderOverview(panel) {
   panelTitle('天下形势');
-  panel.append(el('h1', cursor.world === 'history' ? `${cursor.position} 年的天下` : `第 ${currentChapter()} 回的局势`));
+  panel.append(el('h1', cursor.world === 'history' ? `${cursor.position} 年的天下` : `第 ${currentChapter()} 回的形势`));
   const last = snapshot.lastEvent;
-  if (snapshot.outsideReviewedRange) panel.append(notice('本回尚未编录局势变化。地图灰色表示当前控制待考；可查看此前记录，不能把旧状态当作本回实况。'));
-  else panel.append(notice('虚线沿用建安郡国研究底稿，部分州界及郡名存在年代差异。势力色块随进度更新，属于概略复原，不代表精确县界。', true));
-  if(snapshot.frame){panel.append(row('当前分期',snapshot.frame.title),row('中原集团',`${new Set(territory.records.filter(r=>r.owner).map(r=>r.owner)).size} 个`),row('关外与周边',`${data.national.frontier.length} 个参考区`));
+  if (snapshot.outsideReviewedRange) panel.append(notice('本回暂无收录的形势变化；灰色表示归属待考。'));
+  if(snapshot.frame){panel.append(row('当前分期',snapshot.frame.title),row('中原势力',`${new Set(territory.records.filter(r=>r.owner).map(r=>r.owner)).size} 个`),row('关外与周边',`${data.national.frontier.length} 个参考区`));
     if(cursor.world==='romance')panel.append(el('p',snapshot.frame.note,'subtle'),sourceCard(snapshot.frame.citation));
-    panel.append(button('查看全部势力与颜色',()=>{selected={kind:'factions'};renderPanel();}));}
-  panel.append(row('最近单独编录事件', last ? stamp(last) : '当前进度之前尚无编录'));
+    panel.append(button('全部势力与颜色',()=>{selected={kind:'factions'};renderPanel();}));}
+  panel.append(row('最近收录事件', last ? stamp(last) : '此前暂无收录'));
   if (last) {
-    panel.append(el('h2', '细节事件编录'), eventEntry(last));
+    panel.append(el('h2', '事件详情'), eventEntry(last));
   }
   panel.append(el('h2', '各地城池'));
   const group = el('div', undefined, 'inline-buttons');
@@ -583,40 +616,40 @@ function renderOverview(panel) {
     const place = data.places.find(x => x.id === id);
     group.append(button(place.name, () => showPlace(place)));
   }
-  panel.append(group, el('p', '州郡名称标示行政参考范围；城池表示具体地点，点击色块可查看当前归属与依据。', 'subtle'));
+  panel.append(group, el('p', '点击城池或色块查看归属与依据。', 'subtle'));
   const differences = availableDifferences(data, cursor);
   if (differences.length) {
-    panel.append(el('h2', '正史与演义的差别'));
+    panel.append(el('h2', '史实与演义对照'));
     for (const item of differences) panel.append(button(item.title, () => {selected = {kind:'difference',id:item.id}; renderPanel();}, 'back-button'));
   }
-  panel.append(el('h2', '资料建设'), el('p', `核心语料已保存${data.coverage.downloaded}个卷回；行政名录含十三州、${data.national.commanderies.length}项郡国及${administration.counties.length}项已核县级条目。不同年代参考图分开显示；完整辖界、实控面与人物传记仍待考订。`, 'subtle'), button('查看覆盖与来源', () => {selected={kind:'coverage'};renderPanel();}));
+  panel.append(button('资料与来源', () => {selected={kind:'coverage'};renderPanel();}));
 }
 
 function renderPeople(panel) {
-  panelTitle('人物与配角');
+  panelTitle('人物');
   const people = visiblePeople(data, cursor);
-  panel.append(el('h1', '人物提及'), el('p', `当前版本和进度可查 ${people.length} 名种子人物。可用顶部搜索查姓名、字或别名。`, 'subtle'), notice('覆盖含文臣、武将与配角；提及索引不等于已完成全人物考证。', true));
+  panel.append(el('h1', '人物提及'), el('p', `共 ${people.length} 人；可用顶部搜索查姓名、字或别名。`, 'subtle'), notice('收录范围：文臣、武将及配角。', true));
   const group = el('div', undefined, 'people-grid');
   for (const person of people) {
     const node = button(person.name, () => showPerson(person));
-    node.append(el('small', `${person.mentions.length} 条可见候选`));
+    node.append(el('small', `${person.mentions.length} 条提及`));
     group.append(node);
   }
   panel.append(group);
 }
 
 async function renderText(panel) {
-  panelTitle('固定版本原文');
+  panelTitle('原文');
   if (cursor.world !== 'romance') {
-    panel.append(el('h1', '从事件查看史料'), el('p', '《三国志》按纪传编排。本批从每条已编录事件、人物提及进入相应卷和段落，保留正文与裴注的原始关系。'), el('h2','当前最近的史料'));
+    panel.append(el('h1', '从事件查看史料'), el('p', '《三国志》按纪传编排；可从事件、人物提及进入对应卷与段落，正文与裴注保持原序。'), el('h2','最近史料'));
     for (const event of snapshot.events.slice(-3).toReversed()) panel.append(eventEntry(event));
     return;
   }
   const chapter = currentChapter();
   const paragraph = cursor.position % 1000;
   const key = `romance-${String(chapter).padStart(3,'0')}`;
-  panel.append(el('h1', `第 ${chapter} 回`), el('p', '当前进度表示本回读毕，展示本回原文；段号只用于核对引文，不改变地图进度。', 'subtle'));
-  const waiting = el('p', '正在读取本地原文…', 'subtle');
+  panel.append(el('h1', `第 ${chapter} 回`), el('p', '本回已读毕；段号用于核对引文。', 'subtle'));
+  const waiting = el('p', '正在读取原文…', 'subtle');
   panel.append(waiting);
   try {
     if (!localDocumentCache.has(key)) {
@@ -625,7 +658,7 @@ async function renderText(panel) {
       localDocumentCache.set(key, await response.json());
     }
   } catch (error) {
-    waiting.textContent = '本地原文读取失败（错误编号：2001）。请检查原文文件与本地服务。';
+    waiting.textContent = '原文载入失败。请确认本地资料服务已启动后重试。';
     console.error('2001: Corpus read failed', error);
     return;
   }
@@ -638,39 +671,41 @@ async function renderText(panel) {
     article.append(el('small',`第 ${item.id} 段`,'subtle'), el('p', item.display_text));
     panel.append(article);
   }
-  panel.append(el('p', '拖动底部回目条，可查看其他已读回目的局势。', 'subtle text-footer'));
+  panel.append(el('p', '拖动底部回目条，可查看其他已读回目。', 'subtle text-footer'));
 }
 
 function renderCoverage(panel) {
-  panelTitle('资料覆盖与来源');
+  panelTitle('资料与来源');
   back(panel);
-  panel.append(el('h1', '建设进度'), notice(data.coverage.note));
-  panel.append(row('原著山川与关隘',`${data.coverage.story_geography}项阅读地理示意`));
+  panel.append(el('h1', '收录概况'), notice(data.coverage.note));
+  panel.append(row('原著山川与关隘',`${data.coverage.story_geography} 项地理参照`));
   const precisionNames={day:'日级',month:'月级',season:'季级',year:'年级'};
-  for(const [title,counts]of [['正史事件时间精度',data.coverage.time_precision],['驱动归属的事件精度',data.coverage.control_precision]])
+  for(const [title,counts]of [['事件时间精度',data.coverage.time_precision],['归属变更时间精度',data.coverage.control_precision]])
     panel.append(row(title,Object.entries(counts).map(([key,n])=>`${precisionNames[key]}${n}条`).join(' · ')));
-  panel.append(notice('没有记载的月份保持最后有据状态与阶段参照；不代表其间没有变化。多数新增战事只确认城池点位，没有据此扩大郡县填色。',true));
-  panel.append(row('活动事实',`${data.coverage.activities}条，涉及${data.coverage.people_with_activities}名人物`),row('历史水文资料',`${data.coverage.hydrology_records}组，河道几何待考`),row('行政沿革',`${data.coverage.administrative_changes}条`));
-  const models=el('a','查看三档城池与七类兵人');models.href='models.html';models.target='_blank';models.rel='noopener';panel.append(models);
-  for (const [count, label] of [[administration.provinces.length,'州级行政名录'],[data.national.commanderies.length,'郡国名录条目'],[administration.counties.length,'已核县级文献条目'],[data.national.frontier.length,'关外政权与部族参考条目'],[65,'《三国志》卷已保存'],[120,'《三国演义》回已保存'],[data.coverage.places,'地点与区域索引'],[data.coverage.people_candidates,'有原文命中的姓名候选'],[data.coverage.events,'单独编录事件']]) {
+  panel.append(notice('无记载的月份沿用上一有据状态与阶段背景；新增战事仅确认城池点位，未扩大郡县填色。',true));
+  panel.append(row('人物与军事活动',`${data.coverage.activities}条，涉及${data.coverage.people_with_activities}名人物`),row('历史水文资料',`${data.coverage.hydrology_records}组，河道几何待考`),row('行政沿革',`${data.coverage.administrative_changes}条`));
+  const models=el('a','查看城池与兵人模型');models.href='models.html';models.target='_blank';models.rel='noopener';panel.append(models);
+  for (const [count, label] of [[administration.provinces.length,'州级行政名录'],[data.national.commanderies.length,'郡国名录条目'],[administration.counties.length,'已核县级条目'],[data.national.frontier.length,'关外势力与部族条目'],[65,'《三国志》卷已保存'],[120,'《三国演义》回已保存'],[data.coverage.places,'地点与区域'],[data.coverage.people_candidates,'原文提及人物'],[data.coverage.events,'收录事件']]) {
     const line = el('div', String(count), 'coverage-number');
     line.append(el('span', label));
     panel.append(line);
   }
-  panel.append(el('h2','已做与待做'), el('p', `已做：中文行政层级、十三州参考线、${administration.counties.length}项有引文的县级条目；另有${boundaryReference.features.filter(f=>!f.properties.junction_repair).length}条建安源图边线配准研究与${boundaryReference.labels.length}处中文名称对读。待做：逐界历史考证、三国郡县分置沿革、完整县域、古水系、完整人物生平和逐段事件。`));
-  panel.append(el('p','配准使用24个拟合图块和8个留出检验图块，检验中位偏差约0.44千米。图块来自同一地形系列，只验证图像对齐，不代表古界精度。','subtle'));
-  panel.append(el('h2','底图与许可'), el('p','地图引擎及简繁字典的完整许可随程序分发。自然地理参照使用公版资料；现代地势来源包括美国地质调查局、美国国家海洋和大气管理局。项目名称、作者署名和完整许可见随附档案。', 'subtle'));
+  panel.append(el('h2','收录范围'),
+    row('已收录', `中文行政层级、十三州参考线、${administration.counties.length}项有引文的县级条目；另有${boundaryReference.features.filter(f=>!f.properties.junction_repair).length}条建安源图边线配准研究与${boundaryReference.labels.length}处中文名称对读。`),
+    row('待补', '逐界历史考证、三国郡县分置沿革、完整县域、古水系、完整人物生平和逐段事件。'));
+  panel.append(el('p','配准检验中位偏差约0.44千米（详见底图页）。','subtle'));
+  panel.append(el('h2','底图与许可'), el('p','地图引擎与字典许可随程序分发；自然地理为公版资料；现代地势来源：美国地质调查局、美国国家海洋和大气管理局。完整署名与许可见随附档案。', 'subtle'));
   const links = el('div', undefined, 'inline-buttons');
   for (const [text,url] of [['下载地图引擎许可','assets/MAPLIBRE-LICENSE.txt'],['下载简繁字典许可','assets/OPENCC-LICENSE.txt'],['下载数据署名与许可','assets/DATA-NOTICES.txt'],['下载历法项目许可','assets/CALENDAR-LICENSE.txt'],['下载三维引擎许可','assets/THREE-LICENSE.txt']]) {
     const link = el('a',text);link.href=url;link.download='';links.append(link);
   }
-  panel.append(links, el('h2','本批引用的固定文本'));
+  panel.append(links, el('h2','引用文本'));
   const ids = [...new Set(data.events.map(x => x.source))];
   for (const id of ids) {
     const doc = source(id);
     const entry = el('div',undefined,'entry');
     const a = el('a',doc.title);a.href=doc.url;a.target='_blank';a.rel='noopener noreferrer';
-    entry.append(a,el('p',`修订 ${doc.revision} · ${doc.paragraph_count} 段；仅相关段落已编录，不代表全卷审核。`,'subtle'));
+    entry.append(a,el('p',`修订 ${doc.revision} · 共 ${doc.paragraph_count} 段（相关段落已收录）`,'subtle'));
     panel.append(entry);
   }
 }
@@ -716,12 +751,12 @@ function renderPanel() {
       panelTitle('水文依据');back(panel);panel.append(el('h1',river.name),notice(river.note));
       const event = snapshot.events.find(x => x.id === river.evidence_event);
       if (event) panel.append(sourceCard(event.citation));
-      else panel.append(el('p','本层仅作地理关联示意。当前进度未展开相关后续战事情节。','subtle'));
+      else panel.append(el('p','当前进度尚未涉及相关战事。','subtle'));
       return;
     }
     else if (selected.kind === 'difference') {
       const difference = availableDifferences(data,cursor).find(x => x.id === selected.id);
-      panelTitle('双版本对照');back(panel);panel.append(el('h1',difference.title),el('p',difference.text));
+      panelTitle('史实与演义对照');back(panel);panel.append(el('h1',difference.title),el('p',difference.text));
       for (const id of [difference.history_event,difference.romance_event]) {
         const event = data.events.find(x=>x.id===id);
         panel.append(el('h2',event.world==='history'?'史实记载':'小说记载'),sourceCard(event.citation));
@@ -733,9 +768,9 @@ function renderPanel() {
   else if(activeTab==='campaigns')renderCampaigns(panel);
   else if(activeTab==='activities')renderActivities(panel);
   else if (activeTab === 'events') {
-    panelTitle('截至当前的已录事件');
-    panel.append(el('h1','事件记录'),el('p','仅列出当前版本、当前位置之前的已编录事件。','subtle'));
-    if (!snapshot.events.length) panel.append(notice('当前进度尚无已编录事件。'));
+    panelTitle('已收录事件');
+    panel.append(el('h1','事件记录'),el('p','只显示当前进度之前的已收录事件。','subtle'));
+    if (!snapshot.events.length) panel.append(notice('当前时段暂无收录事件。'));
     for (const event of snapshot.events.toReversed()) panel.append(eventEntry(event));
   } else if (activeTab === 'people') renderPeople(panel);
   else if (activeTab === 'text') renderText(panel);
@@ -752,12 +787,12 @@ function updateSearch() {
     const items=[...sceneView.people.map(p=>({...p,kind:'person'})),...[...scenePlaces.values()].map(p=>({...p,kind:'place'})),
       ...data.places.filter(p=>!scenePlaces.has(p.id)).map(p=>({...p,kind:'base-place'})),
       ...data.story_geography.features.map(f=>({...f.properties,kind:'story-geography'}))].filter(p=>[p.name,...(p.aliases||[])].some(name=>name.includes(query.trim())));
-    if(!items.length)results.append(el('p','本场景与底图中未找到此名称。'));
+    if(!items.length)results.append(el('p','未找到该名称。'));
     for(const item of items.slice(0,25))results.append(button(item.name,()=>{results.hidden=true;$('search').value='';if(item.kind==='story-geography')showStoryGeography(item.id,true);else selectScene(item.kind,item.id);}));
     return;
   }
   const found = search(data,cursor,query);
-  if (!found.length) results.append(el('p','当前版本和阅读进度中未找到；可换用别名。'));
+  if (!found.length) results.append(el('p','未找到该名称；可尝试别名。'));
   for (const item of found) {
     const node = button(item.name,()=>{
       results.hidden=true;
@@ -775,7 +810,7 @@ function updateSearch() {
       else showPerson(item);
     });
     const original=item.kind==='place'?data.places.find(x=>x.id===item.id):null;
-    node.append(el('small',item.kind==='place'?`${item.region} · ${original.kind==='区域'&&original.id!=='haixi'?'行政区域索引':original.kind}`:item.kind==='commandery'?`${item.province} · 郡国参考区`:item.kind==='story-geography'?`${item.geography_kind} · 原著山川`:'人物提及'));
+    node.append(el('small',item.kind==='place'?`${item.region} · ${original.kind==='区域'&&original.id!=='haixi'?'行政区域':original.kind}`:item.kind==='commandery'?`${item.province} · 郡国参考`:item.kind==='story-geography'?`${item.geography_kind} · 原著山川`:'人物提及'));
     results.append(node);
   }
 }
@@ -801,10 +836,10 @@ function updateMap() {
     marker.getElement().classList.toggle('active',selected?.kind==='place'&&selected.id===place.id);
   }
   const legend=$('legend');legend.replaceChildren();
-  legend.append(el('strong',showControl?(sceneMode?'势力范围 · 片段推断':'势力区域 · 概略复原'):'行政中心级别'));
-  legend.append(el('span',showControl?(sceneMode?'色块为地域关联推断；留白归属未明。':`${cursor.world==='romance'?'本回读毕 · ':territory.phase.year+'年背景 · '}点击色块查依据；留白待考，非无主。`):'紫：都城 · 红：州治 · 金：郡治 · 蓝：县城 · 灰：待核','legend-note'));
-  if(document.querySelector('[data-layer="activities"]').checked&&activeActivities().length)legend.append(el('span','兵人／人物标记：活动记载，不表示占领范围。','legend-note'));
-  if(document.querySelector('[data-layer="research-water"]').checked)legend.append(el('span',sceneMode?'研究河道作为地理参考，不用于推断本书年份。':cursor.world==='history'&&cursor.position===208?'蓝色虚线：黄河及长坂汉水、长江研究示意，非考定河道。':'蓝色虚线：东汉黄河研究示意，有争议；长坂图仅在208年显示。','legend-note'));
+  legend.append(el('strong',showControl?'势力范围':'行政中心'));
+  legend.append(el('span',showControl?(sceneMode?'色块为文意推断的势力范围；留白：归属未定。':`${cursor.world==='romance'?'本回读毕 · ':territory.phase.year+'年背景 · '}色块为阶段势力范围（概略）；点击查看依据；留白：暂无归属记录。`):'紫：都城 · 红：州治 · 金：郡治 · 蓝：县城 · 灰：级别待考','legend-note'));
+  if(document.querySelector('[data-layer="activities"]').checked&&activeActivities().length)legend.append(el('span','兵人／人物：活动标记；占领范围见色块。','legend-note'));
+  if(document.querySelector('[data-layer="research-water"]').checked)legend.append(el('span',sceneMode?'蓝色虚线：研究河道（有争议）':cursor.world==='history'&&cursor.position===208?'208年专题：长坂汉水、长江（研究示意）':'蓝色虚线：研究河道（有争议）','legend-note'));
   const recordedOwners=new Set(territory.records.map(r=>r.owner));
   const colors=el('div',undefined,'legend-colors');
   for(const item of showControl?(sceneMode?sceneView.factions:data.factions).filter(x=>recordedOwners.has(x.id)):[]) {
@@ -819,11 +854,11 @@ function updateMap() {
   const campaignsEnabled=document.querySelector('[data-layer="campaigns"]').checked;
   const campaigns=sceneMode?[]:activeCampaigns(campaignData.campaigns,data,cursor);
   campaignLayer.setRecords(campaignsEnabled?campaigns:[],data,cursor);
-  if(campaignsEnabled&&campaigns.length)legend.append(el('span',`战役 ${campaigns.length} 条 · 兵人／箭头可点；虚线表示日期未定。`,'legend-note'));
+  if(campaignsEnabled&&campaigns.length)legend.append(el('span',`战役 ${campaigns.length} 条；虚线：日期未定。`,'legend-note'));
   $('campaign-button').textContent=sceneMode?`军队 · ${sceneView.units.length}`:`战役 · ${campaigns.length}`;
   if(sceneMode){
     sceneRenderer.setView(sceneView,{showControl,showArmies:campaignsEnabled,showPlaces:document.querySelector('[data-layer="places"]').checked});
-    legend.append(el('span','实线：行军方向　虚线：计划　斜线：战后约定','legend-note'));
+    legend.append(el('span','实线：已发生行军　虚线：计划　斜线：战后约定','legend-note'));
   }
   refreshMarkers();
 }
@@ -838,7 +873,7 @@ function highlightCounty(id,point) {
   map.setFilter('county-hover',filter);map.setFilter('county-shadow',filter);
   const tip=$('county-tooltip');
   tip.hidden=!county||!point;
-  if(county&&point){tip.textContent=`${county.properties.name} · ${county.properties.commandery}（县域边界待考）`;
+  if(county&&point){tip.textContent=`${county.properties.name} · ${county.properties.commandery}（县界待考）`;
     tip.style.left=`${Math.min(point.x+15,map.getCanvas().clientWidth-220)}px`;tip.style.top=`${point.y+12}px`;}
   if(window.atlas)window.atlas.hoveredCounty=hoveredCounty;
 }
@@ -851,6 +886,7 @@ function refreshMarkers() {
   const viewport=map.getContainer().getBoundingClientRect();
   for(const selector of ['.activity-marker','.campaign-unit','.campaign-target','.map-heading','.view-actions','#legend-disclosure','#legend','#layer-panel','.map-disclaimer','.maplibregl-ctrl','#mobile-panel-button','#sidebar']){
     for(const node of document.querySelectorAll(selector)){
+      if(node.id!=='legend-disclosure'&&node.closest('#legend-disclosure:not([open])'))continue;
       const b=node.getBoundingClientRect();
       if(b.width&&b.height&&b.left<viewport.right&&b.right>viewport.left&&b.top<viewport.bottom&&b.bottom>viewport.top)occupied.push(b);
     }
@@ -914,7 +950,7 @@ function updateAdministrativeLayers() {
   const district=document.querySelector('[data-layer="commanderies"]');
   for(const id of ['province-reference','imperial-reference'])map.setLayoutProperty(id,'visibility',state?'visible':'none');
   map.setLayoutProperty('commanderies-line','visibility',district.checked?'visible':'none');
-  $('map-disclaimer').textContent='行政基准：建安郡国研究，部分建置跨期；紫色虚线为郡级参考。沿海仅作现代地理参照，非考定古岸线。';
+  $('map-disclaimer').textContent='行政底图：建安郡国研究（219年，部分建置跨期）；海域为现代参照。';
   updateMap();
   refreshMarkers();
 }
@@ -973,12 +1009,12 @@ function render() {
   $('history-mode').classList.toggle('selected',history);$('history-mode').setAttribute('aria-pressed',String(history));
   $('romance-mode').classList.toggle('selected',!history);$('romance-mode').setAttribute('aria-pressed',String(!history));
   $('history-controls').hidden=!history;$('romance-controls').hidden=history;
-  $('world-label').textContent='行政基准：建安郡国研究（219年）';
+  $('world-label').textContent='底图：建安郡国研究（219年）';
   $('map-time').textContent=history?windowLabel(data,cursor):`第 ${currentChapter()} 回`;
-  $('time-note').textContent=history?`势力色块：${territory.phase.year}年阶段背景；地点记录另行更新`:'本回读毕 · 后续回目情节隐藏';
+  $('time-note').textContent=history?`${territory.phase.year}年阶段背景`:'本回读毕';
   $('timeline-position').textContent=$('cursor-label').textContent=history?windowLabel(data,cursor):`第 ${currentChapter()} 回 · 本回读毕`;
-  $('timeline-toggle').textContent=history?`按${{year:'年',month:'月',week:'周'}[cursor.granularity]} · 设置`:'回目设置';
-  $('cursor-description').textContent=history?`${calendarNames[cursor.calendar]} · 窗口末已知局势 · 儒略历 ${julianLabel(snapshot.window.start)}—${julianLabel(snapshot.window.end)} · ${snapshot.uncertainEvents.length}条区间未定记载`:`全国阶段推定 · 最近节点：第 ${Math.floor(territory.phase.position/1000)} 回 · 无新记录时沿用`;
+  $('timeline-toggle').textContent=history?'时间设置':'回目设置';
+  $('cursor-description').textContent=history?`${calendarNames[cursor.calendar]} · ${julianLabel(snapshot.window.start)}—${julianLabel(snapshot.window.end)} · ${snapshot.uncertainEvents.length} 条时间范围未定`:`阶段推定 · 最近节点：第 ${Math.floor(territory.phase.position/1000)} 回`;
   $('year-input').value=history?cursor.position:$('year-input').value;
   if(history)$('year-input').setCustomValidity('');
   if(history)renderHistoryControls();
@@ -1056,12 +1092,12 @@ function renderScene(){
   if(mapReady)updateFactionLabels();
   for(const id of ['history-mode','romance-mode']){$(id).classList.remove('selected');$(id).setAttribute('aria-pressed','false');}
   $('history-controls').hidden=$('romance-controls').hidden=true;$('milestones').replaceChildren();
-  $('world-label').textContent=scenePack.example?'小说片段 · 人工核对示例':'小说剧情 · 模型提取';$('map-time').textContent=scenePack.title;
-  $('time-note').textContent=scenePack.example?'完整地理底图 · 书名与年份未明':'完整地理底图 · 地图精度沿用底图说明';
-  const positionLabel=scenePack.steps[sceneCursor.position]||'当前位置尚无已确认的地图事件';
+  $('world-label').textContent=scenePack.example?'小说片段 · 示例':'小说片段 · 剧本地图';$('map-time').textContent=scenePack.title;
+  $('time-note').textContent=scenePack.example?'书名与年份未详':'底图：建安郡国研究（219年）';
+  const positionLabel=scenePack.steps[sceneCursor.position]||'当前片段暂无地图事件';
   $('timeline-position').textContent=$('cursor-label').textContent=`${scenePack.chapterHint} · ${positionLabel}`;
-  $('timeline-toggle').textContent=`${{current:'当前局势',plan:'文中计策',analysis:'条件推演'}[sceneCursor.view]} · 设置`;
-  $('cursor-description').textContent='按已读片段展开，计划步骤不改变当前实际局势';
+  $('timeline-toggle').textContent=`${{current:'当前形势',plan:'文中计划',analysis:'条件推演'}[sceneCursor.view]} · 设置`;
+  $('cursor-description').textContent='计划步骤仅为推演。';
   $('scene-progress').min=scenePack.example?0:-1;$('scene-progress').max=scenePack.steps.length-1;$('scene-progress').value=sceneCursor.position;$('scene-progress').setAttribute('aria-valuetext',positionLabel);
   $('scene-progress-label').textContent=`${sceneCursor.position+1} / ${scenePack.steps.length}`;
   for(const node of document.querySelectorAll('[data-scene-view]')){const chosen=node.dataset.sceneView===sceneCursor.view;node.classList.toggle('selected',chosen);node.setAttribute('aria-pressed',String(chosen));}
@@ -1070,7 +1106,7 @@ function renderScene(){
   $('scene-branch-label').hidden=sceneCursor.view!=='analysis';
   const branchSelect=$('scene-branch');branchSelect.replaceChildren();
   for(const branch of sceneView.branches){const option=el('option',branch.name);option.value=branch.id;branchSelect.append(option);}
-  if(!sceneView.branches.length){const option=el('option','当前尚无推演');branchSelect.append(option);branchSelect.disabled=true;}else{branchSelect.disabled=false;branchSelect.value=sceneView.branch?.id||sceneCursor.branch;}
+  if(!sceneView.branches.length){const option=el('option','暂无推演条件');branchSelect.append(option);branchSelect.disabled=true;}else{branchSelect.disabled=false;branchSelect.value=sceneView.branch?.id||sceneCursor.branch;}
   renderPanel();updateMap();if($('search').value)updateSearch();
   $('announcement').textContent=`${scenePack.title}，${positionLabel}`;
 }
@@ -1079,7 +1115,7 @@ function bind() {
   if(window.MapTool)$('map-quick-actions').append(button('返回阅读',()=>window.MapTool.returnToReading()));
   $('scene-mode').onclick=()=>{sceneMode=true;selected=null;activeTab='overview';render();focusScene();};
   for(const node of document.querySelectorAll('[data-scene-view]'))node.onclick=()=>{sceneCursor.view=node.dataset.sceneView;selected=null;activeTab='overview';render();};
-  $('scene-progress').oninput=event=>{sceneCursor.position=Number(event.target.value);localStorage.setItem('story-position-'+scenePack.id,String(sceneCursor.position));readingPosition(scenePack,sceneCursor.position).catch(e=>{$('announcement').textContent='阅读位置保存失败：'+e.message;});selected=null;render();};
+  $('scene-progress').oninput=event=>{sceneCursor.position=Number(event.target.value);localStorage.setItem('story-position-'+scenePack.id,String(sceneCursor.position));readingPosition(scenePack,sceneCursor.position).catch(e=>{$('announcement').textContent='阅读位置未能保存。';console.error('阅读位置保存失败',e);});selected=null;render();};
   $('scene-step').onchange=event=>{sceneCursor.step=Number(event.target.value);selected=null;render();};
   $('scene-branch').onchange=event=>{sceneCursor.branch=event.target.value;selected=null;render();};
   $('history-mode').onclick=()=>setYear(194);
@@ -1115,6 +1151,7 @@ function bind() {
   $('close-timeline').onclick=()=>{closeMapOverlays();$('timeline-toggle').focus();};
   $('search-toggle').onclick=()=>{const open=!document.body.classList.contains('search-open');closeMapOverlays();closePanel();document.body.classList.toggle('search-open',open);$('search-toggle').setAttribute('aria-expanded',String(open));if(open)$('search').focus();};
   $('legend-disclosure').querySelector('summary').onclick=()=>{const open=$('legend-disclosure').open;closeMapOverlays();closePanel();$('legend-disclosure').open=open;};
+  $('legend-disclosure').addEventListener('toggle',refreshMarkers);
   $('search').oninput=updateSearch;
   $('story-geography-button').onclick=()=>{selected={kind:'story-geography'};renderPanel();openPanel();};
   $('search').onkeydown=event=>{if(event.key==='Escape')$('search-results').hidden=true;};
@@ -1179,7 +1216,7 @@ function layoutFactionLabels(viewport,occupied,zoom){
       if(placed.has(part))continue;
       if(!part.marker){
         const item=faction(group.owner),node=button(group.name,event=>{event.stopPropagation();if(sceneMode){selectScene('faction',group.owner);return;}selected={kind:'region',id:group.owner};renderPanel();openPanel();},'faction-label');
-        node.dataset.faction=group.owner;node.title=`${item.name} · ${sceneMode?'片段推断范围':'势力概略范围'}`;
+        node.dataset.faction=group.owner;node.title=item.name;
         node.setAttribute('aria-label',`${item.name}，查看人物与势力档案`);
         part.marker=new maplibregl.Marker({element:node}).setLngLat(part.coordinates).addTo(map);
       }
@@ -1212,7 +1249,7 @@ function buildMap(reference, boundaries) {
     maxBounds:[[87,13],[140,53]],attributionControl:false,
     locale:{'Map.Title':'地图查看工具','Marker.Title':'地点标记',
       'NavigationControl.ZoomIn':'放大地图','NavigationControl.ZoomOut':'缩小地图','NavigationControl.ResetBearing':'恢复正北方向',
-      'AttributionControl.ToggleAttribution':'展开或收起来源署名','AttributionControl.MapFeedback':'地图反馈',
+      'AttributionControl.ToggleAttribution':'展开或收起来源署名','AttributionControl.MapFeedback':'反馈问题',
       'ScaleControl.Meters':'米','ScaleControl.Kilometers':'千米','Popup.Close':'关闭详情'},
     style:{version:8,sources:{
       land:{type:'geojson',data:reference.land},
@@ -1255,13 +1292,13 @@ function buildMap(reference, boundaries) {
   map.getContainer().querySelector('.maplibregl-ctrl-attrib-button').click();
   map.on('load',()=>{
     mapReady=true;
-    modelLayer=createModelLayer(map,error=>{$('map-error').hidden=false;$('map-error').textContent='城池或兵人模型读取失败，请检查本地模型文件。';console.error(error);});map.addLayer(modelLayer);
+    modelLayer=createModelLayer(map,error=>{$('map-error').hidden=false;$('map-error').textContent='城池与兵人模型载入失败。';console.error(error);});map.addLayer(modelLayer);
     campaignLayer=createCampaignLayer(map,showCampaign);
     sceneRenderer=createSceneRenderer(map,scenePlaces,strategicRegions,selectScene);
     for(const [i,place] of data.places.entries()) {
       const major=['luoyang','changan','chengdu','jianye','ye','jicheng','xiangping','panyu','xiangyang','jiangling','hanzhong','pengcheng','xiapi'].includes(place.id);
       const node=button('',event=>{event.stopPropagation();showPlace(place);},`place-marker center-${centerLevel(place)}${major?' major':''}`);
-      node.setAttribute('aria-label',`${place.name}，${place.kind}，区域级定位`);
+      node.setAttribute('aria-label',`${place.name}，${place.kind}，查看地点资料`);
       if(place.id==='haixi')node.classList.add('candidate-place');
       node.append(el('span',placeName(place),'place-label'));
       const mini=el('img');mini.className='city-mini';mini.alt='';mini.hidden=true;node.append(mini);
@@ -1271,11 +1308,11 @@ function buildMap(reference, boundaries) {
       node.addEventListener('mouseleave',()=>highlightCounty(selected?.kind==='place'?`county-${selected.id}`:null));
     }
     for(const label of boundaries.labels.filter(x=>x.kind==='郡国名称')){const node=button(label.full_name,()=>{selected={kind:'reference-commandery',name:label.name};renderPanel();openPanel();},'commandery-label');
-      node.setAttribute('aria-label',`${label.full_name}，郡级行政区参考`);node.title='郡级行政区参考，点击查看名称与出处';
+      node.setAttribute('aria-label',`${label.full_name}，郡级行政区参考`);node.title='郡级行政区参考';
       commanderyLabels.push(new maplibregl.Marker({element:node}).setLngLat(label.coordinates).addTo(map));}
     for(const province of strategicRegions.province_labels['219']){const node=button(province.name,()=>{selected={kind:'province',name:province.name};renderPanel();openPanel();},'province-label');node.dataset.province=province.name;node.setAttribute('aria-label',`${province.name}，州级行政区参考`);provinceLabels.push(new maplibregl.Marker({element:node}).setLngLat(province.coordinates).addTo(map));}
     updateFactionLabels();
-    for(const [name,lon,lat]of reference.sea_labels){const node=el('span',`${name}（现代海域参照）`,'sea-label');new maplibregl.Marker({element:node}).setLngLat([lon,lat]).addTo(map);}
+    for(const [name,lon,lat]of reference.sea_labels){const node=el('span',name,'sea-label');new maplibregl.Marker({element:node}).setLngLat([lon,lat]).addTo(map);}
     for(const [name,lon,lat]of data.mountains) {
       const node=el('span',`▲ ${name}`,'mountain-label');node.style.display='none';
       mountainMarkers.push(new maplibregl.Marker({element:node}).setLngLat([lon,lat]).addTo(map));
@@ -1328,16 +1365,17 @@ function buildMap(reference, boundaries) {
   });
   map.on('error',event=>{
     $('map-error').hidden=false;
-    $('map-error').textContent='地图资源载入失败（错误编号：1002）。请检查本地地图文件，详情已记录到开发日志。';
+    $('map-error').textContent='地图资源载入失败。请刷新页面重试。';
     $('announcement').textContent='地图资源载入失败。';
     console.error('1002: Map resource error',event.error);
   });
 }
 
 async function start() {
-  const responses=await Promise.all([fetch('atlas.json'),fetch('reference.json'),fetch('jianan-boundaries.geojson'),fetch('han-administration.json'),fetch('strategic-regions.json'),fetch('historical-water.json'),fetch('faction-labels.json'),fetch('coastal-reference.json'),fetch('campaigns.json'),fetch('scene/xuzhou-letter.json')]);
+  const responses=await Promise.all([fetch('atlas.json'),fetch('reference.json'),fetch('jianan-boundaries.geojson'),fetch('han-administration.json'),fetch('strategic-regions.json'),fetch('historical-water.json'),fetch('faction-labels.json'),fetch('coastal-reference.json'),fetch('campaigns.json'),fetch('scene/xuzhou-letter.json'),fetch('map-compatibility.json')]);
   for(const response of responses)if(!response.ok)throw new Error(`资料载入失败，响应编号：${response.status}`);
-  [data]=await Promise.all([responses[0].json()]);
+  const atlasBytes=await responses[0].arrayBuffer();
+  data=JSON.parse(new TextDecoder().decode(atlasBytes));
   const reference={...await responses[1].json(),...await responses[7].json()};
   $('coastal-note').textContent=reference.coastal_note;
   for(const chapter of data.chapters){const option=el('option',`第 ${chapter.number} 回`);option.value=chapter.number;$('chapter-select').append(option);}
@@ -1349,12 +1387,14 @@ async function start() {
   factionCentres=await responses[6].json();
   campaignData=await responses[8].json();
   scenePack=await responses[9].json();
+  const catalog=await responses[10].json();
+  const [baseMapRevision,atlasRevision]=await Promise.all([sha256(regionBytes),sha256(atlasBytes)]);
+  const localVersion=resolveMapVersion({baseMapId:'jianan-219',baseMapRevision,atlasRevision,sceneSchemaVersion:1},catalog);
   const storyId=new URLSearchParams(location.search).get('story');
   if(storyId){
     scenePack=await readStories(storyId);
-    if(!scenePack)throw Error('本地没有这份剧情包，请从小说工具重新导入');
-    const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',regionBytes))).map(v=>v.toString(16).padStart(2,'0')).join('');
-    if(scenePack.baseMap.revision!==revision)throw Error('剧情包底图版本不匹配，请重新生成');
+    if(!scenePack)throw Error('本地没有这份地图，请从“小说阅读”重新导入或下载。');
+    assertPackCompatible(scenePack,localVersion,catalog);
     sceneCursor.position=(await readingPosition(scenePack))??Math.max(0,Math.min(scenePack.steps.length-1,Number(localStorage.getItem('story-position-'+storyId)||0)));
     sceneCursor.view='current';sceneCursor.step=0;
   }
@@ -1363,4 +1403,4 @@ async function start() {
   bind();render();buildMap(reference,boundaryReference);
 }
 
-start().catch(error=>{$('loading').textContent='地图与资料载入失败（错误编号：1001）。请通过本地服务打开地图，并检查本地资料文件。详情已记录到开发日志。';console.error('1001: Atlas startup failed',error);});
+start().catch(error=>{$('loading').textContent='地图载入失败：'+error.message;console.error('1001: Atlas startup failed',error);});

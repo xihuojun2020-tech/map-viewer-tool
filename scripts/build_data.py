@@ -97,7 +97,7 @@ def main():
                                                 'position':doc['number']*1000+cite['paragraph']})
     sources = [{'id': key, 'title': doc['title'], 'url': doc['url'], 'revision': doc['revision'],
                 'world':doc['world'], 'number': doc['number'], 'paragraph_count': doc['paragraph_count'],
-                'review_status':'已下载，未逐段全量审核'} for key,doc in corpus.items()]
+                'review_status':'已下载；逐段审核进度见覆盖统计'} for key,doc in corpus.items()]
     sources += [
         {'id':'editorial-geography','title':'本项目区域级地名定位','url':None,'review_status':'编辑参照点，不是古城址测绘资料',
          'note':'地点名称与文献逐步关联；坐标是今地或地区级锚点，地点卡保留待考项。'},
@@ -139,8 +139,7 @@ def main():
                         'hydrology_records':len(data['hydrology']), 'administrative_changes':len(data['administrative_changes']),
                         'commanderies':len(national['commanderies']), 'county_sketches':len(national['counties']),
                         'frontier_regions':len(national['frontier']),
-                        'note':'核心全文已保存，已接入月与七日窗口、黄巾及首批人物活动、行政沿革。默认展示首批原著山川，帮助理解场景；山川采用概略示意，全国逐月实控与完整人物行踪仍在增补。'}
-    data['built_at'] = datetime.now(timezone.utc).isoformat()
+                        'note':'核心全文已保存，支持年/月/七日时段、人物活动与行政沿革。默认显示原著山川示意；全国逐月实控与人物行踪见"资料与来源"。'}
     history=[e for e in data['events'] if e['world']=='history']
     data['coverage']['time_precision']=dict(Counter(e['time']['precision'] for e in history))
     data['coverage']['control_precision']=dict(Counter(e['time']['precision'] for e in history if e['controls']))
@@ -152,7 +151,14 @@ def main():
         'by_kind':dict(Counter(e['kind'] for e in history)),
         'records':[{'id':e['id'],'title':e['title'],'time':e['time'],'places':e['places'],'controls':e['controls']} for e in history]}
     (ROOT/'research/chronology-coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf-8')
-    (ROOT / 'web' / 'atlas.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',',':')),encoding='utf-8')
+    output = ROOT / 'web' / 'atlas.json'
+    if output.exists():
+        previous = json.loads(output.read_text(encoding='utf-8'))
+        previous_content = {k: v for k, v in previous.items() if k != 'built_at'}
+        data['built_at'] = previous['built_at'] if data == previous_content else datetime.now(timezone.utc).isoformat()
+    else:
+        data['built_at'] = datetime.now(timezone.utc).isoformat()
+    output.write_text(json.dumps(data, ensure_ascii=False, separators=(',',':')),encoding='utf-8')
     (ROOT / 'research' / 'unmatched-names.json').write_text(json.dumps(unmatched, ensure_ascii=False, indent=2), encoding='utf-8')
     db_path = ROOT / 'data' / 'atlas.sqlite'
     db = sqlite3.connect(db_path)

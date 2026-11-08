@@ -189,12 +189,11 @@ def main():
         records.append({'id': label['source_id'], 'name': label['full_name'], 'source_name': label['name'],
             'phase_key': parent, 'province': roster[parent]['province'], 'geometry': geometry,
             'label': interior_center(geometry), 'source_anchor': label['coordinates'],
-            'precision': '概略复原：沿建安底稿线网插补显示区块，缺口由算法分配；不是考定古郡县界。'})
-    # Explicit town control applies to one local display parcel, never the entire
-    # parent district. Only places that actually have control records are split.
-    controlled = {p for e in atlas['events'] for p in e['controls']}
-    controlled.add('juancheng')  # 194 phase: Cao retained Juancheng during the revolt.
-    places = [p for p in atlas['places'] if p['id'] in controlled and p['kind'] != '区域']
+            'precision': '概略复原显示区块：沿建安底图线网插补，缺口由算法分配。'})
+    # Keep published parcel IDs stable when new historical events are recorded.
+    # Adding a display parcel is a map revision, not an event-data update.
+    local_display_places = {'juancheng', 'tan', 'xiapi', 'xiaopei', 'pengcheng'}
+    places = [p for p in atlas['places'] if p['id'] in local_display_places and p['kind'] != '区域']
     from shapely import voronoi_polygons
     from shapely.geometry import MultiPoint
     features = []
@@ -234,12 +233,12 @@ def main():
     early_seeds = [p['label'] for p in early['provinces']]
     early_areas = partition(early_domain, [shape(f['geometry']) for f in early['features']], early_seeds, early['bounds'], 1048)
     early_labels = [{'name':p['name'],'coordinates':interior_center(g),'geometry':mapping(g),
-        'note':'依据约140年底稿的可见范围求内部中心；裁切外缘及源图缺口仍为概略范围。'} for p,g in zip(early['provinces'], early_areas)]
+        'note':'按约140年底图可见范围求内部中心；裁切外缘与源图缺口为概略范围。'} for p,g in zip(early['provinces'], early_areas)]
     result = {'type':'FeatureCollection','features':features,'display_boundaries':display_boundaries(features),'province_labels':{'140':early_labels,'219':provinces},
         'history':read('data/editorial/territory-phases.json')['history'],
         'source_url':'https://commons.wikimedia.org/wiki/File:Jian%27an_Commanderies.svg',
         'author':'Esiymbro；约140年底稿：Zunkir、Kanguole','license':'CC BY-SA 4.0',
-        'note':'用户授权的概略复原显示区块。原图线网约束区域分配，缺口由算法插补，沿现代海陆裁切。分区轮廓、分期归属和有引文的地点记录分别标注；不称逐年考定疆界。'}
+        'note':'用户授权的概略复原显示区块：原图线网约束分区，缺口由算法插补，沿海陆裁切。分区轮廓、分期归属与有引文的地点记录分别标注。'}
     (ROOT/'web/strategic-regions.json').write_text(json.dumps(result,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     print(json.dumps({'source_districts':len(labels),'display_cells':len(features),'local_control_cells':len(places),
         'province_labels':{k:len(v) for k,v in result['province_labels'].items()}},ensure_ascii=False))

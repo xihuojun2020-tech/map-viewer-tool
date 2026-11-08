@@ -24,7 +24,7 @@ class StoryGeography(unittest.TestCase):
             self.assertEqual(saved[props['id']],dict(props,geometry=feature['geometry']))
             self.assertTrue(geometry.is_valid)
             self.assertLess(geometry.distance(Point(props['label'])),1e-8)
-            self.assertIn('概略',props['precision'])
+            self.assertIn('阅读场景示意',props['precision'])
             for cite in props['citations']:
                 doc=json.loads((ROOT/'data/corpus'/f'{cite["source"]}.json').read_text(encoding='utf-8'))
                 paragraph=next(p for p in doc['paragraphs'] if p['id']==cite['paragraph'])

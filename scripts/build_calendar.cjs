@@ -41,7 +41,7 @@ for(const [id, records] of Object.entries(rows)) {
         if(jian===12)officialYear++;
       }
       calendars[id].push({year:officialYear,month:officialMonth,start:month.start,end,
-        note:transition?'改历交接存在一日差异：源表按237年正月起采用景初历，原站亦列五月起改历的异说。':
+        note:transition?'改历交接有一日差异：源表自237年正月行景初历，原站另列五月改历之说。':
           id==='han'&&year===239&&jian===12?'景初三年后十二月，次年恢复建寅为年首。':''});
     });
   }
@@ -52,7 +52,7 @@ assert.equal(calendars.han.find(m=>m.year===223&&m.month===2).start,julianDay(22
 assert.equal(calendars.wu.find(m=>m.year===223&&m.month===2).start,julianDay(223,3,19));
 const result={source:'https://github.com/ytliu0/ChineseCalendar', author:'Yuk Tung Liu',
   source_hashes:hashes, license:'GPL-3.0', calendars,
-  note:'采用公开历法复原数据；汉魏晋、蜀汉、孙吴朔闰分别处理。西历对照使用儒略历。换算精度不改变史料日期精度。'};
+  note:'公开历法复原数据；汉魏晋、蜀汉、孙吴朔闰分别处理，西历对照用儒略历。换算精度不改变史料日期精度。'};
 fs.writeFileSync(path.join(root,'web/calendar.json'),JSON.stringify(result));
 fs.copyFileSync(path.join(folder,'LICENSE.txt'),path.join(root,'web/assets/CALENDAR-LICENSE.txt'));
 console.log(JSON.stringify({months:Object.fromEntries(Object.entries(calendars).map(([k,v])=>[k,v.length])),source_hashes:hashes}));

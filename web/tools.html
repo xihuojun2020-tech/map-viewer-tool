@@ -1,40 +1,40 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>地图查看工具 · 小说工具</title><link rel="stylesheet" href="tools.css"><script type="module" src="tools.mjs"></script></head>
-<body><header><a href="index.html">返回地图</a><strong>小说工具</strong><button id="settings-open">接口设置</button></header>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>地图查看工具 · 小说阅读</title><link rel="stylesheet" href="tools.css"><script type="module" src="tools.mjs"></script></head>
+<body><header><a href="index.html">返回地图</a><strong>小说阅读</strong><button id="settings-open">接口设置</button></header>
 <main>
-  <section class="intro"><span class="eyebrow">读到哪里，就看见哪里的局势</span><h1>把文字放回地图</h1><p>共用完整地理底图，按小说已读内容呈现人物、军队与势力变化。回忆、计划和待复核记录会单独说明。</p></section>
+  <section class="intro"><span class="eyebrow">按阅读进度查看局势</span><h1>把文字放回地图</h1><p>沿用完整地理底图，按已读内容呈现人物、军队与势力变化；回忆、计划与待复核记录单独标注。</p></section>
   <section id="library-section"><h2>搜索小说，查看局势</h2><label for="library-query">书名或作者</label><input id="library-query" type="search" maxlength="100" placeholder="例如：黄巾求生指南">
-    <div class="actions"><button id="library-search" class="primary">搜索书库</button><button id="library-remote" class="secondary">在书源中继续查找</button></div>
+    <div class="actions"><button id="library-search" class="primary">搜索书库</button><button id="library-remote" class="secondary">到在线书库继续查找</button></div>
     <p id="library-channel-note" class="note"></p><p id="library-status" role="status" aria-live="polite"></p><div id="library-results"></div>
-    <div id="library-range" hidden><h3 id="library-selected"></h3><p class="note">请确认作品使用三国地理；未知或架空地点会保留待考，不自动套用正史势力。</p>
+    <div id="library-range" hidden><h3 id="library-selected"></h3><p class="note">底图覆盖汉末三国地理；势力按小说内容展示，底图无法匹配的地点保留待考。</p>
       <label for="library-chapter">读到哪一章</label><select id="library-chapter"></select>
-      <label for="library-paragraph">读到哪一段（选填）</label><input id="library-paragraph" type="number" min="1" step="1" placeholder="留空表示本章结尾">
-      <label for="library-mode">地图范围</label><select id="library-mode"><option value="cumulative">累计至此：了解前文演变后的局势</option><option value="local">当前章局部：先看这一章的情节</option></select>
-      <p class="note">累计模式首次需要分析前文；局部模式保留完整底图，但不补猜前文的势力。</p>
+      <label for="library-paragraph">读到哪一段（选填）</label><input id="library-paragraph" type="number" min="1" step="1" placeholder="留空即章末">
+      <label for="library-mode">地图范围</label><select id="library-mode"><option value="cumulative">累计至此：含前文演变后的局势</option><option value="local">当前章局部：仅本章的情节</option></select>
+      <p class="note">累计模式首次须分析前文；局部模式只呈现本章，前文势力留空。</p>
       <div class="actions"><button id="library-check">检查可用地图</button><button id="library-download" disabled>下载已有地图</button><button id="library-generate" class="primary">生成所选范围的地图</button></div>
       <details><summary>目录与正文更新</summary><p id="library-checked" class="note"></p><div class="actions"><button id="library-refresh-directory">检查目录更新</button><button id="library-refresh-chapter">重新核对当前章正文</button></div></details>
     </div>
-    <div id="library-progress" hidden><p id="library-progress-text" role="status" aria-live="polite"></p><progress id="library-progress-bar" max="1" value="0" aria-label="地图可查看范围"></progress><div class="actions"><button id="library-cancel">取消我的请求</button><button id="library-new-map" hidden>载入新增剧情</button></div></div>
-    <div class="actions"><button id="library-resume" class="secondary">我的生成请求</button></div><div id="library-request-list"></div>
+    <div id="library-progress" hidden><p id="library-progress-text" role="status" aria-live="polite"></p><progress id="library-progress-bar" max="1" value="0" aria-label="地图可查看范围"></progress><div class="actions"><button id="library-cancel">取消本次请求</button><button id="library-new-map" hidden>载入新增剧情</button></div></div>
+    <div class="actions"><button id="library-resume" class="secondary">生成请求记录</button></div><div id="library-request-list"></div>
   </section>
-  <section><h2>导入与截图</h2><div class="actions"><button id="import">导入小说</button><button id="image">导入截图</button><button id="capture">开启悬浮截图</button><button id="stop-capture" class="secondary">关闭悬浮窗</button><button id="return-reading" class="secondary">返回阅读</button></div><input id="file" type="file" accept=".txt,.md,.json" hidden>
+  <section><h2>导入与截图</h2><div class="actions"><button id="import">导入小说</button><button id="image">导入截图</button><button id="capture">开启悬浮截图</button><button id="stop-capture" class="secondary">关闭悬浮截图</button><button id="return-reading" class="secondary">返回阅读</button></div><input id="file" type="file" accept=".txt,.md,.json" hidden>
     <label for="book-title">书名或片段标题</label><input id="book-title" value="未命名片段" maxlength="200">
-    <label for="excerpt">正文／识字修正</label><textarea id="excerpt" rows="8" placeholder="粘贴当前读到的情节；截图识字后也可以在这里修正。"></textarea>
-    <p id="import-note" class="note">截图在手机本地识字，确认分析后才发送文字。</p>
+    <label for="excerpt">正文（可修正识字结果）</label><textarea id="excerpt" rows="8" placeholder="粘贴当前读到的情节；截图识别结果可在此修正。"></textarea>
+    <p id="import-note" class="note">截图在本机识别；确认分析后才会上传正文。</p>
     <div class="actions"><button id="analyze" class="primary">分析并生成地图</button><button id="clear" class="secondary">清空当前输入</button></div>
     <p id="status" role="status" aria-live="polite"></p>
   </section>
-  <section id="remote-section"><div class="section-title"><h2>服务器处理进度</h2><button id="refresh" class="secondary">刷新</button></div><p class="note">需要内测访问凭据；只有选择托管分析时才上传正文。</p><div id="jobs"></div></section>
-  <section><h2>已保存的剧情地图</h2><p class="note">下载后可以离线查看，阅读位置保存在本机。</p><div id="stories"></div></section>
-  <section><h2>应用与资料更新</h2><button id="updates">检查程序更新</button><p id="update-status" class="note">程序通过同一签名的安装包更新；剧情地图可独立下载。</p></section>
+  <section id="remote-section"><div class="section-title"><h2>托管分析进度</h2><button id="refresh" class="secondary">刷新</button></div><p class="note">需访问凭据；仅托管分析会上传正文。</p><div id="jobs"></div></section>
+  <section><h2>已保存的剧情地图</h2><p class="note">可离线查看；阅读位置保存在本机。</p><div id="stories"></div></section>
+  <section><h2>应用与资料更新</h2><button id="updates">检查程序更新</button><p id="update-status" class="note">程序通过官方安装包更新；剧情地图可单独下载。</p></section>
 </main>
-<div id="live-map" hidden><div class="live-bar"><button id="close-map">返回工具</button><p id="live-status" role="status" aria-live="polite"></p><button id="reload-map" hidden>载入新增剧情</button></div><iframe id="map-frame" title="小说剧情地图"></iframe></div>
+<div id="live-map" hidden><div class="live-bar"><button id="close-map">返回小说阅读</button><p id="live-status" role="status" aria-live="polite"></p><button id="reload-map" hidden>载入新增剧情</button></div><iframe id="map-frame" title="小说剧情地图"></iframe></div>
 <dialog id="settings"><form method="dialog"><div class="section-title"><h2>接口设置</h2><button value="cancel" aria-label="关闭设置">关闭</button></div>
-  <label for="mode">分析渠道</label><select id="mode"><option value="hosted">我们提供的托管分析</option><option value="byok">使用自己的模型接口</option></select>
-  <label for="token">内测访问凭据</label><input id="token" type="password" autocomplete="off" placeholder="留空保留已保存的凭据">
-  <label for="endpoint">自己的模型接口地址</label><input id="endpoint" type="url" inputmode="url" spellcheck="false">
+  <label for="mode">分析渠道</label><select id="mode"><option value="hosted">托管分析</option><option value="byok">使用自带接口</option></select>
+  <label for="token">内测访问凭据</label><input id="token" type="password" autocomplete="off" placeholder="留空则沿用已保存凭据">
+  <label for="endpoint">模型接口地址</label><input id="endpoint" type="url" inputmode="url" spellcheck="false">
   <label for="model">模型标识</label><input id="model" spellcheck="false">
-  <label for="key">自己的模型密钥</label><input id="key" type="password" autocomplete="off" placeholder="留空保留已保存的密钥">
-  <p class="note">自带接口模式由手机直接调用供应商，密钥和分析正文不经过我们的服务器。安卓端使用系统密钥库加密保存设置。</p>
+  <label for="key">模型密钥</label><input id="key" type="password" autocomplete="off" placeholder="留空则沿用已保存密钥">
+  <p class="note">自带接口模式下，设备直接请求模型供应商；密钥与正文不经本项目服务器。安卓端设置由系统密钥库加密保存。</p>
   <button id="settings-save" type="button" class="primary">保存设置</button><p id="settings-status" role="status"></p>
 </form></dialog></body></html>

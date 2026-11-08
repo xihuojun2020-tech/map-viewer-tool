@@ -10,8 +10,8 @@
       "region": "颍川",
       "kind": "县治",
       "aliases": [],
-      "location_note": "长葛一带地域参照；汉长社古城具体城垣待考。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "location_note": "长葛一带的区域参照；汉长社古城城垣待考。",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -34,7 +34,7 @@
       "kind": "地域参照",
       "aliases": [],
       "location_note": "广宗地区参照；现代县名不能直接确定汉广宗县城或战场。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -57,7 +57,7 @@
       "kind": "县治",
       "aliases": [],
       "location_note": "今晋州一带；使用现代地域中心，不是古营地坐标。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -80,7 +80,7 @@
       "kind": "地域参照",
       "aliases": [],
       "location_note": "今阳谷高庙王乡仓上一带的编辑锚点；古黄河渡口及战场待定位。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -103,7 +103,7 @@
       "kind": "地域参照",
       "aliases": [],
       "location_note": "汉寿张在今东平县西南的地域参照；不是后世迁治的阳谷寿张镇，寿张东战场未定位。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -126,7 +126,7 @@
       "kind": "地域参照",
       "aliases": [],
       "location_note": "济北区域编辑锚点；不表示受降地点已精确定位。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -148,7 +148,7 @@
       "kind": "县治",
       "aliases": [],
       "location_note": "今商丘地域参照；不以现代城市范围代替汉城范围。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -171,7 +171,7 @@
       "kind": "区域",
       "aliases": [],
       "location_note": "颍川地域索引；仅指文献活动涉及的郡，不是控制范围或精确军营。",
-      "precision": "编辑地域锚点；非古城、营地或辖界的测绘位置",
+      "precision": "编辑地域锚点",
       "source_ids": [
         "editorial-geography"
       ],
@@ -204,7 +204,7 @@
         "month": 2,
         "label": "中平元年二月，日不详"
       },
-      "summary": "张角等起事。巨鹿是此处所记籍贯，不能据此放置起事大营。",
+      "summary": "张角等起事。巨鹿为其所记籍贯；起事大营位置未详。",
       "places": [],
       "people": [
         "张角"
@@ -241,7 +241,7 @@
           "place_id": "luoyang",
           "faction_id": "han",
           "model": "army",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -267,7 +267,7 @@
         "label": "帝纪系于中平元年三月；庚子日与所用历表不合，暂保留月范围",
         "original_ganzhi": "庚子"
       },
-      "summary": "张曼成攻杀南阳郡守褚贡。地图仅作南阳地域提示，不推定整个南阳已被控制。",
+      "summary": "张曼成攻杀南阳郡守褚贡。地图作南阳地域提示，不整郡改色。",
       "places": [
         "wancheng"
       ],
@@ -278,7 +278,7 @@
           "place_id": "wancheng",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -299,7 +299,7 @@
         "month": 5,
         "label": "中平元年五月，日不详"
       },
-      "summary": "皇甫嵩、朱儁在长社大破波才等。只确定月份，不把战斗安排到某个星期。",
+      "summary": "皇甫嵩、朱儁在长社大破波才等。时间精确到月；战斗不作周级定位。",
       "places": [
         "changshe"
       ],
@@ -313,14 +313,14 @@
           "place_id": "changshe",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         },
         {
           "name": "皇甫嵩、朱儁军",
           "place_id": "changshe",
           "faction_id": "han",
           "model": "army",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -355,14 +355,14 @@
           "place_id": "guangzong",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         },
         {
           "name": "卢植军",
           "place_id": "guangzong",
           "faction_id": "han",
           "model": "army",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -400,7 +400,7 @@
           "place_id": "cangting",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -420,7 +420,7 @@
         "month": 10,
         "label": "中平元年十月，日不详"
       },
-      "summary": "皇甫嵩击败张梁；张角此前已经病死，不能将张角死亡指定为十月战斗当日。",
+      "summary": "皇甫嵩击败张梁；张角此前病死，死亡日期未详。",
       "places": [
         "guangzong"
       ],
@@ -435,7 +435,7 @@
           "place_id": "guangzong",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -469,7 +469,7 @@
           "place_id": "xiaquyang",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -503,14 +503,14 @@
           "place_id": "wancheng",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         },
         {
           "name": "朱儁军",
           "place_id": "wancheng",
           "faction_id": "han",
           "model": "army",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -541,7 +541,7 @@
           "place_id": "jinyang",
           "faction_id": "baibo",
           "model": "army",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -573,7 +573,7 @@
           "place_id": "luoxian",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -597,7 +597,7 @@
         "month": 10,
         "label": "中平五年十月，日不详"
       },
-      "summary": "青州、徐州黄巾再起，攻掠郡县。尚无可定位的县或营地，本条不生成精确地图点。",
+      "summary": "青州、徐州黄巾再起，攻掠郡县。本条无定位县或营地，不出地图点。",
       "places": [],
       "people": [],
       "armies": [],
@@ -630,7 +630,7 @@
           "place_id": "shouzhang",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -702,7 +702,7 @@
           "place_id": "yingchuan",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -716,7 +716,7 @@
         }
       ],
       "kind": "战事与活动",
-      "uncertainty": "刘辟记载冲突待核；不得自动连成196年死亡后又于200年活动的无疑轨迹。"
+      "uncertainty": "刘辟记载存疑：196年“斩辟”与200年刘辟活动并存，人物生平未详。"
     },
     {
       "id": "h-y-200-runan",
@@ -735,11 +735,11 @@
       ],
       "armies": [
         {
-          "name": "刘辟等部（记载冲突待核）",
+          "name": "刘辟等部（记载冲突待考）",
           "place_id": "runan",
           "faction_id": "huangjin",
           "model": "huangjin",
-          "note": "兵种组成未详；模型只表达部队身份。"
+          "note": "兵种未详；模型仅表示部队身份。"
         }
       ],
       "evidence": [
@@ -758,7 +758,7 @@
         "label": "建安二十四年八月，日未详",
         "month": 8
       },
-      "summary": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "summary": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水与战事地点，不绘制淹没范围。",
       "places": [
         "fancheng"
       ],
@@ -901,7 +901,7 @@
       "title": "刘璋降刘备",
       "date": {
         "year": 214,
-        "label": "建安十九年夏，具体月日待核",
+        "label": "建安十九年夏，具体月日待考",
         "season": "夏"
       },
       "summary": "雒城破后围成都数十日，刘璋出降。只更新成都点位。",
@@ -1046,7 +1046,7 @@
       "title": "刘禅降邓艾",
       "date": {
         "year": 263,
-        "label": "炎兴元年冬，具体月日待核",
+        "label": "炎兴元年冬，具体月日待考",
         "season": "冬",
         "calendar": "shu"
       },
@@ -1092,7 +1092,7 @@
         "calendar": "wu",
         "original_ganzhi": "壬申"
       },
-      "summary": "王濬先到建业，受孙皓之降。日历换算有疑，按月区间显示；仅更新建业点位，其他地区仍按阶段参照。",
+      "summary": "王濬先到建业，受孙皓之降。历日换算存疑，按月区间显示；建业点位更新，其他地区沿用阶段参照。",
       "places": [
         "jianye"
       ],
@@ -1112,7 +1112,7 @@
           "phrase": "壬申，王濬最先到，於是受皓之降"
         }
       ],
-      "uncertainty": "《孙皓传》三月条后记壬申；所用吴历三月无此干支，暂保留月区间，待核异历与脱文，不强行生成精确日。",
+      "uncertainty": "《孙皓传》三月条后记壬申；所用吴历三月无此干支，暂保留月区间，待考异历与脱文，不强行生成精确日。",
       "kind": "战事与接管",
       "armies": [
         {
@@ -1134,7 +1134,7 @@
       "place_id": "suiyang",
       "relation": "event",
       "action": "在睢阳为襄邑刘氏报仇；年月未知，不能排入投曹前的某个月。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-18",
@@ -1154,8 +1154,8 @@
       },
       "place_id": null,
       "relation": "event",
-      "action": "从张邈为士，属司马赵宠；只知从军关系，不把张邈治所当作典韦位置。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "从张邈为士，属司马赵宠；张邈治所不用于定位典韦。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-18",
@@ -1176,7 +1176,7 @@
       "place_id": "wancheng",
       "relation": "event",
       "action": "随曹操至宛，张绣复反时战死。纪年据《武帝纪》交叉核对。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-01",
@@ -1196,8 +1196,8 @@
       "date": null,
       "place_id": null,
       "relation": "event",
-      "action": "《汉晋春秋》称家于南阳邓县、襄阳城西二十里隆中。保留出处与躬耕地争议，尚不发布精确草庐坐标。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "《汉晋春秋》称家于南阳邓县、襄阳城西二十里隆中；保留出处与躬耕地争议，草庐不作精确坐标。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-35",
@@ -1215,7 +1215,7 @@
       "place_id": null,
       "relation": "event",
       "action": "《魏略》记建安初在荆州与石广元、徐元直、孟公威游学。建安初不是一个已确定起止日的区间。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-35",
@@ -1236,8 +1236,8 @@
       },
       "place_id": "wuzhang",
       "relation": "event",
-      "action": "由斜谷出，至武功五丈原与司马懿相持；不插值生成行军路线。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "由斜谷出，至武功五丈原与司马懿相持；行军路线不作插值。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-35",
@@ -1259,7 +1259,7 @@
       "place_id": "wuzhang",
       "relation": "event",
       "action": "诸葛亮病卒军中。地图以五丈原战区作参照，具体死亡地点存在不同记载。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-35",
@@ -1282,7 +1282,7 @@
       "place_id": "luoyang",
       "relation": "event",
       "action": "朝廷以何进为大将军，屯兵都亭；都亭在洛阳，具体营址未定位。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1308,8 +1308,8 @@
       },
       "place_id": "changshe",
       "relation": "event",
-      "action": "皇甫嵩、朱儁在长社大破波才等。只确定月份，不把战斗安排到某个星期。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "皇甫嵩、朱儁在长社大破波才等。时间精确到月；战斗不作周级定位。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1330,8 +1330,8 @@
       },
       "place_id": "changshe",
       "relation": "event",
-      "action": "皇甫嵩、朱儁在长社大破波才等。只确定月份，不把战斗安排到某个星期。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "皇甫嵩、朱儁在长社大破波才等。时间精确到月；战斗不作周级定位。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1353,7 +1353,7 @@
       "place_id": "guangzong",
       "relation": "event",
       "action": "卢植围张角于广宗；随后董卓进攻未克。两条记载不给出精确先后日期。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1380,7 +1380,7 @@
       "place_id": "guangzong",
       "relation": "event",
       "action": "卢植围张角于广宗；随后董卓进攻未克。两条记载不给出精确先后日期。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1407,7 +1407,7 @@
       "place_id": "cangting",
       "relation": "event",
       "action": "皇甫嵩与黄巾战于仓亭，擒获其首领。古河道与战场位置未考定。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1428,8 +1428,8 @@
       },
       "place_id": "guangzong",
       "relation": "event",
-      "action": "皇甫嵩击败张梁；张角此前已经病死，不能将张角死亡指定为十月战斗当日。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "皇甫嵩击败张梁；张角此前病死，死亡日期未详。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1450,8 +1450,8 @@
       },
       "place_id": "guangzong",
       "relation": "event",
-      "action": "皇甫嵩击败张梁；张角此前已经病死，不能将张角死亡指定为十月战斗当日。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "action": "皇甫嵩击败张梁；张角此前病死，死亡日期未详。",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1473,7 +1473,7 @@
       "place_id": "xiaquyang",
       "relation": "event",
       "action": "皇甫嵩破下曲阳黄巾，张宝被杀。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1495,7 +1495,7 @@
       "place_id": "xiaquyang",
       "relation": "event",
       "action": "皇甫嵩破下曲阳黄巾，张宝被杀。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1518,7 +1518,7 @@
       "place_id": "wancheng",
       "relation": "event",
       "action": "朱儁攻拔宛城，斩黄巾别帅孙夏。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "archive": "research/2026-11-05-han-water-index-sources.json",
@@ -1539,7 +1539,7 @@
       "place_id": "shouzhang",
       "relation": "event",
       "action": "青州黄巾入兖州，曹操进击于寿张东。本条只定位地域，不将全年画成持续占领。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-01",
@@ -1564,7 +1564,7 @@
       "place_id": "jibei",
       "relation": "event",
       "action": "曹操追至济北，冬季受降，收其精锐号青州兵。降卒三十余万与男女百余万口是不同统计；改编后的青州兵归曹操。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-01",
@@ -1584,7 +1584,7 @@
       "place_id": "runan",
       "relation": "event",
       "action": "《先主传》记汝南黄巾刘辟等应袁绍，刘备参与；这是官渡阶段记录，月份未定。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-32",
@@ -1604,7 +1604,7 @@
       "place_id": "runan",
       "relation": "event",
       "action": "《先主传》记汝南黄巾刘辟等应袁绍，刘备参与；这是官渡阶段记录，月份未定。",
-      "spatial_precision": "地域参照；具体遗址或营地未考定",
+      "spatial_precision": "地域参照；遗址与营地未详",
       "evidence": [
         {
           "source": "sgz-32",
@@ -1680,7 +1680,7 @@
       "entity_type": "person",
       "place_id": "yingchuan",
       "relation": "event",
-      "action": "小说叙述张梁、张宝在颍川；不混入正史活动。",
+      "action": "小说叙述张梁、张宝在颍川；不混入史实活动。",
       "spatial_precision": "小说地点的地域参照",
       "evidence": [
         {
@@ -1701,7 +1701,7 @@
       },
       "place_id": "fancheng",
       "relation": "event",
-      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水与战事地点，不绘制淹没范围。",
       "spatial_precision": "樊城战区参照；营地与洪泛范围待考",
       "evidence": [
         {
@@ -1726,7 +1726,7 @@
       },
       "place_id": "fancheng",
       "relation": "event",
-      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水与战事地点，不绘制淹没范围。",
       "spatial_precision": "樊城战区参照；营地与洪泛范围待考",
       "evidence": [
         {
@@ -1751,7 +1751,7 @@
       },
       "place_id": "fancheng",
       "relation": "event",
-      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水及战事地点关系；不生成无依据的淹没面。",
+      "action": "汉水溢灌于禁军，关羽俘于禁并围曹仁。记录洪水与战事地点，不绘制淹没范围。",
       "spatial_precision": "樊城战区参照；营地与洪泛范围待考",
       "evidence": [
         {
@@ -1914,7 +1914,7 @@
         "荆州",
         "益州"
       ],
-      "summary": "正史所记朝廷行政调整；名义诏令与曹、孙、刘各方实际辖境不能等同。研究图保留原断面，不伪造全国同步九州实控图。",
+      "summary": "史实所记朝廷行政调整；名义诏令与曹、孙、刘各方实际辖境不能等同。研究图保留原断面，不伪造全国同步九州实控图。",
       "evidence": [
         {
           "archive": "data/references/han-river-chronicle-api.json",
@@ -2029,7 +2029,7 @@
         "ganzhi": "癸酉"
       },
       "summary": "侯成、宋宪、魏续等降曹，吕布下白门楼投降。原历为198年十二月，儒略历已进入199年。",
-      "uncertainty": "日级依据《资治通鉴》；《三国志》本纪只记战事次序。概略控制块不等于当天全州每县接管。",
+      "uncertainty": "日级依据《资治通鉴》，《三国志》本纪仅记战事次序。控制记录只更新所记城池，不推及全州。",
       "evidence": [
         {
           "archive": "data/references/dated-control-sources.json",

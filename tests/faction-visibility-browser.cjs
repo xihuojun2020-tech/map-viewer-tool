@@ -1,3 +1,4 @@
+const {openTimeline,openSearch,openLayers,closeDetails}=require('./map-ui.cjs');
 const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
 (async()=>{
@@ -6,7 +7,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[],checks=[];
   page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8790/');await page.waitForFunction(()=>window.atlas&&window.atlas.map.loaded());
-  await page.locator('#time-scale').selectOption('year');
+  await openTimeline(page);await page.locator('#time-scale').selectOption('year');
   async function inspect(name){
    await page.waitForFunction(()=>window.atlas.map.loaded()&&!window.atlas.map.isMoving());
    const result=await page.evaluate(async()=>{
@@ -39,7 +40,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   await inspect('194年全国');
   assert.ok(checks[0].named.includes('yuan')&&checks[0].named.includes('shu-yuan')&&checks[0].named.includes('lu'));
   await page.screenshot({path:'output/faction-visibility-national.png'});
-  await page.locator('#year-input').fill('196');await page.locator('#year-input').press('Tab');
+  await openTimeline(page);await page.locator('#year-input').fill('196');await openTimeline(page);await page.locator('#year-input').press('Tab');
   for(const zoom of [5.8,7.4,7.6,8.2,10.4,12]){
    await page.evaluate(zoom=>window.atlas.map.jumpTo({center:[117.5,34.35],zoom}),zoom);await inspect(`196年徐州${zoom}`);
   }
@@ -49,10 +50,10 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   await page.setViewportSize({width:390,height:844});
   await page.evaluate(()=>window.atlas.map.jumpTo({center:[117.6,34],zoom:5.8}));await inspect('手机徐州');
   await page.screenshot({path:'output/faction-visibility-mobile.png'});
-  await page.locator('#year-input').fill('200');await page.locator('#year-input').press('Tab');await inspect('200年手机徐州');
+  await openTimeline(page);await page.locator('#year-input').fill('200');await openTimeline(page);await page.locator('#year-input').press('Tab');await inspect('200年手机徐州');
   assert.equal(await page.locator('.faction-label[data-faction="lu"]').count(),0);
   await page.locator('#romance-mode').click();await inspect('演义已读范围');
-  await page.locator('#political-button').click();assert.equal(await page.locator('.faction-label:visible').count(),0);
+  await openLayers(page);await page.locator('#political-button').click();assert.equal(await page.locator('.faction-label:visible').count(),0);
   assert.deepEqual(errors,[]);fs.writeFileSync('output/faction-visibility-verification.json',JSON.stringify({checks,errors},null,2));
   console.log(JSON.stringify({scenarios:checks.length,errors}));
  }finally{await browser.close();}

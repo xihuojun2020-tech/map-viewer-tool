@@ -10,11 +10,11 @@ async function choose(asset){current=asset.id;document.getElementById('status').
   if(current!==asset.id)return;
   group.clear();group.add(cache.get(asset.id));const city=asset.kind==='city';radius=city?27:8;target=city?1:1.4;angle=.55;tilt=city?.7:.32;
   document.getElementById('name').textContent=asset.name;document.getElementById('download').href=asset.url;
-  document.getElementById('status').textContent=`${asset.triangles} 个三角面 · ${Math.round(asset.bytes/1024)} 千字节 · 已实际加载三维文件`;
+  document.getElementById('status').textContent=`${asset.triangles} 个三角面 · ${Math.round(asset.bytes/1024)} 千字节`;
   for(const b of document.querySelectorAll('[data-model]'))b.setAttribute('aria-pressed',String(b.dataset.model===asset.id));draw();window.modelPreview={id:asset.id,triangles:asset.triangles};
 }
 function fail(error){document.getElementById('error').hidden=false;document.getElementById('error').textContent='模型读取失败，请检查本地模型文件。';console.error(error);}
 let dragging=false,previous;
 stage.onpointerdown=e=>{dragging=true;previous=[e.clientX,e.clientY];stage.setPointerCapture(e.pointerId);};stage.onpointerup=()=>{dragging=false;};stage.onpointermove=e=>{if(!dragging)return;angle-=(e.clientX-previous[0])*.01;tilt=Math.max(.1,Math.min(1.4,tilt+(e.clientY-previous[1])*.01));previous=[e.clientX,e.clientY];draw();};
 stage.addEventListener('wheel',e=>{e.preventDefault();radius=Math.max(3,Math.min(60,radius*(e.deltaY>0?1.1:.9)));draw();},{passive:false});new ResizeObserver(draw).observe(stage);
-try{const response=await fetch('models/manifest.json');if(!response.ok)throw new Error(`Model manifest ${response.status}`);const manifest=await response.json();for(const asset of manifest.assets){const b=document.createElement('button');b.textContent=asset.name;b.dataset.model=asset.id;b.onclick=()=>choose(asset).catch(fail);document.getElementById('choices').append(b);}await choose(manifest.assets[0]);}catch(error){fail(error);}
+try{const response=await fetch('models/manifest.json');if(!response.ok)throw new Error(`模型目录读取失败，响应编号：${response.status}`);const manifest=await response.json();for(const asset of manifest.assets){const b=document.createElement('button');b.textContent=asset.name;b.dataset.model=asset.id;b.onclick=()=>choose(asset).catch(fail);document.getElementById('choices').append(b);}await choose(manifest.assets[0]);}catch(error){fail(error);}

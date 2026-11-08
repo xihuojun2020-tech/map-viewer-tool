@@ -22,7 +22,7 @@ class UserRegions(unittest.TestCase):
             self.assertTrue(unary_union(areas).covers(Point(label['coordinates'])),label['name'])
         for id in ['hefei','shouchun']:
             city=next(c for c in data['cities'] if c['id']==id)
-            self.assertIn('未说明年代',city['group_note'])
+            self.assertEqual('原包归属东吴；年代与归属待考。',city['group_note'])
         self.assertEqual(len(data['geography']['features']),25)
 
     def test_coastal_source_land_is_not_masked_as_sea(self):
@@ -41,6 +41,6 @@ class UserRegions(unittest.TestCase):
         for f in surface['coastal_patches']['features']:
             sources=[shape(x['geometry']) for x in preview['regions']['features'] if x['properties']['name']==f['properties']['name']]
             self.assertLess(shape(f['geometry']).difference(unary_union(sources)).area,1e-9)
-        self.assertIn('不是考定',surface['coastal_note'])
+        self.assertIn('非三国古海岸',surface['coastal_note'])
 
 if __name__=='__main__':unittest.main()

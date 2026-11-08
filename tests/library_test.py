@@ -89,5 +89,17 @@ class LibraryTests(unittest.TestCase):
         self.run_job(self.task(new['requestId']));self.assertEqual(len(self.calls),count)
         self.assertEqual(self.lib.request('a',new['requestId'])['status'],'ready')
 
+    def test_copy_release_keeps_completed_task_without_model_or_compile(self):
+        original=self.lib.create('a',self.body())[1]
+        task=self.task(original['requestId']);self.run_job(task)
+        ready=self.lib.availability(self.body())
+        self.lib=Library(Path(self.tmp.name),dict(VERSION))
+        with patch('book_worker.analyze',side_effect=AssertionError('不应调用模型')),patch('layer_publish.subprocess.run',side_effect=AssertionError('不应重新编译')):
+            self.assertEqual(self.lib.availability(self.body())['layerId'],ready['layerId'])
+            code,result=self.lib.create('b',self.body())
+            self.assertEqual(code,200)
+            self.assertEqual(result['layerId'],ready['layerId'])
+            self.assertEqual(result['status'],'ready')
+
 
 if __name__=='__main__':unittest.main()

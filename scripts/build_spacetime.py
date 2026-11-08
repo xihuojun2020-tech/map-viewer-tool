@@ -71,7 +71,7 @@ def apply_spacetime(data, corpus, citation):
     for event in data['events']:
         if event['world'] == 'history':
             event['time'] = {'start':julian_day(event['year']), 'end':julian_day(event['year']+1)-1,
-                'precision':'year', 'label':f'{event["year"]}年，月日待核', 'conversion':'沿用已有公元编年，尚未细化原历月份'}
+                'precision':'year', 'label':f'{event["year"]}年，月日待考', 'conversion':'沿用已有公元编年，尚未细化原历月份'}
     for override in additions['event_dates']:
         event = next(e for e in data['events'] if e['id'] == override['id'])
         quotes = [cite(c) for c in override['evidence']]
@@ -90,7 +90,7 @@ def apply_spacetime(data, corpus, citation):
         entry.update(world='history', year=event['date']['year'], position=event['date']['year'],
             controls=event.get('controls',{}), citation=quotes[0], citations=quotes, source=quotes[0]['source'],
             person_ids=[people[name] for name in event['people']], time=time_range(event['date'],calendars),
-            precision='时间按原文精度；地点为有说明的地域参照，不表示精确军营或战线。')
+            precision='时间按原文精度；地点为地域参照，详情见定位说明。')
         data['events'].append(entry)
     data['activities'] = []
     for event in additions['events']:
@@ -98,7 +98,7 @@ def apply_spacetime(data, corpus, citation):
         for i, army in enumerate(event.get('armies', [])):
             data['activities'].append({**army, 'id':f'{event["id"]}-army-{i}', 'world':'history', 'entity_type':'army',
                 'event_id':event['id'], 'time':published['time'], 'relation':'event', 'action':event['summary'],
-                'citations':published['citations'], 'spatial_precision':'地域参照；战线与营地待考'})
+                'citations':published['citations'], 'spatial_precision':'地域参照；战线与营地未详'})
     for record in additions['activities']:
         entry = {k:v for k,v in record.items() if k not in ('date','evidence','person')}
         entry['citations'] = [cite(c) for c in record['evidence']]

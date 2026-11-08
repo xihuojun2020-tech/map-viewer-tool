@@ -1,3 +1,4 @@
+const {openTimeline,openSearch,openLayers,closeDetails}=require('./map-ui.cjs');
 const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
 (async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});try{
@@ -8,15 +9,15 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
  for(const id of ['yangtze','yellow'])assert.equal(await page.locator(`[data-geography="story-${id}"]`).isVisible(),true,`${id}全国视图应有河名`);
  await page.screenshot({path:'output/story-geography-national.png'});
  await page.locator('#romance-mode').click();
- async function search(name){await page.locator('#search').fill(name);await page.locator('#search-results button').filter({hasText:'原著山川'}).first().click();}
+ async function search(name){await openSearch(page);await page.locator('#search').fill(name);await page.locator('#search-results button').filter({hasText:'原著山川'}).first().click();}
  await search('白河');assert.equal(await page.locator('#panel-content h1').innerText(),'白河');
  assert.equal(await page.locator('#panel-content blockquote').count(),0,'未读段落不泄露战事');
  assert.match(await page.locator('#panel-content').innerText(),/尚未读到/);
- await page.locator('#chapter-select').selectOption('40');await search('白河');
+ await openTimeline(page);await page.locator('#chapter-select').selectOption('40');await search('白河');
  assert.match(await page.locator('#panel-content blockquote').innerText(),/白河/);
  await page.waitForFunction(()=>window.atlas.map.loaded()&&!window.atlas.map.isMoving());
  await page.screenshot({path:'output/story-geography-xinye.png'});
- await page.getByRole('button',{name:'返回当前局势',exact:true}).click();
+ await page.getByRole('button',{name:'返回当前形势',exact:true}).click();
  const riverPoint=await page.evaluate(()=>{
   const {map,data}=window.atlas,b=map.getContainer().getBoundingClientRect();
   const points=data.story_geography.features.find(f=>f.properties.id==='story-bai').geometry.coordinates;
@@ -24,18 +25,18 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
  });
  assert.ok(riverPoint,'白河有未被标牌遮挡的可点击河段');await page.mouse.click(riverPoint.x,riverPoint.y);
  assert.equal(await page.locator('#panel-content h1').innerText(),'白河','点击河线应打开对应山川资料');
- await page.locator('#chapter-select').selectOption('7');await search('沔水');
+ await openTimeline(page);await page.locator('#chapter-select').selectOption('7');await search('沔水');
  assert.equal(await page.locator('#panel-content h1').innerText(),'汉水');
  assert.equal(await page.locator('#panel-content blockquote').count(),1,'第七十六回的引文尚未开放');
- await page.locator('#layers-button').click();await page.locator('#story-geography-button').click();await page.locator('#layers-button').click();
+ await page.locator('#layers-button').click();await openLayers(page);await page.locator('#story-geography-button').click();await page.locator('#layers-button').click();
  assert.equal(await page.locator('#panel-content h1').innerText(),'原著中的山川关隘');
  await page.getByRole('button',{name:'秦岭',exact:true}).click();assert.equal(await page.locator('#panel-content h1').innerText(),'秦岭');
  await page.locator('#layers-button').click();await page.locator('[data-layer="story-geography"]').uncheck();await page.locator('#layers-button').click();
  assert.equal(await page.locator('.geography-label:visible').count(),0);
  assert.equal(await page.evaluate(()=>window.atlas.map.getLayoutProperty('story-rivers','visibility')),'none');
  await page.locator('#layers-button').click();await page.locator('[data-layer="story-geography"]').check();await page.locator('#layers-button').click();
- await page.setViewportSize({width:390,height:844});await page.locator('#close-panel').click();await search('泗水');
- await page.locator('#close-panel').click();await page.waitForFunction(()=>window.atlas.map.loaded()&&!window.atlas.map.isMoving());
+ await page.setViewportSize({width:390,height:844});await closeDetails(page);await search('泗水');
+ await closeDetails(page);await page.waitForFunction(()=>window.atlas.map.loaded()&&!window.atlas.map.isMoving());
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
  await page.screenshot({path:'output/story-geography-mobile.png'});
  const english=await page.evaluate(()=>document.body.innerText.split('\n').filter(t=>/[A-Za-z]/.test(t)));assert.deepEqual(english,[]);assert.deepEqual(errors,[]);

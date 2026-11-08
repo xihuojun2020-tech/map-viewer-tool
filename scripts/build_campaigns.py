@@ -47,7 +47,7 @@ def main():
                 item[endpoint]['location_source'] = place['location_source']
         records.append(item)
     assert len({r['id'] for r in records}) == len(records)
-    publication = {'note': '首批逐条核对的战役，尚未覆盖全部三国战争；箭头仅表示文献支持的进攻方向。', 'campaigns': records}
+    publication = {'note': '已核战役：箭头表示文献所载进攻方向；覆盖进度见"资料与来源"。', 'campaigns': records}
     (ROOT / 'web/campaigns.json').write_text(json.dumps(publication, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'已生成 {len(records)} 条战役，其中 {sum(bool(r["origin"]) for r in records)} 条有方向箭头')
 

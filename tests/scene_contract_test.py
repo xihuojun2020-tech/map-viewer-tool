@@ -18,7 +18,11 @@ class SceneContractTest(unittest.TestCase):
         Draft202012Validator.check_schema(schema)
         validator = Draft202012Validator(schema)
         validator.validate(pack)
-        self.assertEqual(pack['baseMap']['revision'], hashlib.sha256((ROOT / 'web/strategic-regions.json').read_bytes()).hexdigest())
+        catalog = json.loads((ROOT/'web/map-compatibility.json').read_text(encoding='utf-8'))
+        self.assertEqual(pack['baseMap']['revision'], catalog['canonical']['baseMapRevision'])
+        actual = {'baseMapRevision':hashlib.sha256((ROOT/'web/strategic-regions.json').read_bytes()).hexdigest(),
+                  'atlasRevision':hashlib.sha256((ROOT/'web/atlas.json').read_bytes()).hexdigest()}
+        self.assertIn(actual, catalog['pairs'])
         invalid = copy.deepcopy(pack)
         invalid['controls'][0]['basis'] = 'planned'
         self.assertFalse(validator.is_valid(invalid), '计划不能进入当前控制记录')

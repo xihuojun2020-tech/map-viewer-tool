@@ -19,7 +19,7 @@ name = 'map-tool-'+item['versionName']+'.apk'
 apk = releases/name
 shutil.copy2(build/item['outputFile'], apk)
 payload = {'package': metadata['applicationId'], 'versionCode': item['versionCode'],
-           'versionName': item['versionName'], 'notes': '程序统一更名为“地图查看工具”，三国作为首个历史底图数据包。保留已有地图、书库、阅读位置及手机和平板横竖屏适配。',
+           'versionName': item['versionName'], 'notes': '修复文案更新后旧小说地图和书库不兼容的问题，保留已有地图与阅读位置；校正分析进度单位、资料说明与页面命名，完善手机和平板横竖屏操作。',
            'url': 'https://genghaodewuwa.xyz/map-tool/releases/'+name,
            'size': apk.stat().st_size, 'sha256': hashlib.file_digest(apk.open('rb'), 'sha256').hexdigest()}
 data = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode()

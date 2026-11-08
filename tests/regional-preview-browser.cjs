@@ -15,7 +15,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
  for(const name of ['凉州','益州','扬州'])assert.equal(await page.locator(`[data-region="${name}"]`).isVisible(),true,'分组名称不得挤掉州名');
  await page.screenshot({path:'output/regional-preview-groups.png'});
  async function search(name,kind){await page.locator('#search').fill(name);await page.locator('#search-results button').filter({hasText:kind}).first().click();await page.waitForFunction(()=>window.regionalPreview.map.loaded()&&!window.regionalPreview.map.isMoving());}
- await search('合肥','城池');assert.equal(await page.locator('#detail-content h2').innerText(),'合肥');assert.match(await page.locator('#detail-content .note').innerText(),/原包将此地分入东吴/);
+ await search('合肥','城池');assert.equal(await page.locator('#detail-content h2').innerText(),'合肥');assert.match(await page.locator('#detail-content .note').innerText(),/原包归属东吴/);
  await search('沔水','河流');assert.equal(await page.locator('#detail-content h2').innerText(),'汉水');
  await page.screenshot({path:'output/regional-preview-han.png'});
  await search('荆州','区域');assert.equal(await page.locator('#detail-content h2').innerText(),'荆州');

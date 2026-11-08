@@ -61,7 +61,7 @@ export function createSceneRenderer(map,places,regions,onSelect){
       const node=document.createElement('button');node.className='scene-point-control';
       const faction=view.factions.find(f=>f.id===claim.faction),place=places.get(claim.place);
       node.style.setProperty('--army-color',faction.color);node.textContent=`${place.name} · ${faction.name}`;
-      node.title=`${node.textContent}；城池控制标记，非郡县辖境`;node.setAttribute('aria-label',node.title);node.dataset.sceneControl=claim.id;
+      node.title=`${node.textContent}；城池控制标记，郡县辖境另见底图`;node.setAttribute('aria-label',node.title);node.dataset.sceneControl=claim.id;
       pick(node,'point-control',claim.id);if(showControl)marker(node,place.coordinates,[0,8]);
       placeIds.delete(place.id);
     }
@@ -75,7 +75,7 @@ export function createSceneRenderer(map,places,regions,onSelect){
       for(const [id,locations]of grouped){
         const people=locations.map(item=>view.people.find(p=>p.id===item.person));
         const node=document.createElement('button');node.className='scene-person';node.textContent=people.slice(0,2).map(p=>p.name).join('、')+(people.length>2?`等${people.length}人`:'');
-        node.title='最近记载的相关位置；点击查看原文，不保证仍然驻留';pick(node,people.length===1?'person':'place',people.length===1?people[0].id:id);marker(node,places.get(id).coordinates,[0,45]);
+        node.title='最近记载的相关位置；点击查看原文';pick(node,people.length===1?'person':'place',people.length===1?people[0].id:id);marker(node,places.get(id).coordinates,[0,45]);
       }
     }
     if(showPlaces)for(const id of placeIds){
@@ -90,7 +90,7 @@ export function createSceneRenderer(map,places,regions,onSelect){
     const latestActions=new Map();for(const action of view.actions)latestActions.set(action.unit||action.id,action);
     if(showArmies)for(const action of latestActions.values()){
       const color=view.factions.find(f=>f.id===action.faction).color;
-      const planned=action.status==='planned',title=`${action.name} · ${planned?'拟议行动':'文中已叙述'} · ${action.from?'方向示意':'起点未明'}`;
+      const planned=action.status==='planned',title=`${action.name} · ${planned?'文中计划':'原文叙述'} · ${action.from?'方向示意':'起点未载'}`;
       if(action.from||action.direction){
         const group=element('g',{'class':`campaign-arrow scene-arrow${planned?' uncertain':''}`,'data-scene-action':action.id,role:'button',tabindex:'0','aria-label':title});
         group.style.setProperty('--army-color',color);
@@ -110,7 +110,7 @@ export function createSceneRenderer(map,places,regions,onSelect){
       const img=document.createElement('img');img.src=`models/${unit.model}.png`;img.alt='通用部队示意';node.append(img);
       const label=document.createElement('span');label.textContent=person?.name||view.factions.find(f=>f.id===action.faction).name;
       const strength=document.createElement('small');strength.textContent=unit.strength?`文中称${unit.strength.value.toLocaleString('zh-CN')}人`:'兵力未详';
-      const state=document.createElement('small');state.textContent=planned?'计划 · 未执行':action.direction?'方向记载 · 起点未明':'行动记载';
+      const state=document.createElement('small');state.textContent=planned?'文中计划 · 未执行':action.direction?'方向记载 · 起点未载':'原文行动';
       node.append(label,strength,state);pick(node,'unit',unit.id);
       const compact=map.getContainer().clientWidth<600;
       const offsets=compact?[[-38,-48],[40,-48]]:[[-55,-76],[55,-76]];

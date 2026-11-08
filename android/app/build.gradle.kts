@@ -6,8 +6,8 @@ android {
         applicationId = "cn.maptool.reader"
         minSdk = 26
         targetSdk = 35
-        versionCode = 10
-        versionName = "0.1.9"
+        versionCode = 11
+        versionName = "0.1.10"
     }
     signingConfigs {
         if (System.getenv("MAPTOOL_KEYSTORE") != null) create("release") {

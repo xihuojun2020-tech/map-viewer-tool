@@ -1,3 +1,4 @@
+const {openTimeline,openSearch,openLayers,closeDetails}=require('./map-ui.cjs');
 const {chromium}=require('C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
 (async()=>{
@@ -6,7 +7,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto('http://127.0.0.1:8790/');await page.waitForFunction(()=>window.atlas&&window.atlas.map.isStyleLoaded());
   async function jump(id){
-   await page.locator('#campaign-button').click();await page.locator(`.campaign-entry[data-campaign="${id}"] button`).click();
+   await openLayers(page);await page.locator('#campaign-button').click();await page.locator(`.campaign-entry[data-campaign="${id}"] button`).click();
    await page.waitForFunction(()=>!window.atlas.map.isMoving());
   }
   async function arrowClick(id){
@@ -24,10 +25,10 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   assert.equal(await page.locator('#panel-content h1').innerText(),'曹操夜袭乌巢');
   assert.equal(await page.locator('.campaign-target[data-campaign="h-wuchao"]').innerText(),'乌巢');
   await page.screenshot({path:'output/campaign-wuchao.png',fullPage:true});
-  await page.locator('#time-scale').selectOption('week');assert.ok(await page.locator('.campaign-arrow.uncertain[data-campaign="h-wuchao"]').count());
-  await arrowClick('h-wuchao');assert.match(await page.locator('#panel-content').innerText(),/无法确定就在本月或本周发生/);
+  await openTimeline(page);await page.locator('#time-scale').selectOption('week');assert.ok(await page.locator('.campaign-arrow.uncertain[data-campaign="h-wuchao"]').count());
+  await arrowClick('h-wuchao');assert.match(await page.locator('#panel-content').innerText(),/发生时机未定/);
   const nov=await page.evaluate(()=>window.atlas.data.calendar.calendars.han.find(m=>m.year===200&&m.month===11).start);
-  await page.locator('#month-select').selectOption(String(nov));assert.equal(await page.locator('.campaign-unit[data-campaign="h-wuchao"]').count(),0);
+  await openTimeline(page);await page.locator('#month-select').selectOption(String(nov));assert.equal(await page.locator('.campaign-unit[data-campaign="h-wuchao"]').count(),0);
   await jump('h-changshe');assert.equal(await page.locator('.campaign-arrow').count(),0);assert.equal(await page.locator('.campaign-unit[data-campaign="h-changshe"]').count(),1);
   assert.equal(await page.evaluate(()=>{
    const a=document.querySelector('.campaign-unit').getBoundingClientRect(),b=document.querySelector('.activity-marker').getBoundingClientRect();
@@ -43,13 +44,13 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
   await page.locator('#layers-button').click();await page.locator('[data-layer="campaigns"]').uncheck();
   assert.equal(await page.locator('.campaign-unit,.campaign-arrow,.campaign-target').count(),0);
   await page.locator('[data-layer="campaigns"]').check();await page.locator('#layers-button').click();
-  await page.locator('#romance-mode').click();await page.locator('#chapter-select').selectOption('29');await page.locator('#campaign-button').click();
+  await page.locator('#romance-mode').click();await openTimeline(page);await page.locator('#chapter-select').selectOption('29');await openLayers(page);await page.locator('#campaign-button').click();
   assert.doesNotMatch(await page.locator('#panel-content').innerText(),/乌巢|关羽渡/);
-  await page.locator('#chapter-select').selectOption('30');await jump('r-wuchao');
+  await openTimeline(page);await page.locator('#chapter-select').selectOption('30');await jump('r-wuchao');
   assert.equal(await page.locator('.campaign-unit').count(),2);assert.match(await page.locator('#panel-content').innerText(),/张辽、许褚、徐晃、于禁/);
   assert.equal(await page.locator('.campaign-arrow').count(),1);
-  await page.locator('#chapter-select').selectOption('31');assert.equal(await page.locator('.campaign-unit').count(),0);
-  await page.locator('#chapter-select').selectOption('73');await jump('r-fancheng');
+  await openTimeline(page);await page.locator('#chapter-select').selectOption('31');assert.equal(await page.locator('.campaign-unit').count(),0);
+  await openTimeline(page);await page.locator('#chapter-select').selectOption('73');await jump('r-fancheng');
   await arrowClick('r-fancheng');assert.match(await page.locator('#panel-content').innerText(),/二千.*出迎支队/);
   const shape=await page.locator('.campaign-line').getAttribute('d');
   await page.evaluate(()=>window.atlas.map.jumpTo({zoom:10,bearing:25,pitch:30}));

@@ -56,7 +56,7 @@ def changban_reference():
             'source_name':'长坂之战示意图','source_url':'https://commons.wikimedia.org/wiki/File:Bataille_de_Changban.svg',
             'author':'Sixsous、Deadkid_dk、Zhuwq','license':'CC BY-SA 3.0','source_path':path_id,
             'status':'二手战役示意，未经古河道考订；默认关闭。',
-            'warning':f'原图没有地理坐标。五个地区参照点拟合均方根偏差约{rms}千米，逐点留出检验最大偏差约{worst}千米。不能用作城址、河岸或战术距离依据。',
+            'warning':f'原图无地理坐标。五个地区参照点拟合均方根偏差约{rms}千米，逐点留出检验最大偏差约{worst}千米；本图不提供城址、河岸或战术距离依据。',
             'scope':'只提取源图独立河流路径；长江中间缺段保持断开，未补线、未推定湖岸。',
             'georeference':'在源图局部坐标中进行一次仿射配准；参照点来自本项目已有地区坐标，非独立测绘。未自由拉伸或沿现代河流吸附。'}
         features.append({'type':'Feature','properties':props,'geometry':{'type':'LineString','coordinates':coordinates}})
@@ -98,7 +98,7 @@ def main():
         'period':'来源概括为公元11—1048年；覆盖汉末三国，但不表示这一千年河道完全不变。',
         'source_name':'黄河历次改道示意图','source_url':'https://commons.wikimedia.org/wiki/File:Yellow_River_watercourse_changes.svg',
         'author':'Stevenliuyi','license':'CC BY-SA 4.0','source_path':'path4550',
-        'status':'有争议的二手图，仅作研究对照；不是考定河道。',
+        'status':'二手图，来源存在争议；仅作研究对照，河道未考定。',
         'warning':'来源页明确指出原图忽略了西汉的重要河道变化。此次只提取其标注的东汉下游线，但该线仍未独立考订，不能作为精确定位或战役淹没范围的依据。',
         'scope':'黄河下游候选线；长江、汉水另有208年战役示意，均未构成考定古河网。',
         'georeference':'沿用原底图公开的等距圆柱投影与经纬范围；共同底图路径核对一致。配准正确不证明历史线路正确。'}

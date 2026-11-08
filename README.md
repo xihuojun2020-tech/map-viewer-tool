@@ -13,6 +13,8 @@
 - 同一来源、同一分析范围可复用服务端结果；新增章节复用已完成部分。剧情包校验通过后安装，保留阅读位置，可离线查看。
 - 手机和平板支持横竖屏；PC 使用宽屏布局。移动端资料面板、图例和详细设置按需展开。
 
+0.1.10 修复了文案更新后旧小说地图与书库不兼容的问题，保留已有阅读位置和分析缓存；同时校正进度单位、资料说明，以及收起图例后州名和势力名的避让。
+
 当前 PC 版本是本地 Python 服务加浏览器界面，**不是已完成的原生 Windows/macOS 安装程序**。安卓最低系统版本为 Android 8，鸿蒙原生版本尚未实现。
 
 ## PC 启动
@@ -77,7 +79,7 @@ Python 后端仅使用标准库；地图编译需要 Node.js 22。服务器默�
 ## 检查与贡献
 
 ```sh
-node --test tests/scene-state.test.mjs tests/layer-client.test.mjs tests/layer-publish.test.mjs tests/story-compile.test.mjs
+node --test tests/scene-state.test.mjs tests/layer-client.test.mjs tests/layer-publish.test.mjs tests/map-version.test.mjs tests/story-compile.test.mjs
 python -m unittest discover -s tests -p 'library*_test.py'
 python -m unittest discover -s tests -p 'analysis_test.py'
 python -m unittest discover -s tests -p 'novel_source_test.py'
@@ -85,6 +87,8 @@ python -m unittest discover -s tests -p 'speed_pipeline_test.py'
 ```
 
 上面的核心检查不调用真实模型，也不需要维护者凭据。完整地理检查另需 Shapely、Pillow、NumPy 或 jsonschema，并先运行 `scripts/build_data.py` 生成本地史料索引；`user_regions_test.py` 和区域预览检查需要未公开的用户地图原包。部分旧研究截图脚本使用本机 Playwright/浏览器路径；这些不是运行预构建地图所必需的依赖。运行前可查看对应脚本的 import 和路径设置。
+
+`web/map-compatibility.json` 只登记已经核对过的资料摘要配对。当前文案版本沿用已部署协议版本，下载包仍校验完整字节。修改资料后可运行 `python scripts/check_copy_compatibility.py 旧版web目录 候选web目录` 核对允许的说明字段；编号、几何或其他运行数据变化不能直接加入此文案兼容组。
 
 密钥检查使用 Gitleaks：
 

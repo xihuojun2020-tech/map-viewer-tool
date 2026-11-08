@@ -109,7 +109,7 @@ def main():
         cite=citation(corpus,item['source'],item['phrase']) if item['source'] else None
         frontier.append(feature(polygon,{'id':item['id'],'name':item['name'],'kind':item['kind'],
             'color':factions[item['id']]['color'],'label':[point.x,point.y],'citation':cite,
-            'precision':'综合汉末三世纪文献的概略活动范围，非逐年精确疆界；部族层可与行政名义范围重叠。'}))
+            'precision':'综合汉末三世纪文献的活动范围示意；非逐年疆界，可与行政名义范围重叠。'}))
     event_records=[]
     for event in catalog['events']:
         cite=citation(corpus,event['source'],event['phrase'])
@@ -167,8 +167,8 @@ def main():
             largest=max(list(combined.geoms),key=lambda x:x.area) if combined.geom_type=='MultiPolygon' else combined
             point=largest.representative_point()
             features.append(feature(combined,{'id':owner,'name':factions[owner]['name'],'color':factions[owner]['color'],
-                'label':[point.x,point.y],'area':combined.area,'kind':'阶段势力概略范围'}))
-        note=phase['note'] if world=='history' else ('按已读原著节点校准的全国阶段推定，背景郡域尚未逐一核文；色块不是精确实控县界。'+anchor['note'])
+                'label':[point.x,point.y],'area':combined.area,'kind':'阶段势力示意区'}))
+        note=phase['note'] if world=='history' else ('按已读原著节点校准的全国阶段推定；背景郡域逐条核文未毕，色块为阶段范围。'+anchor['note'])
         return {'position':position,'reference_year':ref_year,'title':title,'note':note,
                 'source_ids':phase['source_ids'],'citation':cite,'controls':controls,'commandery_owners':owners,
                 'features':features}

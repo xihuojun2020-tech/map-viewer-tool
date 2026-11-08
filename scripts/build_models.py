@@ -118,7 +118,7 @@ def main():
         model=city(tier);assets.append(dict(id=id,name=name,kind='city',**model.write(id)))
     for id,name in [('infantry','步卒'),('archer','弓手'),('crossbow','弩手'),('cavalry','骑兵'),('xianzhen','陷阵营'),('danyang','丹阳兵'),('huangjin','黄巾诸部')]:assets.append(dict(id=id,name=name,kind='army',**troops(id).write(id)))
     for a in assets:a['url']=f'models/{a["id"]}.glb'
-    manifest=dict(assets=assets,license='本项目程序化原创模型；与生成脚本一并提供，类别示意并非具体城址或装备的考古复原。',note='城市大小为屏幕辨识设计，不表示实际面积。兵人数量不表示真实兵力。黄巾头饰与陷阵营整齐甲具有文字依据，其余细节为艺术设计。')
+    manifest=dict(assets=assets,license='本项目程序化原创模型；与生成脚本一并提供，类别示意并非具体城址或装备的考古复原。',note='城池大小与队列人数用于辨识类别。黄巾头饰与陷阵营整齐甲具有文字依据，其余细节为艺术设计。')
     (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8')
     print(json.dumps({'models':len(assets),'triangles':sum(a['triangles']for a in assets),'bytes':sum(a['bytes']for a in assets)},ensure_ascii=False))
 

@@ -25,6 +25,19 @@ SOURCE_SUFFIXES = {'.py', '.mjs', '.cjs', '.js', '.ps1', '.json', '.geojson', '.
                    '.example', '.service', '.conf'}
 
 
+def normalize_export_text(path, relative):
+    # Match .gitattributes so a Git checkout retains SOURCE-MANIFEST byte hashes.
+    parts = relative.parts
+    if (len(parts) == 3 and parts[:2] == ('web', 'assets') or
+        len(parts) == 4 and parts[:3] == ('data', 'references', 'chinese-calendar') or
+        len(parts) == 4 and parts[:3] == ('data', 'references', 'hydrology-2026-11-06') and path.suffix == '.svg'):
+        return
+    if path.suffix in SOURCE_SUFFIXES - {'.png', '.jpg', '.glb', '.der'} or path.name in {'LICENSE', '.gitignore', '.gitattributes'}:
+        raw = path.read_bytes()
+        if b'\r\n' in raw:
+            path.write_bytes(raw.replace(b'\r\n', b'\n'))
+
+
 def export(destination):
     destination = destination.resolve()
     destination.mkdir(parents=True, exist_ok=False)
@@ -80,9 +93,8 @@ def export(destination):
     models = destination/'web/models.html'
     models.write_text(re.sub(r'<a href="miniatures\.html"[^>]*>[^<]*</a>',
         '精细造型审核资源暂未随公开版提供。', models.read_text(encoding='utf-8')), encoding='utf-8')
-    for name in ['web/index.html', 'web/app.mjs']:
-        target = destination/name
-        target.write_text(target.read_text(encoding='utf-8').replace('沿海按原包补齐显示，非考定古岸线。', '沿海仅作现代地理参照，非考定古岸线。'), encoding='utf-8')
+    # app.mjs renders coastal_note from this public surface; do not replace an
+    # obsolete hard-coded sentence in the HTML or application source.
     notices = destination/'web/assets/DATA-NOTICES.txt'
     text = notices.read_text(encoding='utf-8')
     start = text.index('Independent regional preview (regional-preview.html):')
@@ -92,9 +104,12 @@ def export(destination):
     text = text[:text.index(marker)]+surface['coastal_note']+'\n'
     notices.write_text(text, encoding='utf-8')
 
+    for path in destination.rglob('*'):
+        if path.is_file():
+            normalize_export_text(path, path.relative_to(destination))
     manifest = [{'path':p.relative_to(destination).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                  'bytes':p.stat().st_size} for p in sorted(destination.rglob('*')) if p.is_file()]
-    (destination/'SOURCE-MANIFEST.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
+    (destination/'SOURCE-MANIFEST.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8', newline='\n')
     return {'destination':str(destination),'files':len(manifest),'bytes':sum(p['bytes'] for p in manifest)}
 
 

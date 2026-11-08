@@ -45,7 +45,7 @@ def main():
     payload = base64.b64decode(raster.attrib['{http://www.w3.org/1999/xlink}href'].split(',',1)[1])
     (ROOT / 'web/assets/jianan-terrain.jpg').write_bytes(payload)
     result = {'year':219, 'title':'建安郡国边界研究底稿', 'width':2500, 'height':1800,
-              'coordinate_status':'本页保留原图坐标；主地图另载配准研究边线，不代表古界已考定', 'label_scope':editorial['review_scope'],
+              'coordinate_status':'本页保留原图坐标；主地图另载配准研究边线，古界另行考定。', 'label_scope':editorial['review_scope'],
               'terrain':'assets/jianan-terrain.jpg', 'labels':labels, 'boundaries':extraction['boundaries'],
               'source_url':license_record['source_page'], 'license_url':license_record['license_url'],
               'source_sha256':license_record['sha256']}
